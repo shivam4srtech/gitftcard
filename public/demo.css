@@ -1,0 +1,60 @@
+
+  
+.demo{
+    margin: 4.1em auto;
+    justify-content: center;
+    text-align: center;
+    
+    display: block;
+}
+
+.demo h1{
+    font-weight: 700;
+    color: #e89980;
+}
+
+iframe{
+    width: 45%;
+    height: 410px;
+    border-radius: 5px;
+    box-shadow:  11px 11px  rgba(197, 197, 234, 0.2);
+}
+
+.democontent{
+    display: flex;
+    margin: 1.2em auto;
+    width: 45%;
+    border: 2px solid  rgb(224, 221, 221);
+    border-radius: 5px;
+}
+
+.democontent .democontentchild{
+    width: 50%;
+    margin: auto;
+}
+
+.democontent .democontentchild img{
+    width: 100%;
+}
+
+.democontent .democontentchild h1{
+    display: block;
+    margin-bottom: 24px;
+    margin-left: 15px;
+}
+.democontent .democontentchild a{
+    display: block;
+    margin: 24px;
+    text-decoration: none;
+    color:  #7e94f6;
+}
+.democontent .democontentchild button{
+    display: block;
+    margin-bottom: 24px;
+    border-radius: 5px;
+    height: 43px;
+    background-color: transparent;
+    outline: none;
+    border: 2px solid  rgb(224, 221, 221);
+    color: #e89980;
+}

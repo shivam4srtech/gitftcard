@@ -1,0 +1,1028 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>BIGAFFI: The complete affiliate marketing solution for your ecommerce store</title>
+    <link rel="shortcut icon" href="./images/bigaffilogo.jpeg" type="image/x-icon">
+    <!-- *******************Fontawesome***************************** -->
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.2/css/all.min.css" integrity="sha512-z3gLpd7yknf1YoNbCzqRKc4qyor8gaKU1qmn+CShxbuBusANI9QpRohGBreCFkKxLhei6S9CQXFEbbKuqLg0DA==" crossorigin="anonymous" referrerpolicy="no-referrer" />
+    <link rel="stylesheet" href="./font-awesome-4.7.0/css/font-awesome.css">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Open+Sans:wght@300;400&family=Raleway:wght@800&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="./bootstrap-5.3.0-alpha3-dist/css/bootstrap.min.css">
+    <!-- *******************local stylesheet******************** -->
+    <link rel="stylesheet" href="./public/master.css">
+    <link rel="stylesheet" href="./public/admin.css">
+
+</head>
+<body>
+    <!-- ********************************************NAVBAR**************************************************** -->
+    <header>  
+      <nav class="navbar navbar-expand-lg">
+          <div class="container-fluid">
+            <a class="navbar-brand" href="./index.html"><img src="./images/bigaffilogo.jpeg" alt=""></a>
+            <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
+              <span><i class="fa fa-bars" aria-hidden="true"></i></span>
+            </button>
+            <div class="collapse navbar-collapse" id="navbarSupportedContent">
+              <ul class="navbar-nav me-auto mb-2 mb-lg-0">
+                <li class="nav-item">
+                  <a class="nav-link activ" href="plateforms.html">Plateforms</a>
+                </li>
+                <li class="nav-item">
+                  <a class="nav-link home" href="./index.html">Home</a>
+                </li>
+                <li class="nav-item">
+                  <a class="nav-link" href="./pricing.html">Pricing</a>
+                </li>
+                <li class="nav-item">
+                  <a class="nav-link" href="resources.html">Resources </a>
+                </li>
+                <li class="nav-item">
+                  <a class="nav-link" href="./contact.html">Contact</a>
+                </li>
+                <li class="nav-item">
+                  <a class="nav-link" href="admin.html">Dashboard</a>
+                </li>
+              </ul>
+            </div>
+          </div>
+       </nav>
+    </header>
+      <!-- ***********************Dashboard************************************** -->
+      <section class="dashboard container-fluid">
+          <div class="row">
+             <div class="col-lg-2 dashboard-navigation">
+              <div class="row user-info">
+                  <div class="col-4 mx-auto">
+                      <img src="./images/3.jpeg" alt="">
+                  </div>
+                  <div class="col-12 my-3">
+                    <p class="user-name text-center">Lahiruth Thirmaane</p>
+                  </div>
+              </div>
+              <div class="row rowTwo">
+                  <a href="#dashBoard" onclick="toggleVisibility('dashBoard');"><i class="fa-solid fa-gauge"></i>Dashboard</a>
+                  <a href="#mobileApp" onclick="toggleVisibility('mobileApp');"><i class="fa-solid fa-download"></i>Our Mobile App</a>
+              </div>
+              <div class="row toggle-element my-3">
+                <div class="d-flex toggle-btn">
+                  <a class="btns me-auto" data-bs-toggle="collapse" href="#expandA" role="button" aria-expanded="true" aria-controls="expand">Affiliate</a>
+                  <a href="#expandA"  data-bs-toggle="collapse" class="icon ms-auto"><i class="fa-solid fa-angle-down"></i></a>
+                </div>
+                <div class="show my-3" id="expandA">
+                    <ul>
+                        <li><a href="#affiliate" onclick="toggleVisibility('affiliate');"><i class="fa-solid fa-chart-line"></i>Affiliate</a></li>
+                        <li><a href="#analytics" onclick="toggleVisibility('analytics');"><i class="fa-solid fa-chart-line"></i>Analytics</a></li>
+                        <li><a href="#commission" onclick="toggleVisibility('commission');"><i class="fa-solid fa-percent"></i>Commission</a></li>
+                        <li><a href="#affiGroup" onclick="toggleVisibility('affiGroup')"><i class="fa-solid fa-people-line"></i>Groups</a></li>
+                        <li><a href=""><i class="fa-solid fa-ranking-star"></i>Ranking</a></li>
+                    </ul>
+                </div>
+              </div>
+              <!-- ************************** -->
+              <div class="row toggle-element my-3">
+                <div class="d-flex toggle-btn">
+                  <a class="btns me-auto" data-bs-toggle="collapse" href="#expandB" role="button" aria-expanded="true" aria-controls="expand">Merchant</a>
+                  <a href="#expandB"  data-bs-toggle="collapse" class="icon ms-auto"><i class="fa-solid fa-angle-down"></i></a>
+                </div>
+                <div class="show my-3" id="expandB">
+                    <ul>
+                        <li><a href=""><i class="fa-solid fa-chart-line"></i>Analytics</a></li>
+                        <li><a href="#commission" onclick="toggleVisibility('commission');"><i class="fa-solid fa-percent"></i>Commission</a></li>
+                        <li><a href="#affiGroup" onclick="toggleVisibility('affiGroup')"><i class="fa-solid fa-people-line"></i>Groups</a></li>
+                        <li><a href=""><i class="fa-solid fa-ranking-star"></i>Ranking</a></li>
+                    </ul>
+                </div>
+              </div>
+              <!-- ************************** -->
+              <div class="row toggle-element my-3">
+                <div class="d-flex toggle-btn">
+                  <a class="btns me-auto" data-bs-toggle="collapse" href="#expandC" role="button" aria-expanded="true" aria-controls="expand">Affiliate</a>
+                  <a href="#expandC"  data-bs-toggle="collapse" class="icon ms-auto"><i class="fa-solid fa-angle-down"></i></a>
+                </div>
+                <div class="show my-3" id="expandC">
+                    <ul>
+                        <li><a href=""><i class="fa-solid fa-chart-line"></i>Analytics</a></li>
+                        <li><a href=""><i class="fa-solid fa-percent"></i>Commission</a></li>
+                        <li><a href=""><i class="fa-solid fa-shield"></i>Guidelines</a></li>
+                        <li><a href=""><i class="fa-solid fa-ranking-star"></i>Ranking</a></li>
+                    </ul>
+                </div>
+              </div>
+              <!-- ************************** -->
+              <div class="row toggle-element my-3">
+                <div class="d-flex toggle-btn">
+                  <a class="btns me-auto" data-bs-toggle="collapse" href="#expandD" role="button" aria-expanded="true" aria-controls="expand">Settings</a>
+                  <a href="#expandD" data-bs-toggle="collapse" class="icon ms-auto"><i class="fa-solid fa-angle-down"></i></a>
+                </div>
+                <div class="show my-3" id="expandD">
+                    <ul>
+                        <li><a href=""><i class="fa-solid fa-wrench"></i>Settings</a></li>
+                        <li><a href=""><i class="fa-solid fa-dollar-sign"></i>Share &amp Earn</a></li>
+                    </ul>
+                </div>
+              </div>
+              <!-- ************************** -->
+              <div class="row log-out mb-4">
+                  <a href=""data-bs-toggle="modal" data-bs-target="#logoutModal"><i class="fa-solid fa-angles-left"></i>Logout</a>
+              </div>
+            </div>
+          <!-- **************************************************************************************************************************** -->
+             <div class="col-lg-10 bg-light shadow-lg">
+                <div class="my-4" id="dashBoard" style="display: none;">
+                  <div class="main-content">              
+                    <main>
+                        <div class="page-header">
+                            <h1>Dashboard</h1>
+                            <small>Home / Dashboard</small>
+                        </div>
+                        
+                        <div class="page-content">
+                        
+                          <div class="analytics row">
+          
+                           <div class="col-xs-12 col-md-6 col-lg-3 card-box">
+                              <div>
+                                  <div class="card">
+                                    <div class="card-head">
+                                        <h2>107,200</h2>
+                                        <span class="fa-solid fa-user-group"></span>
+                                    </div>
+                                    <div class="card-progress">
+                                        <small>User activity this month</small>
+                                        <div class="card-indicator">
+                                            <div class="indicator one" style="width: 60%"></div>
+                                        </div>
+                                    </div>
+                                  </div>
+                              </div>
+                           </div>
+        
+                           <div class="col-xs-12 col-md-6 col-lg-3 card-box">
+                              <div>
+                                  <div class="card">
+                                    <div class="card-head">
+                                        <h2>340,230</h2>
+                                        <span class="fa-regular fa-eye"></span>
+                                    </div>
+                                    <div class="card-progress">
+                                        <small>Page views</small>
+                                        <div class="card-indicator">
+                                            <div class="indicator two" style="width: 80%"></div>
+                                        </div>
+                                    </div>
+                                  </div>
+                              </div>
+                            </div>
+        
+                            <div class="col-xs-12 col-md-6 col-lg-3 card-box">
+                              <div>
+                                  <div class="card">
+                                    <div class="card-head">
+                                        <h2>$653,200</h2>
+                                        <span class="fa-solid fa-dollar-sign"></span>
+                                    </div>
+                                    <div class="card-progress">
+                                        <small>Monthly revenue growth</small>
+                                        <div class="card-indicator">
+                                            <div class="indicator three" style="width: 65%"></div>
+                                        </div>
+                                    </div>
+                                  </div>
+                              </div>
+                            </div>
+        
+                            <div class="col-xs-12 col-md-6 col-lg-3 card-box">
+                              <div>
+                                  <div class="card">
+                                    <div class="card-head">
+                                        <h2>47,500</h2>
+                                        <span class="fa-regular fa-envelope"></span>
+                                    </div>
+                                    <div class="card-progress">
+                                        <small>New E-mails received</small>
+                                        <div class="card-indicator">
+                                            <div class="indicator four" style="width: 90%"></div>
+                                        </div>
+                                    </div>
+                                  </div>
+                              </div>
+                           </div>
+                        </main>
+                    </div>
+                    <!-- **************Newly Registerd Affiliates*********** -->
+                    <div class="table-section">
+                      <h2 class="heading">Newly Registerd Affiliates</h2>
+                      <table>
+                          <thead>
+                              <tr>
+                                  <th>Name</th>
+                                  <th>Email</th>
+                                  <th>Status</th>
+                              </tr>
+                          </thead>
+                          <tbody>
+                              <tr>
+                                <td><a href="">Brad Hauge</a></td>
+                                <td>bradH@bussiness.com</td>
+                                <td><a href="#profile" class="approve">Accepted</a></td>
+                              </tr>
+                              <tr>
+                                <td>Brad Hauge</td>
+                                <td>bradH@bussiness.com</td>
+                                <td><a href="#profile" class="reject">Rejected</a></td>
+                              </tr>
+                              <tr>
+                                <td>Brad Hauge</td>
+                                <td>bradH@bussiness.com</td>
+                                <td><a href="#profile" class="approve">Accepted</a></td>
+                              </tr>
+                              <tr>
+                                <td>Brad Hauge</td>
+                                <td>bradH@bussiness.com</td>
+                                <td><a href="#profile" class="approve">Accepted</a></td>
+                              </tr>
+                              <tr>
+                                <td>Brad Hauge</td>
+                                <td>bradH@bussiness.com</td>
+                                <td><a href="#profile" class="reject">Rejected</a></td>
+                              </tr>
+                              <tr>
+                                <td>Brad Hauge</td>
+                                <td>bradH@bussiness.com</td>
+                                <td><a href="#profile" class="approve">Accepted</a></td>
+                              </tr>
+                          </tbody>
+                      </table>
+                    </div>    
+                  </div>
+                <!-- **********************************Mobole App Modal*********************************************** -->
+                <div class="my-4 app-modal" id="mobileApp" style="display: none;">
+                    <div class="row">
+                        <div class="col-md-6 app-box">
+                            <div>
+                                <img src="./images/mobile-app.jpg" alt="">
+                            </div>
+                        </div>
+                        <div class="col-md-6 app-box">
+                          <div class="app-item">
+                              <h2>Download App,<br> Start drive, Earn <br> money!</h2>
+                              <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Tempora, adipisc</p>
+                              <div class="app-store row">
+                                  <div class="col-6">
+                                    <a href=""><img src="./images/App-store-apple.svg" alt=""></a>
+                                  </div>
+                                  <div class="col-6">
+                                    <a href=""><img src="./images/Google-Play.svg" alt=""></a>
+                                  </div>
+                              </div>
+                          </div>
+                        </div>
+                    </div>
+                </div>
+                <!-- ************************Affiliate modal************************************ -->
+                <div class="affiliate" id="affiliate" style="display: none;">
+                  <div class="row header">
+                      <div class="d-flex header-box">
+                          <div class="me-auto header-item">
+                              <h2>Affiliate</h2>
+                          </div>
+                          <div class="ms-auto header-item">
+                              <a href="" data-bs-toggle="modal" data-bs-target="#newAffiliate"><span><i class="fa-solid fa-user-plus"></i></span>Add New</a>
+                          </div>
+                      </div>
+                  </div>
+                  <div class="row affiliate-type">
+                      <div class="type-box">
+                          <a href="#allAffiliate">All Affiliates</a>
+                          <a href="#pendingAffiliate">Pending Affiliate</a>
+                          <a href="#rejectedAffiliate">Rejected Affiliate</a>
+                      </div>
+                  </div>
+                  <div class="row filter-options">
+                    <div class="col-4 filter-item">
+                      <div class="dropdown-menu-end">
+                       <form action="" class="d-flex">
+                        <input type="text" placeholder="Search affiliate">
+                        <button><i class="fa-solid fa-magnifying-glass"></i></button>
+                       </form>
+                        <ul class="dropdown-menu">
+                          <li><a class="dropdown-item" href="#">Action</a></li>
+                          <li><a class="dropdown-item" href="#">Action two</a></li>
+                          <li><a class="dropdown-item" href="#">Action three</a></li>
+                        </ul>
+                      </div>
+                    </div>
+                    <!-- ********************** -->
+                    <div class="col-4 filter-item">
+                      <div class="dropdown-center">
+                        <a class="dropdown-toggle" type="button" data-bs-toggle="dropdown" aria-expanded="false">
+                          Group Filter
+                        </a>
+                        <ul class="dropdown-menu">
+                          <li><a class="dropdown-item" href="#">ACN Global Future</a></li>
+                          <li><a class="dropdown-item" href="#">GTPL Network</a></li>
+                          <li><a class="dropdown-item" href="#">Global Network</a></li>
+                        </ul>
+                      </div>
+                    </div>
+                    <!-- ********************** -->
+                    <div class="col-4 filter-item">
+                      <div class="dropdown-center">
+                        <a class="dropdown-toggle" type="button" data-bs-toggle="dropdown" aria-expanded="false">
+                          Show All
+                        </a>
+                        <ul class="dropdown-menu">
+                          <li><a class="dropdown-item" href="#">Approved</a></li>
+                          <li><a class="dropdown-item" href="#">Rejected</a></li>
+                          <li><a class="dropdown-item" href="#">Invited</a></li>
+                        </ul>
+                      </div>
+                    </div>
+                    <!-- ********************** -->
+                  </div>
+                  <div class="row" id="allAffiliate">
+                      <div class="table-section">
+                        <table>
+                            <thead>
+                                <tr>
+                                    <th>Profile</th>
+                                    <th>Name</th>
+                                    <th>Order</th>
+                                    <th>Revenue</th>
+                                    <th>Earnings</th>
+                                    <th>Unpaid</th>
+                                </tr>
+                            </thead>
+                            <tbody>
+                                <tr>
+                                  <td><img src="./images/3.jpeg" alt=""></td>
+                                  <td>Braian Lara</td>
+                                  <td>$199</td>
+                                  <td>$10</td>
+                                  <td>$5</td>
+                                  <td>$5</td>
+                                </tr>
+                                <tr>
+                                  <td><img src="./images/3.jpeg" alt=""></td>
+                                  <td>Braian Lara</td>
+                                  <td>$199</td>
+                                  <td>$10</td>
+                                  <td>$5</td>
+                                  <td>$5</td>
+                                </tr>
+                                <tr>
+                                  <td><img src="./images/3.jpeg" alt=""></td>
+                                  <td>Braian Lara</td>
+                                  <td>$199</td>
+                                  <td>$10</td>
+                                  <td>$5</td>
+                                  <td>$5</td>
+                                </tr>
+                                <tr>
+                                  <td><img src="./images/3.jpeg" alt=""></td>
+                                  <td>Braian Lara</td>
+                                  <td>$199</td>
+                                  <td>$10</td>
+                                  <td>$5</td>
+                                  <td>$5</td>
+                                </tr>
+                                <tr>
+                                  <td><img src="./images/3.jpeg" alt=""></td>
+                                  <td>Braian Lara</td>
+                                  <td>$199</td>
+                                  <td>$10</td>
+                                  <td>$5</td>
+                                  <td>$5</td>
+                                </tr>
+                                <tr>
+                                  <td><img src="./images/3.jpeg" alt=""></td>
+                                  <td>Braian Lara</td>
+                                  <td>$199</td>
+                                  <td>$10</td>
+                                  <td>$5</td>
+                                  <td>$5</td>
+                                </tr>
+                            </tbody>
+                        </table>
+                        <div class="d-flex page-count">
+                          <div class="me-auto">
+                           <span>Displaying 10 entries</span>
+                          </div>
+                          <div class="ms-auto">
+                              <span><i class="fa-solid fa-angle-left"></i></span><span>...</span><span><i class="fa-solid fa-angle-right"></i></span>
+                          </div>
+                       </div>
+                      </div>
+                  </div>
+                  <div class="row" id="pendingAffiliate">
+                    <h2 class="heading">Pedding Affiliates</h2>
+                    <div class="table-section">
+                      <table>
+                          <thead>
+                              <tr>
+                                  <th>Name</th>
+                                  <th>Email</th>
+                                  <th>Status</th>
+                                  <th>Action</th>
+                              </tr>
+                          </thead>
+                          <tbody>
+                              <tr>
+                                <td>Braian Lara</td>
+                                <td>srtech@gmail.com</td>
+                                <td><span class="pending">Pending</span></td>
+                                <td><a href="#S" class="approve">Approve</a><a href="#S" class="reject">Reject</a></td>
+                              </tr>
+                              <tr>
+                                <td>Braian Lara</td>
+                                <td>srtech@gmail.com</td>
+                                <td><span class="pending">Pending</span></td>
+                                <td><a href="#S" class="approve">Approve</a><a href="#S" class="reject">Reject</a></td>
+                              </tr>
+                              <tr>
+                                <td>Braian Lara</td>
+                                <td>srtech@gmail.com</td>
+                                <td><span class="pending">Pending</span></td>
+                                <td><a href="#S" class="approve">Approve</a><a href="#S" class="reject">Reject</a></td>
+                              </tr>
+                              <tr>
+                                <td>Braian Lara</td>
+                                <td>srtech@gmail.com</td>
+                                <td><span class="pending">Pending</span></td>
+                                <td><a href="#S" class="approve">Approve</a><a href="#S" class="reject">Reject</a></td>
+                              </tr>
+                              <tr>
+                                <td>Braian Lara</td>
+                                <td>srtech@gmail.com</td>
+                                <td><span class="pending">Pending</span></td>
+                                <td><a href="#S" class="approve">Approve</a><a href="#S" class="reject">Reject</a></td>
+                              </tr>
+                              <tr>
+                                <td>Braian Lara</td>
+                                <td>srtech@gmail.com</td>
+                                <td><span class="pending">Pending</span></td>
+                                <td><a href="#S" class="approve">Approve</a><a href="#S" class="reject">Reject</a></td>
+                              </tr>
+                          </tbody>
+                      </table>
+                      <div class="d-flex page-count">
+                        <div class="me-auto">
+                         <span>Displaying 10 entries</span>
+                        </div>
+                        <div class="ms-auto">
+                            <span><i class="fa-solid fa-angle-left"></i></span><span>...</span><span><i class="fa-solid fa-angle-right"></i></span>
+                        </div>
+                     </div>
+                    </div>
+                </div>
+                <div class="row" id="rejectedAffiliate">
+                  <h2 class="heading">Rejected Affiliates</h2>
+                  <div class="table-section">
+                    <table>
+                        <thead>
+                            <tr>
+                                <th>Name</th>
+                                <th>Email</th>
+                                <th>Status</th>
+                                <th>Action</th>
+                            </tr>
+                        </thead>
+                        <tbody>
+                            <tr>
+                              <td>Braian Lara</td>
+                              <td>srtech@gmail.com</td>
+                              <td><span class="reject">Rejected</span></td>
+                              <td><a href="#S" class="approve">Approve</a></td>
+                            </tr>
+                            <tr>
+                              <td>Braian Lara</td>
+                              <td>srtech@gmail.com</td>
+                              <td><span class="reject">Rejected</span></td>
+                              <td><a href="#S" class="approve">Approve</a></td>
+                            </tr>
+                            <tr>
+                              <td>Braian Lara</td>
+                              <td>srtech@gmail.com</td>
+                              <td><span class="reject">Rejected</span></td>
+                              <td><a href="#S" class="approve">Approve</a></td>
+                            </tr>
+                            <tr>
+                              <td>Braian Lara</td>
+                              <td>srtech@gmail.com</td>
+                              <td><span class="reject">Rejected</span></td>
+                              <td><a href="#S" class="approve">Approve</a></td>
+                            </tr>
+                            <tr>
+                              <td>Braian Lara</td>
+                              <td>srtech@gmail.com</td>
+                              <td><span class="reject">Rejected</span></td>
+                              <td><a href="#S" class="approve">Approve</a></td>
+                            </tr>
+                            <tr>
+                              <td>Braian Lara</td>
+                              <td>srtech@gmail.com</td>
+                              <td><span class="reject">Rejected</span></td>
+                              <td><a href="#S" class="approve">Approve</a></td>
+                            </tr>
+                        </tbody>
+                      </table>
+                      <div class="d-flex page-count">
+                        <div class="me-auto">
+                         <span>Displaying 10 entries</span>
+                        </div>
+                        <div class="ms-auto">
+                            <span><i class="fa-solid fa-angle-left"></i></span><span>...</span><span><i class="fa-solid fa-angle-right"></i></span>
+                        </div>
+                     </div>
+                    </div>
+                  </div>
+                </div>
+                <div class="my-4 affiliate" id="commission" style="display: none;">
+                 <div class="row product-commission">
+                  <div class="col-xs-12 col-md-6 col-lg-4 card-box">
+                    <div>
+                        <div class="card">
+                          <div class="card-head">
+                              <h2>Default Commission</h2>
+                              <span class="fa-solid fa-percent"></span>
+                          </div>
+                          <div class="card-progress">
+                              <small>30%</small>
+                              <div class="card-indicator">
+                                  <div class="indicator two" style="width: 30%; background-color :#34a853"></div>
+                              </div>
+                          </div>
+                        </div>
+                    </div>
+                  </div>
+                 </div>
+                 <div class="row" id="pendingAffiliate">
+                  <h2 class="heading">Product Commission</h2> 
+                  <div class="table-section">
+                    <table>
+                        <thead>
+                            <tr>
+                                <th>Product</th>
+                                <th>Affiliate</th>
+                                <th>Commission</th>
+                                <th>Action</th>
+                            </tr>
+                        </thead>
+                        <tbody>
+                            <tr>
+                              <td>Hand Bag</td>
+                              <td>Any</td>
+                              <td>30%</td>
+                              <td><a href="#S" class="approve">View</a></td>
+                            </tr>
+                            <tr>
+                              <td>Hand Bag</td>
+                              <td>Any</td>
+                              <td>30%</td>
+                              <td><a href="#S" class="approve">View</a></td>
+                            </tr>
+                            <tr>
+                              <td>Hand Bag</td>
+                              <td>Any</td>
+                              <td>30%</td>
+                              <td><a href="#S" class="approve">View</a></td>
+                            </tr>
+                            <tr>
+                              <td>Hand Bag</td>
+                              <td>Any</td>
+                              <td>30%</td>
+                              <td><a href="#S" class="approve">View</a></td>
+                            </tr>
+                            <tr>
+                              <td>Hand Bag</td>
+                              <td>Any</td>
+                              <td>30%</td>
+                              <td><a href="#S" class="approve">View</a></td>
+                            </tr>
+                            <tr>
+                              <td>Hand Bag</td>
+                              <td>Any</td>
+                              <td>30%</td>
+                              <td><a href="#S" class="approve">View</a></td>
+                            </tr>
+                        </tbody>
+                    </table>
+                    <div class="d-flex page-count">
+                       <div class="me-auto">
+                        <span>Displaying 10 entries</span>
+                       </div>
+                       <div class="ms-auto">
+                           <span><i class="fa-solid fa-angle-left"></i></span><span>...</span><span><i class="fa-solid fa-angle-right"></i></span>
+                       </div>
+                    </div>
+                  </div>
+              </div>
+              </div>
+              <!-- ***************Group Modal****************** -->
+              <div class="my-4 affigroup" id="affiGroup" style="display: none;">
+                <div class="row">
+                    <div class="d-flex group-header">
+                      <p class="me-auto">Affiliate Groups</p>
+                      <a href="" class="ms-auto" data-bs-toggle="modal" data-bs-target="#newGroup"><i class="fa-solid fa-plus"></i>Creat New Group </a>
+                   </div>
+                </div>
+                <div class="row display-group">
+                    <div class="col-xs-12 col-md-6 col-lg-4 group-box">
+                        <div class="group-item">
+                           <div class="group-name">
+                              <h3>ACN Network</h3>
+                           </div>
+                           <div class="d-flex commission">
+                              <span class="me-auto">Standard Commission</span>
+                              <span class="ms-auto">10%</span>
+                            </div>
+                            <div class="d-flex commission">
+                              <span class="me-auto">Member</span>
+                              <span class="ms-auto">23</span>
+                            </div>
+                            <div class="modify">
+                                <a href="">Modify Members</a>
+                                <a href="">Modify Groups</a>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="col-xs-12 col-md-6 col-lg-4 group-box">
+                      <div class="group-item">
+                         <div class="group-name">
+                            <h3>GCDL Delvery</h3>
+                         </div>
+                         <div class="d-flex commission">
+                            <span class="me-auto">Standard Commission</span>
+                            <span class="ms-auto">10%</span>
+                          </div>
+                          <div class="d-flex commission">
+                            <span class="me-auto">Member</span>
+                            <span class="ms-auto">23</span>
+                          </div>
+                          <div class="modify">
+                              <a href="">Modify Members</a>
+                              <a href="">Modify Groups</a>
+                          </div>
+                      </div>
+                    </div>
+                    <div class="col-xs-12 col-md-6 col-lg-4 group-box">
+                      <div class="group-item">
+                         <div class="group-name">
+                            <h3>Cango Nisaka</h3>
+                         </div>
+                         <div class="d-flex commission">
+                            <span class="me-auto">Standard Commission</span>
+                            <span class="ms-auto">10%</span>
+                          </div>
+                          <div class="d-flex commission">
+                            <span class="me-auto">Member</span>
+                            <span class="ms-auto">23</span>
+                          </div>
+                          <div class="modify">
+                              <a href="">Modify Members</a>
+                              <a href="">Modify Groups</a>
+                          </div>
+                      </div>
+                    </div>
+                    <div class="col-xs-12 col-md-6 col-lg-4 group-box">
+                      <div class="group-item">
+                         <div class="group-name">
+                            <h3>Dubly Decon</h3>
+                         </div>
+                         <div class="d-flex commission">
+                            <span class="me-auto">Standard Commission</span>
+                            <span class="ms-auto">10%</span>
+                          </div>
+                          <div class="d-flex commission">
+                            <span class="me-auto">Member</span>
+                            <span class="ms-auto">23</span>
+                          </div>
+                          <div class="modify">
+                              <a href="">Modify Members</a>
+                              <a href="">Modify Groups</a>
+                          </div>
+                      </div>
+                    </div>
+                </div>
+              </div>
+              <!-- ************************Analytics Modal***************************** -->
+              <div class="my-4 analytics" id="analytics" style="display: block;">
+                <div class="row">
+                  <div class="d-flex analytics-header">
+                    <p class="me-auto">Analytics</p>
+                    <a href="" class="ms-auto" data-bs-toggle="modal" data-bs-target="#leaderBoard"><i class="fa-solid fa-plus"></i>Creat Leaderboard</a>
+                  </div>
+                </div>
+                <div class="row filter">
+                  <div class="col-md-4">
+                    <div class="mb-3">
+                        <label for="recipient-name" class="label col-form-label">Filter by Affiliate</label>
+                        <select name="" id=""> 
+                            <option value="rigatoni">Select</option> 
+                            <option value="dave">MAiana Ropa</option> 
+                            <option value="pumpernickel">Dina Chinga</option> 
+                            <option value="reeses">Liala Dau</option> 
+                            <option value="reeses">Mahela Jdh</option> 
+                            <option value="reeses">Sangakara Kumar</option> 
+                        </select>
+                    </div>
+                  </div>
+                  <div class="col-md-4">
+                    <div class="mb-3">
+                      <label for="recipient-name" class="label col-form-label">Filter by Group</label>
+                      <select name="" id=""> 
+                          <option value="rigatoni">Select</option> 
+                          <option value="dave">Asian Internationls</option> 
+                          <option value="pumpernickel">DTV Network</option> 
+                          <option value="reeses">GTPL Groups</option> 
+                      </select>
+                    </div>
+                  </div>
+                  <div class="col-md-4">
+                    <div class="mb-3">
+                      <label for="recipient-name" class="label col-form-label">Filter by Date <span>(From selected date to current date)</span></label>
+                      <input type="date">
+                    </div>
+                  </div>
+                </div>
+                <div class="row display-data">
+                  <div class="col-xs-6 col-md-4 col-lg-3 data-box">
+                     <div class="data-item">
+                        <div class="d-flex data-card">
+                         <strong class="me-auto">10</strong>
+                         <img class="ms-auto" src="./images/sale.png" alt="">
+                        </div>
+                        <p>Sale</p>
+                     </div>
+                  </div>
+                  <div class="col-xs-6 col-md-4 col-lg-3 data-box">
+                    <div class="data-item">
+                       <div class="d-flex data-card">
+                        <strong class="me-auto">10988</strong>
+                        <img class="ms-auto" src="./images/click.png" alt="">
+                       </div>
+                       <p>Clicks</p>
+                    </div>
+                 </div>
+                 <div class="col-xs-6 col-md-4 col-lg-3 data-box">
+                  <div class="data-item">
+                     <div class="d-flex data-card">
+                      <strong class="me-auto">22</strong>
+                      <img class="ms-auto" src="./images/signip.png" alt="">
+                     </div>
+                     <p>Sign Ups</p>
+                  </div>
+                 </div>
+                 <div class="col-xs-6 col-md-4 col-lg-3 data-box">
+                    <div class="data-item">
+                     <div class="d-flex data-card">
+                      <strong class="me-auto">$ 199</strong>
+                      <img class="ms-auto" src="./images/percentage_10252857.png" alt="">
+                     </div>
+                     <p>Commission</p>
+                    </div>
+                 </div>
+                 <div class="col-xs-6 col-md-4 col-lg-3 data-box">
+                  <div class="data-item">
+                    <div class="d-flex data-card">
+                      <strong class="me-auto">$ 9</strong>
+                      <img class="ms-auto" src="./images/ctc.png" alt="">
+                    </div>
+                    <p>Total Cost to Company</p>
+                  </div>
+                 </div>
+                 <div class="col-xs-6 col-md-4 col-lg-3 data-box">
+                  <div class="data-item">
+                    <div class="d-flex data-card">
+                      <strong class="me-auto">$ 4</strong>
+                      <img class="ms-auto" src="./images/conversion.png" alt="">
+                    </div>
+                    <p>Cost Per Conversion</p>
+                  </div>
+                 </div>
+                 <div class="col-xs-6 col-md-4 col-lg-3 data-box">
+                  <div class="data-item">
+                    <div class="d-flex data-card">
+                      <strong class="me-auto">$ 7</strong>
+                      <img class="ms-auto" src="./images/costperclick.png" alt="">
+                    </div>
+                    <p>Cost per Click</p>
+                  </div>
+                 </div>
+                 <div class="col-xs-6 col-md-4 col-lg-3 data-box">
+                  <div class="data-item">
+                    <div class="d-flex data-card">
+                      <strong class="me-auto">$ 1099</strong>
+                      <img class="ms-auto" src="./images/net-revenue.png" alt="">
+                    </div>
+                    <p>Net Revenue</p>
+                  </div>
+                 </div>
+                 <div class="col-xs-6 col-md-4 col-lg-3 data-box">
+                  <div class="data-item">
+                    <div class="d-flex data-card">
+                      <strong class="me-auto">$ 997</strong>
+                      <img class="ms-auto" src="./images/gross-revenue.png" alt="">
+                    </div>
+                    <p>Gross Revenue</p>
+                  </div>
+                 </div>
+                 <div class="col-xs-6 col-md-4 col-lg-3 data-box">
+                  <div class="data-item">
+                    <div class="d-flex data-card">
+                      <strong class="me-auto">$ 5</strong>
+                      <img class="ms-auto" src="./images/bonus.png" alt="">
+                    </div>
+                    <p>Bonus</p>
+                  </div>
+                 </div>
+               </div>
+               <!-- *******Chart********* -->
+               <div class="row chart">
+                  <div id="chart_div"></div>
+               </div>
+              </div>
+              <!-- ***********************************Modal******************************** -->
+              <div class="my-4" id="#" style="display: none;">
+                <h1 class="text-center display-4">This is Analytics Modal m4</h1>
+              </div>
+          </div>
+        </div>
+      </section>
+ <!-- ********************************New LeaderBoard modal************************************************* -->
+ <div class="modal fade leaderboard" id="leaderBoard" tabindex="-1" aria-labelledby="exampleModalLabel" aria-hidden="true">
+  <div class="modal-dialog modal-dialog-centered">
+    <div class="modal-content">
+      <div class="modal-header">
+        <h2 class="text-center">Create Custom Leaderboard</h2>
+      </div>
+      <div class="modal-body">
+        <form action="">
+          <div class="mb-3">
+            <label for="recipient-name" class="label col-form-label">Name</label>
+            <input type="text" class="form-control" id="recipient-name" placeholder="Eg. Top Rated">
+          </div>
+          <div class="mb-3">
+            <label for="recipient-name" class="label col-form-label">Time Period</label>
+              <select name="" id=""> 
+                  <option value="rigatoni">Month</option> 
+                  <option value="dave">Quarter</option> 
+                  <option value="pumpernickel">Year</option> 
+                  <option value="reeses">Day</option> 
+              </select>
+          </div>
+          <div class="mb-3">
+            <label for="recipient-name" class="label col-form-label">Rank By</label>
+              <select name="" id=""> 
+                  <option value="rigatoni">Number of Orders</option> 
+                  <option value="dave">Sale Volume</option> 
+                  <option value="pumpernickel">Sale Commission</option> 
+                  <option value="reeses">Product Sold</option> 
+                  <option value="reeses">Downline number of Order</option> 
+              </select>
+          </div>
+        </form>
+      </div>
+      <div class="modal-footer">
+        <a type="button" class="dismiss" data-bs-dismiss="modal">Cancle</a>
+        <a type="button" class="create">Create</a>
+      </div>
+    </div>
+  </div>
+</div>
+
+      
+<!-- ********************************New Group Model************************************************* -->
+<div class="modal fade newgroup" id="newGroup" tabindex="-1" aria-labelledby="exampleModalLabel" aria-hidden="true">
+  <div class="modal-dialog modal-dialog-centered">
+    <div class="modal-content">
+      <div class="modal-header">
+        <h2 class="text-center">Create New Group</h2>
+      </div>
+      <div class="modal-body">
+        <form action="">
+          <div class="mb-3">
+            <label for="recipient-name" class="label col-form-label">Group Name</label>
+            <input type="text" class="form-control" id="recipient-name" placeholder="Eg. TNP Network">
+          </div>
+          <div class="d-flex">
+            <div class="dropdown me-auto">
+              <button class="btn btn-secondary dropdown-toggle" type="button" data-bs-toggle="dropdown" aria-expanded="false">
+                Default Commission
+              </button>
+              <ul class="dropdown-menu">
+                <li><a class="dropdown-item" href="#">Percentage</a></li>
+                <li><a class="dropdown-item" href="#">Flat Rate on product</a></li>
+                <li><a class="dropdown-item" href="#">Fixed Amount on entire order</a></li>
+              </ul>
+            </div>
+            <div class="ms-auto">
+              <input type="number" class="form-control" id="recipient-name" placeholder="">
+            </div>
+          </div>
+        </form>
+      </div>
+      <div class="modal-footer">
+        <a type="button" class="dismiss" data-bs-dismiss="modal">Cancle</a>
+        <a type="button" class="create">Create</a>
+      </div>
+    </div>
+  </div>
+</div>
+<!-- ********************************Logout Model************************************************* -->
+<div class="modal fade" id="logoutModal" tabindex="-1" aria-labelledby="exampleModalLabel" aria-hidden="true">
+  <div class="modal-dialog modal-dialog-centered">
+    <div class="modal-content logout-content">
+      <div class="modal-header logout-header">
+        <p class="text-center"><i class="fa-solid fa-triangle-exclamation"></i></p>
+        <!-- <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button> -->
+      </div>
+      <div class="modal-body logout-body text-center">
+        <h2>Are You Sure!</h2>
+        <p class="mt-2">Don't worry all your changes are saved.<br>Feel free to log back in.</p>
+      </div>
+      <div class="modal-footer logout-footer">
+        <a type="button" class="btn btn-secondary dismiss" data-bs-dismiss="modal">Cancle</a>
+        <a type="button" class="btn btn-primary logout">Logout</a>
+      </div>
+    </div>
+  </div>
+</div>
+<!-- ********************************Add new Affiliate Model************************************************* -->
+<div class="modal fade" id="newAffiliate" tabindex="-1" aria-labelledby="exampleModalLabel" aria-hidden="true">
+  <div class="modal-dialog modal-dialog-centered">
+    <div class="modal-content">
+      <div class="affiliate-header">
+        <h5 class="modal-title text-center" id="exampleModalLabel">Add a new Affiliate</h5>
+      </div>
+      <div class="modal-body affiliate-body">
+        <form>
+          <div class="mb-3">
+            <label for="recipient-name" class="label col-form-label">Name</label>
+            <input type="text" class="form-control" id="recipient-name" placeholder="D Souza">
+          </div>
+          <div class="mb-3">
+            <label for="message-text" class="label col-form-label">Email Address <span>*</span></label>
+            <input type="email" class="form-control" id="email-address" placeholder="email@example.com">
+            <div class="form-check mt-2">
+              <input class="form-check-input" type="checkbox" value="" id="flexCheckDefault">
+              <label class="form-check-label msg" for="flexCheckDefault">
+               Send Email Updates
+              </label>
+            </div>
+            <div class="mb-3">
+              <label for="recipient-name" class="label col-form-label">Password</label>
+              <input type="password" class="form-control" id="password">
+              <label class="form-check-label mt-1 msg" for="flexCheckDefault">Optional</label>
+            </div>
+            <div class="mb-3">
+              <label for="referral-code" class="label col-form-label">Referral Code</label>
+              <input type="text" class="form-control" id="referral-code">
+              <label class="form-check-label mt-1 msg" for="flexCheckDefault">Optional</label>
+            </div>
+          </div>
+        </form>
+      </div>
+      <div class="affiliate-footer">
+        <a type="button" class="dismiss" data-bs-dismiss="modal">Dismiss</a>
+        <a type="button" class="create">Create Affiliate</a>
+      </div>
+    </div>
+  </div>
+</div>
+ <!-- ***************************Chat Bot modal******************************** -->
+ <section class="">
+  <button class="chatbot-toggler">
+    <span><i class="fa-solid fa-message"></i></span>
+    <span><i class="fa fa-times" aria-hidden="true"></i></span>
+  </button>
+  <div class="chatbot">
+      <header>
+          <h2>Chatbot</h2>
+          <span><i class=" close-btn fa fa-times" aria-hidden="true"></i></span>
+      </header>
+      <ul class="chatbox">
+          <li class="chat incoming">
+              <span><i class="fa-solid fa-robot"></i></span>
+              <p>Hi there <br> How can I help you today?</p>
+          </li>
+      </ul>
+      <div class="chat-input">
+        <textarea placeholder="Enter a message..." required></textarea>
+        <span id="send-btn"><i class="fa-solid fa-paper-plane"></i></span>
+      </div>
+  </div>
+ </section>
+<!-- ***********************Bootstrap Script********************** -->
+<script src="./bootstrap-5.3.0-alpha3-dist/js/bootstrap.bundle.min.js"></script>
+<!-- ******************************Google Script******************************* -->
+<script type="text/javascript" src="https://www.gstatic.com/charts/loader.js"></script>
+<!-- *******************LOCAL************************************* -->
+<script src="./script/dashboard.js"></script>
+<script src="./script/chatbot.js"></script>
+</body>
+</html>    

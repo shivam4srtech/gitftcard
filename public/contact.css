@@ -1,0 +1,105 @@
+section{
+    margin: 3.2rem auto;
+ }
+ .contact-panel img{
+    max-width: 100%;
+    display: flex;
+    margin: auto;
+    object-fit: contain;
+ }
+ .contact-box{
+    display: flex;
+    margin: auto;
+    justify-content: center;
+    align-items: center;
+ }
+ .form-outer {
+    max-width: 100%;
+    margin: auto;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+.contact-form {
+    width: 100%;
+    max-width: 1160px;
+    margin: auto;
+}
+.contact-item h1 {
+    text-align: center;
+    color: #5f5f5f;
+    font-weight: 600;
+    font-size: 2.2rem;
+    margin: auto;
+    padding: 2rem 0rem 1rem 0rem;
+}
+.form-input {
+    margin: 1.6rem auto;
+    position: relative;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+input {
+    border: 2px solid #eee;
+    padding: 6px 10px 6px 50px;
+    font-size: 18px;
+    line-height: 30px;
+    outline: 0;
+    display: block;
+    width: 100%;
+    border-radius: 20px;
+    background-color: #e3e3e3;
+    font-size: .95rem;
+    font-weight: 500;
+    color: #5f5f5f;
+}
+textarea{
+    background-color: #e3e3e3;
+    border-radius: 12px;
+    outline: none;
+    border: none;
+    padding: .5rem .8rem;
+    font-weight: 500;
+    color: #5f5f5f;
+    font-size: .95rem;
+}
+.icon {
+    position: absolute;
+    left: 15px;
+    top: 0;
+    font-size: 20px;
+    color: #ee755d;
+    height: 100%;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+.form-input button{
+    outline: none;
+    border: none;
+    color: #fff;
+    background-color: #ee755d;
+    padding: .6rem 1.2rem;
+    font-weight: 500;
+    border-radius: 4px;
+    text-align: center;
+    border: 1px solid #ee755d;
+    transition: .3s ease;
+}
+.form-input button:hover{
+    background-color: transparent;
+    color: #ee755d;
+
+}
+.form-input button span{
+    padding: .5rem;
+}
+@media(max-width:768px){
+    section{
+        margin: 0rem auto;
+    }
+    .contact-item h1 {
+        padding: 1.4rem 0rem .6rem 0rem;
+    }
+}

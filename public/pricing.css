@@ -1,0 +1,78 @@
+.pricing-panel{
+  margin: 3rem auto;
+}
+.pricing-panel h1{
+  font-weight: 600;
+  font-size: 2.4rem;
+}
+.pricing-panel p{
+  font-weight: 500;
+  font-size: 1.1rem;
+}
+.price-box .price-item{
+  color: #000;
+  border-radius: 12px;
+  padding: 1.6rem .9rem;
+}
+.price-box .basic{
+  background-color: #e7abcf;
+}
+.price-box .professional{
+  background-color: #c9e156;
+}
+.price-box .team{
+  background-color: #f5b402;
+}
+.price-item .title{
+  font-weight: 500;
+  font-size: 1.5rem;
+  margin: .6rem auto;
+}
+.price-item .service-cost{
+  font-weight: 700;
+  font-size: 2.45rem;
+  text-transform: uppercase;
+  margin-bottom: .6rem;
+}
+.price-item p{
+  margin-bottom: .6rem;
+  font-weight: 500;
+  font-size: 1rem;
+}
+.price-item ul li{
+  padding: .35rem 0rem;
+  font-weight: 500;
+  font-size: .98rem;
+}
+.price-item ul li i{
+  padding-right: .6rem;
+  color: #000;
+}
+.price-item button{
+  border: none;
+  outline: none;
+  display: block;
+  margin: 1.2rem 0rem 0rem 0rem;
+  padding: .8rem 1rem;
+  font-weight: 500;
+  background-color: #000;
+  color: #fff;
+  border-radius: 5px;
+  cursor: pointer;
+}
+@media(max-width:992px){
+  .pricing-panel .price-box{
+    margin-bottom: 2rem;
+  }
+  .pricing-panel{
+    margin: 4rem auto;
+  }
+}
+@media(max-width:600px){
+  .price-item ul li{
+    font-size: .84rem;
+  }
+  .pricing-panel{
+    margin: 1.8rem auto;
+  }
+}
