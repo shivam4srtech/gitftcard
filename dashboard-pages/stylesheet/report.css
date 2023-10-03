@@ -1,0 +1,47 @@
+main .report-box{
+    border: 1px solid #d3d1d1;
+    border-radius: 12px;
+    background-color: #fafbfc;
+    padding: 1rem .8rem;
+}
+main .report-box a{
+    color: #5676ff;
+    font-weight: 600;
+    cursor: pointer;
+    letter-spacing: .4px;
+}
+main .report-box form label{
+   font-weight: 600;
+   font-size: .95rem;
+   letter-spacing: .5px;
+}
+main .report-box form input{
+   font-weight: 500;
+   font-size: .9rem;
+   color: #999;
+ }
+ main .report-box form select{
+    font-weight: 500;
+    font-size: .9rem;
+    color: #999;
+  }
+main .report-box .alert-btn{
+    color: #fff;
+    background-color: #ee755d;
+    outline: none;
+    border: none;
+    padding: .6rem 1rem;
+    font-weight: 500;
+    text-transform: capitalize;
+    letter-spacing: .5px;
+} 
+@media(max-width:600px){
+    .alert{
+        font-size: .8rem;
+    }
+    .alert a{
+        font-size: .8rem;
+        display: inline-block;
+        margin-top: .5rem;
+    }
+}

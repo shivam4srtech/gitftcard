@@ -1,0 +1,147 @@
+/* Google Font Import - Poppins */
+@import url('https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;500;600;700&display=swap');
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: 'Poppins', sans-serif;
+}
+
+body{
+    align-items: center;
+    justify-content: center;
+    background: #dce0e5;
+    min-width: 350px;
+}
+.logo img{
+    display: block;
+    margin: 1rem auto;
+    height: 6rem;
+    width: 6rem;
+}
+.container{
+    margin-top: 4vh;
+    position: relative;
+    max-width: 500px;
+    width: 100%;
+    padding: 20px;
+    border-radius: 6px;
+    background-color: #fff;
+}
+.container h1{
+    font-weight: 400;
+    font-size: 2rem;
+    margin-bottom: 1.6rem;
+    color: #171717;
+}
+
+.container .input-box{
+    position: relative;
+    height: 50px;
+    margin-bottom: 2.2rem;
+}
+
+.input-box input{
+    position: absolute;
+    height: 100%;
+    width: 100%;
+    outline: none;
+    border: 2px solid #ccc;
+    border-radius: 6px;
+    padding: 0 35px 0 15px;
+    transition: all 0.2s linear;
+}
+
+input:is(:focus, :valid){
+    border-color: #4070f4;
+}
+
+.input-box :is(label, i){
+    position: absolute;
+    top: 50%;
+    transform: translateY(-50%);
+    color: #999;
+    transition: all 0.2s linear;
+}
+
+.input-box label{
+    left: 15px;
+    pointer-events: none;
+    font-size: 16px;
+    font-weight: 400;
+}
+
+input:is(:focus, :valid) ~ label{
+    color: #4070f4;
+    top: 0;
+    font-size: 12px;
+    font-weight: 500;
+    background-color: #fff;
+}
+
+.input-box i{
+    right: 15px;
+    cursor: pointer;
+    font-size: 20px;
+}
+
+input:is(:focus, :valid) ~ i{
+    color: #4070f4;
+}
+.container .btn{
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    outline: none;
+    border: none;
+}
+.container .btn input{
+    padding: .4rem 2rem;
+    border-radius: 4px;
+    cursor: pointer;
+    color: #000;
+    background-color: transparent;
+    font-weight: 500;
+    letter-spacing: .5px;
+    text-transform: uppercase;
+}
+.container .btn a{
+    text-decoration: none;
+    color: #4070f4;
+    cursor: pointer;
+}
+.container .divider{
+    border-bottom: 1px solid #999;
+    margin-top: 1rem;
+}
+.container .divider p{
+   font-weight: 600;
+   font-size: 1.2rem;
+   letter-spacing: .5px;
+}
+.container .api-login{
+    display: flex;
+    justify-content: space-around;
+    margin-top: 1rem;
+}
+.container .api-login a{
+    border-radius: 4px;
+    padding: .2rem 1rem;
+    font-size: 1.6rem;
+}
+.container .account{
+    margin-top: 2rem;
+}
+.container .account p{
+   font-size: .9rem;
+   color: #616060;
+}
+.container .account a{
+    text-decoration: none;
+    color: #4070f4;
+    padding: .5rem;
+ }
+ .container label span{
+    color: red;
+    font-size: 1.1rem;
+ }

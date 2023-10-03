@@ -1,0 +1,56 @@
+main .profile-info{
+    border: 1px solid #d0cece;
+    border-radius: 4px;
+    background-color: #fafbfc;
+    padding: .5rem .8rem;
+}
+main .profile-info h2{
+    font-weight: 600;
+    font-size: 1.8rem;
+    color: #000;
+}
+main .profile-info small{
+    font-weight: 500;
+    font-size: .9rem;
+    margin: .6rem auto;
+    color: #000;
+    display: inline-block;
+    font-size: .8rem;
+}
+main .profile-info .msg{
+    font-weight: 500;
+    font-size: .9rem;
+    margin-bottom: .6rem;
+    color: #000;
+    display: inline-block;
+    font-size: .8rem;
+}
+main .profile-info .msg strong{
+    font-weight: 600;
+    padding: .4rem;
+    font-size: .9rem;
+}
+.profile-info .submit-form{
+    text-align: center;
+    margin: .5rem auto;
+}
+.profile-info .submit-form a{
+    text-decoration: none;
+    display: inline-block;
+    background-color: #e3f7eb;
+    color: #379971;
+    font-weight: 500;
+    letter-spacing: .4px;
+    padding: .5rem 1.2rem;
+    text-transform: uppercase;
+    border: none;
+    outline: none;
+}
+main .profile-info label{
+    font-weight: 600;
+    font-size: .95rem;
+}
+::placeholder{
+    font-size: .9rem;
+    font-weight: 500;
+}

@@ -1,0 +1,212 @@
+*{
+    font-family: 'Montserrat', sans-serif;
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+body{
+    min-width: 350px;
+}
+a{
+    text-decoration: none;
+}
+
+nav{
+    background-color: #f8f9fa;
+}
+nav .nav-box{
+    padding: 0rem 4rem;
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+    align-items: center;
+}
+nav .nav-box .nav-item a{
+    text-decoration: none;
+    padding: .5rem 2rem;
+    border: 1px solid #232323;
+    font-weight: 600;
+    letter-spacing: .4px;
+    text-transform: uppercase;
+    color: #232323;
+    border-radius: 4px;
+}
+@media(max-width:600px){
+    nav .nav-box{
+        padding: 0rem 1rem;
+        align-items: center;
+    }
+}
+.store-dropdown{
+    border-radius: 0px;
+}
+.store-dropdown .dropdown-toggle{
+    border: none;
+    background-color: transparent;
+    color: #457bee;
+    font-weight: 400;
+}
+.store-dropdown .dropdown-toggle:hover{
+    border: none;
+    background-color: transparent;
+    color: #457bee;
+}
+.store-dropdown ul{
+    border-radius: 0px;
+    background-color: #fff;
+}
+.store-dropdown ul li{
+    color: #000;
+    font-size: .94rem;
+}
+/* ****************Content****************** */
+.content-box{
+    display: flex;
+    justify-content: left;
+    align-items: center;
+    margin-top: 1rem;
+}
+.content-box .content-item img{
+    max-width: 100%;
+    display: block;
+    object-fit: contain;
+    margin: auto;
+}
+.content-box .content-item span{
+   font-size: 1rem;
+   display: block;
+   padding: .5rem 0rem;
+}
+.content-box .content-item h2{
+    font-weight: 600;
+    font-size: 1.8rem;
+    color: #383b3d;
+    line-height: 1.2;
+    letter-spacing: .4px;
+    margin-bottom: 1.5rem;
+ }
+ .content-box .content-item p{
+    font-size: 1.2rem;
+    display: block;
+    letter-spacing: .4px;
+ }
+ .content-box .content-item .join-btn{
+    display: block;
+    margin: 2rem auto;
+    text-align: center;
+ }
+ .content-box .join-btn a{
+    display: inline-block;
+    margin: auto;
+    padding: .5rem 1.4rem;
+    text-transform: uppercase;
+    text-decoration: none;
+    background-color: #dce0e5;
+    color: #383b3d;
+    font-weight: 500;
+    letter-spacing: .4px;
+    border-radius: 4px;
+    border: 2px solid #dce0e5;
+    transition: .3s ease;
+ }
+ .content-box .join-btn a:hover{
+    background-color: transparent;
+ }
+ @media(max-width:600px){
+    .content-box .content-item h2{
+       font-size: 1.4rem;
+     }
+     .content-box .content-item p{
+        font-size: 1rem;
+        font-weight: 500;
+     }
+ }
+ /* =================Earn Commission================= */
+ .commission-box{
+    margin-top: .5rem;
+    margin-bottom: 2rem;
+ }
+ .commission-box .earn-commission h2{
+    text-align: center;
+    font-size: 2rem;
+    font-weight: 600;
+    margin-bottom: 1rem;
+    margin-top: .5rem;
+ }
+  .earn-commission .commission-item img{
+   max-width: 100%;
+   object-fit: contain;
+   max-height: 10rem;
+   display: block;
+   margin: auto;
+   max-height: 8rem;
+ }
+ .earn-commission .commission-item h2{
+   font-weight: 600;
+   font-size: 1.8rem;
+   color: #383b3d;
+   letter-spacing: .4px;
+  }
+  .earn-commission .content{
+    border: 1px solid #d6d6d6;
+    border-radius: 10px;
+    box-shadow: 5px 5px 10px #e2e2e2;
+    padding: .8rem .5rem;
+   }
+   .earn-commission .content p{
+    font-weight: 500;
+    font-size: .95rem;
+    color: #383b3d;
+    letter-spacing: .4px;
+   }
+   .earn-commission .content .join-btn{
+    display: block;
+    margin: 2rem auto;
+    text-align: center;
+   }
+   .earn-commission .content .join-btn a{
+    display: inline-block;
+    margin: auto;
+    padding: .5rem 1.4rem;
+    text-transform: uppercase;
+    text-decoration: none;
+    background-color: #dce0e5;
+    color: #383b3d;
+    font-weight: 500;
+    letter-spacing: .4px;
+    border-radius: 4px;
+    border: 2px solid #dce0e5;
+    transition: .3s ease;
+   }
+   /* =====================Footer=========================== */
+   footer{
+    background-color: #f8f9fa;
+    padding-top: 4rem;
+    padding-bottom: 1rem;
+   }
+   footer .footer-item{
+    background-color: #f8f9fa;
+    padding: 0 3rem;
+   }
+   footer .footer-item .footer-box{
+   margin-bottom: 1rem;
+   }
+   footer .footer-item small{
+    display: block;
+    font-weight: 600;
+    font-size: 1.2rem;
+    margin-bottom: .6rem;
+    color: #383b3d;
+   }
+   footer .footer-item a{
+    display: block;
+    font-weight: 500;
+    font-size: .9rem;
+    padding: .2rem 0rem;
+    text-decoration: none;
+    color: #457bee;
+   }
+   footer p{
+    margin-top: 1rem;
+    font-size: .95rem;
+   }

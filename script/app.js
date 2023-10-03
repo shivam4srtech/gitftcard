@@ -55,7 +55,7 @@ var copy = document.querySelector(".logos-slide").cloneNode(true);
 document.querySelector(".logos").appendChild(copy);
 
 
-//=========================Dashboard
+//=========================Dashboard=========================
 const dropdowns = document.querySelectorAll('.dropdown');
 dropdowns.forEach(dropdown => {
   const select = dropdown.querySelector('.select');
