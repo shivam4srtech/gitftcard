@@ -1,10 +1,3 @@
-.main .store{
-    border: 2px solid red;
-}
-.store .store-type{
-    border: 2px solid green;
-}
-
 
 main .info-data {
 	margin-top: 36px;
@@ -321,7 +314,7 @@ main .filter-store p{
   }
   #allStore .search-program form{
     border-radius: 1.76rem;
-    padding: .18rem 0rem;
+    padding: .18rem .1rem;
     background-color: #ee755d;
   }
   #allStore .search-program form input{
@@ -334,7 +327,7 @@ main .filter-store p{
     color: #fff;
     background-color: transparent;
   }
-  ::placeholder{
+  #allStore ::placeholder{
     color: #fff;
   }
   #allStore .search-program form a{
@@ -346,6 +339,7 @@ main .filter-store p{
     cursor: pointer;
     background-color: #fff;
     color: #000;
+    text-align: center;
   }
   @media(max-width:600px){
     #allStore .search-program form input{
@@ -382,6 +376,7 @@ main .filter-store p{
    -webkit-line-clamp: 1;
    -webkit-box-orient: vertical;
    margin: .8rem 0rem;
+   text-align: center;
   }
   #allStore .display-store .store-item img{
     max-width: 55%;
@@ -442,6 +437,7 @@ main .filter-store p{
    }
    #allStore .display-store .program{
     margin: .6rem 0rem 1.2rem 0rem;
+    text-align: center;
   }
   #allStore .display-store .program a{
     border: 1px solid #232323;
@@ -453,6 +449,7 @@ main .filter-store p{
     color: #000;
     font-weight: 500;
     letter-spacing: .4px;
+    border-radius: 4px;
   }
   /* ===============================Modal Design========================== */
   .modal .enrollment button{

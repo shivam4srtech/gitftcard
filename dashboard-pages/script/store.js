@@ -14,29 +14,20 @@ if (lastSelectedContent) {
     showContent(lastSelectedContent);
 }
  // Single Store tab Selection
- function displayItem(contentId) {
-  var storeElement = document.querySelectorAll('.store-menu');
-  for (var i = 0; i < storeElement.length; i++) {
-    storeElement[i].style.display = 'none';
-  }
-  document.getElementById(contentId).style.display = 'block';
+//  function displayItem(contentId) {
+//   var storeElement = document.querySelectorAll('.store-menu');
+//   for (var i = 0; i < storeElement.length; i++) {
+//     storeElement[i].style.display = 'none';
+//   }
+//   document.getElementById(contentId).style.display = 'block';
 
-  localStorage.setItem('selectedContent', contentId);
-}
+//   localStorage.setItem('selectedContent', contentId);
+// }
 
-var lastStoreMenu = localStorage.getItem('selectedContent');
-if (lastStoreMenu) {
-  displayItem(lastStoreMenu);
-}
-//Store add and remove active classes
-// const navLinkEls = document.querySelectorAll('.nav-link');
-// navLinkEls.forEach(navLinkEls => {
-//     navLinkEls.addEventListener('click', () =>{
-//         document.querySelector('.active').classList.remove('active');
-//         navLinkEls.classList.add('active');
-//         navLinkEls.classList.remove('active');
-//     })
-// })
+// var lastStoreMenu = localStorage.getItem('selectedContent');
+// if (lastStoreMenu) {
+//   displayItem(lastStoreMenu);
+// }
 var x, i, j, l, ll, selElmnt, a, b, c;
 /*look for any elements with the class "custom-select":*/
 x = document.getElementsByClassName("custom-select");

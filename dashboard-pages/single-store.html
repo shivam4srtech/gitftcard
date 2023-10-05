@@ -51,408 +51,407 @@
             </nav>
            <!-- =====================Store Content================================ -->
            <div class="container my-5 single-store">
-                <div class="card text-center">
+                <div class="card">
                     <div class="card-header">
                         <ul class="nav nav-tabs card-header-tabs">
                             <li class="nav-item">
-                                <a class="nav-link active" aria-current="true" href="#"onclick="displayItem('home')">Home</a>
+                                <a class="nav-link active" aria-current="true" href="#" id="home-tab" data-bs-toggle="tab" data-bs-target="#home" aria-controls="home" aria-selected="true">Home</a>
                             </li>
                             <li class="nav-item">
-                                <a class="nav-link" href="#"onclick="displayItem('marketingTool')">Marketing Tools</a>
+                                <a class="nav-link" aria-current="true" href="#" id="marketingTool-tab" data-bs-toggle="tab" data-bs-target="#marketingTool" aria-controls="marketingTool" aria-selected="true">Marketing Tool</a>
                             </li>
                             <li class="nav-item">
-                                <a class="nav-link" href="#"onclick="displayItem('payment')">Payments</a>
+                                <a class="nav-link" aria-current="true" href="#" id="payment-tab" data-bs-toggle="tab" data-bs-target="#payment" aria-controls="payment" aria-selected="true">Payment</a>
                             </li>
                             <li class="nav-item">
-                                <a class="nav-link" href="#"onclick="displayItem('setting')">Settings</a>
+                                <a class="nav-link" aria-current="true" href="#" id="settings-tab" data-bs-toggle="tab" data-bs-target="#settings" aria-controls="settings" aria-selected="true">Settings</a>
                             </li>
                         </ul>
                     </div>
-                    <div class="card-body store-menu" id="home">
-                        <div class="row">
-                            <div class="col-md-6 home-content">
-                                <div>
-                                    <h2 class="user-name">Kumar Sangakkara</h2>
-                                    <small class="user-email">sangakkara@srilanka.com</small>
-                                </div>
-                                <div>
-                                    <h4 class="refferal-link">Refferral Link <span>15%</span></h4>
-                                    <p class="para">Lorem ipsum dolor sit amet, consectetur adipisicing elit. Cum veniam voluptates impedit</p>
-                                    <p><a class="url" href="">https://busymomsboutique.com/?ref=sTJoiIGw3imaO</a></p>
-                                </div>
-                                <div class="icons">
-                                    <a href="">Copy Link<i class="fa-brands fa-creative-commons-share" style="color: #0a53f0;"></i></a>
-                                    <a href=""><i class="fa-solid fa-share-nodes"></i></a>
-                                    <a href=""><i class="fa-solid fa-qrcode"></i></a>
-                                    <a href=""><i class="fa-solid fa-pen"></i></a>
-                                </div>
-                            </div>
-                            <div class="col-md-6 home-content">
-                                <div>
-                                    <h4 class="refferal-link">Coupon Code <span>30% Off</span></h4>
-                                    <p class="para">Lorem ipsum dolor sit amet, consectetur adipisicing elit. Cum veniam voluptates impedit</p>
-                                </div>
-                                <div>
-                                    <small class="coupon-tag">coupon code</small>
-                                    <h4 class="coupon-code">20TOFFSALE</h4>
-                                </div>
-                                <div class="btns-group">
-                                    <a href="">Edit Coupon Code</a>
-                                    <a href="">Copy Coupon Code</a>
-                                    <a href="">Copy Refferal Link</a>
-                                </div>
-                            </div>
-                        </div>
-                        <div class="row report">
-                            <div class="col-md-6">
-                                <h2>Quick Report</h2>
-                            </div>
-                            <div class="col-md-6 date">
-                                <form action="">
-                                    <input placeholder="start date" type="text" onfocus="(this.type = 'date')"  id="date">
-                                    <!-- <label>to</label> -->
-                                    <input placeholder="end date" type="text" onfocus="(this.type = 'date')"  id="date">
-                                    <a href="">get report</a>
-                                </form>
-                            </div>
-                        </div>
-                        <div class=" row statistics">
-                            <div class="col-lg-3 col-md-6">
-                                <div class="data">
-                                    <img src="./images/refferral.png" alt="">
-                                    <div class="d-flex mt-2 align-items-center">
-                                        <h2 class="me-auto">102</h2>
-                                        <small class="ms-auto">Refferral</small>
+                    <div class="card-body tab-content" id="nav-tabContent">
+                        <div class="card-body tab-pane fade show active" id="home" role="tabpanel" aria-labelledby="nav-home-tab" tabindex="0">
+                            <div class="row">
+                                <div class="col-md-6 home-content">
+                                    <div>
+                                        <h2 class="user-name">Kumar Sangakkara</h2>
+                                        <small class="user-email">sangakkara@srilanka.com</small>
                                     </div>
-                                </div>
-                            </div>
-                            <div class="col-lg-3 col-md-6">
-                                <div class="data">
-                                    <img src="./images/conversion.png" alt="">
-                                    <div class="d-flex mt-2 align-items-center">
-                                        <h2 class="me-auto">102</h2>
-                                        <small class="ms-auto">Conversion</small>
+                                    <div>
+                                        <h4 class="refferal-link">Refferral Link <span>15%</span></h4>
+                                        <p class="para">Lorem ipsum dolor sit amet, consectetur adipisicing elit. Cum veniam voluptates impedit</p>
+                                        <p><a class="url" href="">https://busymomsboutique.com/?ref=sTJoiIGw3imaO</a></p>
                                     </div>
-                                </div>
-                            </div>
-                            <div class="col-lg-3 col-md-6">
-                                <div class="data">
-                                    <img src="./images/sales.png" alt="">
-                                    <div class="d-flex mt-2 align-items-center">
-                                        <h2 class="me-auto">102</h2>
-                                        <small class="ms-auto">Sales</small>
-                                    </div>
-                                </div>
-                            </div>
-                            <div class="col-lg-3 col-md-6">
-                                <div class="data">
-                                    <img src="./images/payment_1067281.png" alt="">
-                                    <div class="d-flex mt-2 align-items-center">
-                                        <h2 class="me-auto">102</h2>
-                                        <small class="ms-auto">Earning</small>
-                                    </div>
-                                </div>
-                            </div>
-                        </div>   
-                    </div>
-                    <!-- ==================== -->
-                    <div class="card-body store-menu" id="marketingTool">
-                        <div class="row marketingtool">
-                            <h2>Product Links</h2>
-                            <p>Browse the store for qualifying products. Paste the URL below to generate an affiliate link</p>
-                            <div class="col-lg-6 col-md-12">
-                                <div>
-                                    <small>Paste product page link</small>
-                                    <input type="text">
-                                </div>
-                            </div>
-                            <div class="col-lg-6 col-md-12">
-                                <div>
-                                    <small>Your generated link</small>
-                                    <input type="text">
-                                </div>
-                                <div class="d-flex mt-2">
-                                    <div class="icons me-auto">
-                                        <a href="">Copy Link<i class="fa-brands fa-creative-commons-share" style="color: #0a53f0;"></i></a>
+                                    <div class="icons">
+                                        <a href="#copyLink">Copy Link<i class="fa-solid fa-link" style="color: #0a53f0;"></i></a>
                                         <a href="" data-bs-toggle="modal" data-bs-target="#share"><i class="fa-solid fa-share-nodes"></i></a>
-                                        <a href=""data-bs-toggle="modal" data-bs-target="#qrCode"><i class="fa-solid fa-qrcode"></i></a>
+                                        <a href="" data-bs-toggle="modal" data-bs-target="#qrCode"><i class="fa-solid fa-qrcode"></i></a>
                                         <a href="" data-bs-toggle="modal" data-bs-target="#customizeRefferal"><i class="fa-solid fa-pen"></i></a>
                                     </div>
-                                    <div class="ms-auto icons">
-                                        <a href="">Save</a>
+                                </div>
+                                <div class="col-md-6 home-content">
+                                    <div>
+                                        <h4 class="refferal-link">Coupon Code <span>30% Off</span></h4>
+                                        <p class="para">Lorem ipsum dolor sit amet, consectetur adipisicing elit. Cum veniam voluptates impedit</p>
+                                    </div>
+                                    <div>
+                                        <small class="coupon-tag">coupon code</small>
+                                        <h4 class="coupon-code">20TOFFSALE</h4>
+                                    </div>
+                                    <div class="btns-group">
+                                        <a href="" data-bs-toggle="modal" data-bs-target="#EditCouponCode">Edit Coupon Code</a>
+                                        <a href="">Copy Coupon Code</a>
+                                        <a href="">Copy Refferal Link</a>
                                     </div>
                                 </div>
                             </div>
-                            <p class="text-center mt-4">Share this link on your blog, Facebook, Instagram, etc. When people visit the store using your link, you get commissions on everything they buy</p>
+                            <div class="row mt-5">
+                                <div class="mb-3 col-md-6">
+                                    <label for="exampleFormControlInput2" class="form-label">Start Date</label>
+                                    <input type="text" class="form-control" id="exampleFormControlInput1" placeholder="select date" onfocus="(this.type = 'date')"  id="date">
+                                </div>
+                                <div class="mb-3 col-md-6">
+                                    <label for="exampleFormControlInput2" class="form-label">End Date</label>
+                                    <input type="text" class="form-control" id="exampleFormControlInput1" placeholder="select date" onfocus="(this.type = 'date')"  id="date">
+                                </div>
+                            </div>
+                            <div class=" row statistics">
+                                <div class="col-lg-3 col-md-6">
+                                    <div class="data">
+                                        <img src="./images/refferral.png" alt="">
+                                        <div class="d-flex mt-2 align-items-center">
+                                            <h2 class="me-auto">102</h2>
+                                            <small class="ms-auto">Refferral</small>
+                                        </div>
+                                    </div>
+                                </div>
+                                <div class="col-lg-3 col-md-6">
+                                    <div class="data">
+                                        <img src="./images/conversion.png" alt="">
+                                        <div class="d-flex mt-2 align-items-center">
+                                            <h2 class="me-auto">102</h2>
+                                            <small class="ms-auto">Conversion</small>
+                                        </div>
+                                    </div>
+                                </div>
+                                <div class="col-lg-3 col-md-6">
+                                    <div class="data">
+                                        <img src="./images/sales.png" alt="">
+                                        <div class="d-flex mt-2 align-items-center">
+                                            <h2 class="me-auto">102</h2>
+                                            <small class="ms-auto">Sales</small>
+                                        </div>
+                                    </div>
+                                </div>
+                                <div class="col-lg-3 col-md-6">
+                                    <div class="data">
+                                        <img src="./images/payment_1067281.png" alt="">
+                                        <div class="d-flex mt-2 align-items-center">
+                                            <h2 class="me-auto">102</h2>
+                                            <small class="ms-auto">Earning</small>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>   
                         </div>
-                        <div class="generated-links">
-                            <h2>Generated Links</h2>
-                            <div class="row row-cols-1 row-cols-md-3 g-4">
+                        <!-- ==================== -->
+                        <div class="card-body tab-pane fade show " id="marketingTool" role="tabpanel" aria-labelledby="nav-home-tab" tabindex="0">
+                            <div class="row marketingtool">
+                                <h2>Product Links</h2>
+                                <p>Browse the store for qualifying products. Paste the URL below to generate an affiliate link</p>
+                                <div class="col-lg-6 col-md-12">
+                                    <div>
+                                        <small>Paste product page link</small>
+                                        <input type="text">
+                                    </div>
+                                </div>
+                                <div class="col-lg-6 col-md-12">
+                                    <div>
+                                        <small>Your generated link</small>
+                                        <input type="text">
+                                    </div>
+                                    <div class="d-flex mt-2">
+                                        <div class="icons me-auto">
+                                            <a href="#dataCopy">Copy Link<i class="fa-brands fa-creative-commons-share" style="color: #0a53f0;"></i></a>
+                                            <a href="" data-bs-toggle="modal" data-bs-target="#share"><i class="fa-solid fa-share-nodes"></i></a>
+                                            <a href=""data-bs-toggle="modal" data-bs-target="#qrCode"><i class="fa-solid fa-qrcode"></i></a>
+                                            <a href="" data-bs-toggle="modal" data-bs-target="#customizeRefferal"><i class="fa-solid fa-pen"></i></a>
+                                        </div>
+                                        <div class="ms-auto icons">
+                                            <a href="#save">Save</a>
+                                        </div>
+                                    </div>
+                                </div>
+                                <p class="text-center mt-4">Share this link on your blog, Facebook, Instagram, etc. When people visit the store using your link, you get commissions on everything they buy</p>
+                            </div>
+                            <div class="generated-links">
+                                <h2>Generated Links</h2>
+                                <div class="row row-cols-1 row-cols-md-3 g-4">
+                                    <div class="col">
+                                      <div class="card">
+                                        <img src="./images/dainty.webp" class="card-img-top" alt="...">
+                                        <div class="card-body">
+                                          <div class="d-flex">
+                                            <div class="me-auto">
+                                                <h5 class="card-title">The Morticia Dangle Drop</h5>
+                                            </div>
+                                            <div class="more-btn ms-auto">
+                                                <a class="dropdown-toggle" type="button" data-bs-toggle="dropdown" data-mdb-auto-close="inside" aria-expanded="false">
+                                                <i class="fa fa-ellipsis-h" aria-hidden="true"></i>
+                                                </a>
+                                                <ul class="dropdown-menu text-center">
+                                                  <li><a class="dropdown-item" href="#"><i class="fa-regular fa-copy"></i>Copy Link</a></li>
+                                                  <li><a class="dropdown-item" href="#" data-bs-toggle="modal" data-bs-target="#share"><i class="fa-solid fa-share-nodes"></i>Share</a></li>
+                                                  <li><a class="dropdown-item" href="#"><i class="fa-solid fa-trash delete"></i>Delete</a></li>
+                                                </ul>
+                                            </div>
+                                         </div>
+                                          <p class="card-text"><a href="">https://busymomsboutique.com/products/the-morticia-dangle-drop?ref=sTJoiIGw3imaO</a></p>
+                                        </div>
+                                      </div>
+                                    </div>
+                                    <div class="col">
+                                      <div class="card">
+                                        <img src="./images/mega.webp" class="card-img-top" alt="...">
+                                        <div class="card-body">
+                                            <div class="d-flex">
+                                                <div class="me-auto">
+                                                    <h5 class="card-title">The Morticia Dangle Drop</h5>
+                                                </div>
+                                                <div class="more-btn ms-auto">
+                                                    <a class="dropdown-toggle" type="button" data-bs-toggle="dropdown" data-mdb-auto-close="inside" aria-expanded="false">
+                                                    <i class="fa fa-ellipsis-h" aria-hidden="true"></i>
+                                                    </a>
+                                                    <ul class="dropdown-menu text-center">
+                                                      <li><a class="dropdown-item" href="#"><i class="fa-regular fa-copy"></i>Copy Link</a></li>
+                                                      <li><a class="dropdown-item" href="#" data-bs-toggle="modal" data-bs-target="#share"><i class="fa-solid fa-share-nodes"></i>Share</a></li>
+                                                      <li><a class="dropdown-item" href="#"><i class="fa-solid fa-trash delete"></i>Delete</a></li>
+                                                    </ul>
+                                                </div>
+                                             </div>
+                                          <p class="card-text"><a href="">https://busymomsboutique.com/products/youre-my-hero-son-to-father-keychain?ref=sTJoiIGw3imaO</a></p>
+                                        </div>
+                                      </div>
+                                    </div>
+                                    <div class="col">
+                                      <div class="card">
+                                        <img src="./images/fathersday1.avif" class="card-img-top" alt="...">
+                                        <div class="card-body">
+                                            <div class="d-flex">
+                                                <div class="me-auto">
+                                                    <h5 class="card-title">The Morticia Dangle Drop</h5>
+                                                </div>
+                                                <div class="more-btn ms-auto">
+                                                    <a class="dropdown-toggle" type="button" data-bs-toggle="dropdown" data-mdb-auto-close="inside" aria-expanded="false">
+                                                    <i class="fa fa-ellipsis-h" aria-hidden="true"></i>
+                                                    </a>
+                                                    <ul class="dropdown-menu text-center">
+                                                      <li><a class="dropdown-item" href="#"><i class="fa-regular fa-copy"></i>Copy Link</a></li>
+                                                      <li><a class="dropdown-item" href="#" data-bs-toggle="modal" data-bs-target="#share"><i class="fa-solid fa-share-nodes"></i>Share</a></li>
+                                                      <li><a class="dropdown-item" href="#"><i class="fa-solid fa-trash delete"></i>Delete</a></li>
+                                                    </ul>
+                                                </div>
+                                             </div>
+                                          <p class="card-text"><a href="">https://busymomsboutique.com/products/mega-mystery-gift-box?ref=sTJoiIGw3imaO</a></p>
+                                        </div>
+                                      </div>
+                                    </div>
+                                    <div class="col">
+                                      <div class="card">
+                                        <img src="./images/eartups.jpg" class="card-img-top" alt="...">
+                                        <div class="card-body">
+                                            <div class="d-flex">
+                                                <div class="me-auto">
+                                                    <h5 class="card-title">The Morticia Dangle Drop</h5>
+                                                </div>
+                                                <div class="more-btn ms-auto">
+                                                    <a class="dropdown-toggle" type="button" data-bs-toggle="dropdown" data-mdb-auto-close="inside" aria-expanded="false">
+                                                    <i class="fa fa-ellipsis-h" aria-hidden="true"></i>
+                                                    </a>
+                                                    <ul class="dropdown-menu text-center">
+                                                      <li><a class="dropdown-item" href="#"><i class="fa-regular fa-copy"></i>Copy Link</a></li>
+                                                      <li><a class="dropdown-item" href="#" data-bs-toggle="modal" data-bs-target="#share"><i class="fa-solid fa-share-nodes"></i>Share</a></li>
+                                                      <li><a class="dropdown-item" href="#"><i class="fa-solid fa-trash delete"></i>Delete</a></li>
+                                                    </ul>
+                                                </div>
+                                             </div>
+                                          <p class="card-text"><a href="">https://busymomsboutique.com/products/dainty-gold-gemstone-rings?ref=sTJoiIGw3imaO</a></p>
+                                        </div>
+                                      </div>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                         <!-- ===========payment========= -->
+                        <div class="card-body store-menu tab-pane fade show" id="payment" role="tabpanel" aria-labelledby="nav-home-tab" tabindex="0">
+                            <div class="payment row">
+                                <div class="col-md-6 col-sm-12 payment-box">
+                                    <h4>Payments</h4>
+                                </div>
+                                <div class="col-md-6 col-sm-12 paymentid">
+                                    <strong>Paypal</strong>
+                                    <div>
+                                        <span class="email">sangakkara@paypal.com</span>
+                                    </div>
+                                    <a href="" class="modify" data-bs-toggle="modal" data-bs-target="#updatePaymentId">Modify Payment ID</a>
+                                </div>
+                            </div>
+                            <div class="row row-cols-1 row-cols-md-3 payment-value mt-2">
                                 <div class="col">
-                                  <div class="card">
-                                    <img src="./images/dainty.webp" class="card-img-top" alt="...">
-                                    <div class="card-body">
-                                      <div class="d-flex">
-                                        <div class="me-auto">
-                                            <h5 class="card-title">The Morticia Dangle Drop</h5>
-                                        </div>
-                                        <div class="more-btn ms-auto">
-                                            <a class="dropdown-toggle" type="button" data-bs-toggle="dropdown" data-mdb-auto-close="inside" aria-expanded="false">
-                                            <i class="fa fa-ellipsis-h" aria-hidden="true"></i>
-                                            </a>
-                                            <ul class="dropdown-menu text-center">
-                                              <li><a class="dropdown-item" href="#"><i class="fa-regular fa-copy"></i>Copy Link</a></li>
-                                              <li><a class="dropdown-item" href="#" data-bs-toggle="modal" data-bs-target="#share"><i class="fa-solid fa-share-nodes"></i>Share</a></li>
-                                              <li><a class="dropdown-item" href="#"><i class="fa-solid fa-trash delete"></i>Delete</a></li>
-                                            </ul>
-                                        </div>
+                                   <div class="value-box">
+                                        <h4 class="value"><span>$</span>101</h4>
+                                        <small>Amout Paid</small>
+                                   </div>
+                                </div>
+                                <div class="col">
+                                    <div class="value-box">
+                                        <h4 class="value"><span>$</span>101</h4>
+                                        <small>Amout Pendding</small>
+                                    </div>
+                                </div>
+                                <div class="col">
+                                    <div class="value-box">
+                                        <h4 class="value"><span>$</span>101</h4>
+                                        <small>Last Payment</small>
+                                    </div>
+                                </div>
+                            </div>
+                            <div class="row payment-details">
+                                <div class="">
+                                    <h4 class="">Payment Details</h4>
+                                </div>
+                            </div>
+                            <div class="alert alert-warning alert-dismissible fade show mt-4" role="alert">
+                                <strong>No Transection found! </strong>
+                                <button type="button" class="btn-close" data-bs-dismiss="alert" aria-label="Close"></button>
+                            </div>
+                        </div>
+                         <!-- ============================================== -->
+                         <div class="card-body tab-pane fade show" id="settings" role="tabpanel" aria-labelledby="nav-home-tab" tabindex="0">
+                            <div class="row row-cols-1 row-cols-lg-2 settings">
+                                <div class="col">
+                                     <h4>Profile</h4>
+                                     <small>ID: 2346543</small>
+                                     <div class="image d-none d-lg-block mt-2">
+                                        <img src="./images/profile.svg" alt="">
                                      </div>
-                                      <p class="card-text"><a href="">https://busymomsboutique.com/products/the-morticia-dangle-drop?ref=sTJoiIGw3imaO</a></p>
-                                    </div>
-                                  </div>
                                 </div>
                                 <div class="col">
-                                  <div class="card">
-                                    <img src="./images/mega.webp" class="card-img-top" alt="...">
-                                    <div class="card-body">
-                                        <div class="d-flex">
-                                            <div class="me-auto">
-                                                <h5 class="card-title">The Morticia Dangle Drop</h5>
+                                    <form action="#somewhere" class="row">
+                                        <div class="mb-3 col-md-6">
+                                            <label for="exampleFormControlInput1" class="form-label">First Name<span>*</span></label>
+                                            <input type="text" class="form-control" id="exampleFormControlInput1" placeholder="your first name" required>
+                                        </div>
+                                        <div class="mb-3 col-md-6">
+                                            <label for="exampleFormControlInput1" class="form-label">Last Name</label>
+                                            <input type="text" class="form-control" id="exampleFormControlInput1" placeholder="your last name">
+                                        </div>
+                                        <div class="mb-3 col-md-6">
+                                            <label for="inputState" class="form-label">Country</label>
+                                            <select id="inputState" class="form-select">
+                                              <option selected>country Code</option>
+                                              <option>+91</option>
+                                              <option>+1</option>
+                                              <option>+92</option>
+                                              <option>+93</option>
+                                              <option>+94</option>
+                                            </select>
+                                        </div>
+                                        <div class="mb-3 col-md-6">
+                                            <label for="exampleFormControlInput1" class="form-label">Phone Number<span>*</span></label>
+                                            <input type="number" class="form-control" id="exampleFormControlInput1" placeholder="your phone number" required>
+                                        </div>  
+                                        <div class="mb-3 col-md-12">
+                                            <label for="exampleFormControlInput2" class="form-label">Email<span>*</span></label>
+                                            <input type="email" class="form-control" id="exampleFormControlInput1" placeholder="Your Email" required>
+                                        </div>
+                                        <div class="col-md-6">
+                                            <label for="basic-url" class="form-label">Instagram</label>
+                                            <div class="input-group mb-3">
+                                                <span class="input-group-text" id="basic-addon3">@</span>
+                                                <input type="text" class="form-control" id="basic-url" aria-describedby="basic-addon3">
                                             </div>
-                                            <div class="more-btn ms-auto">
-                                                <a class="dropdown-toggle" type="button" data-bs-toggle="dropdown" data-mdb-auto-close="inside" aria-expanded="false">
-                                                <i class="fa fa-ellipsis-h" aria-hidden="true"></i>
-                                                </a>
-                                                <ul class="dropdown-menu text-center">
-                                                  <li><a class="dropdown-item" href="#"><i class="fa-regular fa-copy"></i>Copy Link</a></li>
-                                                  <li><a class="dropdown-item" href="#" data-bs-toggle="modal" data-bs-target="#share"><i class="fa-solid fa-share-nodes"></i>Share</a></li>
-                                                  <li><a class="dropdown-item" href="#"><i class="fa-solid fa-trash delete"></i>Delete</a></li>
-                                                </ul>
+                                        </div>
+                                        <div class="col-md-6">
+                                            <label for="basic-url" class="form-label">Facebook</label>
+                                            <div class="input-group mb-3">
+                                                <span class="input-group-text" id="basic-addon3">@</span>
+                                                <input type="text" class="form-control" id="basic-url" aria-describedby="basic-addon3">
                                             </div>
-                                         </div>
-                                      <p class="card-text"><a href="">https://busymomsboutique.com/products/youre-my-hero-son-to-father-keychain?ref=sTJoiIGw3imaO</a></p>
-                                    </div>
-                                  </div>
+                                        </div>
+                                        <div class="col-md-12">
+                                            <label for="basic-url" class="form-label">Twitter</label>
+                                            <div class="input-group mb-3">
+                                                <span class="input-group-text" id="basic-addon3">@</span>
+                                                <input type="text" class="form-control" id="basic-url" aria-describedby="basic-addon3">
+                                            </div>
+                                        </div>
+                                        <div class="col-md-6">
+                                          <label for="basic-url" class="form-label">Your Website</label>
+                                          <div class="input-group mb-3">
+                                            <span class="input-group-text" id="basic-addon3">https://</span>
+                                            <input type="text" class="form-control" id="basic-url" aria-describedby="basic-addon3">
+                                          </div>
+                                        </div>
+                                        <div class="col-md-6">
+                                          <label for="basic-url" class="form-label">Youtube Channel</label>
+                                          <div class="input-group mb-3">
+                                            <span class="input-group-text" id="basic-addon3">youtube.com/</span>
+                                            <input type="text" class="form-control" id="basic-url" aria-describedby="basic-addon3">
+                                          </div>
+                                        </div>
+                                          <div class="col-md-4 mb-3">
+                                            <label for="inputCity" class="form-label">Address</label>
+                                            <input type="text" class="form-control" id="inputCity">
+                                          </div>
+                                          <div class="col-md-4 mb-3">
+                                            <label for="inputState" class="form-label">State</label>
+                                            <select id="inputState" class="form-select">
+                                              <option selected>Choose...</option>
+                                              <option>...</option>
+                                            </select>
+                                          </div>
+                                          <div class="col-md-4 mb-3">
+                                            <label for="inputZip" class="form-label">Zip</label>
+                                            <input type="text" class="form-control" id="inputZip">
+                                          </div>
+                                          <div class="text-center update">
+                                            <input type="submit" value="update">
+                                          </div>
+                                    </form>
+                                </div>
+                            </div>
+                            <div class="row row-cols-1 row-cols-md-2 setting-box">
+                                <div class="col">
+                                    <h2>Referral Code</h2>
+                                    <p>Customize your URL referral code</p>
+                                    <small>eg. https://busymomsboutique.com/?ref=sTJoiIGw3imaO</small>
                                 </div>
                                 <div class="col">
-                                  <div class="card">
-                                    <img src="./images/fathersday1.avif" class="card-img-top" alt="...">
-                                    <div class="card-body">
-                                        <div class="d-flex">
-                                            <div class="me-auto">
-                                                <h5 class="card-title">The Morticia Dangle Drop</h5>
-                                            </div>
-                                            <div class="more-btn ms-auto">
-                                                <a class="dropdown-toggle" type="button" data-bs-toggle="dropdown" data-mdb-auto-close="inside" aria-expanded="false">
-                                                <i class="fa fa-ellipsis-h" aria-hidden="true"></i>
-                                                </a>
-                                                <ul class="dropdown-menu text-center">
-                                                  <li><a class="dropdown-item" href="#"><i class="fa-regular fa-copy"></i>Copy Link</a></li>
-                                                  <li><a class="dropdown-item" href="#" data-bs-toggle="modal" data-bs-target="#share"><i class="fa-solid fa-share-nodes"></i>Share</a></li>
-                                                  <li><a class="dropdown-item" href="#"><i class="fa-solid fa-trash delete"></i>Delete</a></li>
-                                                </ul>
-                                            </div>
-                                         </div>
-                                      <p class="card-text"><a href="">https://busymomsboutique.com/products/mega-mystery-gift-box?ref=sTJoiIGw3imaO</a></p>
-                                    </div>
-                                  </div>
+                                   <form action="#somewhere">
+                                        <input type="text" placeholder="refferal code rendered here" required>
+                                        <a href="" type="submit">Customize Code</a>
+                                   </form>
+                                </div>
+                            </div>
+                            <div class="row row-cols-1 row-cols-md-2 setting-box">
+                                <div class="col">
+                                    <h2>Payment Settings</h2>
+                                    <p>How would you like to get paid ?</p>
                                 </div>
                                 <div class="col">
-                                  <div class="card">
-                                    <img src="./images/eartups.jpg" class="card-img-top" alt="...">
-                                    <div class="card-body">
-                                        <div class="d-flex">
-                                            <div class="me-auto">
-                                                <h5 class="card-title">The Morticia Dangle Drop</h5>
-                                            </div>
-                                            <div class="more-btn ms-auto">
-                                                <a class="dropdown-toggle" type="button" data-bs-toggle="dropdown" data-mdb-auto-close="inside" aria-expanded="false">
-                                                <i class="fa fa-ellipsis-h" aria-hidden="true"></i>
-                                                </a>
-                                                <ul class="dropdown-menu text-center">
-                                                  <li><a class="dropdown-item" href="#"><i class="fa-regular fa-copy"></i>Copy Link</a></li>
-                                                  <li><a class="dropdown-item" href="#" data-bs-toggle="modal" data-bs-target="#share"><i class="fa-solid fa-share-nodes"></i>Share</a></li>
-                                                  <li><a class="dropdown-item" href="#"><i class="fa-solid fa-trash delete"></i>Delete</a></li>
-                                                </ul>
-                                            </div>
-                                         </div>
-                                      <p class="card-text"><a href="">https://busymomsboutique.com/products/dainty-gold-gemstone-rings?ref=sTJoiIGw3imaO</a></p>
-                                    </div>
-                                  </div>
+                                   <h4>PayPal</h4>
+                                   <small>sangakkara@paypal.com</small>
+                                   <a href="" data-bs-toggle="modal" data-bs-target="#updatePaymentId">Modify Payment Id</a>
                                 </div>
                             </div>
-                        </div>
-                    </div>
-                     <!-- ===========payment========= -->
-                    <div class="card-body store-menu" id="payment">
-                        <div class="payment row">
-                            <div class="col-md-6 col-sm-12 payment-box">
-                                <h4>Payments</h4>
-                            </div>
-                            <div class="col-md-6 col-sm-12 paymentid">
-                                <strong>Paypal</strong>
-                                <div>
-                                    <span class="email">sangakkara@paypal.com</span>
+                            <div class="row row-cols-1 row-cols-md-2 setting-box">
+                                <div class="col">
+                                    <h2>Settings</h2>
                                 </div>
-                                <a href="" class="modify" data-bs-toggle="modal" data-bs-target="#updatePaymentId">Modify Payment ID</a>
-                            </div>
-                        </div>
-                        <div class="row row-cols-1 row-cols-md-3 payment-value mt-2">
-                            <div class="col">
-                               <div class="value-box">
-                                    <h4 class="value"><span>$</span>101</h4>
-                                    <small>Amout Paid</small>
-                               </div>
-                            </div>
-                            <div class="col">
-                                <div class="value-box">
-                                    <h4 class="value"><span>$</span>101</h4>
-                                    <small>Amout Pendding</small>
+                                <div class="col">
+                                   <a href="" data-bs-toggle="modal" data-bs-target="#changePass">Change Your Password</a>
+                                   <a href="" data-bs-toggle="modal" data-bs-target="#notification">Modify Notification</a>
                                 </div>
-                            </div>
-                            <div class="col">
-                                <div class="value-box">
-                                    <h4 class="value"><span>$</span>101</h4>
-                                    <small>Last Payment</small>
-                                </div>
-                            </div>
-                        </div>
-                        <div class="row payment-details">
-                            <div class="">
-                                <h4 class="">Payment Details</h4>
-                            </div>
-                        </div>
-                        <div class="alert alert-warning alert-dismissible fade show mt-4" role="alert">
-                            <strong>No Transection found! </strong>
-                            <button type="button" class="btn-close" data-bs-dismiss="alert" aria-label="Close"></button>
-                        </div>
-                    </div>
-                     <!-- ==================== -->
-                     <div class="card-body store-menu" id="setting">
-                        <div class="row row-cols-1 row-cols-lg-2 settings">
-                            <div class="col">
-                                 <h4>Profile</h4>
-                                 <small>ID: 2346543</small>
-                                 <div class="image d-none d-lg-block mt-2">
-                                    <img src="./images/profile.svg" alt="">
-                                 </div>
-                            </div>
-                            <div class="col">
-                                <form action="#somewhere" class="row">
-                                    <div class="mb-3 col-md-6">
-                                        <label for="exampleFormControlInput1" class="form-label">First Name<span>*</span></label>
-                                        <input type="text" class="form-control" id="exampleFormControlInput1" placeholder="your first name" required>
-                                    </div>
-                                    <div class="mb-3 col-md-6">
-                                        <label for="exampleFormControlInput1" class="form-label">Last Name</label>
-                                        <input type="text" class="form-control" id="exampleFormControlInput1" placeholder="your last name">
-                                    </div>
-                                    <div class="mb-3 col-md-6">
-                                        <label for="inputState" class="form-label">Country</label>
-                                        <select id="inputState" class="form-select">
-                                          <option selected>country Code</option>
-                                          <option>+91</option>
-                                          <option>+1</option>
-                                          <option>+92</option>
-                                          <option>+93</option>
-                                          <option>+94</option>
-                                        </select>
-                                    </div>
-                                    <div class="mb-3 col-md-6">
-                                        <label for="exampleFormControlInput1" class="form-label">Phone Number<span>*</span></label>
-                                        <input type="number" class="form-control" id="exampleFormControlInput1" placeholder="your phone number" required>
-                                    </div>  
-                                    <div class="mb-3 col-md-12">
-                                        <label for="exampleFormControlInput2" class="form-label">Email<span>*</span></label>
-                                        <input type="email" class="form-control" id="exampleFormControlInput1" placeholder="Your Email" required>
-                                    </div>
-                                    <div class="col-md-6">
-                                        <label for="basic-url" class="form-label">Instagram</label>
-                                        <div class="input-group mb-3">
-                                            <span class="input-group-text" id="basic-addon3">@</span>
-                                            <input type="text" class="form-control" id="basic-url" aria-describedby="basic-addon3">
-                                        </div>
-                                    </div>
-                                    <div class="col-md-6">
-                                        <label for="basic-url" class="form-label">Facebook</label>
-                                        <div class="input-group mb-3">
-                                            <span class="input-group-text" id="basic-addon3">@</span>
-                                            <input type="text" class="form-control" id="basic-url" aria-describedby="basic-addon3">
-                                        </div>
-                                    </div>
-                                    <div class="col-md-12">
-                                        <label for="basic-url" class="form-label">Twitter</label>
-                                        <div class="input-group mb-3">
-                                            <span class="input-group-text" id="basic-addon3">@</span>
-                                            <input type="text" class="form-control" id="basic-url" aria-describedby="basic-addon3">
-                                        </div>
-                                    </div>
-                                    <div class="col-md-6">
-                                      <label for="basic-url" class="form-label">Your Website</label>
-                                      <div class="input-group mb-3">
-                                        <span class="input-group-text" id="basic-addon3">https://</span>
-                                        <input type="text" class="form-control" id="basic-url" aria-describedby="basic-addon3">
-                                      </div>
-                                    </div>
-                                    <div class="col-md-6">
-                                      <label for="basic-url" class="form-label">Youtube Channel</label>
-                                      <div class="input-group mb-3">
-                                        <span class="input-group-text" id="basic-addon3">youtube.com/</span>
-                                        <input type="text" class="form-control" id="basic-url" aria-describedby="basic-addon3">
-                                      </div>
-                                    </div>
-                                      <div class="col-md-4 mb-3">
-                                        <label for="inputCity" class="form-label">Address</label>
-                                        <input type="text" class="form-control" id="inputCity">
-                                      </div>
-                                      <div class="col-md-4 mb-3">
-                                        <label for="inputState" class="form-label">State</label>
-                                        <select id="inputState" class="form-select">
-                                          <option selected>Choose...</option>
-                                          <option>...</option>
-                                        </select>
-                                      </div>
-                                      <div class="col-md-4 mb-3">
-                                        <label for="inputZip" class="form-label">Zip</label>
-                                        <input type="text" class="form-control" id="inputZip">
-                                      </div>
-                                      <div class="text-center update">
-                                        <input type="submit" value="update">
-                                      </div>
-                                </form>
-                            </div>
-                        </div>
-                        <div class="row row-cols-1 row-cols-md-2 setting-box">
-                            <div class="col">
-                                <h2>Referral Code</h2>
-                                <p>Customize your URL referral code</p>
-                                <small>eg. https://busymomsboutique.com/?ref=sTJoiIGw3imaO</small>
-                            </div>
-                            <div class="col">
-                               <form action="#somewhere">
-                                    <input type="text" placeholder="refferal code rendered here" required>
-                                    <a href="" type="submit">Customize Code</a>
-                               </form>
-                            </div>
-                        </div>
-                        <div class="row row-cols-1 row-cols-md-2 setting-box">
-                            <div class="col">
-                                <h2>Payment Settings</h2>
-                                <p>How would you like to get paid ?</p>
-                            </div>
-                            <div class="col">
-                               <h4>PayPal</h4>
-                               <small>sangakkara@paypal.com</small>
-                               <a href="" data-bs-toggle="modal" data-bs-target="#updatePaymentId">Modify Payment Id</a>
-                            </div>
-                        </div>
-                        <div class="row row-cols-1 row-cols-md-2 setting-box">
-                            <div class="col">
-                                <h2>Settings</h2>
-                            </div>
-                            <div class="col">
-                               <a href="" data-bs-toggle="modal" data-bs-target="#changePass">Change Your Password</a>
-                               <a href="" data-bs-toggle="modal" data-bs-target="#notification">Modify Notification</a>
                             </div>
                         </div>
                     </div>
@@ -631,6 +630,28 @@
                     </div>
                 </div>
             </div>
+             <!-- ==================customize Coupon Code modal ===============================-->
+             <div class="modal fade" id="EditCouponCode" tabindex="-1" aria-labelledby="exampleModalLabel" aria-hidden="true">
+                <div class="modal-dialog">
+                    <div class="modal-content">
+                        <div class="modal-header">
+                        <h5 class="modal-title" id="exampleModalLabel">Edit Coupon Code</h5>
+                        <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
+                        </div>
+                        <div class="modal-body customize-refferal">
+                            <h4>Edit your coupon code</h4>
+                            <form action="#somewhere">
+                                <div class="mb-3 col">
+                                    <input type="text" class="form-control" id="exampleFormControlInput1" placeholder="coupon code rendered here.." required>
+                                </div>
+                                <div class="submit">
+                                    <a href="#update" type="submit" value="submit">Save</a>
+                                </div>
+                            </form>
+                        </div>
+                    </div>
+                </div>
+            </div>
             <!-- ==================Notification preference ===============================-->
             <div class="modal fade" id="notification" tabindex="-1" aria-labelledby="exampleModalLabel" aria-hidden="true">
                 <div class="modal-dialog">
@@ -677,23 +698,23 @@
             <!-- ********************************Logout Model************************************************* -->
         <div class="modal fade" id="logoutModal" tabindex="-1" aria-labelledby="exampleModalLabel" aria-hidden="true">
             <div class="modal-dialog modal-dialog-centered">
-            <div class="modal-content logout-content">
-                <div class="modal-header logout-header">
-                <p class="text-center"><i class="fa-solid fa-triangle-exclamation"></i></p>
-                <!-- <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button> -->
+                <div class="modal-content logout-content">
+                    <div class="modal-header logout-header">
+                    <p class="text-center"><i class="fa-solid fa-triangle-exclamation"></i></p>
+                    <!-- <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button> -->
+                    </div>
+                    <div class="modal-body logout-body text-center">
+                    <h2>Are You Sure!</h2>
+                    <p class="mt-2">Don't worry all your changes are saved.<br>Feel free to log back in.</p>
+                    </div>
+                    <div class="modal-footer logout-footer">
+                    <a type="button" class="btn btn-secondary dismiss" data-bs-dismiss="modal">Cancle</a>
+                    <a type="button" class="btn btn-primary logout">Logout</a>
+                    </div>
                 </div>
-                <div class="modal-body logout-body text-center">
-                <h2>Are You Sure!</h2>
-                <p class="mt-2">Don't worry all your changes are saved.<br>Feel free to log back in.</p>
-                </div>
-                <div class="modal-footer logout-footer">
-                <a type="button" class="btn btn-secondary dismiss" data-bs-dismiss="modal">Cancle</a>
-                <a type="button" class="btn btn-primary logout">Logout</a>
-                </div>
-            </div>
             </div>
         </div>
     <script src="../bootstrap-5.3.0-alpha3-dist/js/bootstrap.bundle.min.js"></script>
-    <script src="./script/single-store.js"></script>        
+    <!-- <script src="./script/single-store.js"></script>         -->
     </body>    
 </html>        

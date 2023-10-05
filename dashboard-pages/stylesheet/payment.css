@@ -11,7 +11,7 @@
     border-collapse: collapse;
     background-color: #fff;
 }
-.table-section table span, .table-section table small{
+.table-section table span{
     display: block;
     padding: 1rem 0rem;
 }
@@ -24,16 +24,14 @@
     font-weight: 600;
 }
  table th, table td{
-   padding: 10px 20px;
-   word-break: break-all;
-   text-align: center;
+   padding: 5px 10px;
+   font-weight: 500;
 }
+table th, table td span{
+    font-size: .9rem;
+ }
 table tbody tr:nth-of-type(2n){
     background-color: #f2f2f2;
- }
-table th, table td a{
-    color: #232323;
-    text-decoration: none;
  }
 ::-webkit-scrollbar{
     height: 5px;
@@ -47,6 +45,7 @@ table th, table td a{
 }
 table, th, td {
     border: 1px solid #e5e1e1;
+    font-weight: 500;
  }
  .table-section table tr .time{
     font-weight: 500;
@@ -58,45 +57,17 @@ table, th, td {
     font-weight: 500;
     color: #000;
  }
- .table-section table tr .icon{
-    font-size: 1rem;
-    font-weight: 500;
- }
- .table-section table tr .link{
-    font-size: .85rem;
-    font-weight: 500;
-    display: -webkit-box;
-    -webkit-line-clamp: 1;
-    -webkit-box-orient: vertical;
-    overflow: hidden;
-    display: block;
- }
- .table-section table tr .ipaddress{
-    font-size: .85rem;
-    font-weight: 500;
- }
- .table-section table tr .visitor{
-    font-weight: 500;
-    color: #000;
-    font-size: 1.1rem;
- }
- .table-section table tr .negative{
-   font-weight: 600;
-   font-size: 1.2rem;
-   color: #cd1c1f;
- }
- .table-section table tr .possitive{
+ .table-section table tr .order{
     font-weight: 600;
-    font-weight: 1.2rem;
-    color: #379971;
-  }
-  .traffic .filter label{
+    color: #000;
+ }
+  .orders .filter label{
     font-weight: 600;
     font-size: .9rem;
     text-transform: capitalize;
     color: #000;
 }
-/* ================================= */
+/* =============================== */
 main .page-count{
     display: flex;
     flex-direction: row;

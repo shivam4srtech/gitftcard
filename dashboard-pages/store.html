@@ -99,488 +99,490 @@
 				<li><a href="" class="active">Store</a></li>
 			</ul>
             <!-- ********************************************************** -->
-            <div class="card text-center mt-3">
+            <div class="card mt-3">
                 <div class="card-header">
-                  <ul class="nav nav-tabs card-header-tabs">
-                    <li class="nav-item">
-                      <a class="nav-link active" onclick="showContent('myStore')" aria-current="true" href="#">My Store</a>
-                    </li>
-                    <li class="nav-item">
-                      <a class="nav-link" onclick="showContent('allStore')" href="#">Available Store</a>
-                    </li>
-                  </ul>
+                    <ul class="nav nav-tabs card-header-tabs id="myTab" role="tablist"">
+                        <li class="nav-item" role="presentation">
+                          <a class="nav-link active" aria-current="true" href="#" id="home-tab" data-bs-toggle="tab" data-bs-target="#myStore" aria-controls="myStore" aria-selected="true">My Store</a>
+                        </li>
+                        <li class="nav-item" role="presentation">
+                         <a class="nav-link" aria-current="true" href="#" id="home-tab" data-bs-toggle="tab" data-bs-target="#allStore" aria-controls="allStore" aria-selected="true">All Store</a>
+                        </li>
+                    </ul>
                 </div>
                 <!-- **************************** -->
-                <div class="info-data content" id="myStore">
-                    <div class="filter-store mb-4">
-                        <p>Filter Store</p>
-                        <div class="custom-select">
-                            <select>
-                              <option value="1">Select Store</option>
-                              <option value="2">All Stores</option>
-                              <option value="3">Approved Store</option>
-                              <option value="4">Approvel Pending Store</option>
-                              <option value="5">Approvel Blocked Store</option>
-                            </select>
-                        </div>
-                    </div>
-                    <div class="row">
-                        <div class="col-lg-4 col-md-6 col-xs-12">
-                            <div class="card">
-                                <div>
-                                    <div class="store-info">
-                                        <h2 class="store-name">Expert Voltaic Service</h2>
-                                        <div class="d-flex status-box">
-                                            <p class="me-auto">Status:</p>
-                                            <span class="status ms-auto approved">Approved</span>
-                                        </div>
-                                        <div class="d-flex id-box">
-                                            <p class="me-auto">Store ID:</p>
-                                            <span class="ms-auto">7079763</span>
-                                        </div>
-                                        <a href="#">store-domen.com/refferal-link</a>
-                                    </div>
-                                    <div class="dashboard-link">
-                                        <a href="" class="active">Dashboard</a>
-                                    </div>
+                <div class="card-body tab-content" id="nav-tabContent">
+                    <div class="info-data tab-pane fade show active" id="myStore" role="tabpanel" aria-labelledby="nav-home-tab" tabindex="0">
+                        <div class="filter-store mb-4">
+                            <div class="row">
+                                <div class="col-md-12 mb-3">
+                                    <label for="inputReport" class="form-label">Filter Store</label>
+                                    <select id="inputReport" class="form-select">
+                                      <option selected>All Store</option>
+                                      <option>Approved Store</option>
+                                      <option>Pending Store</option>
+                                      <option>Blocked Store</option>
+                                    </select>
                                 </div>
                             </div>
                         </div>
-                        <!-- ==============ENDS!================== -->
-                        <div class="col-lg-4 col-md-6 col-xs-12">
-                            <div class="card">
-                                <div>
-                                    <div class="store-info">
-                                        <h2 class="store-name">Expert Voltaic Service</h2>
-                                        <div class="d-flex status-box">
-                                            <p class="me-auto">Status:</p>
-                                            <span class="status ms-auto blocked">Blocked</span>
+                        <div class="row">
+                            <div class="col-lg-4 col-md-6 col-xs-12">
+                                <div class="card">
+                                    <div>
+                                        <div class="store-info">
+                                            <h2 class="store-name">Expert Voltaic Service</h2>
+                                            <div class="d-flex status-box">
+                                                <p class="me-auto">Status:</p>
+                                                <span class="status ms-auto approved">Approved</span>
+                                            </div>
+                                            <div class="d-flex id-box">
+                                                <p class="me-auto">Store ID:</p>
+                                                <span class="ms-auto">7079763</span>
+                                            </div>
+                                            <a href="#">store-domen.com/refferal-link</a>
                                         </div>
-                                        <div class="d-flex id-box">
-                                            <p class="me-auto">Store ID:</p>
-                                            <span class="ms-auto">7079763</span>
+                                        <div class="dashboard-link">
+                                            <a href="" class="active">Dashboard</a>
                                         </div>
-                                        <a href="#">store-domen.com/</a>
-                                    </div>
-                                    <div class="dashboard-link">
-                                        <a href="" class="disabled">Dashboard</a>
-                                    </div>
-                                </div>
-                            </div>
-                        </div>
-                        <div class="col-lg-4 col-md-6 col-xs-12">
-                            <div class="card">
-                                <div>
-                                    <div class="store-info">
-                                        <h2 class="store-name">Expert Voltaic Service</h2>
-                                        <div class="d-flex status-box">
-                                            <p class="me-auto">Status:</p>
-                                            <span class="status ms-auto approved">Approved</span>
-                                        </div>
-                                        <div class="d-flex id-box">
-                                            <p class="me-auto">Store ID:</p>
-                                            <span class="ms-auto">7079763</span>
-                                        </div>
-                                        <a href="#">store-domen.com/refferal-link</a>
-                                    </div>
-                                    <div class="dashboard-link">
-                                        <a href="" class="active">Dashboard</a>
                                     </div>
                                 </div>
                             </div>
-                        </div>
-                        <!-- ==============ENDS!================== -->
-                        <div class="col-lg-4 col-md-6 col-xs-12">
-                            <div class="card">
-                                <div>
-                                    <div class="store-info">
-                                        <h2 class="store-name">Expert Voltaic Service</h2>
-                                        <div class="d-flex status-box">
-                                            <p class="me-auto">Status:</p>
-                                            <span class="status ms-auto pending">Pending</span>
+                            <!-- ==============ENDS!================== -->
+                            <div class="col-lg-4 col-md-6 col-xs-12">
+                                <div class="card">
+                                    <div>
+                                        <div class="store-info">
+                                            <h2 class="store-name">Expert Voltaic Service</h2>
+                                            <div class="d-flex status-box">
+                                                <p class="me-auto">Status:</p>
+                                                <span class="status ms-auto blocked">Blocked</span>
+                                            </div>
+                                            <div class="d-flex id-box">
+                                                <p class="me-auto">Store ID:</p>
+                                                <span class="ms-auto">7079763</span>
+                                            </div>
+                                            <a href="#">store-domen.com/</a>
                                         </div>
-                                        <div class="d-flex id-box">
-                                            <p class="me-auto">Store ID:</p>
-                                            <span class="ms-auto">7079763</span>
+                                        <div class="dashboard-link">
+                                            <a href="" class="disabled">Dashboard</a>
                                         </div>
-                                        <a href="#">store-domen.com/</a>
-                                    </div>
-                                    <div class="dashboard-link">
-                                        <a href="" class="disabled">Dashboard</a>
-                                    </div>
-                                </div>
-                            </div>
-                        </div>
-                        <!-- ==============ENDS!================== -->
-                        <div class="col-lg-4 col-md-6 col-xs-12">
-                            <div class="card">
-                                <div>
-                                    <div class="store-info">
-                                        <h2 class="store-name">Expert Voltaic Service</h2>
-                                        <div class="d-flex status-box">
-                                            <p class="me-auto">Status:</p>
-                                            <span class="status ms-auto approved">Approved</span>
-                                        </div>
-                                        <div class="d-flex id-box">
-                                            <p class="me-auto">Store ID:</p>
-                                            <span class="ms-auto">7079763</span>
-                                        </div>
-                                        <a href="#">store-domen.com/refferal-link</a>
-                                    </div>
-                                    <div class="dashboard-link">
-                                        <a href="" class="active">Dashboard</a>
                                     </div>
                                 </div>
                             </div>
-                        </div>
-                        <!-- ==============ENDS!================== -->
-                        <div class="col-lg-4 col-md-6 col-xs-12">
-                            <div class="card">
-                                <div>
-                                    <div class="store-info">
-                                        <h2 class="store-name">Expert Voltaic Service</h2>
-                                        <div class="d-flex status-box">
-                                            <p class="me-auto">Status:</p>
-                                            <span class="status ms-auto approved">Approved</span>
+                            <div class="col-lg-4 col-md-6 col-xs-12">
+                                <div class="card">
+                                    <div>
+                                        <div class="store-info">
+                                            <h2 class="store-name">Expert Voltaic Service</h2>
+                                            <div class="d-flex status-box">
+                                                <p class="me-auto">Status:</p>
+                                                <span class="status ms-auto approved">Approved</span>
+                                            </div>
+                                            <div class="d-flex id-box">
+                                                <p class="me-auto">Store ID:</p>
+                                                <span class="ms-auto">7079763</span>
+                                            </div>
+                                            <a href="#">store-domen.com/refferal-link</a>
                                         </div>
-                                        <div class="d-flex id-box">
-                                            <p class="me-auto">Store ID:</p>
-                                            <span class="ms-auto">7079763</span>
+                                        <div class="dashboard-link">
+                                            <a href="" class="active">Dashboard</a>
                                         </div>
-                                        <a href="#">store-domen.com/refferal-link</a>
-                                    </div>
-                                    <div class="dashboard-link">
-                                        <a href="" class="active">Dashboard</a>
                                     </div>
                                 </div>
                             </div>
-                        </div>
-                        <!-- ==============ENDS!================== -->
-                    </div>
-                    <div class="page-count">
-                        <div>
-                            <select name="page-count" class="">
-                                <option value="10">10 per page</option>
-                                <option value="20">20 per page</option>
-                                <option value="30">30 per page</option>
-                                <option value="40">40 per page</option>
-                              </select>
-                        </div>
-                        <div>
-                            <p>Page <span>1</span> of <span>1</span></p>
-                        </div>
-                        <div class="next-page">
-                            <a href="#nextPage">Next Page</a>
-                        </div>
-                    </div>
-                </div>
-                <!-- ==================================Available Store========================================= -->
-                <div class="content" id="allStore">
-                    <div class="row allStore-filter">
-                        <div class="search-program">
-                            <label for="">Search anything Eg. Clothing, Sports, Beauty products etc.</label>
-                            <form action="#some-where">
-                                <input type="text" placeholder="search for program...">
-                                <a href=""><i class="fa-solid fa-magnifying-glass"></i></a>
-                            </form>
-                        </div>
-                        <div class="col-xs-6 col-md-6">
-                            <label for="">Filter by Currency :</label>
-                            <div class="custom-select">
-                                <select>
-                                  <option value="1">Select Currency</option>
-                                  <option value="2">US Dollar</option>
-                                  <option value="3">Euro</option>
-                                  <option value="4">Indian Rupee</option>
-                                  <option value="5">Australian Dollar</option>
-                                  <option value="5">Dirham</option>
-                                  <option value="5">Riyal</option>
-                                  <option value="5">Japani Yen</option>
-                                  <option value="5">Others</option>
-                                </select>
+                            <!-- ==============ENDS!================== -->
+                            <div class="col-lg-4 col-md-6 col-xs-12">
+                                <div class="card">
+                                    <div>
+                                        <div class="store-info">
+                                            <h2 class="store-name">Expert Voltaic Service</h2>
+                                            <div class="d-flex status-box">
+                                                <p class="me-auto">Status:</p>
+                                                <span class="status ms-auto pending">Pending</span>
+                                            </div>
+                                            <div class="d-flex id-box">
+                                                <p class="me-auto">Store ID:</p>
+                                                <span class="ms-auto">7079763</span>
+                                            </div>
+                                            <a href="#">store-domen.com/</a>
+                                        </div>
+                                        <div class="dashboard-link">
+                                            <a href="" class="disabled">Dashboard</a>
+                                        </div>
+                                    </div>
+                                </div>
                             </div>
+                            <!-- ==============ENDS!================== -->
+                            <div class="col-lg-4 col-md-6 col-xs-12">
+                                <div class="card">
+                                    <div>
+                                        <div class="store-info">
+                                            <h2 class="store-name">Expert Voltaic Service</h2>
+                                            <div class="d-flex status-box">
+                                                <p class="me-auto">Status:</p>
+                                                <span class="status ms-auto approved">Approved</span>
+                                            </div>
+                                            <div class="d-flex id-box">
+                                                <p class="me-auto">Store ID:</p>
+                                                <span class="ms-auto">7079763</span>
+                                            </div>
+                                            <a href="#">store-domen.com/refferal-link</a>
+                                        </div>
+                                        <div class="dashboard-link">
+                                            <a href="" class="active">Dashboard</a>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                            <!-- ==============ENDS!================== -->
+                            <div class="col-lg-4 col-md-6 col-xs-12">
+                                <div class="card">
+                                    <div>
+                                        <div class="store-info">
+                                            <h2 class="store-name">Expert Voltaic Service</h2>
+                                            <div class="d-flex status-box">
+                                                <p class="me-auto">Status:</p>
+                                                <span class="status ms-auto approved">Approved</span>
+                                            </div>
+                                            <div class="d-flex id-box">
+                                                <p class="me-auto">Store ID:</p>
+                                                <span class="ms-auto">7079763</span>
+                                            </div>
+                                            <a href="#">store-domen.com/refferal-link</a>
+                                        </div>
+                                        <div class="dashboard-link">
+                                            <a href="" class="active">Dashboard</a>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                            <!-- ==============ENDS!================== -->
                         </div>
-                        <div class="col-xs-6 col-md-6">
-                            <label for="">Filter by Location :</label>
-                            <div class="custom-select">
-                                <select>
-                                  <option value="1">Select Shipping Location</option>
-                                  <option value="2">Australia</option>
-                                  <option value="3">Brazil</option>
-                                  <option value="4">Canada</option>
-                                  <option value="5">Denmark</option>
-                                  <option value="5">Egypt</option>
-                                  <option value="5">Finland</option>
-                                  <option value="5">GreenLand</option>
-                                  <option value="5">HomgKong</option>
-                                  <option value="5">India</option>
-                                  <option value="5">Japan</option>
-                                  <option value="5">Korea</option>
-                                </select>
+                        <div class="page-count">
+                            <div>
+                                <select name="page-count" class="">
+                                    <option value="10">10 per page</option>
+                                    <option value="20">20 per page</option>
+                                    <option value="30">30 per page</option>
+                                    <option value="40">40 per page</option>
+                                  </select>
+                            </div>
+                            <div>
+                                <p>Page <span>1</span> of <span>1</span></p>
+                            </div>
+                            <div class="next-page">
+                                <a href="#nextPage">Next Page</a>
                             </div>
                         </div>
                     </div>
-                    <!-- ******************** -->
-                    <div class=" row display-store">
-                        <div class="col-xs-12 col-md-6 col-lg-4 store-card">
-                            <div class="store-item">
-                                <img src="./images/world-star.png" alt="">
-                                <p class="store-name">WorldSTAR Hair L.A.</p>
-                                <div class="store-data">
-                                    <div class="data-item">
-                                        <small>Store ID</small>
-                                        <span>134567</span>
-                                    </div>
-                                    <div class="data-item">
-                                        <small>Commission</small>
-                                        <span>10%</span>
-                                    </div>
-                                    <div class="data-item">
-                                        <small>Currency</small>
-                                        <span>EUR</span>
-                                    </div>
-                                    <div class="data-item">
-                                        <small>Cookie Duration</small>
-                                        <span>30 days</span>
-                                    </div>
-                                    <div class="data-item">
-                                        <small>Registrations open</small>
-                                        <span class="no">No</span>
-                                    </div>
-                                    <div class="data-item">
-                                        <small>Instant access</small>
-                                        <span class="yes">Yes</span>
-                                    </div>
+                    <!-- ==================================Available Store========================================= -->
+                    <div class="tab-pane fade show" id="allStore" role="tabpanel" aria-labelledby="all-store-tab" tabindex="0">
+                        <div class="row allStore-filter">
+                            <div class="search-program">
+                                <label for="">Search anything Eg. Clothing, Sports, Beauty products etc.</label>
+                                <form action="#some-where">
+                                    <input type="text" placeholder="search for program...">
+                                    <a href=""><i class="fa-solid fa-magnifying-glass"></i></a>
+                                </form>
+                            </div>
+                            <div class="row">
+                                <div class="col-md-6 mb-3">
+                                    <label for="inputReport" class="form-label">Filter by Currency :</label>
+                                    <select id="inputReport" class="form-select">
+                                      <option selected>Select Currency</option>
+                                      <option value="1">US Dollar</option>
+                                      <option value="2">Euro</option>
+                                      <option value="3">Indian Rupee</option>
+                                      <option value="4">Australian Dollar</option>
+                                      <option value="5">Dirham</option>
+                                      <option value="6">Riyal</option>
+                                      <option value="7">Japani Yen</option>
+                                      <option value="8">Others</option>
+                                    </select>
                                 </div>
-                                <div class="store-url">
-                                    <a href="#">www.worldstarhairla.com</a>
-                                    <a href="#" data-bs-toggle="modal" data-bs-target="#enroll">Enroll</a>
-                                </div>
-                                <div class="program">
-                                    <a href="./view-program.html">Register</a>
+                                <div class="col-md-6 mb-3">
+                                    <label for="inputReport" class="form-label">Filter by Location :</label>
+                                    <select id="inputReport" class="form-select">
+                                      <option selected>Select Shiping Location</option>
+                                      <option value="2">Australia</option>
+                                      <option value="3">Brazil</option>
+                                      <option value="4">Canada</option>
+                                      <option value="5">Denmark</option>
+                                      <option value="5">Egypt</option>
+                                      <option value="5">Finland</option>
+                                      <option value="5">GreenLand</option>
+                                      <option value="5">HomgKong</option>
+                                      <option value="5">India</option>
+                                      <option value="5">Japan</option>
+                                      <option value="5">Korea</option>
+                                    </select>
                                 </div>
                             </div>
                         </div>
-                        <!-- **********Ends***************-->
-                        <div class="col-xs-12 col-md-6 col-lg-4 store-card">
-                            <div class="store-item">
-                                <img src="./images/Zamaly.png" alt="">
-                                <p class="store-name">Zamaly</p>
-                                <div class="store-data">
-                                    <div class="data-item">
-                                        <small>Store ID</small>
-                                        <span>134567</span>
+                        <!-- ******************** -->
+                        <div class=" row display-store">
+                            <div class="col-xs-12 col-md-6 col-lg-4 store-card">
+                                <div class="store-item">
+                                    <img src="./images/world-star.png" alt="">
+                                    <p class="store-name">WorldSTAR Hair L.A.</p>
+                                    <div class="store-data">
+                                        <div class="data-item">
+                                            <small>Store ID</small>
+                                            <span>134567</span>
+                                        </div>
+                                        <div class="data-item">
+                                            <small>Commission</small>
+                                            <span>10%</span>
+                                        </div>
+                                        <div class="data-item">
+                                            <small>Currency</small>
+                                            <span>EUR</span>
+                                        </div>
+                                        <div class="data-item">
+                                            <small>Cookie Duration</small>
+                                            <span>30 days</span>
+                                        </div>
+                                        <div class="data-item">
+                                            <small>Registrations open</small>
+                                            <span class="no">No</span>
+                                        </div>
+                                        <div class="data-item">
+                                            <small>Instant access</small>
+                                            <span class="yes">Yes</span>
+                                        </div>
                                     </div>
-                                    <div class="data-item">
-                                        <small>Commission</small>
-                                        <span>10%</span>
+                                    <div class="store-url">
+                                        <a href="#">www.worldstarhairla.com</a>
+                                        <a href="#" data-bs-toggle="modal" data-bs-target="#enroll">Enroll</a>
                                     </div>
-                                    <div class="data-item">
-                                        <small>Currency</small>
-                                        <span>EUR</span>
+                                    <div class="program">
+                                        <a href="./view-program.html">Register</a>
                                     </div>
-                                    <div class="data-item">
-                                        <small>Cookie Duration</small>
-                                        <span>30 days</span>
-                                    </div>
-                                    <div class="data-item">
-                                        <small>Registrations open</small>
-                                        <span class="no">No</span>
-                                    </div>
-                                    <div class="data-item">
-                                        <small>Instant access</small>
-                                        <span class="no">No</span>
-                                    </div>
-                                </div>
-                                <div class="store-url">
-                                    <a href="#">www.worldstarhairla.com</a>
-                                    <a href="#" data-bs-toggle="modal" data-bs-target="#enroll">Enroll</a>
-                                </div>
-                                <div class="program">
-                                    <a href="./view-program.html">Register</a>
                                 </div>
                             </div>
-                        </div>
-                        <!-- **********Ends***************-->
-                        <div class="col-xs-12 col-md-6 col-lg-4 store-card">
-                            <div class="store-item">
-                                <img src="./images/busy-moms.png" alt="">
-                                <p class="store-name">The Busy Moms Boutique</p>
-                                <div class="store-data">
-                                    <div class="data-item">
-                                        <small>Store ID</small>
-                                        <span>134567</span>
+                            <!-- **********Ends***************-->
+                            <div class="col-xs-12 col-md-6 col-lg-4 store-card">
+                                <div class="store-item">
+                                    <img src="./images/Zamaly.png" alt="">
+                                    <p class="store-name">Zamaly</p>
+                                    <div class="store-data">
+                                        <div class="data-item">
+                                            <small>Store ID</small>
+                                            <span>134567</span>
+                                        </div>
+                                        <div class="data-item">
+                                            <small>Commission</small>
+                                            <span>10%</span>
+                                        </div>
+                                        <div class="data-item">
+                                            <small>Currency</small>
+                                            <span>EUR</span>
+                                        </div>
+                                        <div class="data-item">
+                                            <small>Cookie Duration</small>
+                                            <span>30 days</span>
+                                        </div>
+                                        <div class="data-item">
+                                            <small>Registrations open</small>
+                                            <span class="no">No</span>
+                                        </div>
+                                        <div class="data-item">
+                                            <small>Instant access</small>
+                                            <span class="no">No</span>
+                                        </div>
                                     </div>
-                                    <div class="data-item">
-                                        <small>Commission</small>
-                                        <span>10%</span>
+                                    <div class="store-url">
+                                        <a href="#">www.worldstarhairla.com</a>
+                                        <a href="#" data-bs-toggle="modal" data-bs-target="#enroll">Enroll</a>
                                     </div>
-                                    <div class="data-item">
-                                        <small>Currency</small>
-                                        <span>EUR</span>
+                                    <div class="program">
+                                        <a href="./view-program.html">Register</a>
                                     </div>
-                                    <div class="data-item">
-                                        <small>Cookie Duration</small>
-                                        <span>30 days</span>
-                                    </div>
-                                    <div class="data-item">
-                                        <small>Registrations open</small>
-                                        <span class="yes">Yes</span>
-                                    </div>
-                                    <div class="data-item">
-                                        <small>Instant access</small>
-                                        <span class="no">No</span>
-                                    </div>
-                                </div>
-                                <div class="store-url">
-                                    <a href="#">www.worldstarhairla.com</a>
-                                    <a href="#" data-bs-toggle="modal" data-bs-target="#enroll">Enroll</a>
-                                </div>
-                                <div class="program">
-                                    <a href="./view-program.html">Register</a>
                                 </div>
                             </div>
-                        </div>
-                        <!-- **********Ends***************-->
-                        <div class="col-xs-12 col-md-6 col-lg-4 store-card">
-                            <div class="store-item">
-                                <img src="./images/Gilthubjwellary.png" alt="">
-                                <p class="store-name">Gilthub Jewellery</p>
-                                <div class="store-data">
-                                    <div class="data-item">
-                                        <small>Store ID</small>
-                                        <span>134567</span>
+                            <!-- **********Ends***************-->
+                            <div class="col-xs-12 col-md-6 col-lg-4 store-card">
+                                <div class="store-item">
+                                    <img src="./images/busy-moms.png" alt="">
+                                    <p class="store-name">The Busy Moms Boutique</p>
+                                    <div class="store-data">
+                                        <div class="data-item">
+                                            <small>Store ID</small>
+                                            <span>134567</span>
+                                        </div>
+                                        <div class="data-item">
+                                            <small>Commission</small>
+                                            <span>10%</span>
+                                        </div>
+                                        <div class="data-item">
+                                            <small>Currency</small>
+                                            <span>EUR</span>
+                                        </div>
+                                        <div class="data-item">
+                                            <small>Cookie Duration</small>
+                                            <span>30 days</span>
+                                        </div>
+                                        <div class="data-item">
+                                            <small>Registrations open</small>
+                                            <span class="yes">Yes</span>
+                                        </div>
+                                        <div class="data-item">
+                                            <small>Instant access</small>
+                                            <span class="no">No</span>
+                                        </div>
                                     </div>
-                                    <div class="data-item">
-                                        <small>Commission</small>
-                                        <span>10%</span>
+                                    <div class="store-url">
+                                        <a href="#">www.worldstarhairla.com</a>
+                                        <a href="#" data-bs-toggle="modal" data-bs-target="#enroll">Enroll</a>
                                     </div>
-                                    <div class="data-item">
-                                        <small>Currency</small>
-                                        <span>EUR</span>
+                                    <div class="program">
+                                        <a href="./view-program.html">Register</a>
                                     </div>
-                                    <div class="data-item">
-                                        <small>Cookie Duration</small>
-                                        <span>30 days</span>
-                                    </div>
-                                    <div class="data-item">
-                                        <small>Registrations open</small>
-                                        <span class="no">No</span>
-                                    </div>
-                                    <div class="data-item">
-                                        <small>Instant access</small>
-                                        <span class="yes">Yes</span>
-                                    </div>
-                                </div>
-                                <div class="store-url">
-                                    <a href="#">www.worldstarhairla.com</a>
-                                    <a href="#" data-bs-target="#enroll" data-bs-toggle="modal">Enroll</a>
-                                </div>
-                                <div class="program">
-                                    <a href="./view-program.html">Register</a>
                                 </div>
                             </div>
-                        </div>
-                        <!-- **********Ends***************-->
-                        <div class="col-xs-12 col-md-6 col-lg-4 store-card">
-                            <div class="store-item">
-                                <img src="./images/Buzz.png" alt="">
-                                <p class="store-name">Buzz Vibes</p>
-                                <div class="store-data">
-                                    <div class="data-item">
-                                        <small>Store ID</small>
-                                        <span>134567</span>
+                            <!-- **********Ends***************-->
+                            <div class="col-xs-12 col-md-6 col-lg-4 store-card">
+                                <div class="store-item">
+                                    <img src="./images/Gilthubjwellary.png" alt="">
+                                    <p class="store-name">Gilthub Jewellery</p>
+                                    <div class="store-data">
+                                        <div class="data-item">
+                                            <small>Store ID</small>
+                                            <span>134567</span>
+                                        </div>
+                                        <div class="data-item">
+                                            <small>Commission</small>
+                                            <span>10%</span>
+                                        </div>
+                                        <div class="data-item">
+                                            <small>Currency</small>
+                                            <span>EUR</span>
+                                        </div>
+                                        <div class="data-item">
+                                            <small>Cookie Duration</small>
+                                            <span>30 days</span>
+                                        </div>
+                                        <div class="data-item">
+                                            <small>Registrations open</small>
+                                            <span class="no">No</span>
+                                        </div>
+                                        <div class="data-item">
+                                            <small>Instant access</small>
+                                            <span class="yes">Yes</span>
+                                        </div>
                                     </div>
-                                    <div class="data-item">
-                                        <small>Commission</small>
-                                        <span>10%</span>
+                                    <div class="store-url">
+                                        <a href="#">www.worldstarhairla.com</a>
+                                        <a href="#" data-bs-target="#enroll" data-bs-toggle="modal">Enroll</a>
                                     </div>
-                                    <div class="data-item">
-                                        <small>Currency</small>
-                                        <span>EUR</span>
+                                    <div class="program">
+                                        <a href="./view-program.html">Register</a>
                                     </div>
-                                    <div class="data-item">
-                                        <small>Cookie Duration</small>
-                                        <span>30 days</span>
-                                    </div>
-                                    <div class="data-item">
-                                        <small>Registrations open</small>
-                                        <span class="yes">Yes</span>
-                                    </div>
-                                    <div class="data-item">
-                                        <small>Instant access</small>
-                                        <span class="yes">Yes</span>
-                                    </div>
-                                </div>
-                                <div class="store-url">
-                                    <a href="#">www.worldstarhairla.com</a>
-                                    <a href="#" data-bs-toggle="modal" data-bs-target="#enroll">Enroll</a>
-                                </div>
-                                <div class="program">
-                                    <a href="./view-program.html">Register</a>
                                 </div>
                             </div>
-                        </div>
-                        <!-- **********Ends***************-->
-                        <div class="col-xs-12 col-md-6 col-lg-4 store-card">
-                            <div class="store-item">
-                                <img src="./images/lemaillotfoot.png" alt="">
-                                <p class="store-name">lemaillotfoot</p>
-                                <div class="store-data">
-                                    <div class="data-item">
-                                        <small>Store ID</small>
-                                        <span>134567</span>
+                            <!-- **********Ends***************-->
+                            <div class="col-xs-12 col-md-6 col-lg-4 store-card">
+                                <div class="store-item">
+                                    <img src="./images/Buzz.png" alt="">
+                                    <p class="store-name">Buzz Vibes</p>
+                                    <div class="store-data">
+                                        <div class="data-item">
+                                            <small>Store ID</small>
+                                            <span>134567</span>
+                                        </div>
+                                        <div class="data-item">
+                                            <small>Commission</small>
+                                            <span>10%</span>
+                                        </div>
+                                        <div class="data-item">
+                                            <small>Currency</small>
+                                            <span>EUR</span>
+                                        </div>
+                                        <div class="data-item">
+                                            <small>Cookie Duration</small>
+                                            <span>30 days</span>
+                                        </div>
+                                        <div class="data-item">
+                                            <small>Registrations open</small>
+                                            <span class="yes">Yes</span>
+                                        </div>
+                                        <div class="data-item">
+                                            <small>Instant access</small>
+                                            <span class="yes">Yes</span>
+                                        </div>
                                     </div>
-                                    <div class="data-item">
-                                        <small>Commission</small>
-                                        <span>10%</span>
+                                    <div class="store-url">
+                                        <a href="#">www.worldstarhairla.com</a>
+                                        <a href="#" data-bs-toggle="modal" data-bs-target="#enroll">Enroll</a>
                                     </div>
-                                    <div class="data-item">
-                                        <small>Currency</small>
-                                        <span>EUR</span>
+                                    <div class="program">
+                                        <a href="./view-program.html">Register</a>
                                     </div>
-                                    <div class="data-item">
-                                        <small>Cookie Duration</small>
-                                        <span>30 days</span>
-                                    </div>
-                                    <div class="data-item">
-                                        <small>Registrations open</small>
-                                        <span class="no">No</span>
-                                    </div>
-                                    <div class="data-item">
-                                        <small>Instant access</small>
-                                        <span class="no">No</span>
-                                    </div>
-                                </div>
-                                <div class="store-url">
-                                    <a href="#">www.worldstarhairla.com</a>
-                                    <a href="#" data-bs-toggle="modal" data-bs-target="#enroll">Enroll</a>
-                                </div>
-                                <div class="program">
-                                    <a href="./view-program.html">Register</a>
                                 </div>
                             </div>
+                            <!-- **********Ends***************-->
+                            <div class="col-xs-12 col-md-6 col-lg-4 store-card">
+                                <div class="store-item">
+                                    <img src="./images/lemaillotfoot.png" alt="">
+                                    <p class="store-name">lemaillotfoot</p>
+                                    <div class="store-data">
+                                        <div class="data-item">
+                                            <small>Store ID</small>
+                                            <span>134567</span>
+                                        </div>
+                                        <div class="data-item">
+                                            <small>Commission</small>
+                                            <span>10%</span>
+                                        </div>
+                                        <div class="data-item">
+                                            <small>Currency</small>
+                                            <span>EUR</span>
+                                        </div>
+                                        <div class="data-item">
+                                            <small>Cookie Duration</small>
+                                            <span>30 days</span>
+                                        </div>
+                                        <div class="data-item">
+                                            <small>Registrations open</small>
+                                            <span class="no">No</span>
+                                        </div>
+                                        <div class="data-item">
+                                            <small>Instant access</small>
+                                            <span class="no">No</span>
+                                        </div>
+                                    </div>
+                                    <div class="store-url">
+                                        <a href="#">www.worldstarhairla.com</a>
+                                        <a href="#" data-bs-toggle="modal" data-bs-target="#enroll">Enroll</a>
+                                    </div>
+                                    <div class="program">
+                                        <a href="./view-program.html">Register</a>
+                                    </div>
+                                </div>
+                            </div>
+                            <!-- **********Ends***************-->
                         </div>
-                        <!-- **********Ends***************-->
-                    </div>
-                    <div class="page-count">
-                        <div>
-                            <select name="page-count" class="">
-                                <option value="10">10 per page</option>
-                                <option value="20">20 per page</option>
-                                <option value="30">30 per page</option>
-                                <option value="40">40 per page</option>
-                              </select>
+                        <div class="page-count">
+                            <div>
+                                <select name="page-count" class="">
+                                    <option value="10">10 per page</option>
+                                    <option value="20">20 per page</option>
+                                    <option value="30">30 per page</option>
+                                    <option value="40">40 per page</option>
+                                  </select>
+                            </div>
+                            <div>
+                                <p>Page <span>1</span> of <span>1</span></p>
+                            </div>
+                            <div class="next-page">
+                                <a href="#nextPage">Next Page</a>
+                            </div>
                         </div>
-                        <div>
-                            <p>Page <span>1</span> of <span>1</span></p>
-                        </div>
-                        <div class="next-page">
-                            <a href="#nextPage">Next Page</a>
-                        </div>
-                    </div>
-                </div>
-            </div>
+                       </div>
+                     </div>
+                  </div>
+              </div>
 			<!-- ============Recent Transections ================-->
 		</main>
 	</section>
@@ -642,6 +644,6 @@
     <!-- ==============================Local script============================ -->
 	<script src="./script/global-script.js"></script>
     <script src="./script/dashboard.js"></script>
-    <script src="./script/store.js"></script>
+    <script src="./script/sto.js"></script>
     </body>
 </html>    
