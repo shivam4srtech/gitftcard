@@ -1,0 +1,103 @@
+.date label{
+    font-weight: 600;
+}
+.recent-info{
+	margin-top: 20px;
+    max-width: 100%;
+    display: flex;
+    flex-wrap: wrap;
+    flex-direction: row;
+    margin: auto;
+}
+.overview-data{
+    padding: 20px;
+	background: var(--light);
+	border-radius: 10px;
+	box-shadow: 4px 4px 16px rgba(0, 0, 0, .1);
+}
+.overview-data .head{
+    font-weight: 600;
+    text-align: center;
+    color: #000;
+    font-size: 1.4rem;
+    padding: .5rem 0rem;
+    border-radius: 4px;
+    margin-bottom: .5rem;
+    background-color: #f7f6f6;
+}
+.recent-info .overview-info{
+    border-bottom: 1px solid #a2a1a1;
+    display: flex;
+    justify-content: space-between;
+    padding: 1rem 0rem;
+}
+.recent-info .recent-box{
+   margin-bottom: 1.4rem;
+}
+.recent-info .overview-info span{
+    font-weight: 500;
+    font-size: 1rem;
+    color: #000;
+}
+.recent-info .overview-info .member a{
+    border: 1px solid #2162ff;
+    border-radius: 4px;
+    padding: .5rem 1rem;
+    color: #2162ff;
+    font-weight: 600;
+    text-transform: uppercase;
+    letter-spacing: .4px;
+    cursor: pointer;
+}
+.recent-info .overview-info .active i{
+  padding: 0rem .5rem;
+  font-weight: 600;
+  color: #34a853;
+}
+.recent-info .recent-affiliate{
+    display: flex;
+    justify-content: space-between;
+    padding: 1rem 0rem;
+  }
+  .recent-info .recent-affiliate .name{
+   color: #2162ff;
+   font-weight: 500;
+   text-transform: capitalize;
+   cursor: pointer;
+   text-decoration: none;
+   font-size: 1rem;
+  }
+  .recent-info .recent-affiliate .status{
+    padding: .4rem .3rem;
+    font-weight: 500;
+    border-radius: 4px;
+    letter-spacing: .4px;
+    color: #fff;
+    font-size: .85rem;
+    width: 5rem;
+    text-align: center;
+   }
+   .recent-info .recent-affiliate .approve{
+   background-color: #34a853;
+   }
+   .recent-info .recent-affiliate .pending{
+    background-color: #f5b402;
+    }
+    .recent-info .recent-affiliate .block{
+        background-color: #cd1c1f;
+    }
+    @media(max-width:600px){
+        .overview-data .head{
+            font-size: 1.2rem;
+        }
+        .recent-info .overview-info span{
+            font-size: .9rem;
+        }
+        .recent-info .recent-affiliate .name{
+            font-size: .9rem;
+        }
+        .recent-info .recent-affiliate .status{
+            font-size: .75rem;
+           }
+
+    }

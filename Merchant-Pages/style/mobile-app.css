@@ -1,0 +1,76 @@
+/* *******************************App Modal***************************** */
+.app-modal{
+    background-color: #e0e0ec;
+    border-radius: 12px;
+    padding: .6rem 1rem;
+}
+.app-modal .app-box{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+.app-modal .app-box img{
+   max-width: 100%;
+   border-radius: 12px;
+   object-fit: contain;
+   display: block;
+   margin: auto;
+}
+.app-box .app-item{
+    justify-content: center;
+    align-items: center;
+}
+.app-box .app-item h2{
+    font-weight: 600;
+    font-size: 2.6rem;
+    letter-spacing: 1px;
+}
+.app-box .app-item p{
+    font-weight: 500;
+    font-size: 1.2rem;
+    letter-spacing: 1px;
+    margin-top: 1rem;
+}
+.app-item .app-store{
+    margin-top: 1rem;
+}
+.app-item .app-store img{
+   object-fit: contain;
+   aspect-ratio: 4/3;
+   border-radius: 5px;
+}
+@media(max-width:600px){
+    .app-box .app-item h2{
+        font-size: 1.85rem;
+    }
+    .app-box .app-item p{
+        font-size: 1rem;
+    }
+    .app-modal .app-box img{
+        max-width: 80%;
+     }
+}
+.app-modal .qr a{
+    color: #5676ff;
+    font-size: .9rem;
+    text-decoration: none;
+}
+.app-modal .qr a i{
+   display: inline-block;
+   padding: .3rem;
+}
+#qrCode img{
+    max-width: 50%;
+    object-fit: contain;
+    margin: auto;
+    display: block;
+}
+#qrCode a{
+    color: #5676ff;
+    font-size: 1rem;
+    text-decoration: none;
+    font-weight: 500;
+}
+#qrCode a i{
+   padding: .6rem;
+}

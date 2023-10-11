@@ -1,0 +1,74 @@
+.add-affi{
+    border: 1px  solid #5676ff;
+    padding: .4rem .5rem;
+    color: #5676ff;
+    border-radius: 4px;
+    text-transform: capitalize;
+    font-weight: 500;
+ }
+table tbody td{
+   font-size: .85rem;
+   font-weight: 500;
+}
+table tbody .name a{
+   color: #5676ff;
+   text-transform: capitalize;
+   font-weight: 500;
+   cursor: pointer;
+   text-decoration: none;
+   font-size: .9rem;
+ }
+ table tbody tr .approve{
+    color: #34a853;
+    font-weight: 600;
+    letter-spacing: .4px;
+    text-decoration: none;
+  }
+  table tbody tr .reject{
+    color: #cd1c1f;
+    font-weight: 600;
+    letter-spacing: .4px;
+    text-decoration: none;
+  }
+  /* ***********************************Affilaite Modal****************************** */
+.affiliate-header .modal-title{
+    font-weight: 500;
+    font-size: 1.8rem;
+    margin-top: 1rem;
+    color: #000;
+}
+.affiliate-body .label{
+    font-weight: 600;
+    font-size: 1rem;
+    color: #000;
+}
+.affiliate-body .label span{
+    color: red;
+}
+.affiliate-body .msg{
+   font-size: .85rem;
+   color: #74767d;
+}
+.modal .affiliate-footer{
+    display: flex;
+    justify-content: space-evenly;
+    padding: 1rem 0rem;
+}
+.affiliate-footer a{
+    text-decoration: none;
+    border-radius: 0px;
+    font-weight: 500;
+    text-transform: uppercase;
+    letter-spacing: .4px;
+    padding: .6rem .8rem;
+    color: #fff;
+    border: none;
+    outline: none;
+    border-radius: 2px;
+}
+.affiliate-footer .create{
+   background-color: #ee755d;
+}
+.affiliate-footer .dismiss{
+    background-color: #000;
+ }
