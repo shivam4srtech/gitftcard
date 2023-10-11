@@ -1,0 +1,253 @@
+main a{
+    color: #5676ff;
+    text-decoration: none;
+    font-weight: 500;
+    font-size: 1rem;
+}
+main .affi-name{
+    margin-right: 1rem;
+    text-align: center;
+    align-items: center;
+    display: flex;
+    justify-content: left;
+    flex-direction: row;
+    margin-top: 1.4rem;
+}
+main .affi-name h2{
+    display: inline-block;
+    font-weight: 600;
+    font-size: 1.45rem;
+    text-transform: capitalize;
+}
+main .affi-name  i{
+    padding: .4rem;
+    border-radius: 50%;
+    border: 1px solid #bdb9b9;
+    margin-right: .7rem;
+    width: 2.5rem;
+    height: 2.5rem;
+    text-align: center;
+    align-items: center;
+    display: flex;
+    justify-content: center;
+    flex-direction: row;
+    font-size: 1.2rem;
+}
+main .active-time{
+    display: inline-block;
+    margin-top: .4rem;
+}
+main .active-time small{
+    display: inline-block;
+    font-size: .8rem;
+    font-weight: 500;
+    padding: 0rem .5rem;
+}
+main .active-time small span{
+   padding: 0 .4rem;
+   font-weight: 400;
+}   
+main .affiliate-info{
+    border: 1px solid #cdcbcb;
+    border-radius: 10px;
+    padding: 1rem .5rem;
+}
+.affiliate-info .heading{
+   text-align: center;
+   font-weight: 600;
+   font-size: 1.2rem;
+   padding: .8rem 0rem;
+   background-color: #f5f5f5;
+   border-radius: 10px;
+   margin-bottom: 1rem;
+}
+.affiliate-info .info-box{
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: .5rem .4rem;
+ }
+ .affiliate-info .info-box p{
+    font-weight: 600;
+    font-size: .95rem;
+    color: #000;
+ }
+ .affiliate-info .info-box small{
+    font-weight: 500;
+    font-size: .9rem;
+    color: #000;
+ }
+ .affiliate-info .info-box .block{
+   color: #cd1c1f;
+ }
+ .affiliate-info .info-box .dismiss{
+    color: #ffc22c;
+  }
+  @media(max-width:600px){
+    .affiliate-info .heading{
+        font-size: 1.1rem;
+     }
+     .affiliate-info .info-box p{
+        font-size: .9rem;
+     }
+     .affiliate-info .info-box small{
+       font-size: .85rem;
+     }
+  }
+  /* *=======================Statistics============================ */
+.statistics{
+    margin-top: 2rem;
+}
+.statistics .statistics-box{
+    border: 1px solid #7b7c7c;
+    border-radius: 4px;
+    padding: .5rem;
+    margin-bottom: 1rem;
+}
+.statistics .statistics-box img{
+    max-width: 100%;
+    display: block;
+    object-fit: contain;
+    width: 25%;
+    margin: auto;
+}
+.statistics .statistics-box h2{
+   color: #383737;
+   font-weight: 600;
+   font-size: 2rem;
+}
+.statistics .statistics-box h2 span{
+    padding: .25rem;
+ }
+.statistics .statistics-box small{
+    color: #383737;
+    font-weight: 500;
+    font-size: .9rem;
+ }
+ /* ====================Commission======================= */
+ .set-commission h2{
+    font-weight: 600;
+    font-size: 1.65rem;
+    margin-bottom: .8rem;
+    color: #000;
+ }
+ .set-commission .commission-value{
+    display: inline-block;
+    padding: .1em .8rem;
+    text-align: center;
+    border-radius: 4px;
+    color: #fff;
+    background-color: #000;
+ }
+ .set-commission .commission-value span{
+   padding: 0 0 0 .3rem;
+ }
+ .set-commission p{
+    font-weight: 500;
+    font-size: 1rem;
+    color: #000;
+ }
+ .set-commission .tag-list{
+   margin-bottom: 1rem;
+  }
+  .set-commission .tag-list a{
+    font-weight: 500;
+    font-size: 1rem;
+   }
+ .set-commission .tag{
+    border-radius: 4px;
+    font-weight: 500;
+    display: inline-block;
+    padding: .1rem .3rem;
+    color: #fff;
+    margin-right: 1rem;
+ }
+ .set-commission .custom{
+   background-color: #5676ff;
+ }
+ .set-commission .default{
+    background-color: #ee755d;
+  }
+  /* ======================Table================================ */
+  table tbody .timestamp{
+    display: flex;
+    flex-direction: column;
+    justify-content: left;
+    padding: none;
+    text-align: left;
+    border: none;
+   }
+   table tbody .timestamp .time, table tbody .timestamp .date {
+    padding: 0;
+   }
+   table tbody .action {
+    padding: 0rem;
+    text-align: left;
+   }
+   table tbody .action a{
+    padding: .2rem .2rem;
+    margin-left: .4rem;
+    text-transform: capitalize;
+    font-size: .85rem;
+    border-radius: 4px;
+    display: inline-block;
+    color: #fff;
+   }
+   table tbody .action .approve{
+   background-color: #cd1c1f;
+   }
+   table tbody .action .reject{
+    background-color: #34a853;
+    }
+ /* ===============commission Modal=================== */
+ .commission-header{
+    border-bottom: 1px solid #c7c5c5;
+    padding: .5rem 0;
+    text-align: center;
+ }
+ .commission-header h5{
+   font-weight: 600;
+   font-size: 1.6rem;
+   margin-bottom: .5rem;
+   color: #000;
+ }
+ .commission-header p{
+    font-weight: 500;
+    font-size: 1rem;
+    margin-bottom: .5rem;
+    color: #000;
+  }
+  .commission-body label{
+    font-weight:600;
+    font-size: .9rem;
+    color: #000;
+  }
+  .commission-body ::placeholder{
+    font-weight:500;
+    color: #000;
+  }
+  .commission-body span{
+    font-weight:600;
+    color: #000;
+  }
+  .commission-footer{
+    display: flex;
+    justify-content: space-around;
+    margin-bottom: 1.2rem;
+  }
+  .commission-footer a{
+    text-decoration: none;
+    text-transform: uppercase;
+    padding: .5rem 1.2rem;
+    color: #fff;
+    border-radius: 4px;
+    font-weight: 500;
+    letter-spacing: .4px;
+    cursor: pointer;
+  }
+  .commission-footer .dismiss{
+    background-color: #000;
+  }
+  .commission-footer .save{
+    background-color: #ee755d;
+  }
