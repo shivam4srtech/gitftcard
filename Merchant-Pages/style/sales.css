@@ -1,0 +1,106 @@
+body a{
+  color: #5676ff;
+  font-weight: 500;
+}
+table tbody td a{
+  color: #5676ff;
+  font-weight: 500;
+}
+
+table tbody td{
+    font-size: .85rem;
+    font-weight: 500;
+ }
+ table tbody .name a{
+    color: #5676ff;
+    text-transform: capitalize;
+    font-weight: 500;
+    cursor: pointer;
+    text-decoration: none;
+    font-size: .9rem;
+  }
+  table tbody tr .approve{
+     color: #fff;
+     font-weight: 600;
+     letter-spacing: .4px;
+     text-decoration: none;
+     background-color: #34a853;
+     padding: .2rem;
+     border-radius: 4px;
+     text-transform: capitalize;
+   }
+   table tbody tr .pending{
+    color: #fff;
+    font-weight: 600;
+    letter-spacing: .4px;
+    text-decoration: none;
+    background-color: #f5b402;
+    padding: .2rem;
+    border-radius: 4px;
+    text-transform: capitalize;
+  }
+   table tbody tr .reject{
+     color: #cd1c1f;
+     font-weight: 600;
+     letter-spacing: .4px;
+     text-decoration: none;
+   }
+   table tbody .timestamp{
+    display: flex;
+    flex-direction: column;
+    justify-content: left;
+    padding: none;
+    text-align: left;
+    border: none;
+   }
+   table tbody .timestamp .date{
+    font-size: .95rem;
+   }
+   table tbody .timestamp .time{
+    font-size: .8rem;
+   }
+   table tbody .timestamp .time, table tbody .timestamp .date {
+    padding: 0;
+   }
+   table .status {
+    padding: 0;
+   }
+   table .status a{
+    display: inline-block;
+   }
+   @media(max-width:1000px){
+    table thead tr th{
+      font-size: 1.1rem !important;
+      padding: 1rem .2rem;
+    }
+   }
+     /* *=======================Statistics============================ */
+.statistics{
+    margin-top: 2rem;
+}
+.statistics .statistics-box{
+    border: 1px solid #7b7c7c;
+    border-radius: 4px;
+    padding: .5rem;
+    margin-bottom: 1rem;
+}
+.statistics .statistics-box img{
+    max-width: 100%;
+    display: block;
+    object-fit: contain;
+    width: 25%;
+    margin: auto;
+}
+.statistics .statistics-box h2{
+   color: #383737;
+   font-weight: 600;
+   font-size: 2rem;
+}
+.statistics .statistics-box h2 span{
+    padding: .25rem;
+ }
+.statistics .statistics-box small{
+    color: #383737;
+    font-weight: 500;
+    font-size: .9rem;
+ }

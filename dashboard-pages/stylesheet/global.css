@@ -381,6 +381,11 @@ main .title {
 	font-weight: 600;
 	margin-bottom: 10px;
 }
+@media(max-width:600px){
+	main .title {
+		font-size: 20px;
+	}
+}
 main .breadcrumbs {
 	display: flex;
 	grid-gap: 6px;
@@ -595,3 +600,27 @@ main .page-count select option{
  .modal .modal-footer .logout{
     background-color: #363636;
  }
+/* ======================Video Modal============================= */
+ #videoModal h2{
+	font-weight: 600;
+	font-size: 1.45rem;
+}
+.embed-container {
+	position: relative; 
+	padding-bottom: 56.25%; 
+	height: 0; 
+	overflow: hidden; 
+	max-width: 100%; 
+   } 
+.embed-container iframe, .embed-container object, .embed-container embed {
+	position: absolute; 
+	top: 0; 
+	left: 0; 
+	width: 100%; 
+	height: 100%;
+   } 
+   @media(max-width:768px){
+	#videoModal h2{
+		font-size: 1.1rem;
+	}
+   }

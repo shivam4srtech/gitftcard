@@ -3,7 +3,7 @@
     <head>
         <meta charset="UTF-8">
         <meta name="viewport" content="width=device-width, initial-scale=1.0">
-        <title>BIGAFFI: Affiliate Dashboard</title>
+        <title>BIGAFFI: Merchant Dashboard</title>
         <link rel="shortcut icon" href="../images/bigaffilogo.jpeg" type="image/x-icon">
         <!-- *******************Fontawesome icons***************************** -->
         <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.2/css/all.min.css" integrity="sha512-z3gLpd7yknf1YoNbCzqRKc4qyor8gaKU1qmn+CShxbuBusANI9QpRohGBreCFkKxLhei6S9CQXFEbbKuqLg0DA==" crossorigin="anonymous" referrerpolicy="no-referrer" />
@@ -34,10 +34,10 @@
 				<ul class="side-dropdown">
 					<li><a href="./affiliate.html">Affiliates</a></li>
 					<li><a href="./mobile-app.html">Mobile App</a></li>
-					<li><a href="./report.html">Report Card</a></li>
+					<li><a href="./sales.html">Sales</a></li>
 				</ul>
 			</li>
-			<li><a href="./traffic.html"><i class='bx bxs-traffic icon' ></i> Traffic</a></li>
+			<li><a href="./commission.html"><i class="fa-solid fa-percent icon"></i> Commission</a></li>
 			<li><a href="./payment.html"><i class='bx bx-dollar icon' ></i> Payment</a></li>
 			<li class="divider" data-text="Policy">Policy</li>
 			<li>
@@ -212,22 +212,95 @@
 					<div class="overview-data"> 
 						<h2 class="head">Recent Registered Affiliates</h2>
                         <div class="recent-affiliate">
-                            <a href="#000" class="name">Steven Smith</a>
+                            <a href="./affiliate-details.html" class="name">Steven Smith</a>
                             <span class="status approve">Approved</span>
                         </div>
                         <div class="recent-affiliate">
-                            <a href="#000" class="name">Glenn Maxwell</a>
+                            <a href="./affiliate-details.html" class="name">Glenn Maxwell</a>
                             <span class="status pending">Pending</span>
                         </div>
                         <div class="recent-affiliate">
-                            <a href="#000" class="name">Pat Commins</a>
+                            <a href="./affiliate-details.html" class="name">Pat Commins</a>
                             <span class="status block">Blocked</span>
                         </div>
                         <div class="recent-affiliate">
-                            <a href="#000" class="name">Jos hazelwood</a>
+                            <a href="./affiliate-details.html" class="name">Jos hazelwood</a>
                             <span class="status approve">Approved</span>
                         </div>
 					</div>
+				</div>
+			</div>
+			<div class="row recent-order">
+				<h2>Recent Orders</h2>
+				<div class="table-section">
+					<table>
+						<thead>
+							<tr>
+								<th>Affiliate</th>
+								<th>Order #</th>
+								<th>Order Value</th>
+								<th>Commission</th>
+							</tr>
+						</thead>
+						<tbody>
+							<tr>
+								<td class="name">
+									<span><a href="./affiliate-details.html">Glenn Maxwell</a></span>
+								</td>
+								<td>
+									<span><a href="">1001</a></span>
+								</td>
+								<td>
+									<span>$999</span>
+								</td>
+								<td>
+									<span>$99</span>
+								</td>
+							</tr>
+							<tr>
+								<td class="name">
+									<span><a href="./affiliate-details.html">Somya Sarkar</a></span>
+								</td>
+								<td>
+									<span><a href="">1001</a></span>
+								</td>
+								<td>
+									<span>$999</span>
+								</td>
+								<td>
+									<span>$99</span>
+								</td>
+							</tr>
+							<tr>
+								<td class="name">
+									<span><a href="./affiliate-details.html">Mahis Tikshana</a></span>
+								</td>
+								<td>
+									<span><a href="">1001</a></span>
+								</td>
+								<td>
+									<span>$999</span>
+								</td>
+								<td>
+									<span>$99</span>
+								</td>
+							</tr>
+							<tr>
+								<td class="name">
+									<span><a href="./affiliate-details.html">Lasith Mollinga</a></span>
+								</td>
+								<td>
+									<span><a href="">1001</a></span>
+								</td>
+								<td>
+									<span>$999</span>
+								</td>
+								<td>
+									<span>$99</span>
+								</td>
+							</tr>
+						</tbody>
+					</table>
 				</div>
 			</div>
             <!-- ========================Overview================================== -->

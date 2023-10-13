@@ -1,0 +1,449 @@
+<!DOCTYPE html>
+<html lang="en">
+    <head>
+        <meta charset="UTF-8">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <title>BIGAFFI: Merchant Dashboard</title>
+        <link rel="shortcut icon" href="../images/bigaffilogo.jpeg" type="image/x-icon">
+        <!-- *******************Fontawesome icons***************************** -->
+        <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.2/css/all.min.css" integrity="sha512-z3gLpd7yknf1YoNbCzqRKc4qyor8gaKU1qmn+CShxbuBusANI9QpRohGBreCFkKxLhei6S9CQXFEbbKuqLg0DA==" crossorigin="anonymous" referrerpolicy="no-referrer" />
+        <link rel="stylesheet" href="./font-awesome-4.7.0/css/font-awesome.css">
+        <!-- *********************************Boxi-icons************************************ -->
+        <link href='https://unpkg.com/boxicons@2.0.9/css/boxicons.min.css' rel='stylesheet'>
+        <!-- ***********************************Montserrat********************************** -->
+        <link rel="preconnect" href="https://fonts.googleapis.com">
+        <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+        <link href="https://fonts.googleapis.com/css2?family=Montserrat:wght@100;200;300;400;500;600;800&family=Open+Sans:wght@300;400;600;700&display=swap" rel="stylesheet">
+        <link href="https://fonts.googleapis.com/css2?family=Open+Sans:wght@300;400&family=Raleway:wght@800&display=swap" rel="stylesheet">
+        <link rel="stylesheet" href="../bootstrap-5.3.0-alpha3-dist/css/bootstrap.min.css">
+        <!-- *******************local stylesheet******************** -->
+        <link rel="stylesheet" href="../dashboard-pages/stylesheet/global.css">
+        <link rel="stylesheet" href="../dashboard-pages/stylesheet/dashboard.css">
+        <link rel="stylesheet" href="./style/sales.css">
+    </head>
+    <body>
+    <!-- ***********************Dashboard Sidebar************************************** -->
+    <!-- SIDEBAR -->
+	<section id="sidebar">
+		<a href="./merchant.html" class="brand"><img class="logo" style="height: 36px; width: 36px;" src="../images/bigaffilogo.jpeg" alt=""> Big<span>Affi</span></a>
+		<ul class="side-menu">
+			<li><a href="./merchant.html" class="active"><i class='bx bxs-dashboard icon' ></i> Dashboard</a></li>
+			<li class="divider" data-text="Marketplace">Marketplace</li>
+			<li>
+				<a href="#"><i class='bx bxs-group icon'></i>Merchant<i class='bx bx-chevron-right icon-right' ></i></a>
+				<ul class="side-dropdown">
+					<li><a href="./affiliate.html">Affiliates</a></li>
+					<li><a href="./mobile-app.html">Mobile App</a></li>
+					<li><a href="./sales.html">Sales</a></li>
+				</ul>
+			</li>
+			<li><a href="./commission.html"><i class="fa-solid fa-percent icon"></i> Commission</a></li>
+			<li><a href="./payment.html"><i class='bx bx-dollar icon' ></i> Payment</a></li>
+			<li class="divider" data-text="Policy">Policy</li>
+			<li>
+				<a href="#"><i class='bx bx-edit icon' ></i> Uses Policy <i class='bx bx-chevron-right icon-right' ></i></a>
+				<ul class="side-dropdown">
+					<li><a href="#"><i class='bx bx-lock-alt icon' ></i> Privacy</a></li>
+					<li><a href="#"><i class='bx bxs-contact icon' ></i> T & C</a></li>
+				</ul>
+			</li>
+			<li><a href="./settings.html"><i class='bx bx-cog icon' ></i>Settings</a></li>
+			<li><a href="#"><i class='bx bxs-contact icon' ></i> Contact Us</a></li>
+			<li><a href="#" data-bs-toggle="modal" data-bs-target="#logOut"><i class='bx bxs-log-out-circle icon' ></i> Logout</a></li>
+		</ul>
+		<div class="ads">
+			<div class="wrapper">
+				<a href="#" class="btn-upgrade">Upgrade</a>
+				<p>Become a <span>PRO</span> member and enjoy <span>All Features</span></p>
+			</div>
+		</div>
+	</section>
+	<!-- SIDEBAR -->
+
+	<!-- NAVBAR -->
+	<section id="content">
+		<!-- NAVBAR -->
+		<nav>
+			<i class='bx bx-menu toggle-sidebar' ></i>
+			<form action="#">
+				<div class="form-group">
+					<input type="text" placeholder="Search...">
+					<i class='bx bx-search icon' ></i>
+				</div>
+			</form>
+			<a href="#" class="nav-link">
+				<i class='bx bxs-bell icon' ></i>
+				<span class="badge">5</span>
+			</a>
+			<a href="#" class="nav-link">
+				<i class='bx bxs-message-square-dots icon'></i>
+				<span class="badge">8</span>
+			</a>
+			<span class="divider"></span>
+			<div class="profile">
+				<img src="../images/female_avatar_efig.svg" alt="">
+				<ul class="profile-link">
+					<li><a href="#"><i class='bx bxs-user-circle icon' ></i> Profile</a></li>
+					<li><a href="#"><i class='bx bxs-cog' ></i> Settings</a></li>
+					<li><a href="#" data-bs-toggle="modal" data-bs-target="#logOut"><i class='bx bxs-log-out-circle' ></i> Logout</a></li>
+				</ul>
+			</div>
+		</nav>
+		<!-- NAVBAR -->
+
+		<!-- MAIN -->
+		<main>
+			<div class="d-flex align-items-center">
+                <div class="me-auto">
+                    <h1 class="title">Sales</h1>
+                </div>
+                <div class="ms-auto">
+                    <a href="./assign-sale.html">Assign Sale</a>
+                </div>
+            </div>
+			<ul class="breadcrumbs">
+				<li><a href="#">Home</a></li>
+				<li class="divider">/</li>
+				<li><a href="./affiliate.html" class="active">Sales</a></li>
+			</ul>
+            <div class="card mt-4">
+                <div class="card-header">
+                  <ul class="nav nav-tabs card-header-tabs id="myTab" role="tablist"">
+                    <li class="nav-item" role="presentation">
+                      <a class="nav-link active" aria-current="true" href="#" id="home-tab" data-bs-toggle="tab" data-bs-target="#allSales" aria-controls="allSales" aria-selected="true">All Sales</a>
+                    </li>
+                    <li class="nav-item" role="presentation">
+                     <a class="nav-link" aria-current="true" href="#" id="home-tab" data-bs-toggle="tab" data-bs-target="#pendingSales" aria-controls="pendingSales" aria-selected="true">Pendding Sales</a>
+                    </li>
+                  </ul>
+                </div>
+                <div class="card-body tab-content" id="nav-tabContent">
+                    <div class="row  date">
+                        <form action="#somewhere" class="row">
+                            <div class="mb-3 col-md-6">
+                                <label for="exampleFormControlInput2" class="form-label p-2">Start Date</label>
+                                <input type="text" class="form-control" id="exampleFormControlInput1" placeholder="select date" onfocus="(this.type = 'date')"  id="date">
+                            </div>
+                            <div class="mb-3 col-md-6">
+                                <label for="exampleFormControlInput2" class="form-label p-2">End Date</label>
+                                <input type="text" class="form-control" id="exampleFormControlInput1" placeholder="select date" onfocus="(this.type = 'date')"  id="date">
+                            </div>
+                        </form>
+                    </div>
+                    <div class=" row statistics">
+                        <div class="col-lg-4 col-md-6">
+                            <div class="statistics-box">
+                                <img src="../dashboard-pages/images/sales.png" alt="">
+                                <div class="d-flex mt-2 align-items-center">
+                                    <h2 class="me-auto"><span>102</h2>
+                                    <small class="ms-auto">Revenue</small>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="col-lg-4 col-md-6">
+                            <div class="statistics-box">
+                                <img src="../dashboard-pages/images/money_2454282.png" alt="">
+                                <div class="d-flex mt-2 align-items-center">
+                                    <h2 class="me-auto"><span>$</span>102</h2>
+                                    <small class="ms-auto">Total Commissions</small>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="col-lg-4 col-md-6">
+                            <div class="statistics-box">
+                                <img src="../dashboard-pages/images/sale_8771950.png" alt="">
+                                <div class="d-flex mt-2 align-items-center">
+                                    <h2 class="me-auto">102</h2>
+                                    <small class="ms-auto">Sales</small>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="row mt-2">
+                        <div class="col-md-6 mb-3">
+                            <label for="exampleFormControlInput1" class="form-label">Search Order</label>
+                            <input type="search" class="form-control" id="exampleFormControlInput1" placeholder="Eg. 10001">
+                        </div>
+                        <div class="col-md-6 mb-3">
+                            <label for="exampleFormControlInput1" class="form-label">Search Affiliates</label>
+                            <input type="search" class="form-control" id="exampleFormControlInput1" placeholder="Eg. Ravindra Jadeja">
+                        </div>
+                    </div>
+                    <div class="tab-pane fade show active" id="allSales" role="tabpanel" aria-labelledby="nav-home-tab" tabindex="0">
+                        <div class="table-section">
+                            <table>
+                                <thead>
+                                    <tr>
+                                        <th>Date</th>
+                                        <th>Order #</th>
+                                        <th>Amount</th>
+                                        <th>Commission</th>
+                                        <th>Affiliate</th>
+                                        <th>Status</th>
+                                        <th>Action</th>
+                                    </tr>
+                                </thead>
+                                <tbody>
+                                    <tr>
+                                        <td class="timestamp">
+											<span class="date">10-Oct-2023</span>
+											<span class="time">02:45 pm</span>
+										</td>
+                                        <td>
+                                            <span><a href="">10001</a></span>
+                                        </td>
+                                        <td>
+                                            <span>$999</span>
+                                        </td>
+                                        <td>
+                                            <span>$99</span>
+                                        </td>
+                                        <td class="name">
+                                            <span><a href="./affiliate-details.html">Glenn Maxwell</a></span>
+                                        </td>
+                                        <td>
+                                            <span><a href="#000" class="approve">Approved</a></span>
+                                        </td>
+                                        <td>
+                                            <span><a href="#000" class="reject">Reject</a></span>
+                                        </td>
+                                    </tr>
+                                    <tr>
+                                        <td class="timestamp">
+											<span class="date">10-Oct-2023</span>
+											<span class="time">02:45 pm</span>
+										</td>
+                                        <td>
+                                            <span><a href="">10001</a></span>
+                                        </td>
+                                        <td>
+                                            <span>$999</span>
+                                        </td>
+                                        <td>
+                                            <span>$99</span>
+                                        </td>
+                                        <td class="name">
+                                            <span><a href="./affiliate-details.html">Glenn Maxwell</a></span>
+                                        </td>
+                                        <td>
+                                            <span><a href="#000" class="approve">Approved</a></span>
+                                        </td>
+                                        <td>
+                                            <span><a href="#000" class="reject">Reject</a></span>
+                                        </td>
+                                    </tr>
+                                    <tr>
+                                        <td class="timestamp">
+											<span class="date">10-Oct-2023</span>
+											<span class="time">02:45 pm</span>
+										</td>
+                                        <td>
+                                            <span><a href="">10001</a></span>
+                                        </td>
+                                        <td>
+                                            <span>$999</span>
+                                        </td>
+                                        <td>
+                                            <span>$99</span>
+                                        </td>
+                                        <td class="name">
+                                            <span><a href="./affiliate-details.html">Glenn Maxwell</a></span>
+                                        </td>
+                                        <td>
+                                            <span><a href="#000" class="approve">Approved</a></span>
+                                        </td>
+                                        <td>
+                                            <span><a href="#000" class="reject">Reject</a></span>
+                                        </td>
+                                    </tr>
+                                    <tr>
+                                        <td class="timestamp">
+											<span class="date">10-Oct-2023</span>
+											<span class="time">02:45 pm</span>
+										</td>
+                                        <td>
+                                            <span><a href="">10001</a></span>
+                                        </td>
+                                        <td>
+                                            <span>$999</span>
+                                        </td>
+                                        <td>
+                                            <span>$99</span>
+                                        </td>
+                                        <td class="name">
+                                            <span><a href="./affiliate-details.html">Glenn Maxwell</a></span>
+                                        </td>
+                                        <td>
+                                            <span><a href="#000" class="approve">Approved</a></span>
+                                        </td>
+                                        <td>
+                                            <span><a href="#000" class="reject">Reject</a></span>
+                                        </td>
+                                    </tr>
+                                </tbody>
+                            </table>
+                        </div>
+                    </div>
+                    <!-- ================History=============== -->
+                    <div class="tab-pane fade show" id="pendingSales" role="tabpanel" aria-labelledby="nav-home-tab" tabindex="0">
+                        <div class="table-section">
+                            <table>
+                                <thead>
+                                    <tr>
+                                        <th>Date</th>
+                                        <th>Order #</th>
+                                        <th>Amount</th>
+                                        <th>Commission</th>
+                                        <th>Affiliate</th>
+                                        <th>Status</th>
+                                        <th>Action</th>
+                                    </tr>
+                                </thead>
+                                <tbody>
+                                    <tr>
+                                        <td class="timestamp">
+											<span class="date">10-Oct-2023</span>
+											<span class="time">02:45 pm</span>
+										</td>
+                                        <td>
+                                            <span><a href="">10001</a></span>
+                                        </td>
+                                        <td>
+                                            <span>$999</span>
+                                        </td>
+                                        <td>
+                                            <span>$99</span>
+                                        </td>
+                                        <td class="name">
+                                            <span><a href="./affiliate-details.html">Glenn Maxwell</a></span>
+                                        </td>
+                                        <td>
+                                            <span><a href="#000" class="pending">pending</a></span>
+                                        </td>
+                                        <td class="status">
+                                            <span><a href="#000" class="reject p-1">Reject</a><a href="#000" class="approve">Approve</a></span>
+                                        </td>
+                                    </tr>
+                                    <tr>
+                                        <td class="timestamp">
+											<span class="date">10-Oct-2023</span>
+											<span class="time">02:45 pm</span>
+										</td>
+                                        <td>
+                                            <span><a href="">10001</a></span>
+                                        </td>
+                                        <td>
+                                            <span>$999</span>
+                                        </td>
+                                        <td>
+                                            <span>$99</span>
+                                        </td>
+                                        <td class="name">
+                                            <span><a href="./affiliate-details.html">Glenn Maxwell</a></span>
+                                        </td>
+                                        <td>
+                                            <span><a href="#000" class="pending">pending</a></span>
+                                        </td>
+                                        <td class="status">
+                                            <span><a href="#000" class="reject p-1">Reject</a><a href="#000" class="approve">Approve</a></span>
+                                        </td>
+                                    </tr>
+                                    <tr>
+                                        <td class="timestamp">
+											<span class="date">10-Oct-2023</span>
+											<span class="time">02:45 pm</span>
+										</td>
+                                        <td>
+                                            <span><a href="">10001</a></span>
+                                        </td>
+                                        <td>
+                                            <span>$999</span>
+                                        </td>
+                                        <td>
+                                            <span>$99</span>
+                                        </td>
+                                        <td class="name">
+                                            <span><a href="./affiliate-details.html">Glenn Maxwell</a></span>
+                                        </td>
+                                        <td>
+                                            <span><a href="#000" class="pending">pending</a></span>
+                                        </td>
+                                        <td class="status">
+                                            <span><a href="#000" class="reject p-1">Reject</a><a href="#000" class="approve">Approve</a></span>
+                                        </td>
+                                    </tr>
+                                    <tr>
+                                        <td class="timestamp">
+											<span class="date">10-Oct-2023</span>
+											<span class="time">02:45 pm</span>
+										</td>
+                                        <td>
+                                            <span><a href="">10001</a></span>
+                                        </td>
+                                        <td>
+                                            <span>$999</span>
+                                        </td>
+                                        <td>
+                                            <span>$99</span>
+                                        </td>
+                                        <td class="name">
+                                            <span><a href="./affiliate-details.html">Glenn Maxwell</a></span>
+                                        </td>
+                                        <td>
+                                            <span><a href="#000" class="pending">pending</a></span>
+                                        </td>
+                                        <td class="status">
+                                            <span><a href="#000" class="reject p-1">Reject</a><a href="#000" class="approve">Approve</a></span>
+                                        </td>
+                                    </tr>
+                                </tbody>
+                            </table>
+                        </div>
+                    </div>
+                </div>
+            </div>
+            <div class="page-count">
+                <div>
+                    <select name="page-count" class="">
+                        <option value="10">10 per page</option>
+                        <option value="20">20 per page</option>
+                        <option value="30">30 per page</option>
+                        <option value="40">40 per page</option>
+                      </select>
+                </div>
+                <div>
+                    <p>Page <span>1</span> of <span>1</span></p>
+                </div>
+                <div class="next-page">
+                    <a href="#nextPage">Next Page</a>
+                </div>
+            </div>
+		</main>
+	</section>
+	<!-- ********************************Logout Model************************************************* -->
+	<div class="modal fade" id="logOut" tabindex="-1" aria-labelledby="exampleModalLabel" aria-hidden="true">
+		<div class="modal-dialog modal-dialog-centered">
+			<div class="modal-content logout-content">
+				<div class="modal-header logout-header">
+				<p class="text-center"><i class="fa-solid fa-triangle-exclamation"></i></p>
+				</div>
+				<div class="modal-body logout-body text-center">
+				<h2>Are You Sure!</h2>
+				<p class="mt-2">Don't worry all your changes are saved.<br>Feel free to log back in.</p>
+				</div>
+				<div class="modal-footer logout-footer">
+				<a type="button" class="btn btn-secondary dismiss" data-bs-dismiss="modal">Cancle</a>
+				<a type="button" class="btn btn-primary logout">Logout</a>
+				</div>
+			</div>
+		</div>
+	</div>
+    <!-- ==============================Bootstrap script============================ -->
+    <script src="../bootstrap-5.3.0-alpha3-dist/js/bootstrap.bundle.min.js"></script>
+    <!-- ==============================ApexChart script CDN ============================ -->
+    <script src="https://cdn.jsdelivr.net/npm/apexcharts"></script>
+    <!-- ==============================Local script============================ -->
+    <script src="../dashboard-pages/script/global-script.js"></script>
+    <script src="../dashboard-pages/script/dashboard.js"></script>
+    </body>
+</html>    

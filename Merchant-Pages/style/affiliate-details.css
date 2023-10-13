@@ -1,3 +1,15 @@
+.modal label{
+  font-weight: 600;
+  font-size: .9rem;
+}
+.modal h5{
+  font-weight: 600;
+  font-size: 1.35rem;
+}
+.modal p{
+  font-weight: 500;
+  font-size: .95rem;
+}
 main a{
     color: #5676ff;
     text-decoration: none;
@@ -251,3 +263,124 @@ main .affiliate-info{
   .commission-footer .save{
     background-color: #ee755d;
   }
+  /* ==============================Settings================================== */
+  .payment-setting{
+    border: 1px solid #c0bebe;
+    padding: 1rem;
+    border-radius: 10px;
+  }
+  .payment-setting h2{
+    font-weight: 600;
+    font-size: 1.6rem;
+    color: #000;
+    margin-bottom: 1rem;
+  }
+  .payment-setting p{
+    font-weight: 500;
+    font-size: 1rem;
+    color: #000;
+    margin: .5rem auto;
+  }
+  .payment-setting small{
+    font-weight: 500;
+    font-size: .75rem;
+    color: #000;
+  }
+  .payment-setting label{
+    font-weight: 600;
+    font-size: .98rem;
+  }
+  .payment-setting form ::placeholder{
+    font-weight: 500;
+    color: #000;
+    font-size: .8rem;
+  }
+  .payment-setting form span{
+    color: #000;
+    font-weight: 500;
+  }
+  .payment-setting form .submit, .profile-info form .submit{
+    display: flex;
+    justify-content: center;
+    text-align: center;
+  }
+  .payment-setting form select{
+    color: green;
+    font-size: .9rem;
+    font-weight: 500;
+    color: #000;
+  }
+  .payment-setting form .submit input, .profile-info form .submit input{
+    padding: .4rem 1rem;
+    font-weight: 500;
+    text-transform: uppercase;
+    letter-spacing: .4px;
+    border-radius: 4px;
+    color: #5676ff;
+    border: 1px solid #5676ff;
+    background-color: transparent;
+  }
+  .profile-info{
+    border: 1px solid #c0bebe;
+    padding: 1rem;
+    border-radius: 10px;
+  }
+  .profile-info label{
+   font-size: .98rem;
+   font-weight: 600;
+  }
+  .profile-info h2{
+    font-weight: 600;
+    font-size: 1.6rem;
+    color: #000;
+    margin-bottom: 1.4rem;
+  }
+  .profile-info form ::placeholder{
+    font-weight: 500;
+    color: #000;
+    font-size: .85rem;
+   }
+   .profile-info form small{
+    font-weight: 500;
+    color: #000;
+    font-size: .85rem;
+   }
+   .profile-info form .input-group-text, .profile-info form select{
+    font-weight: 500;
+    color: #000;
+    font-size: .9rem;
+   }
+.account-setting{
+  border: 1px solid #c0bebe;
+  border-radius: 10px;
+  margin-bottom: 1rem;
+  padding: 1rem;
+}
+.account-setting a{
+  display: block;
+  color: #5676ff;
+  text-transform: capitalize;
+  margin-bottom: .8rem;
+  font-size: .95rem;
+}
+.account-setting h3{
+  font-weight: 600;
+  font-size: 1.4rem;
+  margin-bottom: .6rem;
+}
+.account-setting p{
+  font-weight: 500;
+  color: #000;
+  margin-bottom: .8rem;
+  font-size: 1rem;
+}
+.account-setting .delete{
+ display: inline-block;
+ padding: .5rem 1rem;
+ text-transform: capitalize;
+ font-weight: 500;
+ background-color: #cd1c1f;
+ color: #fff;
+ border-radius: 4px;
+ letter-spacing: .4px;
+}

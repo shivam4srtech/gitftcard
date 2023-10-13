@@ -101,3 +101,13 @@
            }
 
     }
+    .recent-order h2{
+        font-weight: 600;
+        font-size: 1.6rem;
+    }
+    .recent-order table td a {
+        color: #2162ff;
+        font-weight: 500;
+        text-transform: capitalize;
+        
+    }

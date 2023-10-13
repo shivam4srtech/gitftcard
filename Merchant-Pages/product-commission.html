@@ -19,7 +19,7 @@
         <!-- *******************local stylesheet******************** -->
         <link rel="stylesheet" href="../dashboard-pages/stylesheet/global.css">
         <link rel="stylesheet" href="../dashboard-pages/stylesheet/dashboard.css">
-        <link rel="stylesheet" href="./style/mobile-app.css">
+        <link rel="stylesheet" href="./style/assign-sale.css">
     </head>
     <body>
     <!-- ***********************Dashboard Sidebar************************************** -->
@@ -76,7 +76,7 @@
 				<span class="badge">5</span>
 			</a>
 			<a href="#" class="nav-link">
-				<i class='bx bxs-message-square-dots icon' ></i>
+				<i class='bx bxs-message-square-dots icon'></i>
 				<span class="badge">8</span>
 			</a>
 			<span class="divider"></span>
@@ -93,38 +93,65 @@
 
 		<!-- MAIN -->
 		<main>
-			<h1 class="title">Dashboard</h1>
+			<div class="d-flex align-items-center">
+                <div class="me-auto">
+                    <h1 class="title">Product Commission</h1>
+                </div>
+            </div>
 			<ul class="breadcrumbs">
 				<li><a href="#">Home</a></li>
 				<li class="divider">/</li>
-				<li><a href="#" class="active">Dashboard</a></li>
+				<li><a href="./affiliate.html" class="active">Product Commission</a></li>
 			</ul>
-			 <!-- **********************************Mobole App Modal*********************************************** -->
-             <div class="my-4 app-modal">
-                <div class="row">
-                    <div class="col-md-6 app-box">
-                        <div>
-                            <img src="../images/mobile-app.jpg" alt="">
+			<div class="row mt-4 assign-sale">
+				<h2>Assign commission for the products</h2>
+				<p>Watch tutorial video for more info <a href="" class="video-modal" data-video="https://www.youtube.com/embed/HBdcL7YsdBY" data-bs-toggle="modal" data-bs-target="#videoModal">Watch Here <i class="fa-solid fa-video"></i></a></p>
+			</div>
+			<form action="" class="row assign-form">
+				<div class="mb-3 col-md-6">
+                    <div class="mb-3">
+                        <label for="exampleFormControlInput2" class="form-label p-2">Product</label>
+                        <select class="form-select" aria-label="Default select example" required>
+                            <option selected>All Products</option>
+                            <option value="1">Jhandu Balm</option>
+                            <option value="2">Loreaol Palace</option>
+                            <option value="3">Wow skin Care</option>
+                        </select>
+                    </div>
+					<div class="mb-3">
+                        <label for="exampleFormControlInput2" class="form-label p-2">Affiliate</label>
+                        <select class="form-select" aria-label="Default select example" required>
+                            <option selected>Select Affiliate</option>
+                            <option value="1">Jos Butllor</option>
+                            <option value="2">Rachin Ravindra</option>
+                            <option value="3">Soeb Jamai</option>
+                        </select>
+                    </div>
+                    <div class="mb-3">
+                        <label for="inputReport" class="form-label p-2">Select commission attribute</label>
+                        <select id="paymentMethod" class="form-select" onchange="defaultCommission(this)">
+                          <option selected>Select</option>
+                          <option value="1">Percentages</option>
+                          <option value="2">Flat Rate</option>
+                        </select>
+                    </div>
+                    <div class="col-md-12 mb-3 d-none" id="percentages">
+                        <div class="input-group mb-3">
+                            <span class="input-group-text" id="basic-addon3">%</span>
+                            <input type="number" class="form-control" id="basic-url" aria-describedby="basic-addon3">
                         </div>
                     </div>
-                    <div class="col-md-6 app-box">
-                      <div class="app-item">
-                          <h2>Download App,<br> Start drive, Earn <br> money!</h2>
-                          <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Tempora, adipisc</p>
-                          <div class="app-store row">
-                              <div class="col-6">
-                                <p class="qr"><a href="" data-bs-toggle="modal" data-bs-target="#qrCode">Scan QR (Android)<i class="fa-solid fa-qrcode"></i></a></p>
-                                <a href=""><img src="../dashboard-pages/images/app-store.png" alt=""></a>
-                              </div>
-                              <div class="col-6">
-                                <p class="qr"><a href="" data-bs-toggle="modal" data-bs-target="#qrCode">Sacn QR (iOS)<i class="fa-solid fa-qrcode"></i></a></p>
-                                <a href=""><img src="../images/Google-Play.svg" alt=""></a>
-                              </div>
-                          </div>
-                      </div>
-                    </div>
-                </div>
-            </div>
+                    <div class=" mb-3 d-none" id="flatRate">
+                        <div class="input-group mb-3">
+                            <span class="input-group-text" id="basic-addon3">$</span>
+                            <input type="number" class="form-control" id="basic-url" aria-describedby="basic-addon3">
+                        </div>
+                    </div>	
+				</div>
+				<div class="mb-3 col-md-6 submit">
+					<input type="submit" value="Assign Commission">
+				</div>
+			</form>
 		</main>
 	</section>
 	<!-- ********************************Logout Model************************************************* -->
@@ -133,7 +160,6 @@
 			<div class="modal-content logout-content">
 				<div class="modal-header logout-header">
 				<p class="text-center"><i class="fa-solid fa-triangle-exclamation"></i></p>
-				<!-- <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button> -->
 				</div>
 				<div class="modal-body logout-body text-center">
 				<h2>Are You Sure!</h2>
@@ -146,25 +172,48 @@
 			</div>
 		</div>
 	</div>
-     <!-- ==================QR Code modal ===============================-->
-     <div class="modal fade" id="qrCode" tabindex="-1" aria-labelledby="exampleModalLabel" aria-hidden="true">
-        <div class="modal-dialog">
-        <div class="modal-content qrcode">
-            <div class="modal-header">
-            <h5 class="modal-title fw-bold" id="exampleModalLabel">Scan QR Code to dwonload the App</h5>
-            <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
-            </div>
-            <div class="modal-body">
-                <div>
-                    <img src="../dashboard-pages/images/qr-code.png" alt="">
-                </div>
-                <div class="my-4 text-center">
-                    <a href="#000">Download<i class="fa-solid fa-file-arrow-down"></i></a>
-                </div>
-            </div>
-        </div>
-        </div>
-    </div>
+	<!-- =======================Video Modal===================================== -->
+	<div class="modal fade" id="videoModal" tabindex="-1" role="dialog" aria-labelledby="myModalLabel" aria-hidden="true">
+		<div class="modal-dialog modal-lg">
+		  <div class="modal-content">
+			<div class="modal-header">
+			  <h2>Manually assign sales to an affiliate.</h2>	
+			  <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
+			</div>
+			<div class="modal-body">
+			  <div class="embed-container">
+				<iframe width="100%" height="350" src="https://www.youtube.com/embed/HBdcL7YsdBY" frameborder="0" allowfullscreen></iframe>
+			  </div>
+			</div>
+		  </div>
+		</div>
+	</div>
+	<script>
+			$(".video-modal").click(function () {
+			var theModal = $(this).data("target"),
+				videoSRC = $(this).attr("data-video"),
+				videoSRCauto = videoSRC + "?modestbranding=1&rel=0&controls=0&showinfo=0&html5=1&autoplay=1";
+			$(theModal + ' iframe').attr('src', videoSRCauto);
+			$(theModal).on('hidden.bs.modal', function () {
+				$(theModal + ' iframe').attr('src', videoSRC);
+			});
+		});
+	</script>
+    <script type="text/javascript">
+		function defaultCommission(answer){
+			console.log(answer.value);
+			if(answer.value == 1){
+				document.getElementById('percentages').classList.remove('d-none');
+			} else{
+				document.getElementById('percentages').classList.add('d-none');
+			}
+			if(answer.value == 2){
+				document.getElementById('flatRate').classList.remove('d-none');
+			} else{
+				document.getElementById('flatRate').classList.add('d-none');
+			}
+		};
+	</script>
     <!-- ==============================Bootstrap script============================ -->
     <script src="../bootstrap-5.3.0-alpha3-dist/js/bootstrap.bundle.min.js"></script>
     <!-- ==============================ApexChart script CDN ============================ -->
