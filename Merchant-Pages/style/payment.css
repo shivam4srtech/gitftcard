@@ -1,0 +1,70 @@
+ label{
+    font-weight: 600;
+    font-size: 1rem;
+    padding: .4rem;
+} 
+ .coupon input::placeholder{
+    color: #000;
+    font-weight: 500;
+    font-size: .9rem;
+}
+ select{
+    color: #000;
+    font-weight: 500;
+    font-size: .9rem;
+}
+ a{
+    color: #5676ff;
+    font-weight: 500;
+    font-size: 1rem;
+}
+ h2{
+    font-weight: 600;
+    color: #000;
+    font-size: 1.5rem;
+    margin-bottom: 1rem;
+}
+.table-section table .affiliate{
+    padding: 0; 
+}
+.table-section table tbody .affiliate span{
+    text-align: left;
+    padding: .2rem;
+}
+.table-section table tbody .affiliate a{
+    font-weight: 500;
+    color: #000;
+}
+.table-section table tbody td{
+    font-weight: 500;
+    color: #000;
+    padding: 0;
+}
+.table-section table tbody .affiliate .name{
+    font-weight: 500;
+    color: #5676ff;
+    text-transform: capitalize;
+}
+.table-section table tbody .pay-time{
+    padding: 0;
+}
+.table-section table tbody .pay-time span{
+    padding: .2rem;
+    display: block;
+    text-align: left;
+}
+.table-section table tbody .pay-time .date{
+   font-weight: 600;
+   font-size: 1rem;
+
+}
+.table-section table tbody td{
+    font-weight: 500;
+    font-size: .9rem;
+ 
+ }
+ .table-section table tbody a{
+   color: #5676ff;
+   text-decoration: none;
+ 
+ }

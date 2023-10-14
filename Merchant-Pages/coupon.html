@@ -19,7 +19,7 @@
         <!-- *******************local stylesheet******************** -->
         <link rel="stylesheet" href="../dashboard-pages/stylesheet/global.css">
         <link rel="stylesheet" href="../dashboard-pages/stylesheet/dashboard.css">
-		<link rel="stylesheet" href="./style/commission.css">
+        <link rel="stylesheet" href="./style/coupon.css">
     </head>
     <body>
     <!-- ***********************Dashboard Sidebar************************************** -->
@@ -38,9 +38,9 @@
 				</ul>
 			</li>
 			<li><a href="./commission.html"><i class="fa-solid fa-percent icon"></i> Commission</a></li>
-			<li><a href="./coupon.html"><i class="fa-solid fa-tag icon"></i> Coupon</a></li>
+            <li><a href="./coupon.html"><i class="fa-solid fa-tag icon"></i> Coupon</a></li>
 			<li><a href="./payment.html"><i class='bx bx-dollar icon' ></i> Payment</a></li>
-			<li><a href="./upload-media.html"><i class="fa-solid fa-image icon"></i> Media</a></li>
+            <li><a href="./upload-media.html"><i class="fa-solid fa-image icon"></i> Media</a></li>
 			<li class="divider" data-text="Policy">Policy</li>
 			<li>
 				<a href="#"><i class='bx bx-edit icon' ></i> Uses Policy <i class='bx bx-chevron-right icon-right' ></i></a>
@@ -97,155 +97,115 @@
 		<main>
 			<div class="d-flex align-items-center">
                 <div class="me-auto">
-                    <h1 class="title">Commission</h1>
+                    <h1 class="title">Coupon</h1>
                 </div>
             </div>
 			<ul class="breadcrumbs">
 				<li><a href="#">Home</a></li>
 				<li class="divider">/</li>
-				<li><a href="./affiliate.html" class="active">commissions</a></li>
+				<li><a href="./affiliate.html" class="active">coupon</a></li>
 			</ul>
             <div class="card mt-4">
                 <div class="card-header">
                   <ul class="nav nav-tabs card-header-tabs id="myTab" role="tablist"">
                     <li class="nav-item" role="presentation">
-                      <a class="nav-link active" aria-current="true" href="#" id="home-tab" data-bs-toggle="tab" data-bs-target="#referralCommissions" aria-controls="referralCommissions" aria-selected="true">Referral commissions</a>
-                    </li>
-                    <li class="nav-item" role="presentation">
-                     <a class="nav-link" aria-current="true" href="#" id="home-tab" data-bs-toggle="tab" data-bs-target="#royaltiesCommission" aria-controls="royaltiesCommission" aria-selected="true">Royalties Commission</a>
+                      <a class="nav-link active" aria-current="true" href="#" id="home-tab" data-bs-toggle="tab" data-bs-target="#couponBasedCommission" aria-controls="couponBasedCommission" aria-selected="true">Coupon Based Commission</a>
                     </li>
                   </ul>
                 </div>
                 <div class="card-body tab-content" id="nav-tabContent">
                     <div class="tab-pane fade show active" id="referralCommissions" role="tabpanel" aria-labelledby="nav-home-tab" tabindex="0">
-                        <div class="row default-commission mt-2">
-							<div class="col-md-6 mb-3">
-								<h2>Default Commission</h2>
-								<p>Default commission applies to all products and affiliates</p>
+                        <div class="row coupon mt-2">
+							<div class="col-lg-8 col-md-10 mb-3">
+								<p>You can assign coupon to your affiliates. Pay commission to your affiliates whenever your assigned coupon is used for purchase by customer.</p>
 								<p>Watch tutorial video for more info <a href="" class="video-modal" data-video="https://www.youtube.com/embed/HBdcL7YsdBY" data-bs-toggle="modal" data-bs-target="#videoModal">Watch Here <i class="fa-solid fa-video"></i></a></p>
-							</div>
-							<div class="col-md-6 mb-3">
-								<small>10 <span>%</span></small>
-								<p><a href="" data-bs-toggle="modal" data-bs-target="#defautCommission" class="modify-commission">Change</a></p>
+                                <a href="" data-bs-toggle="modal" data-bs-target="#createCoupon">Assign Coupons to Affiliates</a>
 							</div>
 						</div>
-						<div class="row affiliate-commission">
-							<div class="col-lg-6 mb-3">
-								<h2>Affiliate Commissions</h2>
-								<p>You can assign different commission value for different affiliate</p>
-								<p>Watch tutorial video for more info <a href="" class="video-modal" data-video="https://www.youtube.com/embed/HBdcL7YsdBY" data-bs-toggle="modal" data-bs-target="#videoModal">Watch Here <i class="fa-solid fa-video"></i></a></p>
-							</div>
-							<div class="col-lg-6 mb-3">
-								<a href="./afficommission.html">Assign Commission to affiliates</a>
-							</div>
-						</div>
-						<div class=" row statistics">
-							<div class="col-lg-4 col-md-6">
-								<div class="statistics-box">
-									<a href="./affiliate-details.html" class="affi-name">Muthaiya Murlidharan</a>
-									<div class="d-flex mt-4 align-items-center">
-										<h2 class="me-auto">12<span>%</span></h2>
-										<a href="" data-bs-toggle="modal" data-bs-target="#oneAffi" class="change">Modify</a>
-									</div>
-								</div>
-							</div>
-							<div class="col-lg-4 col-md-6">
-								<div class="statistics-box">
-									<a href="./affiliate-details.html" class="affi-name">Abdullah Gurbaz</a>
-									<div class="d-flex mt-4 align-items-center">
-										<h2 class="me-auto">15<span>%</span></h2>
-										<a href="" data-bs-toggle="modal" data-bs-target="#oneAffi" class="change">Modify</a>
-									</div>
-								</div>
-							</div>
-							<div class="col-lg-4 col-md-6">
-								<div class="statistics-box">
-									<a href="./affiliate-details.html" class="affi-name">Musafikur Rahim</a>
-									<div class="d-flex mt-4 align-items-center">
-										<h2 class="me-auto">10<span>%</span></h2>
-										<a href="" data-bs-toggle="modal" data-bs-target="#oneAffi" class="change">Modify</a>
-									</div>
-								</div>
-							</div>
-						</div>
-						<div class="row product-commission">
-							<div class="col-md-6 mt-2">
-								<h2>Product Commissions</h2>
-								<p>You can assign different commission for different</p>
-								<p>eg. 4% commission on Black T-Shirt if Affiliate A gets you the customer</p>
-							</div>
-							<div class="col-md-6 mt-2">
-								<a href="./product-commission.html">Assign commission to specific product</a>
-								<div class="col-md-12 my-3">
-									<input type="search" class="form-control" id="formGroupExampleInput" placeholder="search product">
-								</div>
-							</div>
-						</div>
+                        <div class="row coupon">
+                            <h2>Filter Option</h2>
+                            <div class="col-md-4">
+                                <label for="formGroupExampleInput" class="form-label">Search Affiliate</label>
+                                <input type="search" class="form-control" id="formGroupExampleInput" placeholder="Eg. Jason Holder">
+                            </div>
+                            <div class="col-md-4">
+                                <label for="formGroupExampleInput" class="form-label">Search Coupon Code</label>
+                                <input type="search" class="form-control" id="formGroupExampleInput">
+                            </div>
+                            <div class="col-md-4">
+                                <label for="inputReport" class="form-label">Coupon type</label>
+                                <select id="paymentMethod" class="form-select">
+                                  <option selected>Select</option>
+                                  <option value="1">Personal Coupon</option>
+                                  <option value="2">Referral Coupon</option>
+                                </select>
+                            </div>
+                        </div>
 						<div class=" row table-section">
                             <table>
                                 <thead>
                                     <tr>
-                                        <th>Product</th>
                                         <th>Affiliate</th>
-                                        <th>Commission</th>
+                                        <th>Coupon Code</th>
+                                        <th>Type</th>
                                         <th>Action</th>
                                     </tr>
                                 </thead>
                                 <tbody>
                                     <tr>
-                                        <td class="">
-											<span>Jhandu Balm Ek balm 6 kaam</span>
-										</td>
                                         <td>
                                             <span><a href="./affiliate-details.html">Corey Anderson</a></span>
                                         </td>
                                         <td>
-                                            <span>$999</span>
+                                            <span class="code">20TOFFGG</span>
+                                        </td>
+                                        <td class="">
+                                           <span class="coupon-type">Referrel</span>
                                         </td>
                                         <td class="action">
-                                            <span><a href="#000" class="reject p-1">Reject</a><a href="#000" class="approve">Approve</a></span>
+                                            <span><a href="#000" class="delete">Delete</a></span>
                                         </td>
                                     </tr>
                                     <tr>
-                                        <td class="">
-											<span>Jhandu Balm Ek balm 6 kaam</span>
-										</td>
                                         <td>
-                                            <span><a href="./affiliate-details.html">Imran Tahir</a></span>
+                                            <span><a href="./affiliate-details.html">Corey Anderson</a></span>
                                         </td>
                                         <td>
-                                            <span>$999</span>
+                                            <span class="code">20TOFFGG</span>
+                                        </td>
+                                        <td class="">
+                                           <span class="coupon-type">Referrel</span>
                                         </td>
                                         <td class="action">
-                                            <span><a href="#000" class="reject p-1">Reject</a><a href="#000" class="approve">Approve</a></span>
+                                            <span><a href="#000" class="delete">Delete</a></span>
                                         </td>
                                     </tr>
                                     <tr>
-                                        <td class="">
-											<span>Jhandu Balm Ek balm 6 kaam</span>
-										</td>
                                         <td>
-                                            <span><a href="./affiliate-details.html">Michel Marsh</a></span>
+                                            <span><a href="./affiliate-details.html">Corey Anderson</a></span>
                                         </td>
                                         <td>
-                                            <span>$999</span>
+                                            <span class="code">20TOFFGG</span>
+                                        </td>
+                                        <td class="">
+                                           <span class="coupon-type">Referrel</span>
                                         </td>
                                         <td class="action">
-                                            <span><a href="#000" class="reject p-1">Reject</a><a href="#000" class="approve">Approve</a></span>
+                                            <span><a href="#000" class="delete">Delete</a></span>
                                         </td>
                                     </tr>
                                     <tr>
-                                        <td class="">
-											<span>Jhandu Balm Ek balm 6 kaam</span>
-										</td>
                                         <td>
-                                            <span><a href="./affiliate-details.html">Kagiso Rabada</a></span>
+                                            <span><a href="./affiliate-details.html">Corey Anderson</a></span>
                                         </td>
                                         <td>
-                                            <span>$999</span>
+                                            <span class="code">20TOFFGG</span>
+                                        </td>
+                                        <td class="">
+                                           <span class="coupon-type">Referrel</span>
                                         </td>
                                         <td class="action">
-                                            <span><a href="#000" class="reject p-1">Reject</a><a href="#000" class="approve">Approve</a></span>
+                                            <span><a href="#000" class="delete">Delete</a></span>
                                         </td>
                                     </tr>
                                 </tbody>
@@ -260,7 +220,7 @@
 							<p>Doesn't matter who refers the sale, the set affiliate will also get the commission.</p>
 							<p>Watch tutorial video for more info <a href="" class="video-modal" data-video="https://www.youtube.com/embed/HBdcL7YsdBY" data-bs-toggle="modal" data-bs-target="#videoModal">Watch Here <i class="fa-solid fa-video"></i></a></p>
 						</div>
-						<form action="" class="row royaltie-form">
+						<form action="" class="row coupon-form">
 							<div class="col-md-6">
 								<div class="mb-3">
 									<select class="form-select" aria-label="Default select example" required>
@@ -436,75 +396,48 @@
 		  </div>
 		</div>
 	</div>
-	<!-- ==================Update default commission ===============================-->
-	<div class="modal fade" id="defautCommission" tabindex="-1" aria-labelledby="exampleModalLabel" aria-hidden="true">
+	<!-- ==================Create Coupon ===============================-->
+	<div class="modal fade" id="createCoupon" tabindex="-1" aria-labelledby="exampleModalLabel" aria-hidden="true">
 		<div class="modal-dialog">
 			<div class="modal-content">
 				<div class="modal-header">
-				<h5 class="modal-title" id="exampleModalLabel">Change Default Commission</h5>
+				<h5 class="modal-title" id="exampleModalLabel">Create Coupon</h5>
 				<button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
 				</div>
 				<div class="modal-body">
 					<form action="#someWhere">
-						<div class="col-md-12 mb-3 mt-3">
-							<label for="inputReport" class="form-label">Select commission attribute</label>
-							<select id="paymentMethod" class="form-select" onchange="defaultCommission(this)">
-							  <option selected>Select</option>
-							  <option value="1">Percentages</option>
-							  <option value="2">Flat Rate</option>
-							</select>
-						</div>
-						<div class="col-md-12 mb-3 d-none" id="percentages">
-							<div class="input-group mb-3">
-								<span class="input-group-text" id="basic-addon3">%</span>
-								<input type="number" class="form-control" id="basic-url" aria-describedby="basic-addon3">
-							</div>
-						</div>
-						<div class="col-md-12 mb-3 d-none" id="flatRate">
-							<div class="input-group mb-3">
-								<span class="input-group-text" id="basic-addon3">$</span>
-								<input type="number" class="form-control" id="basic-url" aria-describedby="basic-addon3">
-							</div>
-						</div>
-						<a type="button" class="btn btn-secondary" data-bs-dismiss="modal">Cancle</a>
-						<a type="submit" class="btn btn-primary">Update</a>
-					</form>
-				</div>
-			</div>
-		</div>
-	</div>
-	<!-- ==================Single Affiliate commission ===============================-->
-	<div class="modal fade" id="oneAffi" tabindex="-1" aria-labelledby="exampleModalLabel" aria-hidden="true">
-		<div class="modal-dialog">
-			<div class="modal-content">
-				<div class="modal-header">
-				<h5 class="modal-title" id="exampleModalLabel">Change Commission for one affiliate</h5>
-				<button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
-				</div>
-				<div class="modal-body">
-					<form action="#someWhere">
-						<div class="col-md-12 mb-3 mt-3">
-							<label for="inputReport" class="form-label">Select commission attribute</label>
-							<select id="paymentMethod" class="form-select" onchange="oneAffiate(this)">
-							  <option selected>Select</option>
-							  <option value="1">Percentages</option>
-							  <option value="2">Flat Rate</option>
-							</select>
-						</div>
-						<div class="col-md-12 mb-3 d-none" id="percentage">
-							<div class="input-group mb-3">
-								<span class="input-group-text" id="basic-addon3">%</span>
-								<input type="number" class="form-control" id="basic-url" aria-describedby="basic-addon3">
-							</div>
-						</div>
-						<div class="col-md-12 mb-3 d-none" id="flat">
-							<div class="input-group mb-3">
-								<span class="input-group-text" id="basic-addon3">$</span>
-								<input type="number" class="form-control" id="basic-url" aria-describedby="basic-addon3">
-							</div>
-						</div>
-						<a type="button" class="btn btn-secondary" data-bs-dismiss="modal">Cancle</a>
-						<a type="submit" class="btn btn-primary">Update</a>
+						<div class="input-group mb-3">
+                            <div class="input-group-text p-0">
+                                <select class="form-select shadow-none bg-light border-0">
+                                    <option selected>Affiliate</option>
+                                    <option value="1">Jos Butller</option>
+                                    <option value="2">Quinton Decock</option>
+                                    <option value="3">Mahela Jayvardhane</option>
+                                    <option value="4">Musafilkur Rahim</option>
+                                    <option value="5">Dhananjay di Silva</option>
+                                </select>
+                            </div>
+                            <input type="search" class="form-control" placeholder="Search Affiliate">
+                            <a href="#000" class="input-group-text shadow-none px-4 btn-warning">
+                                <i class="fa fa-search"></i>
+                            </a>
+                        </div>
+						<div class="col-md-12 mb-3">
+                            <label for="formGroupExampleInput" class="form-label p-1">Coupon Code</label>
+                            <input type="text" class="form-control" id="formGroupExampleInput">
+                        </div>
+                        <div class="form-check mb-3">
+                            <input class="form-check-input" type="checkbox" value="" id="invalidCheck" required>
+                            <small class="form-check-label" for="invalidCheck">
+                               Also create in store
+                            </small>
+                            <div class="invalid-feedback">
+                                You must agree before submitting.
+                            </div>
+                        </div>
+
+						<a type="button" class="btn btn-secondary" data-bs-dismiss="modal">Dismiss</a>
+						<a type="submit" class="btn btn-primary">Create</a>
 					</form>
 				</div>
 			</div>
@@ -522,21 +455,6 @@
 				document.getElementById('flatRate').classList.remove('d-none');
 			} else{
 				document.getElementById('flatRate').classList.add('d-none');
-			}
-		};
-	</script>
-	<script type="text/javascript">
-		function oneAffiate(answer){
-			console.log(answer.value);
-			if(answer.value == 1){
-				document.getElementById('percentage').classList.remove('d-none');
-			} else{
-				document.getElementById('percentage').classList.add('d-none');
-			}
-			if(answer.value == 2){
-				document.getElementById('flat').classList.remove('d-none');
-			} else{
-				document.getElementById('flat').classList.add('d-none');
 			}
 		};
 	</script>
