@@ -1,0 +1,131 @@
+h2{
+    font-weight: 600;
+    font-size: 1.4rem;
+    margin-bottom: .5rem;
+    color: #000;
+}
+.modal h5{
+    font-weight: 600;
+    font-size: 1.2rem;
+}
+h3{
+    font-weight: 600;
+    font-size: 1.2rem;
+}
+#videoModal h2{
+    font-size: 1.25rem;
+}
+#logo{
+    max-width: 80px;
+    object-fit: contain;
+}
+p{
+    font-weight: 500;
+    font-size: 1rem;
+    margin-bottom: .4rem;
+    color: #000;
+}
+label{
+    font-weight: 600;
+    font-size: .9rem;
+    padding: 0 .4rem;
+}
+.media-size{
+    margin-top: .1rem;
+    padding: .3rem;
+    display: inline-block;
+    font-weight: 500;
+    font-size: .8rem;
+  }
+a{
+    color: #5676ff;
+    text-decoration: none;
+    font-size: .9rem;
+    font-weight: 500;
+   
+}
+a i{
+    display: inline-block;
+    padding: .5rem;
+}
+select option{
+    font-weight: 500;
+    font-size: .9rem;
+}
+.store-profile{
+    padding-bottom: 1.6rem        ;
+    border-bottom: 1px solid #dddada;
+}
+.store-logo{
+    border-bottom: 1px solid #dddada;
+    margin-top: 1rem;
+    padding-top: 1.4rem;
+    padding-bottom: 1.4rem;
+}
+.store-font{
+    margin-top: 1rem;
+    padding-top: 1rem;
+    padding-bottom: 1.6rem;
+    border-bottom: 1px solid #dddada;
+}
+.store-font .custome-font{
+    border: 1px solid #5676ff;
+    display: inline-block;
+    margin-top: 1rem;
+    padding: .5rem 1rem;
+    border-radius: 4px;
+    font-weight: 500;
+    text-transform: capitalize;
+}
+.affiliate-portal{
+    margin-top: 1rem;
+    padding-top: 1rem;
+    padding-bottom: 2rem;
+    border-bottom: 1px solid #dddada;
+    
+}
+.affiliate-portal .affi-url{
+    font-weight: 600;
+    font-size: 1rem;
+    margin-bottom: 1rem;
+}
+.affiliate-portal .custome-url{
+    border: 1px solid #5676ff;
+    display: inline-block;
+    margin-top: 1rem;
+    padding: .5rem 1rem;
+    border-radius: 4px;
+    font-weight: 500;
+}
+.color-picker{
+    border-bottom: 1px solid #dddada;
+    margin-top: 1rem;
+    padding-top: 1rem;
+    padding-bottom: 2rem;
+}
+.color-picker input{
+   border-radius: 4px;
+   display: inline-block;
+   width: 4rem;
+   height: 2rem;
+   border: none !important;
+   outline: none !important;
+   cursor: pointer;
+}
+.affi-language{
+    margin-top: 1rem;
+    padding-top: 1rem;
+    padding-bottom: 2rem;
+    border-bottom: 1px solid #dddada;
+}
+.uses-policy{
+    margin-top: 1rem;
+    padding-top: 1rem;
+    padding-bottom: 2rem;
+    border-bottom: 1px solid #dddada;
+}
+.contact-page{
+    margin-top: 1rem;
+    padding-top: 1rem;
+    padding-bottom: 2rem;
+}

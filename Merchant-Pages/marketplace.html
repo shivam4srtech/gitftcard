@@ -16,10 +16,10 @@
         <link href="https://fonts.googleapis.com/css2?family=Montserrat:wght@100;200;300;400;500;600;800&family=Open+Sans:wght@300;400;600;700&display=swap" rel="stylesheet">
         <link href="https://fonts.googleapis.com/css2?family=Open+Sans:wght@300;400&family=Raleway:wght@800&display=swap" rel="stylesheet">
         <link rel="stylesheet" href="../bootstrap-5.3.0-alpha3-dist/css/bootstrap.min.css">
-        <!-- *******************local stylesheet******************** -->
+        <!-- ==================Multiselect ==================================-->
         <link rel="stylesheet" href="../dashboard-pages/stylesheet/global.css">
         <link rel="stylesheet" href="../dashboard-pages/stylesheet/dashboard.css">
-        <link rel="stylesheet" href="./style/upload-media.css">
+        <link rel="stylesheet" href="./style/marketplace.css">
     </head>
     <body>
     <!-- ***********************Dashboard Sidebar************************************** -->
@@ -40,7 +40,7 @@
 			<li><a href="./commission.html"><i class="fa-solid fa-percent icon"></i> Commission</a></li>
             <li><a href="./coupon.html"><i class="fa-solid fa-tag icon"></i> Coupon</a></li>
 			<li><a href="./payment.html"><i class='bx bx-dollar icon' ></i> Payment</a></li>
-			<li class="divider" data-text="Uploads">Uploads</li>
+            <li class="divider" data-text="Uploads">Uploads</li>
 			<li>
 				<a href="#"><i class="fa-solid fa-image icon"></i>  Media Center <i class='bx bx-chevron-right icon-right' ></i></a>
 				<ul class="side-dropdown">
@@ -99,129 +99,70 @@
 		<main>
 			<div class="d-flex align-items-center">
                 <div class="me-auto">
-                    <h1 class="title">Media Center</h1>
+                    <h1 class="title">Marketplace</h1>
                 </div>
             </div>
 			<ul class="breadcrumbs">
 				<li><a href="#">Home</a></li>
 				<li class="divider">/</li>
-				<li><a href="./affiliate.html" class="active">media</a></li>
+				<li><a href="./affiliate.html" class="active">marketplace</a></li>
 			</ul>
             <div class="card mt-4 p-3">
                 <div class="row">
-                    <div class="col-lg-8 col-md-10 upload-media">
+                    <div class="col-md-10 upload-media">
                         <div>
-                            <h2>Upload media resources for your affiliates</h2>
-                            <p>Share banners, logos, and various media resources with your affiliates, enabling them to enhance their social media promotions. Craft distinctive and compelling media materials to boost conversion rates.</p>
-                            <div class="mb-3 mt-3">
-                                <label for="formFileMultiple" class="form-label p-2">Upload Image</label>
-                                <input class="form-control" type="file" id="formFileMultiple" multiple>
-                                <span class="media-size">Only PNG, JPG files. Maximum size 2MB</span>
+                            <h2>Upload Logo and Icon </h2>
+                            <p>A logo and icon are essential elements of your <strong>Brand Identity</strong>. They serve as visual representations of your store, making it easier for affiliates to recognize and remember your brand.</p>
+                            <div class="row icon mt-4">
+                                <div class="mb-3 mt-3 col-md-8">
+                                    <label for="formFileMultiple" class="form-label p-2">Upload Icon</label>
+                                    <input class="form-control" type="file" id="formFileMultiple" multiple onchange="readURLIcon(this);">
+                                    <span class="media-size">Only PNG, JPG files. Maximum size 2MB</span>
+                                </div>
+                                <div class="col-md-4">
+                                    <img id="icon" src="http://placehold.it/100" alt="your image" />
+                                </div>
                             </div>
-                            <div class="col mb-3">
-                                <label for="inputState" class="form-label p-2">Select or Create media category (optional)</label>
-                                <select id="commission" class="form-select">
-                                  <option selected>All Media</option>
-                                  <option>Store Image</option>
-                                  <option>Banner</option>
-                                  <option>Product Images</option>
-                                  <option>Other Images</option>
-                                </select>
+                            <div class="row logo mt-4">
+                                <div class="mb-3 mt-3 col-md-8">
+                                    <label for="formFileMultiple" class="form-label p-2">Upload Logo</label>
+                                    <input class="form-control" type="file" id="formFileMultiple" multiple onchange="readURLLogo(this);">
+                                    <span class="media-size">Only PNG, JPG files. Maximum size 2MB</span>
+                                </div>
+                                <div class="col-md-4">
+                                    <img id="logo" src="http://placehold.it/150" alt="your image" />
+                                </div>
                             </div>
                         </div>
                     </div>
-                    <div class="row media-group">
-                        <h2>Image Gallery</h2>
-                        <div class="col-md-6 col-lg-3 mb-3">
-                            <div class="media-box">
-                                <div class="">
-                                    <img src="../images/banner.jpg" alt="">
-                                </div>
-                                <div class="img-info">
-                                    <div>
-                                        <a href="#000" data-bs-toggle="modal" data-bs-target="#mediaInfo">Add Info</a>
-                                    </div>
-                                    <div>
-                                        <a href="#000" class="delete">Delete</a>
-                                    </div>
-                                </div>
+                </div>
+                <div class="row store-category">
+                   <div>
+                       <h2>Select Store Category (maximum 5)</h2>
+                   </div>
+                   <div class="cat-btn">
+                        <a href="" data-bs-toggle="modal" data-bs-target="#chooseCategory">Select Category</a>
+                   </div>
+                   <div class="cat-box">
+                        <span>Appliances</span>
+                        <span>Baby Product</span>
+                        <span>Health Care</span>
+                        <span>Clothing</span>
+                        <span>Books</span>
+                   </div>
+                </div>
+                <div class="row about-store">
+                    <div>
+                        <h2>Describe your Store</h2>
+                        <form action="#somewhere">
+                            <div class="mb-3 col-lg-8 col-md-10">
+                                <label for="exampleFormControlTextarea1" class="form-label">Store Description</label>
+                                <textarea class="form-control" id="exampleFormControlTextarea1" rows="3"></textarea>
                             </div>
-                        </div>
-                        <div class="col-md-6 col-lg-3 mb-3">
-                            <div class="media-box">
-                                <div class="">
-                                    <img src="../dashboard-pages/images/secure_login_pdn4.svg" alt="">
-                                </div>
-                                <div class="img-info">
-                                    <div>
-                                        <a href="#000" data-bs-toggle="modal" data-bs-target="#mediaInfo">Add Info</a>
-                                    </div>
-                                    <div>
-                                        <a href="#000" class="delete">Delete</a>
-                                    </div>
-                                </div>
+                            <div class="mb-3 submit">
+                                <input type="submit" value="update">
                             </div>
-                        </div>
-                        <div class="col-md-6 col-lg-3 mb-3">
-                            <div class="media-box">
-                                <div class="">
-                                    <img src="../dashboard-pages/images/advertise.svg" alt="">
-                                </div>
-                                <div class="img-info">
-                                    <div>
-                                        <a href="#000" data-bs-toggle="modal" data-bs-target="#mediaInfo">Add Info</a>
-                                    </div>
-                                    <div>
-                                        <a href="#000" class="delete">Delete</a>
-                                    </div>
-                                </div>
-                            </div>
-                        </div>
-                        <div class="col-md-6 col-lg-3 mb-3">
-                            <div class="media-box">
-                                <div class="">
-                                    <img src="../dashboard-pages/images/join.svg" alt="">
-                                </div>
-                                <div class="img-info">
-                                    <div>
-                                        <a href="#000" data-bs-toggle="modal" data-bs-target="#mediaInfo">Add Info</a>
-                                    </div>
-                                    <div>
-                                        <a href="#000" class="delete">Delete</a>
-                                    </div>
-                                </div>
-                            </div>
-                        </div>
-                        <div class="col-md-6 col-lg-3 mb-3">
-                            <div class="media-box">
-                                <div class="">
-                                    <img src="../dashboard-pages/images/login-affi.svg" alt="">
-                                </div>
-                                <div class="img-info">
-                                    <div>
-                                        <a href="#000" data-bs-toggle="modal" data-bs-target="#mediaInfo">Add Info</a>
-                                    </div>
-                                    <div>
-                                        <a href="#000" class="delete">Delete</a>
-                                    </div>
-                                </div>
-                            </div>
-                        </div>
-                        <div class="col-md-6 col-lg-3 mb-3">
-                            <div class="media-box">
-                                <div class="">
-                                    <img src="../dashboard-pages/images/profile.svg" alt="">
-                                </div>
-                                <div class="img-info">
-                                    <div>
-                                        <a href="#000" data-bs-toggle="modal" data-bs-target="#mediaInfo">Add Info</a>
-                                    </div>
-                                    <div>
-                                        <a href="#000" class="delete">Delete</a>
-                                    </div>
-                                </div>
-                            </div>
-                        </div>
+                        </form>
                     </div>
                 </div>
             </div>
@@ -285,6 +226,95 @@
 			</div>
 		</div>
 	</div>
+    <!-- ==================Store Category preference ===============================-->
+	<div class="modal fade" id="chooseCategory" tabindex="-1" aria-labelledby="exampleModalLabel" aria-hidden="true">
+		<div class="modal-dialog">
+		<div class="modal-content">
+			<div class="modal-header">
+			<h5 class="modal-title" id="exampleModalLabel">Category Preference (max 5)</h5>
+			<button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
+			</div>
+			<div class="modal-body">
+				  <div class="form-check">
+					<input class="form-check-input" type="checkbox" value="" id="flexCheckChecked" checked>
+					<label class="form-check-label" for="flexCheckChecked">
+						Appliances
+					</label>
+				  </div>
+				  <div class="form-check">
+					<input class="form-check-input" type="checkbox" value="" id="flexCheckChecked" checked>
+					<label class="form-check-label" for="flexCheckChecked">
+						Baby Product
+					</label>
+				  </div>
+				  <div class="form-check">
+					<input class="form-check-input" type="checkbox" value="" id="flexCheckChecked" checked>
+					<label class="form-check-label" for="flexCheckChecked">
+						Health Care
+					</label>
+				  </div>
+				  <div class="form-check">
+					<input class="form-check-input" type="checkbox" value="" id="flexCheckChecked" checked>
+					<label class="form-check-label" for="flexCheckChecked">
+						Clothing
+					</label>
+				  </div>
+				  <div class="form-check">
+					<input class="form-check-input" type="checkbox" value="" id="flexCheckDefault" checked>
+					<label class="form-check-label" for="flexCheckChecked">
+                        Books
+					</label>
+				  </div>
+                  <div class="form-check">
+                    <input class="form-check-input" type="checkbox" value="" id="flexCheckDefault">
+                    <label class="form-check-label" for="flexCheckDefault">
+                        Beauty
+                    </label>
+                  </div>
+                  <div class="form-check">
+                    <input class="form-check-input" type="checkbox" value="" id="flexCheckDefault">
+                    <label class="form-check-label" for="flexCheckDefault">
+                        Electronics
+                    </label>
+                  </div>
+                  <div class="form-check">
+                    <input class="form-check-input" type="checkbox" value="" id="flexCheckDefault">
+                    <label class="form-check-label" for="flexCheckDefault">
+                        Herbs
+                    </label>
+                  </div>
+			</div>
+		</div>
+		</div>
+	</div>
+    <script>
+          function readURLIcon(input) {
+            if (input.files && input.files[0]) {
+                var reader = new FileReader();
+
+                reader.onload = function (e) {
+                    $('#icon')
+                        .attr('src', e.target.result);
+                };
+
+                reader.readAsDataURL(input.files[0]);
+            }
+        }
+        function readURLLogo(input) {
+            if (input.files && input.files[0]) {
+                var reader = new FileReader();
+
+                reader.onload = function (e) {
+                    $('#logo')
+                        .attr('src', e.target.result);
+                };
+
+                reader.readAsDataURL(input.files[0]);
+            }
+        }
+    </script>
+   <!-- ==============================JQuery CDN========================================= -->
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.1.0/jquery.min.js"></script>  
     <!-- ==============================Bootstrap script============================ -->
     <script src="../bootstrap-5.3.0-alpha3-dist/js/bootstrap.bundle.min.js"></script>
     <!-- ==============================ApexChart script CDN ============================ -->
