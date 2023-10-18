@@ -19,7 +19,7 @@
         <!-- *******************local stylesheet******************** -->
         <link rel="stylesheet" href="../dashboard-pages/stylesheet/global.css">
         <link rel="stylesheet" href="../dashboard-pages/stylesheet/dashboard.css">
-        <link rel="stylesheet" href="./style/merchant.css">
+        <link rel="stylesheet" href="./style/analytics.css">
     </head>
     <body>
     <!-- ***********************Dashboard Sidebar************************************** -->
@@ -35,14 +35,14 @@
 					<li><a href="./affiliate.html">Affiliates</a></li>
 					<li><a href="./mobile-app.html">Mobile App</a></li>
 					<li><a href="./sales.html">Sales</a></li>
-					<li><a href="./leaderbors.html">Leaderboard</a></li>
+                    <li><a href="./leaderbors.html">Leaderboard</a></li>
 					<li><a href="./multilevel.html">MLM</a></li>
 				</ul>
 			</li>
 			<li><a href="./commission.html"><i class="fa-solid fa-percent icon"></i> Commission</a></li>
 			<li><a href="./coupon.html"><i class="fa-solid fa-tag icon"></i> Coupon</a></li>
 			<li><a href="./payment.html"><i class='bx bx-dollar icon' ></i> Payment</a></li>
-			<li><a href="./analytics.html"><i class="fa-solid fa-chart-line icon"></i>Analytics</a></li>
+            <li><a href="./analytics.html"><i class="fa-solid fa-chart-line icon"></i>Analytics</a></li>
 			<li class="divider" data-text="Uploads">Uploads</li>
 			<li>
 				<a href="#"><i class="fa-solid fa-image icon"></i>  Media Center <i class='bx bx-chevron-right icon-right' ></i></a>
@@ -100,11 +100,11 @@
 
 		<!-- MAIN -->
 		<main>
-			<h1 class="title">Dashboard</h1>
+			<h1 class="title">Analytics</h1>
 			<ul class="breadcrumbs">
 				<li><a href="#">Home</a></li>
 				<li class="divider">/</li>
-				<li><a href="#" class="active">Dashboard</a></li>
+				<li><a href="#" class="active">Analytics</a></li>
 			</ul>
 			<div class="row mt-4 date">
                 <form action="#somewhere" class="row">
@@ -116,10 +116,68 @@
                         <label for="exampleFormControlInput2" class="form-label p-2">End Date</label>
                         <input type="text" class="form-control" id="exampleFormControlInput1" placeholder="select date" onfocus="(this.type = 'date')"  id="date">
                     </div>
+                    <div class="col-md-6 mb-3">
+                        <label for="formGroupExampleInput" class="form-label">Filter by Affiliate</label>
+                        <input type="search" class="form-control" id="formGroupExampleInput" placeholder="Eg. Jason Holder">
+                    </div>
+                    <div class="col-md-6 mb-3">
+                        <label for="inputReport" class="form-label">Filter by group</label>
+                        <select id="paymentMethod" class="form-select">
+                          <option selected>All</option>
+                          <option value="1">TNG Network</option>
+                          <option value="2">ASTG Groups</option>
+                          <option value="2">Tech Team Pvt Ltd.</option>
+                          <option value="2">Other</option>
+                        </select>
+                    </div>
                 </form>
             </div>
 			<div class="info-data">
 				<div class="card">
+					<div class="head">
+						<div>
+							<h2>10</h2>
+							<p>Signups</p>
+						</div>
+						<i class='bx bx-trending-up icon' ></i>
+					</div>
+					<span class="progress" data-value="80%"></span>
+					<span class="label">80%</span>
+				</div>
+				<div class="card">
+					<div class="head">
+						<div>
+							<h2><span>$</span>9999</h2>
+							<p>Commission</p>
+						</div>
+						<i class='bx bx-trending-down icon down' ></i>
+					</div>
+					<span class="progress" data-value="55%"></span>
+					<span class="label">55%</span>
+				</div>
+				<div class="card">
+					<div class="head">
+						<div>
+							<h2><span>$</span>9</h2>
+							<p>Cost Per Click</p>
+						</div>
+						<i class='bx bx-trending-up icon' ></i>
+					</div>
+					<span class="progress" data-value="30%"></span>
+					<span class="label">30%</span>
+				</div>
+				<div class="card">
+					<div class="head">
+						<div>
+							<h2><span>$</span>9</h2>
+							<p>Cost Per Conversion</p>
+						</div>
+						<i class='bx bx-trending-up icon' ></i>
+					</div>
+					<span class="progress" data-value="80%"></span>
+					<span class="label">80%</span>
+				</div>
+                <div class="card">
 					<div class="head">
 						<div>
 							<h2>1500</h2>
@@ -167,7 +225,7 @@
 			<div class="data">
 				<div class="content-data">
 					<div class="head">
-						<h3>Sales Report</h3>
+						<h3>Analytics Report</h3>
 						<div class="menu">
 							<i class='bx bx-dots-horizontal-rounded icon'></i>
 							<ul class="menu-link">
@@ -182,128 +240,87 @@
 					</div>
 				</div>
 			</div>
-			<!-- ============Recent Transections ================-->
-			<div class="row recent-info mt-4">
-				<div class="col-md-6 recent-box">
-					<div class="overview-data">
-						<h2 class="head">Merchant Overview</h2>
-                        <div>
-                            <div class="overview-info">
-                                <span>Membership Type</span>
-                                <span class="member"><a href="#00">Free</a></span>
-                            </div>
-                            <div class="overview-info">
-                                <span>Affiliate Program Status</span>
-                                <span class="active"><i class="fa-regular fa-circle-check"></i>Active</span>
-                            </div>
-                            <div class="overview-info">
-                                <span>Affiliates</span>
-                                <span>17</span>
-                            </div>
-                            <div class="overview-info">
-                                <span>Orders</span>
-                                <span>101</span>
-                            </div>
-                            <div class="overview-info">
-                                <span>Revenue</span>
-                                <span>$999</span>
-                            </div>
-                            <div class="overview-info">
-                                <span>Commissions</span>
-                                <span>$99</span>
-                            </div>
-                        </div>
-					</div>
-				</div>
-				<div class="col-md-6 recent-box">
-					<div class="overview-data"> 
-						<h2 class="head">Recent Registered Affiliates</h2>
-                        <div class="recent-affiliate">
-                            <a href="./affiliate-details.html" class="name">Steven Smith</a>
-                            <span class="status approve">Approved</span>
-                        </div>
-                        <div class="recent-affiliate">
-                            <a href="./affiliate-details.html" class="name">Glenn Maxwell</a>
-                            <span class="status pending">Pending</span>
-                        </div>
-                        <div class="recent-affiliate">
-                            <a href="./affiliate-details.html" class="name">Pat Commins</a>
-                            <span class="status block">Blocked</span>
-                        </div>
-                        <div class="recent-affiliate">
-                            <a href="./affiliate-details.html" class="name">Jos hazelwood</a>
-                            <span class="status approve">Approved</span>
-                        </div>
-					</div>
-				</div>
-			</div>
-			<div class="row recent-order">
-				<h2>Recent Orders</h2>
+		
+			<div class="row recent-order mt-4">
+				<h2>Visits</h2>
 				<div class="table-section">
 					<table>
 						<thead>
 							<tr>
+								<th>Date</th>
+								<th>Landing Page</th>
 								<th>Affiliate</th>
-								<th>Order #</th>
-								<th>Order Value</th>
-								<th>Commission</th>
+								<th>Page Views</th>
+                                <th>Order</th>
 							</tr>
 						</thead>
 						<tbody>
 							<tr>
+								<td class="date">
+									<span>Oct 13, 01:44 PM</span>
+								</td>
+								<td>
+									<span><i class="fa-solid fa-desktop" style="margin-right: 12px;"></i> <img src="../dashboard-pages/images/windows.svg" height="12" alt="chrome" style="margin-right: 12px;"><img src="../dashboard-pages/images/chrome.svg" height="12" alt="chrome" style="margin-right: 12px;"></span>
+								</td>
 								<td class="name">
 									<span><a href="./affiliate-details.html">Glenn Maxwell</a></span>
 								</td>
 								<td>
-									<span><a href="">1001</a></span>
+									<span>10</span>
 								</td>
-								<td>
-									<span>$999</span>
-								</td>
-								<td>
-									<span>$99</span>
+                                <td>
+									<span>10001</span>
 								</td>
 							</tr>
 							<tr>
+								<td class="date">
+									<span>Oct 13, 01:44 PM</span>
+								</td>
+								<td>
+									<span><i class="fa-solid fa-desktop" style="margin-right: 12px;"></i> <i class="fa-brands fa-apple" style="margin-right: 12px;"></i><img src="../dashboard-pages/images/Safari_browser_logo.svg.png" height="12" alt="chrome" style="margin-right: 12px;"></span>
+								</td>
 								<td class="name">
-									<span><a href="./affiliate-details.html">Somya Sarkar</a></span>
+									<span><a href="./affiliate-details.html">Glenn Maxwell</a></span>
 								</td>
 								<td>
-									<span><a href="">1001</a></span>
+									<span>10</span>
 								</td>
-								<td>
-									<span>$999</span>
-								</td>
-								<td>
-									<span>$99</span>
+                                <td>
+									<span>10001</span>
 								</td>
 							</tr>
 							<tr>
+								<td class="date">
+									<span>Oct 13, 01:44 PM</span>
+								</td>
+								<td>
+									<span><i class="fa-solid fa-desktop" style="margin-right: 12px;"></i> <img src="../dashboard-pages/images/windows.svg" height="12" alt="chrome" style="margin-right: 12px;"><img src="../dashboard-pages/images/edge.png" height="12" alt="chrome" style="margin-right: 12px;"></span>
+								</td>
 								<td class="name">
-									<span><a href="./affiliate-details.html">Mahis Tikshana</a></span>
+									<span><a href="./affiliate-details.html">Pat Commins</a></span>
 								</td>
 								<td>
-									<span><a href="">1001</a></span>
+									<span>10</span>
 								</td>
-								<td>
-									<span>$999</span>
-								</td>
-								<td>
-									<span>$99</span>
+                                <td>
+									<span>10001</span>
 								</td>
 							</tr>
 							<tr>
+								<td class="date">
+									<span>Oct 13, 01:44 PM</span>
+								</td>
+								<td>
+									<span><i class="fa-solid fa-mobile-screen" style="margin-right: 12px;"></i><i class="fa-brands fa-android" style="margin-right: 12px;"></i><img src="../dashboard-pages/images/chrome.svg" height="12" alt="chrome" style="margin-right: 12px;"></span>
+								</td>
 								<td class="name">
-									<span><a href="./affiliate-details.html">Lasith Mollinga</a></span>
+									<span><a href="./affiliate-details.html">Musafikur Rahim</a></span>
 								</td>
 								<td>
-									<span><a href="">1001</a></span>
+									<span>10</span>
 								</td>
-								<td>
-									<span>$999</span>
-								</td>
-								<td>
-									<span>$99</span>
+                                <td>
+									<span>10001</span>
 								</td>
 							</tr>
 						</tbody>

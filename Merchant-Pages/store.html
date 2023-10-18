@@ -35,11 +35,14 @@
 					<li><a href="./affiliate.html">Affiliates</a></li>
 					<li><a href="./mobile-app.html">Mobile App</a></li>
 					<li><a href="./sales.html">Sales</a></li>
+                    <li><a href="./leaderbors.html">Leaderboard</a></li>
+                    <li><a href="./multilevel.html">MLM</a></li>
 				</ul>
 			</li>
 			<li><a href="./commission.html"><i class="fa-solid fa-percent icon"></i> Commission</a></li>
             <li><a href="./coupon.html"><i class="fa-solid fa-tag icon"></i> Coupon</a></li>
 			<li><a href="./payment.html"><i class='bx bx-dollar icon' ></i> Payment</a></li>
+            <li><a href="./analytics.html"><i class="fa-solid fa-chart-line icon"></i>Analytics</a></li>
             <li class="divider" data-text="Uploads">Uploads</li>
 			<li>
 				<a href="#"><i class="fa-solid fa-image icon"></i>  Media Center <i class='bx bx-chevron-right icon-right' ></i></a>
@@ -88,7 +91,7 @@
 				<img src="../images/female_avatar_efig.svg" alt="">
 				<ul class="profile-link">
 					<li><a href="#"><i class='bx bxs-user-circle icon' ></i> Profile</a></li>
-					<li><a href="#"><i class='bx bxs-cog' ></i> Settings</a></li>
+					<li><a href="./settings.html"><i class='bx bxs-cog' ></i> Settings</a></li>
 					<li><a href="#" data-bs-toggle="modal" data-bs-target="#logOut"><i class='bx bxs-log-out-circle' ></i> Logout</a></li>
 				</ul>
 			</div>
@@ -111,15 +114,18 @@
                 <div class="card-header">
                   <ul class="nav nav-tabs card-header-tabs id="myTab" role="tablist"">
                     <li class="nav-item" role="presentation">
-                      <a class="nav-link active" aria-current="true" href="#" id="home-tab" data-bs-toggle="tab" data-bs-target="#profile" aria-controls="profile" aria-selected="true">Profile</a>
+                      <a class="nav-link" aria-current="true" href="#" id="home-tab" data-bs-toggle="tab" data-bs-target="#profile" aria-controls="profile" aria-selected="true">Profile</a>
                     </li>
                     <li class="nav-item" role="presentation">
-                     <a class="nav-link" aria-current="true" href="#" id="home-tab" data-bs-toggle="tab" data-bs-target="#pendingAffiliate" aria-controls="pendingAffiliate" aria-selected="true">Approvel Pendding Affiliates</a>
+                       <a class="nav-link" aria-current="true" href="#" id="home-tab" data-bs-toggle="tab" data-bs-target="#affiliateDashboard" aria-controls="affiliateDashboard" aria-selected="true">Affiliate Dashboard</a>
                     </li>
+                    <li class="nav-item" role="presentation">
+                        <a class="nav-link active" aria-current="true" href="#" id="home-tab" data-bs-toggle="tab" data-bs-target="#dashboardPreference" aria-controls="dashboardPreference" aria-selected="true">Dashboard Preference</a>
+                     </li>
                   </ul>
                 </div>
                 <div class="card-body tab-content" id="nav-tabContent">
-                    <div class="tab-pane fade show active" id="allAffiliate" role="tabpanel" aria-labelledby="nav-home-tab" tabindex="0">
+                    <div class="tab-pane fade show " id="profile" role="tabpanel" aria-labelledby="nav-home-tab" tabindex="0">
                         <div class="row store-profile">
                             <div class="col-md-6">
                                 <h2> Store Profile</h2>
@@ -206,7 +212,7 @@
                                 </div>
                                 <div class="card d-flex align-items-center flex-row py-3 px-2 mb-3">
                                     <label class="me-auto" for="favcolor">Button text color:</label>
-                                    <input class="ms-auto" type="color" id="favcolor" value="#fff">
+                                    <input class="ms-auto" type="color" id="favcolor" value="#ffffff">
                                 </div>
                             </div>
                         </div>
@@ -287,77 +293,503 @@
                                 </div>
                             </div>
                         </div>
-                     </div>   
-                    <!-- ================History=============== -->
-                    <div class="table-section tab-pane fade show" id="pendingAffiliate" role="tabpanel" aria-labelledby="nav-home-tab" tabindex="0">
-                        <table>
-                            <thead>
-                                <tr>
-                                    <th>Name</th>
-                                    <th>Email</th>
-                                    <th>Action</th>
-                                    <th>Action</th>
-                                </tr>
-                            </thead>
-                            <tbody>
-                                <tr>
-                                    <td class="name">
-                                        <span><a href="./affiliate-details.html">Glenn Maxwell</a></span>
-                                    </td>
-                                    <td>
-                                        <span>gillyIsTheBoss@aus.com</span>
-                                    </td>
-                                    <td>
-                                        <span><a href="#000" class="approve">Approve</a></span>
-                                    </td>
-                                    <td>
-                                        <span><a href="#000" class="reject">Reject</a></span>
-                                    </td>
-                                </tr>
-                                <tr>
-                                    <td class="name">
-                                        <span><a href="./affiliate-details.html">Corey Anderson</a></span>
-                                    </td>
-                                    <td>
-                                        <span>gillyIsTheBoss@aus.com</span>
-                                    </td>
-                                    <td>
-                                        <span><a href="#000"  class="approve">Approve</a></span>
-                                    </td>
-                                    <td>
-                                        <span><a href="#000" class="reject">Reject</a></span>
-                                    </td>
-                                </tr>
-                                <tr>
-                                    <td class="name">
-                                        <span><a href="./affiliate-details.html">BretLee</a></span>
-                                    </td>
-                                    <td>
-                                        <span>gillyIsTheBoss@aus.com</span>
-                                    </td>
-                                    <td>
-                                        <span><a href="#000"  class="approve">Approve</a></span>
-                                    </td>
-                                    <td>
-                                        <span><a href="#000" class="reject">Reject</a></span>
-                                    </td>
-                                </tr>
-                                <tr>
-                                    <td class="name">
-                                        <span><a href="./affiliate-details.html">Mike Hassi</a></span>
-                                    </td>
-                                    <td>
-                                        <span>gillyIsTheBoss@aus.com</span>
-                                    </td>
-                                    <td>
-                                        <span><a href="#000" class="approve">Approve</a></span>
-                                    </td>
-                                    <td>
-                                        <span><a href="#000" class="reject">Reject</a></span>
-                                    </td>
-                                </tr>
-                            </tbody>
-                        </table>
+                    </div>   
+                    <!-- ================Affiliate Dashboard=============== -->
+                    <div class="tab-pane fade show" id="affiliateDashboard" role="tabpanel" aria-labelledby="nav-home-tab" tabindex="0">
+                        <div class="row dash-title">
+                            <div class="col-lg-8 col-md-10">
+                                <h3>You can customize how your affiliate's dashboard look like.</h3>
+                                <p>your changes will applied instantly visit <a href="">javacontrols.bigAffi.com</a> see changes that you made.</p>
+                                <a href="" class="video-modal" data-video="https://www.youtube.com/embed/HBdcL7YsdBY" data-bs-toggle="modal" data-bs-target="#videoModal">Watch Video for info<i class="fa-solid fa-video"></i></a>
+                            </div>
+                        </div>
+                        <div class="row mt-4 dashboard-components">
+                            <h3>Components of affiliate dashboard</h3>
+                            <div class="accordion" id="accordionExample">
+                                <div class="accordion-item">
+                                  <h2 class="accordion-header">
+                                    <button class="accordion-button" type="button" data-bs-toggle="collapse" data-bs-target="#navBar" aria-expanded="true" aria-controls="collapseOne">
+                                      Navigation Bar
+                                    </button>
+                                  </h2>
+                                  <div id="navBar" class="accordion-collapse collapse show" aria-labelledby="headingOne" data-bs-parent="#accordionExample">
+                                    <div class="accordion-body">
+                                      <div class="row">
+                                        <div class="col-md-6 mb-3">
+                                            <div class="nav-color">
+                                                <h4>Navbar Background Color</h4>
+                                                <input class="" type="color" id="favcolor" value="#f5f5f5">
+                                            </div>
+                                        </div>
+                                        <div class="col-md-6 mb-3">
+                                            <div class="">
+                                                <h4>Logo URL</h4>
+                                               <div class="col-md-12 mb-3 ">
+                                                    <input type="text" class="form-control" id="formGroupExampleInput" placeholder="bigaffi.com/home">
+                                                </div>
+                                            </div>
+                                        </div>
+                                      </div>
+                                      <div class="row nav-btn">
+                                        <h4>Navbar Button</h4>
+                                        <div class="col-lg-4 col-md-6 mb-3">
+                                            <div class="">
+                                                <label for="recipient-name" class="label col-form-label">Button Text</label>
+                                                <input type="text" class="form-control" id="recipient-name" placeholder="Login">
+                                            </div> 
+                                        </div>
+                                        <div class="col-lg-4 col-md-6 mb-3">
+                                            <div class="">
+                                                <label for="recipient-name" class="label col-form-label">Button Text Color</label>
+                                                <input type="color" value="#000000">
+                                            </div>  
+                                        </div>
+                                        <div class="col-lg-4 col-md-6 mb-3">
+                                            <div class="">
+                                                <label for="recipient-name" class="label col-form-label">Button Background Color</label>
+                                                <input type="color" value="#f5f5f5">
+                                            </div>  
+                                        </div>
+                                    </div>
+                                    <!-- Default switch -->
+                                    <div class="form-check show-hide">
+                                        <input class="form-check-input" type="checkbox" value="" id="flexCheckChecked" checked>
+                                        <label class="form-check-label" for="flexCheckChecked">
+                                          Show/Hide
+                                        </label>
+                                        <small>Keep Checkbox check to display component on affiliate dashboard</small>
+                                    </div>
+                                    </div>
+                                  </div>
+                                </div>
+                                <!-- ============Dashboard Body======== -->
+                                <div class="accordion-item">
+                                    <h2 class="accordion-header">
+                                    <button class="accordion-button collapsed" type="button" data-bs-toggle="collapse" data-bs-target="#dashboardBody" aria-expanded="false" aria-controls="collapseTwo">
+                                        Dashboard Body
+                                    </button>
+                                    </h2>
+                                    <div id="dashboardBody" class="accordion-collapse collapse" aria-labelledby="headingTwo" data-bs-parent="#accordionExample">
+                                      <div class="accordion-body">
+                                        <div class="row">
+                                          <div class="col-md-6 mb-3">
+                                              <div>
+                                                <h4>Body Image</h4>
+                                                <div class="col">
+                                                    <input class="form-control" type="file" id="formFileMultiple">
+                                                </div>
+                                              </div>
+                                          </div>
+                                          <div class="col-md-6 mb-3">
+                                              <div>
+                                                  <h4>Body Text</h4>
+                                                 <div class="col-md-12">
+                                                      <input type="text" class="form-control" id="formGroupExampleInput" placeholder="lorem ipsum sit amet....">
+                                                  </div>
+                                              </div>
+                                          </div>
+                                        </div>
+                                        <div class="row nav-btn">
+                                          <h4>Body Button</h4>
+                                          <div class="col-lg-4 col-md-6 mb-3">
+                                              <div class="">
+                                                  <label for="recipient-name" class="label col-form-label">Button Text</label>
+                                                  <input type="text" class="form-control" id="recipient-name" placeholder="Login">
+                                              </div> 
+                                          </div>
+                                          <div class="col-lg-4 col-md-6 mb-3">
+                                              <div class="">
+                                                  <label for="recipient-name" class="label col-form-label">Button Text Color</label>
+                                                  <input type="color" value="#000000">
+                                              </div>  
+                                          </div>
+                                          <div class="col-lg-4 col-md-6 mb-3">
+                                              <div class="">
+                                                  <label for="recipient-name" class="label col-form-label">Button Background Color</label>
+                                                  <input type="color" value="#f5f5f5">
+                                              </div>  
+                                          </div>
+                                      </div>
+                                      <!-- Default switch -->
+                                      <div class="form-check show-hide">
+                                          <input class="form-check-input" type="checkbox" value="" id="flexCheckChecked" checked>
+                                          <label class="form-check-label" for="flexCheckChecked">
+                                            Show/Hide
+                                          </label>
+                                          <small>Keep Checkbox check to display component on affiliate dashboard</small>
+                                      </div>
+                                    </div>
+                                  </div>
+                                </div>
+                                <!-- ========================CARD=================== -->
+                                <div class="accordion-item">
+                                  <h2 class="accordion-header">
+                                    <button class="accordion-button collapsed" type="button" data-bs-toggle="collapse" data-bs-target="#cardGroup" aria-expanded="false" aria-controls="collapseTwo">
+                                     Card Group
+                                    </button>
+                                  </h2>
+                                  <div id="cardGroup" class="accordion-collapse collapse" aria-labelledby="headingTwo" data-bs-parent="#accordionExample">
+                                    <div class="accordion-body">
+                                      <div class="row">
+                                        <div class="mb-3">
+                                            <input type="text" class="form-control" id="recipient-name" placeholder="Card Title">
+                                        </div>
+                                        <div class="col-lg-4 col-md-6 mb-3">
+                                            <div class="card-box">
+                                                <div class="card-img">
+                                                    <img id="join" src="http://placehold.it/160" alt="your image"/>
+                                                    <a href="#000">Delete</a>
+                                                </div>
+                                                <div class="mb-3 mt-3 col">
+                                                    <input class="form-control" type="file" id="formFileMultiple" multiple onchange="join(this);">
+                                                </div>
+                                                <div class="mb-3 col">
+                                                    <input type="text" class="form-control" id="recipient-name" placeholder="Join">
+                                                </div>
+                                                <div class="col mb-3">
+                                                    <label for="floatingInput" class="p-2">Card Text</label>
+                                                    <textarea class="form-control" aria-label="With textarea"></textarea>
+                                                  </div> 
+                                            </div>
+                                        </div>
+                                        <div class="col-lg-4 col-md-6 mb-3">
+                                            <div class="card-box">
+                                                <div class="card-img">
+                                                    <img id="advertise" src="http://placehold.it/160" alt="your image"/>
+                                                    <a href="#000">Delete</a>
+                                                </div>
+                                                <div class="mb-3 mt-3 col">
+                                                    <input class="form-control" type="file" id="formFileMultiple" multiple onchange="advertise(this);">
+                                                </div>
+                                                <div class="mb-3 col">
+                                                    <input type="text" class="form-control" id="recipient-name" placeholder="Advertise">
+                                                </div>
+                                                <div class="col mb-3">
+                                                    <label for="floatingInput" class="p-2">Card Text</label>
+                                                    <textarea class="form-control" aria-label="With textarea"></textarea>
+                                                  </div> 
+                                            </div>
+                                        </div>
+                                        <div class="col-lg-4 col-md-6 mb-3">
+                                            <div class="card-box">
+                                                <div class="card-img">
+                                                    <img id="earn" src="http://placehold.it/160" alt="your image"/>
+                                                    <a href="#000">Delete</a>
+                                                </div>
+                                                <div class="mb-3 mt-3 col">
+                                                    <input class="form-control" type="file" id="formFileMultiple" multiple onchange="earn(this);">
+                                                </div>
+                                                <div class="mb-3 col">
+                                                    <input type="text" class="form-control" id="recipient-name" placeholder="Earn">
+                                                </div>
+                                                <div class="col mb-3">
+                                                    <label for="floatingInput" class="p-2">Card Text</label>
+                                                    <textarea class="form-control" aria-label="With textarea"></textarea>
+                                                  </div> 
+                                            </div>
+                                        </div>
+                                      </div>
+                                      <!-- Default switch -->
+                                        <div class="form-check show-hide">
+                                            <input class="form-check-input" type="checkbox" value="" id="flexCheckChecked" checked>
+                                            <label class="form-check-label" for="flexCheckChecked">
+                                            Show/Hide
+                                            </label>
+                                            <small>Keep Checkbox check to display component on affiliate dashboard</small>
+                                        </div>
+                                    </div>
+                                  </div>
+                                </div>
+                                <div class="accordion-item">
+                                  <h2 class="accordion-header" id="">
+                                    <button class="accordion-button collapsed" type="button" data-bs-toggle="collapse" data-bs-target="#footer" aria-expanded="false" aria-controls="collapseThree">
+                                     Footer
+                                    </button>
+                                  </h2>
+                                  <div id="footer" class="accordion-collapse collapse" aria-labelledby="headingThree" data-bs-parent="#accordionExample">
+                                    <div class="accordion-body">
+                                        <div class="row">
+                                            <div class="col-lg-3 col-md-6 mb-3">
+                                                <div class="footer-box">
+                                                    <div class="mb-3 col">
+                                                        <input type="text" class="form-control" id="recipient-name" placeholder="Customer Support">
+                                                    </div>
+                                                    <div class="col mb-3">
+                                                        <label for="floatingInput" class="p-2">Card Text</label>
+                                                        <textarea class="form-control" aria-label="With textarea"></textarea>
+                                                      </div> 
+                                                </div>
+                                            </div>
+                                            <div class="col-lg-3 col-md-6 mb-3">
+                                                <div class="footer-box">
+                                                    <div class="mb-3 col">
+                                                        <input type="text" class="form-control" id="recipient-name" placeholder="Learn">
+                                                    </div>
+                                                    <div class="col mb-3">
+                                                        <label for="floatingInput" class="p-2">Card Text</label>
+                                                        <textarea class="form-control" aria-label="With textarea"></textarea>
+                                                      </div> 
+                                                </div>
+                                            </div>
+                                            <div class="col-lg-3 col-md-6 mb-3">
+                                                <div class="footer-box">
+                                                    <div class="mb-3 col">
+                                                        <input type="text" class="form-control" id="recipient-name" placeholder="Legal">
+                                                    </div>
+                                                    <div class="col mb-3">
+                                                        <label for="floatingInput" class="p-2">Card Text</label>
+                                                        <textarea class="form-control" aria-label="With textarea"></textarea>
+                                                      </div> 
+                                                </div>
+                                            </div>
+                                            <div class="col-lg-3 col-md-6 mb-3">
+                                                <div class="footer-box">
+                                                    <div class="mb-3 col">
+                                                        <input type="text" class="form-control" id="recipient-name" placeholder="Tool">
+                                                    </div>
+                                                    <div class="col mb-3">
+                                                        <label for="floatingInput" class="p-2">Footer Link or Short Code</label>
+                                                        <textarea class="form-control" aria-label="With textarea"></textarea>
+                                                      </div> 
+                                                </div>
+                                            </div>
+                                          </div>
+                                          <!-- Default switch -->
+                                        <div class="form-check show-hide">
+                                            <input class="form-check-input" type="checkbox" value="" id="flexCheckChecked" checked>
+                                            <label class="form-check-label" for="flexCheckChecked">
+                                            Show/Hide
+                                            </label>
+                                            <small>Keep Checkbox check to display component on affiliate dashboard</small>
+                                        </div>
+                                    </div>
+                                  </div>
+                                </div>
+                              </div>    
+                        </div>
+                    </div>
+                    <!-- ========================Preference================================ -->
+                    <div class="tab-pane fade show active" id="dashboardPreference" role="tabpanel" aria-labelledby="nav-home-tab" tabindex="0">
+                        <div class="row">
+                            <h2>Customize Tabs for your Affiliate's Dashboard</h2>
+                            <p>You can control which tab your affiliate can access</p>
+                            <p>Keep checkbox checked to display that tab in affiliates personal dashboard</p>
+                        </div>
+                        <div class="row dashboard-tabs">
+                            <h3>Dashboard Tabs</h3>
+                            <a href="" class="video-modal" data-video="https://www.youtube.com/embed/HBdcL7YsdBY" data-bs-toggle="modal" data-bs-target="#videoModal">Watch Video for info<i class="fa-solid fa-video"></i></a>
+                            <div class="col">
+                                <div class="tab-box">
+                                    <div class="form-check check-box">
+                                        <input class="form-check-input" type="checkbox" value="" id="flexCheckChecked" checked>
+                                        <label class="form-check-label" for="flexCheckChecked">
+                                          Home
+                                        </label>
+                                    </div>
+                                    <div class="child-check">
+                                        <h4 class="label-heading">Section</h4>
+                                        <div class="form-check check-box child-item">
+                                            <input class="form-check-input" type="checkbox" value="" id="flexCheckChecked" checked>
+                                            <label class="form-check-label" for="flexCheckChecked">
+                                              Refferel Link
+                                            </label>
+                                        </div>
+                                        <div class="form-check check-box child-item">
+                                            <input class="form-check-input" type="checkbox" value="" id="flexCheckChecked" checked>
+                                            <label class="form-check-label" for="flexCheckChecked">
+                                              Coupon Code
+                                            </label>
+                                        </div>
+                                    </div>
+                                    <!-- =============== -->
+                                    <div class="form-check check-box mt-2">
+                                        <input class="form-check-input" type="checkbox" value="" id="flexCheckChecked" checked>
+                                        <label class="form-check-label" for="flexCheckChecked">
+                                            Marketing Tools
+                                        </label>
+                                    </div>
+                                    <div class="child-check">
+                                        <h4 class="label-heading">Section</h4>
+                                        <div class="form-check check-box child-item">
+                                            <input class="form-check-input" type="checkbox" value="" id="flexCheckChecked" checked>
+                                            <label class="form-check-label" for="flexCheckChecked">
+                                                Product Links
+                                            </label>
+                                        </div>
+                                        <div class="form-check check-box child-item">
+                                            <input class="form-check-input" type="checkbox" value="" id="flexCheckChecked" checked>
+                                            <label class="form-check-label" for="flexCheckChecked">
+                                                My Files
+                                            </label>
+                                        </div>
+                                        <div class="form-check check-box child-item">
+                                            <input class="form-check-input" type="checkbox" value="" id="flexCheckChecked" checked>
+                                            <label class="form-check-label" for="flexCheckChecked">
+                                                Media Assets
+                                            </label>
+                                        </div>
+                                    </div>
+                                    <div class="form-check check-box mt-2">
+                                        <input class="form-check-input" type="checkbox" value="" id="flexCheckChecked" checked>
+                                        <label class="form-check-label" for="flexCheckChecked">
+                                            Advanced Analytics
+                                        </label>
+                                    </div>
+                                    <div class="form-check check-box mt-2">
+                                        <input class="form-check-input" type="checkbox" value="" id="flexCheckChecked" checked>
+                                        <label class="form-check-label" for="flexCheckChecked">
+                                            Transactions
+                                        </label>
+                                    </div>
+                                    <div class="form-check check-box mt-2">
+                                        <input class="form-check-input" type="checkbox" value="" id="flexCheckChecked" checked>
+                                        <label class="form-check-label" for="flexCheckChecked">
+                                            Payments
+                                        </label>
+                                    </div>
+                                    <div class="form-check check-box mt-2">
+                                        <input class="form-check-input" type="checkbox" value="" id="flexCheckChecked" checked>
+                                        <label class="form-check-label" for="flexCheckChecked">
+                                            Settings
+                                        </label>
+                                    </div>
+                                    <div class="child-check">
+                                        <h4 class="label-heading">Section in Settings Tab</h4>
+                                        <div class="form-check check-box child-item">
+                                            <input class="form-check-input" type="checkbox" value="" id="flexCheckChecked" checked>
+                                            <label class="form-check-label" for="flexCheckChecked">
+                                                Profile
+                                            </label>
+                                        </div>
+                                        <div class="form-check check-box child-item">
+                                            <input class="form-check-input" type="checkbox" value="" id="flexCheckChecked" checked>
+                                            <label class="form-check-label" for="flexCheckChecked">
+                                                Payments Section
+                                            </label>
+                                        </div>
+                                        <div class="form-check check-box child-item">
+                                            <input class="form-check-input" type="checkbox" value="" id="flexCheckChecked" checked>
+                                            <label class="form-check-label" for="flexCheckChecked">
+                                                Mailing Address
+                                            </label>
+                                        </div>
+                                        <div class="form-check check-box child-item">
+                                            <input class="form-check-input" type="checkbox" value="" id="flexCheckChecked" checked>
+                                            <label class="form-check-label" for="flexCheckChecked">
+                                                Tax Information
+                                            </label>
+                                        </div>
+                                        <div class="form-check check-box child-item">
+                                            <input class="form-check-input" type="checkbox" value="" id="flexCheckChecked" checked>
+                                            <label class="form-check-label" for="flexCheckChecked">
+                                                Facebook Pixel ID
+                                            </label>
+                                        </div>
+                                    </div>    
+                                </div>
+                            </div>
+                        </div>
+                        <!-- ===============Tracking============ -->
+                        <div class="row dashboard-tabs mt-4">
+                            <h3>Tracking</h3>
+                            <a href="" class="video-modal" data-video="https://www.youtube.com/embed/HBdcL7YsdBY" data-bs-toggle="modal" data-bs-target="#videoModal">Watch Video for info<i class="fa-solid fa-video"></i></a>
+                            <div class="col">
+                                <div class="tab-box">
+                                    <div class="form-check check-box">
+                                        <input class="form-check-input" type="checkbox" value="" id="flexCheckChecked" checked>
+                                        <label class="form-check-label" for="flexCheckChecked">
+                                          Referral Link
+                                        </label>
+                                    </div>
+                                    <div class="child-check">
+                                        <div class="form-check check-box child-item">
+                                            <input class="form-check-input" type="checkbox" value="" id="flexCheckChecked" checked>
+                                            <label class="form-check-label" for="flexCheckChecked">
+                                                Allow affiliate to customize referral code
+                                            </label>
+                                        </div>
+                                    </div>
+                                    <!-- =============== -->
+                                    <div class="form-check check-box mt-2">
+                                        <input class="form-check-input" type="checkbox" value="" id="flexCheckChecked" checked>
+                                        <label class="form-check-label" for="flexCheckChecked">
+                                            Coupon Code
+                                        </label>
+                                    </div>
+                                    <div class="child-check">
+                                        <div class="form-check check-box child-item">
+                                            <input class="form-check-input" type="checkbox" value="" id="flexCheckChecked" checked>
+                                            <label class="form-check-label" for="flexCheckChecked">
+                                                Allow affiliate to customize coupon code
+                                            </label>
+                                        </div>
+                                    </div>
+                                    <div class="form-check check-box mt-2">
+                                        <input class="form-check-input" type="checkbox" value="" id="flexCheckChecked" checked>
+                                        <label class="form-check-label" for="flexCheckChecked">
+                                            Allow affiliate to customize personal coupon codes
+                                        </label>
+                                    </div>
+                                    <div class="form-check check-box mt-2">
+                                        <input class="form-check-input" type="checkbox" value="" id="flexCheckChecked" checked>
+                                        <label class="form-check-label" for="flexCheckChecked">
+                                            Hide coupon code section if coupon is not assigned
+                                        </label>
+                                    </div>    
+                                </div>
+                            </div>
+                        </div>
+                        <!-- ===============Analytics============ -->
+                        <div class="row dashboard-tabs mt-4">
+                            <h3>Analytics</h3>
+                            <a href="" class="video-modal" data-video="https://www.youtube.com/embed/HBdcL7YsdBY" data-bs-toggle="modal" data-bs-target="#videoModal">Watch Video for info<i class="fa-solid fa-video"></i></a>
+                            <div class="col">
+                                <div class="tab-box">
+                                    <div class="form-check check-box mb-2">
+                                        <input class="form-check-input" type="checkbox" value="" id="flexCheckChecked" checked>
+                                        <label class="form-check-label" for="flexCheckChecked">
+                                            Summary Widget
+                                        </label>
+                                    </div>
+                                    <div class="form-check check-box mb-2">
+                                        <input class="form-check-input" type="checkbox" value="" id="flexCheckChecked" checked>
+                                        <label class="form-check-label" for="flexCheckChecked">
+                                            Show Products Sold
+                                        </label>
+                                    </div>
+                                    <div class="form-check check-box mb-2">
+                                        <input class="form-check-input" type="checkbox" value="" id="flexCheckChecked" checked>
+                                        <label class="form-check-label" for="flexCheckChecked">
+                                            Show Order details
+                                        </label>
+                                    </div>
+                                    <div class="form-check check-box mb-2">
+                                        <input class="form-check-input" type="checkbox" value="" id="flexCheckChecked" checked>
+                                        <label class="form-check-label" for="flexCheckChecked">
+                                            Show Traffic source
+                                        </label>
+                                    </div> 
+                                    <div class="form-check check-box mb-2">
+                                        <input class="form-check-input" type="checkbox" value="" id="flexCheckChecked" checked>
+                                        <label class="form-check-label" for="flexCheckChecked">
+                                            Show Leader board
+                                        </label>
+                                    </div> 
+                                    <div class="form-check check-box mb-2">
+                                        <input class="form-check-input" type="checkbox" value="" id="flexCheckChecked" checked>
+                                        <label class="form-check-label" for="flexCheckChecked">
+                                            Show Commissions Table
+                                        </label>
+                                    </div>
+                                    <div class="form-check check-box mb-2">
+                                        <input class="form-check-input" type="checkbox" value="" id="flexCheckChecked" checked>
+                                        <label class="form-check-label" for="flexCheckChecked">
+                                            Show Mobile app links in footer
+                                        </label>
+                                    </div>   
+                                </div>
+                            </div>
+                        </div>
                     </div>
                 </div>
             </div>
@@ -381,48 +813,6 @@
 			</div>
 		</div>
 	</div>
-    <!-- ********************************Add new Affiliate Model************************************************* -->
-    <div class="modal fade" id="addAffiliate" tabindex="-1" aria-labelledby="exampleModalLabel" aria-hidden="true">
-        <div class="modal-dialog modal-dialog-centered">
-            <div class="modal-content">
-                <div class="affiliate-header">
-                    <h5 class="modal-title text-center" id="exampleModalLabel">Add a new Affiliate</h5>
-                </div>
-                <div class="modal-body affiliate-body">
-                    <form>
-                        <div class="mb-3">
-                            <label for="recipient-name" class="label col-form-label">Name <span>*</span></label>
-                            <input type="text" class="form-control" id="recipient-name" placeholder="Eg. KLokesh Rahul">
-                        </div>
-                        <div class="mb-3">
-                            <label for="message-text" class="label col-form-label">Email Address <span>*</span></label>
-                            <input type="email" class="form-control" id="email-address" placeholder="email@example.com">
-                            <div class="form-check mt-2">
-                                <input class="form-check-input" type="checkbox" value="" id="flexCheckDefault">
-                                <label class="form-check-label msg" for="flexCheckDefault">
-                                Send Email Updates
-                                </label>
-                            </div>
-                            <div class="mb-3">
-                                <label for="recipient-name" class="label col-form-label">Password</label>
-                                <input type="password" class="form-control" id="password">
-                                <label class="form-check-label mt-1 msg" for="flexCheckDefault">Optional</label>
-                            </div>
-                            <div class="mb-3">
-                                <label for="referral-code" class="label col-form-label">Referral Code</label>
-                                <input type="text" class="form-control" id="referral-code">
-                                <label class="form-check-label mt-1 msg" for="flexCheckDefault">Optional</label>
-                            </div>
-                        </div>
-                    </form>
-                </div>
-                <div class="affiliate-footer">
-                    <a type="button" class="dismiss" data-bs-dismiss="modal">Dismiss</a>
-                    <a type="button" class="create">Create Affiliate</a>
-                </div>
-            </div>
-        </div>
-    </div>
     <!-- =======================Video Modal===================================== -->
 	<div class="modal fade" id="videoModal" tabindex="-1" role="dialog" aria-labelledby="myModalLabel" aria-hidden="true">
 		<div class="modal-dialog modal-lg">
@@ -533,6 +923,42 @@
 
                 reader.onload = function (e) {
                     $('#logo')
+                        .attr('src', e.target.result);
+                };
+
+                reader.readAsDataURL(input.files[0]);
+            }
+        }
+        function join(input) {
+            if (input.files && input.files[0]) {
+                var reader = new FileReader();
+
+                reader.onload = function (e) {
+                    $('#join')
+                        .attr('src', e.target.result);
+                };
+
+                reader.readAsDataURL(input.files[0]);
+            }
+        }
+        function advertise(input) {
+            if (input.files && input.files[0]) {
+                var reader = new FileReader();
+
+                reader.onload = function (e) {
+                    $('#advertise')
+                        .attr('src', e.target.result);
+                };
+
+                reader.readAsDataURL(input.files[0]);
+            }
+        }
+        function earn(input) {
+            if (input.files && input.files[0]) {
+                var reader = new FileReader();
+
+                reader.onload = function (e) {
+                    $('#earn')
                         .attr('src', e.target.result);
                 };
 

@@ -1,0 +1,137 @@
+.settings{
+    border-bottom: 1px solid #dcdada;
+    padding-bottom: 1.6rem;
+    margin-bottom: 1.8rem;
+}
+.settings h4{
+    border: 2px solid green;
+    font-size: 1.3rem;
+    font-weight: 600;
+    margin-bottom: .5rem;
+    color: #000;
+}
+.settings p{
+    color: #000;
+    font-size: .95rem;
+    font-weight: 500;
+}
+.settings .submit{
+    border: none;
+    outline: none;
+    font-weight: 500;
+    text-decoration: none;
+    letter-spacing: .4px;
+    border-radius: 4px;
+    background-color: #ee755d;
+    color: #fff;
+    text-transform: uppercase;
+    padding: .5rem 1rem;
+    display: inline-block;
+    cursor: pointer;
+}
+.settings .form-select {
+   font-weight: 500;
+   color: #000;
+   font-size: .9rem;
+}
+.settings label {
+   font-weight: 600;
+   font-size: .85rem;
+ }
+.settings #basic-addon{
+    font-weight: 500;
+}
+.settings .tab-box label{
+    font-weight: 500;
+    font-size: .9rem;
+    margin-left: .2rem;
+    display: inline-block;
+    color: #000;
+ }
+ .settings a{
+    color: #5676ff;
+ }
+ .settings .customize-template{
+    margin-top: .5rem;
+    display: inline-block;
+    color: #5676ff;
+    font-weight: 500;
+    font-size: .95rem;
+    letter-spacing: .4px;
+    text-transform: capitalize;
+    cursor: pointer;
+ }
+ .settings .tab-box small{
+    font-weight: 500;
+    font-size: .95rem;
+    display: inline-block;
+    color: #000;
+ }
+ .settings .check-box{
+    margin-bottom: .5rem;
+ }
+ .settings .tab-box .child-check{
+     margin-left: 2%;
+     margin-top: .6rem;
+ }
+ .settings .tab-box .child-check .child-item{
+     margin-right: 1rem;
+     margin-bottom: .5rem;
+ }
+ .settings .tab-box .label-heading {
+    display: block;
+    font-weight: 600;
+    margin-bottom: .5rem;
+    font-size: .95rem; 
+  }
+  @media(max-width:600px){
+     .settings .tab-box{
+         padding: .5rem;
+     }
+  }
+  /* ===================report=========================== */
+.settings .report-box{
+    border: 1px solid #d3d1d1;
+    border-radius: 12px;
+    background-color: #fafbfc;
+    padding: 1rem .8rem;
+}
+.settings .report-box a{
+    color: #5676ff;
+    font-weight: 600;
+    cursor: pointer;
+    letter-spacing: .4px;
+}
+.settings .report-box small{
+    display: block;
+    font-weight: 500;
+    color: #000;
+    font-size: .8rem;
+    margin-top: .5rem;
+    padding-left: 1rem;
+}
+main .report-box form input::placeholder{
+   font-weight: 500;
+   font-size: .9rem;
+   color: #000;
+ }
+  .settings .report-box .alert-btn{
+    color: #fff;
+    background-color: #ee755d;
+    outline: none;
+    border: none;
+    padding: .6rem 1rem;
+    font-weight: 500;
+    text-transform: capitalize;
+    letter-spacing: .5px;
+} 
+@media(max-width:600px){
+    .alert{
+        font-size: .8rem;
+    }
+    .alert a{
+        font-size: .8rem;
+        display: inline-block;
+        margin-top: .5rem;
+    }
+}

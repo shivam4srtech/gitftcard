@@ -111,4 +111,11 @@
         text-transform: capitalize;
         
     }
-  
+    table tbody tr td{
+        font-weight: 500;
+        padding: 0;
+    }
+    table tbody tr td span{
+        font-weight: 500;
+        padding: 0;
+    }

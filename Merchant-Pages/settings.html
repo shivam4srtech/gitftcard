@@ -1,0 +1,748 @@
+<!DOCTYPE html>
+<html lang="en">
+    <head>
+        <meta charset="UTF-8">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <title>BIGAFFI: Merchant Dashboard</title>
+        <link rel="shortcut icon" href="../images/bigaffilogo.jpeg" type="image/x-icon">
+        <!-- *******************Fontawesome icons***************************** -->
+        <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.2/css/all.min.css" integrity="sha512-z3gLpd7yknf1YoNbCzqRKc4qyor8gaKU1qmn+CShxbuBusANI9QpRohGBreCFkKxLhei6S9CQXFEbbKuqLg0DA==" crossorigin="anonymous" referrerpolicy="no-referrer" />
+        <link rel="stylesheet" href="./font-awesome-4.7.0/css/font-awesome.css">
+        <!-- *********************************Boxi-icons************************************ -->
+        <link href='https://unpkg.com/boxicons@2.0.9/css/boxicons.min.css' rel='stylesheet'>
+        <!-- ***********************************Montserrat********************************** -->
+        <link rel="preconnect" href="https://fonts.googleapis.com">
+        <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+        <link href="https://fonts.googleapis.com/css2?family=Montserrat:wght@100;200;300;400;500;600;800&family=Open+Sans:wght@300;400;600;700&display=swap" rel="stylesheet">
+        <link href="https://fonts.googleapis.com/css2?family=Open+Sans:wght@300;400&family=Raleway:wght@800&display=swap" rel="stylesheet">
+        <link rel="stylesheet" href="../bootstrap-5.3.0-alpha3-dist/css/bootstrap.min.css">
+        <!-- *******************local stylesheet******************** -->
+        <link rel="stylesheet" href="../dashboard-pages/stylesheet/global.css">
+        <link rel="stylesheet" href="../dashboard-pages/stylesheet/dashboard.css">
+        <link rel="stylesheet" href="./style/settings.css">
+    </head>
+    <body>
+    <!-- ***********************Dashboard Sidebar************************************** -->
+    <!-- SIDEBAR -->
+	<section id="sidebar">
+		<a href="./merchant.html" class="brand"><img class="logo" style="height: 36px; width: 36px;" src="../images/bigaffilogo.jpeg" alt=""> Big<span>Affi</span></a>
+		<ul class="side-menu">
+			<li><a href="./merchant.html" class="active"><i class='bx bxs-dashboard icon' ></i> Dashboard</a></li>
+			<li class="divider" data-text="Marketplace">Marketplace</li>
+			<li>
+				<a href="#"><i class='bx bxs-group icon'></i>Merchant<i class='bx bx-chevron-right icon-right' ></i></a>
+				<ul class="side-dropdown">
+					<li><a href="./affiliate.html">Affiliates</a></li>
+					<li><a href="./mobile-app.html">Mobile App</a></li>
+					<li><a href="./sales.html">Sales</a></li>
+                    <li><a href="./leaderbors.html">Leaderboard</a></li>
+                    <li><a href="./multilevel.html">MLM</a></li>
+				</ul>
+			</li>
+			<li><a href="./commission.html"><i class="fa-solid fa-percent icon"></i> Commission</a></li>
+            <li><a href="./coupon.html"><i class="fa-solid fa-tag icon"></i> Coupon</a></li>
+			<li><a href="./payment.html"><i class='bx bx-dollar icon' ></i> Payment</a></li>
+            <li><a href="./analytics.html"><i class="fa-solid fa-chart-line icon"></i>Analytics</a></li>
+            <li class="divider" data-text="Uploads">Uploads</li>
+			<li>
+				<a href="#"><i class="fa-solid fa-image icon"></i>  Media Center <i class='bx bx-chevron-right icon-right' ></i></a>
+				<ul class="side-dropdown">
+                    <li><a href="./upload-media.html"><i class="fa-solid fa-image icon"></i> Media</a></li>
+                    <li><a href="./marketplace.html"><i class="fa-solid fa-shop icon"></i>Marketplace</a></li>
+                    <li><a href="./store.html"><i class="fa-solid fa-earth-americas icon"></i>Store</a></li>
+					<li><a href="#"><i class='bx bx-lock-alt icon' ></i> Privacy</a></li>
+					<li><a href="#"><i class='bx bxs-contact icon' ></i> T & C</a></li>
+				</ul>
+			</li>
+			<li><a href="./settings.html"><i class='bx bx-cog icon' ></i>Settings</a></li>
+			<li><a href="#"><i class='bx bxs-contact icon' ></i> Contact Us</a></li>
+			<li><a href="#" data-bs-toggle="modal" data-bs-target="#logOut"><i class='bx bxs-log-out-circle icon' ></i> Logout</a></li>
+		</ul>
+		<div class="ads">
+			<div class="wrapper">
+				<a href="#" class="btn-upgrade">Upgrade</a>
+				<p>Become a <span>PRO</span> member and enjoy <span>All Features</span></p>
+			</div>
+		</div>
+	</section>
+	<!-- SIDEBAR -->
+
+	<!-- NAVBAR -->
+	<section id="content">
+		<!-- NAVBAR -->
+		<nav>
+			<i class='bx bx-menu toggle-sidebar' ></i>
+			<form action="#">
+				<div class="form-group">
+					<input type="text" placeholder="Search...">
+					<i class='bx bx-search icon' ></i>
+				</div>
+			</form>
+			<a href="#" class="nav-link">
+				<i class='bx bxs-bell icon' ></i>
+				<span class="badge">5</span>
+			</a>
+			<a href="#" class="nav-link">
+				<i class='bx bxs-message-square-dots icon'></i>
+				<span class="badge">8</span>
+			</a>
+			<span class="divider"></span>
+			<div class="profile">
+				<img src="../images/female_avatar_efig.svg" alt="">
+				<ul class="profile-link">
+					<li><a href="#"><i class='bx bxs-user-circle icon' ></i> Profile</a></li>
+					<li><a href="./settings.html"><i class='bx bxs-cog' ></i> Settings</a></li>
+					<li><a href="#" data-bs-toggle="modal" data-bs-target="#logOut"><i class='bx bxs-log-out-circle' ></i> Logout</a></li>
+				</ul>
+			</div>
+		</nav>
+		<!-- NAVBAR -->
+
+		<!-- MAIN -->
+		<main>
+			<div class="d-flex align-items-center">
+                <div class="me-auto">
+                    <h1 class="title">Setting</h1>
+                </div>
+            </div>
+			<ul class="breadcrumbs">
+				<li><a href="#">Home</a></li>
+				<li class="divider">/</li>
+				<li><a href="./affiliate.html" class="active">setting</a></li>
+			</ul>
+            <div class="card mt-4">
+                <div class="card-header">
+                  <ul class="nav nav-tabs card-header-tabs id="myTab" role="tablist"">
+                    <li class="nav-item" role="presentation">
+                      <a class="nav-link" aria-current="true" href="#" id="home-tab" data-bs-toggle="tab" data-bs-target="#generalSetting" aria-controls="generalSetting" aria-selected="true">General Setting</a>
+                    </li>
+					<li class="nav-item" role="presentation">
+						<a class="nav-link" aria-current="true" href="#" id="home-tab" data-bs-toggle="tab" data-bs-target="#notification" aria-controls="notification" aria-selected="true">Notification</a>
+					</li>
+					<li class="nav-item" role="presentation">
+						<a class="nav-link" aria-current="true" href="#" id="home-tab" data-bs-toggle="tab" data-bs-target="#payment" aria-controls="payment" aria-selected="true">Payment</a>
+					</li>
+					<li class="nav-item" role="presentation">
+						<a class="nav-link" aria-current="true" href="#" id="home-tab" data-bs-toggle="tab" data-bs-target="#report" aria-controls="report" aria-selected="true">Report</a>
+					</li>
+					<li class="nav-item" role="presentation">
+						<a class="nav-link active" aria-current="true" href="#" id="home-tab" data-bs-toggle="tab" data-bs-target="#integration" aria-controls="integration" aria-selected="true">Integration</a>
+					</li>
+                  </ul>
+                </div>
+                <div class="card-body tab-content" id="nav-tabContent">
+                    <div class="tab-pane fade show" id="generalSetting" role="tabpanel" aria-labelledby="nav-home-tab" tabindex="0">
+                        <div class="row settings">
+							<div class="col-md-6">
+								<h4>Set Cookie Duration</h4>
+								<p>Cookie duration refers to the period a web cookie stays active, storing user data and preferences before automatically expiring or being deleted.</p>
+							</div>
+							<div class="col-md-6">
+								<form action="#somewhere">
+									<div class="col mb-3">
+										<select id="paymentMethod" class="form-select">
+										  <option selected>Days</option>
+										  <option value="1">Hours</option>
+										</select>
+									</div>
+									<div class="col mb-3">
+										<input type="number" class="form-control" id="basic-url" aria-describedby="basic-addon3" required>
+									</div>
+									<div class="text-center">
+										<a href="#000" class="submit">Save</a>
+									</div>
+								</form>
+							</div>
+						</div>
+						<div class="row settings">
+							<div class="col-md-6">
+								<h4>Timezone</h4>
+								<p>The time mentioned in Data &amp reports to be downloaded from this site is based on your selected time zone </p>
+							</div>
+							<div class="col-md-6">
+								<div class="col">
+									<select id="paymentMethod" class="form-select">
+										<option selected>Select Time Zone</option>
+										<option value="1" id="choice">+ 5:30 GMT Asia/Calcutta	India Standard Time</option>
+										<option value="2">+ 6: GMT Asia/Rangoon	Myanmar Time</option>
+										<option value="3">+ 7: GMT Asia/Rangoon	Myanmar Time</option>
+										<option value="4">+ 7:30 GMT Asia/Rangoon	Myanmar Time</option>
+										<option value="5">+ 8: GMT Asia/Rangoon	Myanmar Time</option>
+										<option value="6">+ 8:30 GMT Asia/Rangoon	Myanmar Time</option>
+									</select>
+								</div>
+							</div>
+						</div>
+						<div class="row settings">
+							<div class="col-md-6">
+								<h4>Signup Bonus</h4>
+								<p>Signup Bonus automatically assigned to the affilited after completion of registration process</p>
+							</div>
+							<div class="col-md-6">
+								<div class="col">
+									<div class="input-group mb-3">
+										<span class="input-group-text" id="basic-addon">$</span>
+										<input type="number" class="form-control" id="basic-url" aria-describedby="basic-addon3">
+									</div>
+								</div>
+							</div>
+						</div>
+						<div class="row settings">
+							<div class="col-md-6">
+								<h4>Affiliate Registrations</h4>
+								<p>You can Manage registrations of affiliates &amp their users</p>
+							</div>
+							<div class="col-md-6">
+								<div class="col">
+									<div class="tab-box">
+										<div class="form-check check-box">
+											<input class="form-check-input" type="checkbox" value="" id="flexCheckChecked" checked>
+											<label class="form-check-label" for="flexCheckChecked">
+												Allow registrations from affiliate page
+											</label>
+										</div>
+										<small>Allow users to register from the public registration page at javacontrols.goaffpro.com/create-account</small>
+									</div>
+									<div class="tab-box mt-5">
+										<div class="form-check check-box">
+											<input class="form-check-input" type="checkbox" value="" id="flexCheckChecked" checked>
+											<label class="form-check-label" for="flexCheckChecked">
+												Auto Approve
+											</label>
+										</div>
+										<small>Desablign this option will restrict affiliates to access the dashbord untill you allow them to access.</small>
+									</div>
+								</div>	
+							</div>
+						</div>
+                    </div>
+					<!-- =========Notification============= -->
+					<div class="tab-pane fade show" id="notification" role="tabpanel" aria-labelledby="nav-home-tab" tabindex="0">
+                        <div class="row settings">
+							<div class="col-md-6">
+								<h4>Contact Info</h4>
+								<p>Kindly provide your valid contact info so that your affilites can directly communicate with you.</p>
+							</div>
+							<div class="col-md-6">
+								<form action="#somewhere">
+									<div class="mb-3">
+										<label for="formGroupExampleInput" class="form-label p-1">Email Address</label>
+										<input type="email" class="form-control" id="formGroupExampleInput">
+									</div>
+									<div class="row">
+										<div class="col-md-6">
+											<label for="basic-url" class="form-label">Instagram</label>
+											<div class="input-group mb-3">
+												<span class="input-group-text" id="basic-addon3">@</span>
+												<input type="text" class="form-control" id="basic-url" aria-describedby="basic-addon3">
+											</div>
+										</div>
+										<div class="col-md-6">
+											<label for="basic-url" class="form-label">Twitter X</label>
+											<div class="input-group mb-3">
+												<span class="input-group-text" id="basic-addon3">@</span>
+												<input type="text" class="form-control" id="basic-url" aria-describedby="basic-addon3">
+											</div>
+										</div>
+									</div>
+									<div class="text-center mt-4">
+										<a href="#000" class="submit">Save</a>
+									</div>
+								</form>
+							</div>
+						</div>
+						<div class="row settings">
+							<div class="col-md-6">
+								<h4>Personal Notification</h4>
+								<p>your prefered notification will send to <a href="">josTheBoss@jaldiKro.com</a></p>
+								<a href="" class="customize-template">Customize email templates</a>
+							</div>
+							<div class="col-md-6">
+								<div class="col">
+									<div class="tab-box">
+										<div class="form-check check-box">
+											<input class="form-check-input" type="checkbox" value="" id="flexCheckChecked" checked>
+											<label class="form-check-label" for="flexCheckChecked">
+												When new affiliate registers
+											</label>
+										</div>
+										<div class="form-check check-box">
+											<input class="form-check-input" type="checkbox" value="" id="flexCheckChecked" checked>
+											<label class="form-check-label" for="flexCheckChecked">
+												When a new affiliate sale is made
+											</label>
+										</div>
+										<div class="form-check check-box">
+											<input class="form-check-input" type="checkbox" value="" id="flexCheckChecked" checked>
+											<label class="form-check-label" for="flexCheckChecked">
+												When an affiliate uploads a new file
+											</label>
+										</div>
+									</div>
+								</div>
+							</div>
+						</div>
+						<div class="row settings">
+							<div class="col-md-6">
+								<h4>Affiliate's Notifications</h4>
+								<p>These notification will send to your affilite's registered email address</p>
+								<a href="" class="customize-template">Customize email templates</a>
+							</div>
+							<div class="col-md-6">
+								<div class="col">
+									<div class="tab-box">
+										<div class="form-check check-box">
+											<input class="form-check-input" type="checkbox" value="" id="flexCheckChecked" checked>
+											<label class="form-check-label" for="flexCheckChecked">
+												Affiliate email verification email
+											</label>
+										</div>
+										<div class="form-check check-box">
+											<input class="form-check-input" type="checkbox" value="" id="flexCheckChecked" checked>
+											<label class="form-check-label" for="flexCheckChecked">
+												When affiliate account is approved
+											</label>
+										</div>
+										<div class="form-check check-box">
+											<input class="form-check-input" type="checkbox" value="" id="flexCheckChecked" checked>
+											<label class="form-check-label" for="flexCheckChecked">
+												When affiliate account is rejected or blocked
+											</label>
+										</div>
+										<div class="form-check check-box">
+											<input class="form-check-input" type="checkbox" value="" id="flexCheckChecked" checked>
+											<label class="form-check-label" for="flexCheckChecked">
+												When affiliate account is deleted
+											</label>
+										</div>
+										<div class="form-check check-box">
+											<input class="form-check-input" type="checkbox" value="" id="flexCheckChecked" checked>
+											<label class="form-check-label" for="flexCheckChecked">
+												When a new sale is made
+											</label>
+										</div>
+										<div class="form-check check-box">
+											<input class="form-check-input" type="checkbox" value="" id="flexCheckChecked" checked>
+											<label class="form-check-label" for="flexCheckChecked">
+												When a new sale is approved
+											</label>
+										</div>
+										<div class="form-check check-box">
+											<input class="form-check-input" type="checkbox" value="" id="flexCheckChecked" checked>
+											<label class="form-check-label" for="flexCheckChecked">
+												When a sale is updated
+											</label>
+										</div>
+										<div class="form-check check-box">
+											<input class="form-check-input" type="checkbox" value="" id="flexCheckChecked" checked>
+											<label class="form-check-label" for="flexCheckChecked">
+												When a sale is rejected
+											</label>
+										</div>
+										<div class="form-check check-box">
+											<input class="form-check-input" type="checkbox" value="" id="flexCheckChecked" checked>
+											<label class="form-check-label" for="flexCheckChecked">
+												When affiliate payment is processed
+											</label>
+										</div>
+									</div>
+								</div>
+							</div>	
+						</div>
+						<div class="row settings">
+							<div class="col-md-6">
+								<h4>Welcome Message</h4>
+								<p>A welcome message will send to affilites at their registered email address once their account is approved.</p>
+							</div>
+							<div class="col-md-6">
+								<div class="col">
+									<a href="" class="customize-template">Customize email templates</a>
+								</div>
+							</div>
+						</div>
+                    </div>
+					<!-- ================Payment==================== -->
+					<div class="tab-pane fade show" id="payment" role="tabpanel" aria-labelledby="nav-home-tab" tabindex="0">
+                        <div class="row settings">
+							<div class="col-md-6">
+								<h4>Global Payment Methods</h4>
+								<p>These are the worldwide supported payment methods. Your affiliates can see only those payment method which are checked by you. </p>
+							</div>
+							<div class="col-md-6">
+								<div class="col">
+									<div class="tab-box">
+										<div class="form-check check-box">
+											<input class="form-check-input" type="checkbox" value="" id="flexCheckChecked" checked>
+											<label class="form-check-label" for="flexCheckChecked">
+												PayPal
+											</label>
+										</div>
+										<div class="form-check check-box">
+											<input class="form-check-input" type="checkbox" value="" id="flexCheckChecked" checked>
+											<label class="form-check-label" for="flexCheckChecked">
+												Debit Card
+											</label>
+										</div>
+										<div class="form-check check-box">
+											<input class="form-check-input" type="checkbox" value="" id="flexCheckChecked" checked>
+											<label class="form-check-label" for="flexCheckChecked">
+												Bitcoin
+											</label>
+										</div>
+										<div class="form-check check-box">
+											<input class="form-check-input" type="checkbox" value="" id="flexCheckChecked" checked>
+											<label class="form-check-label" for="flexCheckChecked">
+												Cash
+											</label>
+										</div>
+										<div class="form-check check-box">
+											<input class="form-check-input" type="checkbox" value="" id="flexCheckChecked" checked>
+											<label class="form-check-label" for="flexCheckChecked">
+												Bank Transfer (SWIFT/ACH)
+											</label>
+										</div>
+										<div class="form-check check-box">
+											<input class="form-check-input" type="checkbox" value="" id="flexCheckChecked" checked>
+											<label class="form-check-label" for="flexCheckChecked">
+												Payoneer
+											</label>
+										</div>
+									</div>
+								</div>
+							</div>
+						</div>
+						<div class="row settings">
+							<div class="col-md-6">
+								<h4>Payment Methods for Indian Affiliates</h4>
+								<p>Global Pyament methods are also supported for affiliates from Indian origin</p>
+								<p>Here are some additional payment methods for india affiliates</p>
+							</div>
+							<div class="col-md-6">
+								<div class="col">
+									<div class="tab-box">
+										<div class="form-check check-box">
+											<input class="form-check-input" type="checkbox" value="" id="flexCheckChecked" checked>
+											<label class="form-check-label" for="flexCheckChecked">
+												Paytm
+											</label>
+										</div>
+										<div class="form-check check-box">
+											<input class="form-check-input" type="checkbox" value="" id="flexCheckChecked" checked>
+											<label class="form-check-label" for="flexCheckChecked">
+												UPI
+											</label>
+										</div>
+										<div class="form-check check-box">
+											<input class="form-check-input" type="checkbox" value="" id="flexCheckChecked" checked>
+											<label class="form-check-label" for="flexCheckChecked">
+												SBI Cards
+											</label>
+										</div>
+										<div class="form-check check-box">
+											<input class="form-check-input" type="checkbox" value="" id="flexCheckChecked" checked>
+											<label class="form-check-label" for="flexCheckChecked">
+												Net Banking
+											</label>
+										</div>
+									</div>
+								</div>
+							</div>
+						</div>
+						<div class="row settings">
+							<div class="col-md-6">
+								<h4>Choose Default Payment Method</h4>
+								<p>Select deafault payment method for new affiliates</p>
+							</div>
+							<div class="col-md-6">
+								<div class="col">
+									<select id="paymentMethod" class="form-select">
+										<option selected>Paypal</option>
+										<option value="1">Net Banking</option>
+										<option value="2">Payoneer</option>
+										<option value="3">Bitcoin</option>
+										<option value="4">Debit Card</option>
+										<option value="5">Bank Transfer (SWIFT/ACH)</option>
+										<option value="6">UPI</option>
+										<option value="6">Paytm</option>
+									</select>
+								</div>
+							</div>
+						</div>
+						<div class="row settings">
+							<div class="col-md-6">
+								<h4>Customize commission hold time</h4>
+								<p>Restrict affiliates commission for a certain period of time, after which it will payable to the affiliates.</p>
+							</div>
+							<div class="col-md-6">
+								<div class="input-group mb-3">
+									<input type="number" class="form-control" aria-describedby="basic-addon2">
+									<span class="input-group-text" id="basic-addon2">Days</span>
+								</div>
+							</div>
+						</div>
+						<div class="row settings">
+							<div class="col-md-6">
+								<h4>Payment T &amp C</h4>
+								<p>Your payment terms and conditions for affiliates</p>
+							</div>
+							<div class="col-md-6">
+								<div class="col mb-3">
+									<label for="inputReport" class="form-label">Select Payment Terms &amp Condition</label>
+									<select id="paymentMethod" class="form-select" onchange="paymentTerm(this)">
+									  <option selected>Default</option>
+									  <option value="1">Custome Payment Terms</option>
+									</select>
+								</div>
+								<div id="custome" class="d-none">
+									<label for="formGroupExampleInput" class="form-label">Custome Term</label>
+									<input type="text" class="form-control" id="formGroupExampleInput" placeholder="enter custome payment term link ">
+								</div>
+							</div>
+						</div>
+						<div class="row settings">
+							<div class="col-md-6">
+								<h4>Minimum Payout</h4>
+								<p>Amount will be payable after it touches minimum payout mark.</p>
+								<p>Leave it blank for no payout restriction</p>
+							</div>
+							<div class="col-md-6">
+								<div class="col">
+									<label for="basic-url" class="form-label">Minimum Payout</label>
+									<div class="input-group mb-3">
+										<span class="input-group-text" id="basic-addon3">$</span>
+										<input type="number" class="form-control" id="basic-url" aria-describedby="basic-addon3">
+									</div>
+								</div>
+							</div>
+						</div>
+						<div class="row settings">
+							<div class="col-md-6">
+								<h4>Tax/TDS &amp VAT</h4>
+								<p>Taxes submitted by you on behalf of your affiliates will be adjusted from their payouts, reflecting the net amount in their final payments.</p>
+							</div>
+							<div class="col-md-6">
+								<form action="#somewhere">
+									<div class="col mb-3">
+										<label for="basic-url" class="form-label p-1">Tax Type</label>
+										<select id="textType" class="form-select">
+										  <option selected>Paid by affiliate</option>
+										  <option value="1">Paid by Merchant</option>
+										</select>
+									</div>
+									<div class="col mb-3">
+										<label for="basic-url" class="form-label p-1">Tax &percnt;</label>
+										<input type="number" class="form-control" id="basic-url" aria-describedby="basic-addon3" required>
+									</div>
+									<div class="text-center">
+										<a href="#000" class="submit">Save</a>
+									</div>
+								</form>
+							</div>
+						</div>
+					</div>
+					<!-- ================Report==================== -->
+					<div class="tab-pane fade show" id="report" role="tabpanel" aria-labelledby="nav-home-tab" tabindex="0">
+						<div class="row settings">
+							<h4 class="text-center my-4">Download Report</h4>
+							<div class="col-md-6 mx-auto report-box">
+								<div class="">
+									<form action="#somewhere">
+										<div class="col mb-3">
+											<label for="inputReport" class="form-label p-1">Report Type</label>
+											<select id="inputReport" class="form-select">
+											  <option selected>Affiliates</option>
+											  <option>Order/Sales</option>
+											  <option>Product</option>
+											  <option>Payout</option>
+											  <option>Traffic</option>
+											  <option>Transaction</option>	
+											</select>
+										</div>
+										<div class="row mb-3">
+											<div class="col-md-6">
+												<label for="exampleFormControlInput2" class="form-label p-1">Start Date</label>
+												<input type="text" class="form-control" id="exampleFormControlInput1" placeholder="select date" onfocus="(this.type = 'date')"  id="date">
+											</div>
+											<div class="col-md-6">
+												<label for="exampleFormControlInput2" class="form-label p-1">Final Date</label>
+												<input type="text" class="form-control" id="exampleFormControlInput1" placeholder="select date" onfocus="(this.type = 'date')"  id="date">
+											</div>
+											<small>Report to be downloaded within selected date frame</small>
+										</div>
+										<div class="col mb-3">
+											<label for="inputState" class="form-label p-1">Additional Filter</label>
+											<select id="inputState" class="form-select">
+											  <option selected>Filter by Affiliate</option>
+											  <option>Filter by group</option>
+											  <option>Filter by tag</option>
+											</select>
+										</div>
+										<div class="col mb-3">
+											<label for="inputState" class="form-label p-1">Download Format</label>
+											<select id="inputState" class="form-select">
+											  <option selected>PDF</option>
+											  <option>docs</option>
+											  <option>txt</option>
+											  <option>Excel</option>
+											</select>
+										</div>
+										<div id="liveAlertPlaceholder"></div>
+										<a type="button" class="btn  alert-btn" id="liveAlertBtn">Generate Report</a>
+									</form>
+								</div>
+							</div>
+						</div>
+					</div>
+					<!-- =======================Integration====================== -->
+					<div class="tab-pane fade show active" id="integration" role="tabpanel" aria-labelledby="nav-home-tab" tabindex="0">
+                        <div class="row settings">
+							<div class="col-md-6">
+								<h4>Tax/TDS &amp VAT</h4>
+								<p>Taxes submitted by you on behalf of your affiliates will be adjusted from their payouts, reflecting the net amount in their final payments.</p>
+							</div>
+							<div class="col-md-6">
+								<form action="#somewhere">
+									<div class="col mb-3">
+										<label for="basic-url" class="form-label p-1">Tax Type</label>
+										<select id="textType" class="form-select">
+										  <option selected>Paid by affiliate</option>
+										  <option value="1">Paid by Merchant</option>
+										</select>
+									</div>
+									<div class="col mb-3">
+										<label for="basic-url" class="form-label p-1">Tax &percnt;</label>
+										<input type="number" class="form-control" id="basic-url" aria-describedby="basic-addon3" required>
+									</div>
+									<div class="text-center">
+										<a href="#000" class="submit">Save</a>
+									</div>
+								</form>
+							</div>
+						</div>
+					</div>					
+                </div>
+            </div>
+		</main>
+	</section>
+	<!-- ********************************Logout Model************************************************* -->
+	<div class="modal fade" id="logOut" tabindex="-1" aria-labelledby="exampleModalLabel" aria-hidden="true">
+		<div class="modal-dialog modal-dialog-centered">
+			<div class="modal-content logout-content">
+				<div class="modal-header logout-header">
+				<p class="text-center"><i class="fa-solid fa-triangle-exclamation"></i></p>
+				</div>
+				<div class="modal-body logout-body text-center">
+				<h2>Are You Sure!</h2>
+				<p class="mt-2">Don't worry all your changes are saved.<br>Feel free to log back in.</p>
+				</div>
+				<div class="modal-footer logout-footer">
+				<a type="button" class="btn btn-secondary dismiss" data-bs-dismiss="modal">Cancle</a>
+				<a type="button" class="btn btn-primary logout">Logout</a>
+				</div>
+			</div>
+		</div>
+	</div>
+	<!-- =======================Video Modal===================================== -->
+	<div class="modal fade" id="videoModal" tabindex="-1" role="dialog" aria-labelledby="myModalLabel" aria-hidden="true">
+		<div class="modal-dialog modal-lg">
+		  <div class="modal-content">
+			<div class="modal-header">
+			  <h2>Manually assign sales to an affiliate.</h2>	
+			  <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
+			</div>
+			<div class="modal-body">
+			  <div class="embed-container">
+				<iframe width="100%" height="350" src="https://www.youtube.com/embed/HBdcL7YsdBY" frameborder="0" allowfullscreen></iframe>
+			  </div>
+			</div>
+		  </div>
+		</div>
+	</div>
+	<!-- ==================Create Coupon ===============================-->
+	<div class="modal fade" id="createCoupon" tabindex="-1" aria-labelledby="exampleModalLabel" aria-hidden="true">
+		<div class="modal-dialog">
+			<div class="modal-content">
+				<div class="modal-header">
+				<h5 class="modal-title" id="exampleModalLabel">Create Coupon</h5>
+				<button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
+				</div>
+				<div class="modal-body">
+					<form action="#someWhere">
+						<div class="input-group mb-3">
+                            <div class="input-group-text p-0">
+                                <select class="form-select shadow-none bg-light border-0">
+                                    <option selected>Affiliate</option>
+                                    <option value="1">Jos Butller</option>
+                                    <option value="2">Quinton Decock</option>
+                                    <option value="3">Mahela Jayvardhane</option>
+                                    <option value="4">Musafilkur Rahim</option>
+                                    <option value="5">Dhananjay di Silva</option>
+                                </select>
+                            </div>
+                            <input type="search" class="form-control" placeholder="Search Affiliate">
+                            <a href="#000" class="input-group-text shadow-none px-4 btn-warning">
+                                <i class="fa fa-search"></i>
+                            </a>
+                        </div>
+						<div class="col-md-12 mb-3">
+                            <label for="formGroupExampleInput" class="form-label p-1">Coupon Code</label>
+                            <input type="text" class="form-control" id="formGroupExampleInput">
+                        </div>
+                        <div class="form-check mb-3">
+                            <input class="form-check-input" type="checkbox" value="" id="invalidCheck" required>
+                            <small class="form-check-label" for="invalidCheck">
+                               Also create in store
+                            </small>
+                            <div class="invalid-feedback">
+                                You must agree before submitting.
+                            </div>
+                        </div>
+
+						<a type="button" class="btn btn-secondary" data-bs-dismiss="modal">Dismiss</a>
+						<a type="submit" class="btn btn-primary">Create</a>
+					</form>
+				</div>
+			</div>
+		</div>
+	</div>
+	<script type="text/javascript">
+		function paymentTerm(answer){
+			console.log(answer.value);
+			if(answer.value == 1){
+				document.getElementById('custome').classList.remove('d-none');
+			} else{
+				document.getElementById('custome').classList.add('d-none');
+			}
+		};
+	</script>
+	<script>
+			const alertPlaceholder = document.getElementById('liveAlertPlaceholder')
+
+			const alert = (message, type) => {
+			const wrapper = document.createElement('div')
+			wrapper.innerHTML = [
+				`<div class="alert alert-${type} alert-dismissible" role="alert">`,
+				`   <div>${message}</div>`,
+				'   <button type="button" class="btn-close" data-bs-dismiss="alert" aria-label="Close"></button>',
+				'</div>'
+			].join('')
+
+			alertPlaceholder.append(wrapper)
+			}
+
+			const alertTrigger = document.getElementById('liveAlertBtn')
+			if (alertTrigger) {
+			alertTrigger.addEventListener('click', () => {
+				alert('Report generated successfully <a href="#"> Click to download </a>', 'success')
+			})
+			}
+	</script>
+    <!-- ==============================Bootstrap script============================ -->
+    <script src="../bootstrap-5.3.0-alpha3-dist/js/bootstrap.bundle.min.js"></script>
+    <!-- ==============================ApexChart script CDN ============================ -->
+    <script src="https://cdn.jsdelivr.net/npm/apexcharts"></script>
+    <!-- ==============================Local script============================ -->
+    <script src="../dashboard-pages/script/global-script.js"></script>
+    <script src="../dashboard-pages/script/dashboard.js"></script>
+    </body>
+</html>    

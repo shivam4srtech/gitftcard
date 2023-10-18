@@ -1,4 +1,7 @@
-h2{
+.form-check-input{
+	margin-top: 0;
+   }
+#profile h2{
     font-weight: 600;
     font-size: 1.4rem;
     margin-bottom: .5rem;
@@ -8,7 +11,7 @@ h2{
     font-weight: 600;
     font-size: 1.2rem;
 }
-h3{
+#profile h3{
     font-weight: 600;
     font-size: 1.2rem;
 }
@@ -19,36 +22,36 @@ h3{
     max-width: 80px;
     object-fit: contain;
 }
-p{
+#profile p{
     font-weight: 500;
     font-size: 1rem;
     margin-bottom: .4rem;
     color: #000;
 }
-label{
+#profile label{
     font-weight: 600;
     font-size: .9rem;
     padding: 0 .4rem;
 }
-.media-size{
+#profile .media-size{
     margin-top: .1rem;
     padding: .3rem;
     display: inline-block;
     font-weight: 500;
     font-size: .8rem;
   }
-a{
+  #profile a{
     color: #5676ff;
     text-decoration: none;
     font-size: .9rem;
     font-weight: 500;
    
 }
-a i{
+#profile a i{
     display: inline-block;
     padding: .5rem;
 }
-select option{
+#profile select option{
     font-weight: 500;
     font-size: .9rem;
 }
@@ -129,3 +132,196 @@ select option{
     padding-top: 1rem;
     padding-bottom: 2rem;
 }
+/* ===========================Affiliate Dashboard================================== */
+#affiliateDashboard .dash-title h3{
+    font-weight: 600;
+    font-size: 1.4rem;
+    margin-bottom: .8rem;
+    color: #000;
+}
+#affiliateDashboard .dash-title p{
+    font-weight: 500;
+    color: #000;
+    font-size: 1rem;
+    margin-bottom: .5rem;
+}
+#affiliateDashboard .dash-title a{
+   color: #5676ff;
+   font-weight: 500;
+   text-decoration: none;
+}
+#affiliateDashboard .dash-title a i{
+    padding: .25rem;
+ }
+ .dashboard-components h3{
+    color: #000;
+    font-size: 1.25rem;
+    margin-bottom: .8rem;
+    font-weight: 600;
+ }
+ .dashboard-components h4{
+    color: #000;
+    font-size: .95rem;
+    margin-bottom: .8rem;
+    font-weight: 600;
+ }
+ .dashboard-components .nav-color input{
+    width: 4rem;
+    height: 2rem;
+    border: none;
+    outline: none;
+    cursor: pointer;
+    border-radius: 4px;
+ }
+ .dashboard-components .show-hide small{
+    display: block;
+    font-weight: 500;
+    font-size: .8rem;
+    margin-top: .4rem;
+  }
+  .dashboard-components .show-hide label{
+    font-weight: 600;
+    font-size: .9rem;
+  }
+  .dashboard-components .nav-btn input{
+    display: block;
+  }
+  .dashboard-components .nav-btn input[type=color]{
+    display: block;
+    width: 4rem;
+    height: 2rem;
+    border: none;
+    outline: none;
+    cursor: pointer;
+  }
+  .dashboard-components .nav-btn label{
+    font-weight: 600;
+    color: #000;
+    font-size: .8rem;
+  }
+  .dashboard-components .accordion-button{
+    color: #000;
+    font-weight: 600;
+    text-transform: capitalize;
+    cursor: pointer;
+    font-size: 1rem;
+    letter-spacing: .4px;
+  }
+  #cardGroup .card-box{
+    border: 1px solid #e0e4e8;
+    padding: .4rem;
+    border-radius: 10px;
+  }
+  #cardGroup .card-box label{
+    font-weight: 600;
+    color: #000;
+    font-size: .95rem;
+  }
+  #cardGroup .card-box .card-img img{
+   display: block;
+   margin: auto;
+   object-fit: contain;
+   max-width: 100%;
+   width: 160px;
+   border-radius: 4px;
+  }
+  #cardGroup .card-box .card-img a{
+    display: block;
+    text-align: center;
+    font-weight: 500;
+    color: #cd1c1f;
+    font-size: .95rem;
+    margin-top: .8rem;
+   }
+   #cardGroup ::placeholder{
+   font-weight: 500;
+   color: #000;
+   font-size: .9rem;
+   }
+   #cardGroup .card-box textarea{
+   min-height: 8rem;
+   }
+   #footer .footer-box{
+    border: 1px solid #e0e4e8;
+    padding: .4rem;
+    border-radius: 10px;
+   }
+   #footer .footer-box textarea{
+    min-height: 6rem;
+   }
+   #footer .footer-box label{
+    color: #000;
+    font-weight: 600;
+    font-size: .85rem;
+   }
+   #footer .footer-box input::placeholder{
+    color: #000;
+    font-weight: 500;
+    font-size: .85rem;
+   }
+/* ============================Dashboard Preference============================== */
+#dashboardPreference h2{
+    font-weight: 600;
+    font-size: 1.4rem;
+    margin-bottom: .5rem;
+    color: #000;
+}
+#dashboardPreference p{
+   font-weight: 500;
+   color: #000;
+   font-size: .95rem;
+   margin-bottom: .23rem;
+   line-height: 1.2;
+   letter-spacing: .4px;
+}
+#dashboardPreference .video-modal{
+   color: #5676ff;
+   font-weight: 500;
+   font-size: .9rem;
+   margin-bottom: .5rem;
+}
+#dashboardPreference .video-modal i{
+   padding: .2rem;
+ }
+ #dashboardPreference .dashboard-tabs h3{
+    font-weight: 600;
+    font-size: 1.2rem;
+    margin-bottom: .1rem;
+    margin-top: .5rem;
+}
+ .dashboard-tabs .tab-box{
+    border: 1px solid #e0e4e8;
+    border-radius: 10px;
+    padding: .5rem 1.8rem;
+}
+.dashboard-tabs .tab-box label{
+   font-weight: 500;
+   font-size: .85rem;
+   margin-left: .2rem;
+   display: inline-block;
+   color: #000;
+}
+.dashboard-tabs .check-box{
+    display: flex;
+    align-items: center;
+    flex-direction: row;
+}
+.dashboard-tabs .tab-box .child-check{
+    margin-left: 2%;
+    margin-top: .6rem;
+}
+.dashboard-tabs .tab-box .child-check .child-item{
+    margin-right: 1rem;
+    margin-bottom: .5rem;
+}
+.dashboard-tabs .tab-box .label-heading {
+   display: block;
+   font-weight: 600;
+   margin-bottom: .5rem;
+   font-size: .95rem; 
+ }
+ @media(max-width:600px){
+    .dashboard-tabs .tab-box{
+        padding: .5rem;
+    }
+ }

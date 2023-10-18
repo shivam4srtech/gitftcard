@@ -1,0 +1,27 @@
+.multi-level p{
+    font-weight: 500;
+    line-height: 1.4;
+    letter-spacing: .4px;
+}
+.multi-level h2 {
+    font-weight: 600;
+    font-size: 1.4rem;
+    margin-bottom: 1rem;
+   }
+.multi-level label{
+   font-weight: 600;
+   font-size: .95rem;  
+}
+.multi-level select{
+    font-weight: 600;
+    font-size: .95rem;
+ }
+ .multi-level .video-modal{
+    display: block;
+    margin-top: .3rem;
+    font-weight: 500;
+    color: #5676ff;
+ }
+ .multi-level .video-modal i{
+    padding: .5rem;
+ }
