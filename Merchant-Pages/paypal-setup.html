@@ -19,7 +19,7 @@
         <!-- *******************local stylesheet******************** -->
         <link rel="stylesheet" href="../dashboard-pages/stylesheet/global.css">
         <link rel="stylesheet" href="../dashboard-pages/stylesheet/dashboard.css">
-        <link rel="stylesheet" href="./style/mobile-app.css">
+        <link rel="stylesheet" href="./style/paypal-setup.css">
     </head>
     <body>
     <!-- ***********************Dashboard Sidebar************************************** -->
@@ -35,21 +35,21 @@
 					<li><a href="./affiliate.html">Affiliates</a></li>
 					<li><a href="./mobile-app.html">Mobile App</a></li>
 					<li><a href="./sales.html">Sales</a></li>
-					<li><a href="./leaderbors.html">Leaderboard</a></li>
-					<li><a href="./multilevel.html">MLM</a></li>
+                    <li><a href="./leaderbors.html">Leaderboard</a></li>
+                    <li><a href="./multilevel.html">MLM</a></li>
 				</ul>
 			</li>
 			<li><a href="./commission.html"><i class="fa-solid fa-percent icon"></i> Commission</a></li>
-			<li><a href="./coupon.html"><i class="fa-solid fa-tag icon"></i> Coupon</a></li>
+            <li><a href="./coupon.html"><i class="fa-solid fa-tag icon"></i> Coupon</a></li>
 			<li><a href="./payment.html"><i class='bx bx-dollar icon' ></i> Payment</a></li>
-			<li><a href="./analytics.html"><i class="fa-solid fa-chart-line icon"></i>Analytics</a></li>
-			<li class="divider" data-text="Uploads">Uploads</li>
+            <li><a href="./analytics.html"><i class="fa-solid fa-chart-line icon"></i>Analytics</a></li>
+            <li class="divider" data-text="Uploads">Uploads</li>
 			<li>
 				<a href="#"><i class="fa-solid fa-image icon"></i>  Media Center <i class='bx bx-chevron-right icon-right' ></i></a>
 				<ul class="side-dropdown">
                     <li><a href="./upload-media.html"><i class="fa-solid fa-image icon"></i> Media</a></li>
                     <li><a href="./marketplace.html"><i class="fa-solid fa-shop icon"></i>Marketplace</a></li>
-					<li><a href="./store.html"><i class="fa-solid fa-earth-americas icon"></i>Store</a></li>
+                    <li><a href="./store.html"><i class="fa-solid fa-earth-americas icon"></i>Store</a></li>
 					<li><a href="#"><i class='bx bx-lock-alt icon' ></i> Privacy</a></li>
 					<li><a href="#"><i class='bx bxs-contact icon' ></i> T & C</a></li>
 				</ul>
@@ -83,7 +83,7 @@
 				<span class="badge">5</span>
 			</a>
 			<a href="#" class="nav-link">
-				<i class='bx bxs-message-square-dots icon' ></i>
+				<i class='bx bxs-message-square-dots icon'></i>
 				<span class="badge">8</span>
 			</a>
 			<span class="divider"></span>
@@ -91,7 +91,7 @@
 				<img src="../images/female_avatar_efig.svg" alt="">
 				<ul class="profile-link">
 					<li><a href="#"><i class='bx bxs-user-circle icon' ></i> Profile</a></li>
-					<li><a href="settings.html"><i class='bx bxs-cog' ></i> Settings</a></li>
+					<li><a href="./settings.html"><i class='bx bxs-cog' ></i> Settings</a></li>
 					<li><a href="#" data-bs-toggle="modal" data-bs-target="#logOut"><i class='bx bxs-log-out-circle' ></i> Logout</a></li>
 				</ul>
 			</div>
@@ -100,36 +100,55 @@
 
 		<!-- MAIN -->
 		<main>
-			<h1 class="title">Dashboard</h1>
+			<div class="d-flex align-items-center">
+                <div class="me-auto">
+                    <h1 class="title">Setting</h1>
+                </div>
+				<div class="ms-auto">
+                    <a href="https://www.paypal.com/signin" target="_blank">Visit PayPal MyApp</a>
+                </div>
+            </div>
 			<ul class="breadcrumbs">
 				<li><a href="./merchant.html">Home</a></li>
 				<li class="divider">/</li>
-				<li><a href="#" class="active">Dashboard</a></li>
+				<li><a href="./settings.html" class="active">setting</a></li>
+                <li class="divider">/</li>
+                <li><a href="./paypal-setup.html" class="active">PayPal Pyament Integration</a></li>
 			</ul>
-			 <!-- **********************************Mobole App Modal*********************************************** -->
-             <div class="my-4 app-modal">
-                <div class="row">
-                    <div class="col-md-6 app-box">
-                        <div>
-                            <img src="../images/mobile-app.jpg" alt="">
-                        </div>
-                    </div>
-                    <div class="col-md-6 app-box">
-                      <div class="app-item">
-                          <h2>Download App,<br> Start drive, Earn <br> money!</h2>
-                          <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Tempora, adipisc</p>
-                          <div class="app-store row">
-                              <div class="col-6">
-                                <p class="qr"><a href="" data-bs-toggle="modal" data-bs-target="#qrCode">Scan QR (Android)<i class="fa-solid fa-qrcode"></i></a></p>
-                                <a href=""><img src="../dashboard-pages/images/app-store.png" alt=""></a>
-                              </div>
-                              <div class="col-6">
-                                <p class="qr"><a href="" data-bs-toggle="modal" data-bs-target="#qrCode">Sacn QR (iOS)<i class="fa-solid fa-qrcode"></i></a></p>
-                                <a href=""><img src="../images/Google-Play.svg" alt=""></a>
-                              </div>
-                          </div>
-                      </div>
-                    </div>
+            <div class="card mt-4">
+                <div class="card-header">
+                  <ul class="nav nav-tabs card-header-tabs id="myTab" role="tablist"">
+					<li class="nav-item" role="presentation">
+						<a class="nav-link active" aria-current="true" href="#" id="home-tab" data-bs-toggle="tab" data-bs-target="#paypalIntegration" aria-controls="paypalIntegration" aria-selected="true">PayPal Integration</a>
+					</li>
+                  </ul>
+                </div>
+                <div class="card-body tab-content" id="nav-tabContent">
+					<!-- =======================Paypal Integratiobn====================== -->
+					<div class="tab-pane fade show active" id="paypalIntegration" role="tabpanel" aria-labelledby="nav-home-tab" tabindex="0">
+						<div class="row">
+							<h4>Setup Paypal Payouts</h4>
+							<div class="col-md-8 mx-auto paypal-box">
+								<form action="#SomeWhere">
+									<div class="col mb-3">
+										<label for="formGroupExampleInput" class="form-label">Client ID<span>*</span></label required>
+										<input type="text" class="form-control" id="formGroupExampleInput">
+									</div>
+									<div class="col mb-3">
+										<label for="formGroupExampleInput" class="form-label">Client Secret<span>*</span></label required>
+										<input type="text" class="form-control" id="formGroupExampleInput">
+									</div>
+									<div class="col mb-3">
+										<label for="formGroupExampleInput" class="form-label">Wallet Password (optional)</label>
+										<input type="text" class="form-control" id="">
+									</div>
+									<div class="submit text-center">
+										<input type="submit" value="save">
+									</div>
+								</form>
+							</div>
+						</div>
+					</div>					
                 </div>
             </div>
 		</main>
@@ -140,7 +159,6 @@
 			<div class="modal-content logout-content">
 				<div class="modal-header logout-header">
 				<p class="text-center"><i class="fa-solid fa-triangle-exclamation"></i></p>
-				<!-- <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button> -->
 				</div>
 				<div class="modal-body logout-body text-center">
 				<h2>Are You Sure!</h2>
@@ -153,29 +171,68 @@
 			</div>
 		</div>
 	</div>
-     <!-- ==================QR Code modal ===============================-->
-     <div class="modal fade" id="qrCode" tabindex="-1" aria-labelledby="exampleModalLabel" aria-hidden="true">
-        <div class="modal-dialog">
-        <div class="modal-content qrcode">
-            <div class="modal-header">
-            <h5 class="modal-title fw-bold" id="exampleModalLabel">Scan QR Code to dwonload the App</h5>
-            <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
-            </div>
-            <div class="modal-body">
-                <div>
-                    <img src="../dashboard-pages/images/qr-code.png" alt="">
-                </div>
-                <div class="my-4 text-center">
-                    <a href="#000">Download<i class="fa-solid fa-file-arrow-down"></i></a>
-                </div>
-            </div>
-        </div>
-        </div>
-    </div>
+	<!-- =======================Video Modal===================================== -->
+	<div class="modal fade" id="videoModal" tabindex="-1" role="dialog" aria-labelledby="myModalLabel" aria-hidden="true">
+		<div class="modal-dialog modal-lg">
+		  <div class="modal-content">
+			<div class="modal-header">
+			  <h2>Manually assign sales to an affiliate.</h2>	
+			  <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
+			</div>
+			<div class="modal-body">
+			  <div class="embed-container">
+				<iframe width="100%" height="350" src="https://www.youtube.com/embed/HBdcL7YsdBY" frameborder="0" allowfullscreen></iframe>
+			  </div>
+			</div>
+		  </div>
+		</div>
+	</div>
+	<script type="text/javascript">
+		function paymentTerm(answer){
+			console.log(answer.value);
+			if(answer.value == 1){
+				document.getElementById('custome').classList.remove('d-none');
+			} else{
+				document.getElementById('custome').classList.add('d-none');
+			}
+		};
+	</script>
+	<script>
+		function myFunction() {
+		  var checkBox = document.getElementById("myCheck");
+		  var text = document.getElementById("text");
+		  if (checkBox.checked == true){
+			text.style.display = "block";
+			console.log("BLOCK");
+		  } else {
+			 text.style.display = "none";
+		  }
+		}
+	</script>
+	<script>
+			const alertPlaceholder = document.getElementById('liveAlertPlaceholder')
+
+			const alert = (message, type) => {
+			const wrapper = document.createElement('div')
+			wrapper.innerHTML = [
+				`<div class="alert alert-${type} alert-dismissible" role="alert">`,
+				`   <div>${message}</div>`,
+				'   <button type="button" class="btn-close" data-bs-dismiss="alert" aria-label="Close"></button>',
+				'</div>'
+			].join('')
+
+			alertPlaceholder.append(wrapper)
+			}
+
+			const alertTrigger = document.getElementById('liveAlertBtn')
+			if (alertTrigger) {
+			alertTrigger.addEventListener('click', () => {
+				alert('Report generated successfully <a href="#"> Click to download </a>', 'success')
+			})
+			}
+	</script>
     <!-- ==============================Bootstrap script============================ -->
     <script src="../bootstrap-5.3.0-alpha3-dist/js/bootstrap.bundle.min.js"></script>
-    <!-- ==============================ApexChart script CDN ============================ -->
-    <script src="https://cdn.jsdelivr.net/npm/apexcharts"></script>
     <!-- ==============================Local script============================ -->
     <script src="../dashboard-pages/script/global-script.js"></script>
     <script src="../dashboard-pages/script/dashboard.js"></script>

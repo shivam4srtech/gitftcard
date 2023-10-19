@@ -400,7 +400,7 @@ main .breadcrumbs li a {
 main .breadcrumbs li a.active,
 main .breadcrumbs li.divider {
 	color: var(--dark-grey);
-	pointer-events: none;
+	/* pointer-events: none; */
 }
 
 

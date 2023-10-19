@@ -106,7 +106,7 @@
                 </div>
             </div>
 			<ul class="breadcrumbs">
-				<li><a href="#">Home</a></li>
+				<li><a href="./merchant.html">Home</a></li>
 				<li class="divider">/</li>
 				<li><a href="./affiliate.html" class="active">setting</a></li>
 			</ul>
@@ -126,7 +126,13 @@
 						<a class="nav-link" aria-current="true" href="#" id="home-tab" data-bs-toggle="tab" data-bs-target="#report" aria-controls="report" aria-selected="true">Report</a>
 					</li>
 					<li class="nav-item" role="presentation">
-						<a class="nav-link active" aria-current="true" href="#" id="home-tab" data-bs-toggle="tab" data-bs-target="#integration" aria-controls="integration" aria-selected="true">Integration</a>
+						<a class="nav-link" aria-current="true" href="#" id="home-tab" data-bs-toggle="tab" data-bs-target="#integration" aria-controls="integration" aria-selected="true">Integration</a>
+					</li>
+					<li class="nav-item" role="presentation">
+						<a class="nav-link" aria-current="true" href="#" id="home-tab" data-bs-toggle="tab" data-bs-target="#sdk" aria-controls="sdk" aria-selected="true">SDK</a>
+					</li>
+					<li class="nav-item" role="presentation">
+						<a class="nav-link active" aria-current="true" href="#" id="home-tab" data-bs-toggle="tab" data-bs-target="#advance" aria-controls="advance" aria-selected="true">Advance</a>
 					</li>
                   </ul>
                 </div>
@@ -490,12 +496,12 @@
 									<label for="inputReport" class="form-label">Select Payment Terms &amp Condition</label>
 									<select id="paymentMethod" class="form-select" onchange="paymentTerm(this)">
 									  <option selected>Default</option>
-									  <option value="1">Custome Payment Terms</option>
+									  <option value="1">Custom Payment Terms</option>
 									</select>
 								</div>
 								<div id="custome" class="d-none">
-									<label for="formGroupExampleInput" class="form-label">Custome Term</label>
-									<input type="text" class="form-control" id="formGroupExampleInput" placeholder="enter custome payment term link ">
+									<label for="formGroupExampleInput" class="form-label">Custom Term</label>
+									<input type="text" class="form-control" id="formGroupExampleInput" placeholder="enter custom payment term link ">
 								</div>
 							</div>
 						</div>
@@ -594,36 +600,555 @@
 						</div>
 					</div>
 					<!-- =======================Integration====================== -->
-					<div class="tab-pane fade show active" id="integration" role="tabpanel" aria-labelledby="nav-home-tab" tabindex="0">
+					<div class="tab-pane fade show" id="integration" role="tabpanel" aria-labelledby="nav-home-tab" tabindex="0">
                         <div class="row settings">
 							<div class="col-md-6">
-								<h4>Tax/TDS &amp VAT</h4>
-								<p>Taxes submitted by you on behalf of your affiliates will be adjusted from their payouts, reflecting the net amount in their final payments.</p>
+								<h4>Paypal Payouts</h4>
+								<p>Efficiently transfer earnings to your affiliates right within the application.</p>
+								<a href="" class="video-modal" data-video="https://www.youtube.com/embed/HBdcL7YsdBY" data-bs-toggle="modal" data-bs-target="#videoModal">Need Help?<i class="fa-solid fa-video"></i></a>
+							</div>
+							<div class="col-md-6 integration">
+								<div class="">
+									<a href="./paypal-setup.html" class="submit">Setup Instruction</a>
+								</div>
+							</div>
+						</div>
+						<div class="row settings">
+							<div class="col-md-6">
+								<h4>Amazon Attribution</h4>
+								<p>
+									If you have Amazon Brand, integrate your Amazon brand with your program for smooth affiliate sales tracking on Amazon.
+								</p>
+								<a href="" class="video-modal" data-video="https://www.youtube.com/embed/HBdcL7YsdBY" data-bs-toggle="modal" data-bs-target="#videoModal">Need Help?<i class="fa-solid fa-video"></i></a>
+							</div>
+							<div class="col-md-6 integration">
+								<div class="">
+									<a href="#000" class="submit">Complete Setup</a>
+								</div>
+							</div>
+						</div>
+						<div class="row settings">
+							<div class="col-md-6">
+								<h4>Enable Google Recaptcha</h4>
+								<p>
+									enabling Google reCAPTCHA on the login page will enhance security, reduced spam, and protection against automated login attempts.	
+								</p>
+								<a href="" class="video-modal" data-video="https://www.youtube.com/embed/HBdcL7YsdBY" data-bs-toggle="modal" data-bs-target="#videoModal">Need Help?<i class="fa-solid fa-video"></i></a>
+							</div>
+							<div class="col-md-6">
+								<div>
+									<label class="switch">
+										<input class="switch-input" type="checkbox" / checked>
+										<span class="switch-label" data-on="Enable" data-off="Desable"></span> 
+										<span class="switch-handle"></span> 
+									</label>
+								</div>
+							</div>
+						</div>
+						<div class="row settings">
+							<div class="col-md-6">
+								<h4>Google tag manager</h4>
+								<p>
+									Conversion tracking is automatic when recording conversions in Google Analytics.
+								</p>
+								<a href="" class="video-modal" data-video="https://www.youtube.com/embed/HBdcL7YsdBY" data-bs-toggle="modal" data-bs-target="#videoModal">Need Help?<i class="fa-solid fa-video"></i></a>
+							</div>
+							<div class="col-md-6 integration">
+								<div class="">
+									<a href="#000" class="submit" data-bs-toggle="modal" data-bs-target="#googleTagManager">setup instruction</a>
+								</div>
+							</div>
+						</div>
+						<div class="row settings">
+							<div class="col-md-6">
+								<h4>Third party checkout</h4>
+								<p>
+									Integrate external checkout applications like shopBase Checkout with the app.
+								</p>
+								<a href="" class="video-modal" data-video="https://www.youtube.com/embed/HBdcL7YsdBY" data-bs-toggle="modal" data-bs-target="#videoModal">Need Help?<i class="fa-solid fa-video"></i></a>
+							</div>
+							<div class="col-md-6 integration">
+								<div class="">
+									<a href="#000" class="submit" data-bs-toggle="modal" data-bs-target="#thirdParty" data-bs-whatever="@mdo">see instruction</a>
+								</div>
+							</div>
+						</div>
+						<div class="row settings">
+							<div class="col-md-6">
+								<h4>CampaignMonitor</h4>
+								<p>
+									Sync affiliate data with campaignmonitor
+								</p>
+								<a href="" class="video-modal" data-video="https://www.youtube.com/embed/HBdcL7YsdBY" data-bs-toggle="modal" data-bs-target="#videoModal">Need Help?<i class="fa-solid fa-video"></i></a>
+							</div>
+							<div class="col-md-6 integration">
+								<div class="">
+									<a href="#000" class="submit">Sync</a>
+								</div>
+							</div>
+						</div>
+						<div class="row settings">
+							<div class="col-md-6">
+								<h4>ActiveCampaign</h4>
+								<p>
+									Sync affiliate data with active campaign.
+								</p>
+								<a href="" class="video-modal" data-video="https://www.youtube.com/embed/HBdcL7YsdBY" data-bs-toggle="modal" data-bs-target="#videoModal">Need Help?<i class="fa-solid fa-video"></i></a>
+							</div>
+							<div class="col-md-6 integration">
+								<div class="">
+									<a href="#000" class="submit">Integrate</a>
+								</div>
+							</div>
+						</div>
+					</div>
+					<!-- =======================SDK====================== -->
+					<div class="tab-pane fade show " id="sdk" role="tabpanel" aria-labelledby="nav-home-tab" tabindex="0">
+                        <div class="row settings">
+							<div class="col-md-6">
+								<h4>Secure Payload</h4>
+								<p>Only allow secure payloads for conversion callback</p>
+								<a href="" class="video-modal" data-video="https://www.youtube.com/embed/HBdcL7YsdBY" data-bs-toggle="modal" data-bs-target="#videoModal">Need Help?<i class="fa-solid fa-video"></i></a>
+							</div>
+							<div class="col-md-6 integration">
+								<div>
+									<label class="switch">
+										<input id="myCheck" onclick="playloadKey()" class="switch-input" type="checkbox"/>
+										<span class="switch-label" data-on="Enable" data-off="Desable"></span> 
+										<span class="switch-handle"></span> 
+									</label>
+								</div>
+								<div id="key" style="display: none;">
+									<label for="formGroupExampleInput" class="form-label" id="input">Payload Key</label>
+									<input type="text" class="form-control" id="formGroupExampleInput" placeholder="Existing key fetched here">
+									<div class="d-flex refresh-key">
+										<a href="#000" class="me-auto">Refresh Key</a>
+										<a href="#000" class="ms-auto">Copy</a>
+									</div>
+								</div>
+							</div>
+						</div>
+						<div class="row settings">
+							<div class="col-md-6">
+								<h4>Rest JSON</h4>
+								<p>
+									Allows the app to call various functions on your API.
+								</p>
+								<a href="" class="video-modal" data-video="https://www.youtube.com/embed/HBdcL7YsdBY" data-bs-toggle="modal" data-bs-target="#videoModal">Need Help?<i class="fa-solid fa-video"></i></a>
+							</div>
+							<div class="col-md-6 integration">
+								<div class="">
+									<a href="#000" class="submit">Edit JSON</a>
+								</div>
+							</div>
+						</div>
+						<div class="row settings">
+							<div class="col-md-6">
+								<h4>Product List</h4>
+								<p>
+									Input or upload your product list, allowing you to configure commissions later in the 'New product commission' section of the Commissions page
+								</p>
+								<a href="" class="video-modal" data-video="https://www.youtube.com/embed/HBdcL7YsdBY" data-bs-toggle="modal" data-bs-target="#videoModal">Need Help?<i class="fa-solid fa-video"></i></a>
+							</div>
+							<div class="col-md-6 integration">
+								<div class="">
+									<a href="#000" class="submit">Upload product</a>
+								</div>
+							</div>
+						</div>
+						<div class="row settings">
+							<div class="col-md-6">
+								<h4>Custom Javascript</h4>
+								<p>
+									enabSupplementary custom JavaScript loaded alongside the referral tracking script, simplifying the creation of conversion tracking using just one tag.
+								</p>
+								<a href="" class="video-modal" data-video="https://www.youtube.com/embed/HBdcL7YsdBY" data-bs-toggle="modal" data-bs-target="#videoModal">Need Help?<i class="fa-solid fa-video"></i></a>
+							</div>
+							<div class="col-md-6 integration">
+								<div class="">
+									<a href="#000" class="submit">Edit Script</a>
+								</div>
+							</div>
+						</div>
+					</div>
+					<!-- =======================Advance Tab====================== -->
+					<div class="tab-pane fade show active" id="advance" role="tabpanel" aria-labelledby="nav-home-tab" tabindex="0">
+                        <div class="row settings">
+							<div class="col-md-6">
+								<h4>Block Commission</h4>
+								<p>
+									Prevents commission for clicks originating from specified domains/pages, with support for partial matches and regular expressions.
+								</p>
+								<a href="" class="video-modal" data-video="https://www.youtube.com/embed/HBdcL7YsdBY" data-bs-toggle="modal" data-bs-target="#videoModal">Need Help?<i class="fa-solid fa-video"></i></a>
+							</div>
+							<div class="col-md-6 integration">
+								<div>
+									<label for="formGroupExampleInput" class="form-label p-1">Enter Domain/IP <span>Separate each with comma (,)</span></label>
+									<textarea class="form-control" placeholder="One domain / IP in one line"></textarea>
+								</div>
+							</div>
+						</div>
+						<div class="row settings">
+							<div class="col-md-6">
+								<h4>Affiliate Conflict Resolution</h4>
+								<p>In the event a customer utilizes links from two different affiliates, which affiliate should receive the credit?</p>
+								<a href="" class="video-modal" data-video="https://www.youtube.com/embed/HBdcL7YsdBY" data-bs-toggle="modal" data-bs-target="#videoModal">Need Help?<i class="fa-solid fa-video"></i></a>
+							</div>
+							<div class="col-md-6">
+								<div class="col">
+									<select id="paymentMethod" class="form-select">
+										<option selected>Default (The last affiliate)</option>
+										<option value="1">Both Affiliate</option>
+										<option value="2">First Affiliate</option>
+										<option value="3">None</option>
+									</select>
+								</div>
+							</div>
+						</div>
+						<div class="row settings">
+							<div class="col-md-6">
+								<h4>Shortened Refferal Links</h4>
+								<p>Shortened refferal links are abbreviated URLs, created to simplify long web addresses and make sharing and tracking easier and more convenient.</p>
+								<a href="" class="video-modal" data-video="https://www.youtube.com/embed/HBdcL7YsdBY" data-bs-toggle="modal" data-bs-target="#videoModal">Need Help?<i class="fa-solid fa-video"></i></a>
+							</div>
+							<div class="col-md-6">
+								<div class="col">
+									<label for="formGroupExampleInput" class="form-label p-1">URL Shortener</label>
+									<select id="paymentMethod" class="form-select">
+										<option selected>bit.ly</option>
+										<option value="1">tinyurl</option>
+										<option value="2">shortlink</option>
+										<option value="3">None</option>
+									</select>
+								</div>
+							</div>
+						</div>
+						<div class="row settings">
+							<div class="col-md-6">
+								<h4>Default Referral Link</h4>
+								<p>Customize the primary referral link displayed in the affiliate portal to a preferred or unique link of your choice.</p>
+								<a href="" class="video-modal" data-video="https://www.youtube.com/embed/HBdcL7YsdBY" data-bs-toggle="modal" data-bs-target="#videoModal">Need Help?<i class="fa-solid fa-video"></i></a>
 							</div>
 							<div class="col-md-6">
 								<form action="#somewhere">
-									<div class="col mb-3">
-										<label for="basic-url" class="form-label p-1">Tax Type</label>
-										<select id="textType" class="form-select">
-										  <option selected>Paid by affiliate</option>
-										  <option value="1">Paid by Merchant</option>
-										</select>
+									<div class="mb-3">
+										<input type="text" class="form-control" id="formGroupExampleInput">
 									</div>
-									<div class="col mb-3">
-										<label for="basic-url" class="form-label p-1">Tax &percnt;</label>
-										<input type="number" class="form-control" id="basic-url" aria-describedby="basic-addon3" required>
-									</div>
-									<div class="text-center">
-										<a href="#000" class="submit">Save</a>
+									<div class="text-center mt-4">
+										<a href="#000" class="submit">Submit</a>
 									</div>
 								</form>
 							</div>
 						</div>
-					</div>					
+						<div class="row settings">
+							<div class="col-md-6">
+								<h4>Refferal Code Style</h4>
+								<p>Referral code styles refer to the format or structure used to create unique codes for tracking and identifying affiliates or referrals</p>
+								<p class="mt-2">The refferal code often have alphanumeric characters. Common styles include random strings, usernames, or a combination of initials and numbers.</p>
+								<h3>Example refferal link:</h3>
+								<span class="example-refferal">https://udemy.com/?ref=jaeavgpshd</span>
+								<a href="" class="video-modal" data-video="https://www.youtube.com/embed/HBdcL7YsdBY" data-bs-toggle="modal" data-bs-target="#videoModal">Need Help?<i class="fa-solid fa-video"></i></a>
+							</div>
+							<div class="col-md-6">
+								<div>
+									<h5>Random string</h5>
+									<a href="#000" data-bs-toggle="modal" data-bs-target="#refferalStyle" class="change-style">Change</a>
+								</div>
+							</div>
+						</div>
+						<div class="row settings">
+							<div class="col-md-6">
+								<h4>Multiple Referral Codes</h4>
+								<p>Affiliates can use and manage up to 10 distinct referral codes individually</p>
+								<a href="" class="video-modal" data-video="https://www.youtube.com/embed/HBdcL7YsdBY" data-bs-toggle="modal" data-bs-target="#videoModal">Need Help?<i class="fa-solid fa-video"></i></a>
+							</div>
+							<div class="col-md-6">
+								<div>
+									<div class="mt-3">
+										<label class="switch">
+											<input class="switch-input" type="checkbox"/>
+											<span class="switch-label" data-on="Allow" data-off="Deny"></span> 
+											<span class="switch-handle"></span> 
+										</label>
+									</div>
+								</div>
+							</div>
+						</div>
+						<div class="row settings">
+							<div class="col-md-6">
+								<h4>AMP Pages Tracking</h4>
+								<p>Tracking AMP (Accelerated Mobile Pages) involves monitoring user interactions and engagement on lightweight, fast-loading web pages for mobile, providing insights for optimization.</p>
+								<a href="" class="video-modal" data-video="https://www.youtube.com/embed/HBdcL7YsdBY" data-bs-toggle="modal" data-bs-target="#videoModal">Need Help?<i class="fa-solid fa-video"></i></a>
+							</div>
+							<div class="col-md-6">
+								<div class="">
+									<a href="#000" class="submit" data-bs-toggle="modal" data-bs-target="#ampTracking">setup</a>
+								</div>
+							</div>
+						</div>
+						<div class="row settings">
+							<div class="col-md-6">
+								<h4>Third Party Tracking</h4>
+								<p>Insert the tracking code into the landing page, lead page, or WordPress blog to monitor affiliate referral activity.</p>
+								<a href="" class="video-modal" data-video="https://www.youtube.com/embed/HBdcL7YsdBY" data-bs-toggle="modal" data-bs-target="#videoModal">Need Help?<i class="fa-solid fa-video"></i></a>
+							</div>
+							<div class="col-md-6 integration">
+								<div>
+									<label class="switch">
+										<input id="trackingCheck" onclick="tracking()" class="switch-input" type="checkbox"/>
+										<span class="switch-label" data-on="Enable" data-off="Desable"></span> 
+										<span class="switch-handle"></span> 
+									</label>
+								</div>
+								<div id="embedCode" style="display: none;">
+									<label for="formGroupExampleInput" class="form-label p-1" id="input">Embed code</label>
+									<textarea class="form-control" placeholder="JS Code rendered here"></textarea>
+									<div class="d-flex refresh-key">
+										<a href="#000" class="me-auto">Copy</a>
+									</div>
+								</div>
+							</div>
+						</div>
+						<div class="row settings">
+							<div class="col-md-6">
+								<h4>Auto approve affiliates from</h4>
+								<p>
+									Auto approve affiliates coming from utm_source (enter one source per line).
+								</p>
+								<a href="" class="video-modal" data-video="https://www.youtube.com/embed/HBdcL7YsdBY" data-bs-toggle="modal" data-bs-target="#videoModal">Need Help?<i class="fa-solid fa-video"></i></a>
+							</div>
+							<div class="col-md-6 integration">
+								<div>
+									<form action="#someWhere">
+										<textarea class="form-control" placeholder="enter one source per line"required></textarea>
+										<div class="text-center mt-4">
+											<a href="#000" class="submit">save</a>
+										</div>
+									</form>
+								</div>
+							</div>
+						</div>
+						<div class="row settings">
+							<div class="col-md-6">
+								<h4>Sale reporting</h4>
+								<p>Report sales with order amount or subtotal</p>
+								<a href="" class="video-modal" data-video="https://www.youtube.com/embed/HBdcL7YsdBY" data-bs-toggle="modal" data-bs-target="#videoModal">Need Help?<i class="fa-solid fa-video"></i></a>
+							</div>
+							<div class="col-md-6">
+								<div class="col">
+									<select id="paymentMethod" class="form-select">
+										<option selected>Commission value (order subtotal)</option>
+										<option value="1">Order Total</option>
+									</select>
+								</div>
+							</div>
+						</div>
+						<div class="row settings">
+							<div class="col-md-6">
+								<h4>Extra fields</h4>
+								<p>Supplements the affiliate's admin page with additional fields for managing ERP data or facilitating API integration.</p>
+								<a href="" class="video-modal" data-video="https://www.youtube.com/embed/HBdcL7YsdBY" data-bs-toggle="modal" data-bs-target="#videoModal">Need Help?<i class="fa-solid fa-video"></i></a>
+							</div>
+							<div class="col-md-6">
+								<div class="col">
+									<select id="paymentMethod" class="form-select">
+										<option selected>No Extra Field</option>
+										<option value="1">1</option>
+										<option value="1">2</option>
+										<option value="1">3</option>
+										<option value="1">4</option>
+									</select>
+								</div>
+							</div>
+						</div>
+						<div class="row settings">
+							<div class="col-md-6">
+								<h4>Auto Ref linking</h4>
+								<p>Automatically appends the referral code to outbound links from your store, streamlining the tracking process for affiliate-driven traffic.</p>
+								<a href="" class="video-modal" data-video="https://www.youtube.com/embed/HBdcL7YsdBY" data-bs-toggle="modal" data-bs-target="#videoModal">Need Help?<i class="fa-solid fa-video"></i></a>
+							</div>
+							<div class="col-md-6">
+								<div>
+									<div class="mt-3">
+										<label class="switch">
+											<input class="switch-input" type="checkbox"/>
+											<span class="switch-label" data-on="Allow" data-off="Deny"></span> 
+											<span class="switch-handle"></span> 
+										</label>
+									</div>
+								</div>
+							</div>
+						</div>
+						<div class="row settings">
+							<div class="col-md-6">
+								<h4>Auto Ref linking</h4>
+								<p>Extend the tracking script's cache duration for improved script delivery efficiency, noting a delay in applying admin panel changes to tracking parameters.</p>
+								<a href="" class="video-modal" data-video="https://www.youtube.com/embed/HBdcL7YsdBY" data-bs-toggle="modal" data-bs-target="#videoModal">Need Help?<i class="fa-solid fa-video"></i></a>
+							</div>
+							<div class="col-md-6">
+								<div>
+									<label for="formGroupExampleInput" class="form-label">Cache Duration</label>
+									<div class="input-group mb-3">
+										<input type="number" class="form-control" aria-describedby="basic-addon2">
+										<span class="input-group-text" id="basic-addon2">Seconds</span>
+									</div>
+								</div>
+							</div>
+						</div>
+						<div class="row settings">
+							<div class="col-md-6">
+								<h4>Multi-Currency</h4>
+								<p>Automatically convert affiliate commissions to the store's primary currency for seamless financial transactions.</p>
+								<a href="" class="video-modal" data-video="https://www.youtube.com/embed/HBdcL7YsdBY" data-bs-toggle="modal" data-bs-target="#videoModal">Need Help?<i class="fa-solid fa-video"></i></a>
+							</div>
+							<div class="col-md-6">
+								<div>
+									<div class="mt-3">
+										<label class="switch">
+											<input class="switch-input" type="checkbox" checked/>
+											<span class="switch-label" data-on="Allow" data-off="Deny"></span> 
+											<span class="switch-handle"></span> 
+										</label>
+									</div>
+								</div>
+							</div>
+						</div>
+						<div class="row settings">
+							<h4 class="text-center">Conversion Preference Order</h4>
+							<p class="text-center">The preference order of conversion tests for sale attribution</p>
+							<div class="col-md-8 conversion mx-auto">
+								<div class="conversion-box mt-4">
+									<div>
+										<p>Coupon Code Tracking</p>
+									</div>
+									<div class="switch-box">
+										<label class="switch">
+											<input class="switch-input" type="checkbox" checked/>
+											<span class="switch-label" data-on="Allow" data-off="Deny"></span> 
+											<span class="switch-handle"></span> 
+										</label>
+									</div>
+								</div>
+								<div class="conversion-box">
+									<div>
+										<p>Customer Affiliate Connection</p>
+									</div>
+									<div class="switch-box">
+										<label class="switch">
+											<input class="switch-input" type="checkbox" checked/>
+											<span class="switch-label" data-on="Allow" data-off="Deny"></span> 
+											<span class="switch-handle"></span> 
+										</label>
+									</div>
+								</div>
+								<div class="conversion-box">
+									<div>
+										<p>Refferal Link Tracking</p>
+									</div>
+									<div class="switch-box">
+										<label class="switch">
+											<input class="switch-input" type="checkbox" />
+											<span class="switch-label" data-on="Allow" data-off="Deny"></span> 
+											<span class="switch-handle"></span> 
+										</label>
+									</div>
+								</div>
+								<div class="conversion-box">
+									<div>
+										<p>Personal Order</p>
+									</div>
+									<div class="switch-box">
+										<label class="switch">
+											<input class="switch-input" type="checkbox" checked/>
+											<span class="switch-label" data-on="Allow" data-off="Deny"></span> 
+											<span class="switch-handle"></span> 
+										</label>
+									</div>
+								</div>
+								<div class="conversion-box">
+									<div>
+										<p>Custome Tracking Rules</p>
+									</div>
+									<div class="switch-box">
+										<label class="switch">
+											<input class="switch-input" type="checkbox" />
+											<span class="switch-label" data-on="Allow" data-off="Deny"></span> 
+											<span class="switch-handle"></span> 
+										</label>
+									</div>
+								</div>
+								<div class="conversion-box">
+									<div>
+										<p>System Reported Tracking</p>
+									</div>
+									<div class="switch-box">
+										<label class="switch">
+											<input class="switch-input" type="checkbox" checked/>
+											<span class="switch-label" data-on="Allow" data-off="Deny"></span> 
+											<span class="switch-handle"></span> 
+										</label>
+									</div>
+								</div>
+								<div class="conversion-box">
+									<div>
+										<p>Fuzzy Detection Algorithm</p>
+									</div>
+									<div class="switch-box">
+										<label class="switch">
+											<input class="switch-input" type="checkbox" />
+											<span class="switch-label" data-on="Allow" data-off="Deny"></span> 
+											<span class="switch-handle"></span> 
+										</label>
+									</div>
+								</div>
+								<div class="conversion-box">
+									<div>
+										<p>Party Link</p>
+									</div>
+									<div class="switch-box">
+										<label class="switch">
+											<input class="switch-input" type="checkbox" checked/>
+											<span class="switch-label" data-on="Allow" data-off="Deny"></span> 
+											<span class="switch-handle"></span> 
+										</label>
+									</div>
+								</div>
+								<div class="conversion-box">
+									<div>
+										<p>subscription Rewenals</p>
+									</div>
+									<div class="switch-box">
+										<label class="switch">
+											<input class="switch-input" type="checkbox" />
+											<span class="switch-label" data-on="Allow" data-off="Deny"></span> 
+											<span class="switch-handle"></span> 
+										</label>
+									</div>
+								</div>
+							</div>
+						</div>
+						<div class="row settings">
+							<div class="col-md-6">
+								<h4>Program Status</h4>
+								<p>Deactivates the affiliate program's ability to monitor website visits and sales.</p>
+								<a href="" class="video-modal" data-video="https://www.youtube.com/embed/HBdcL7YsdBY" data-bs-toggle="modal" data-bs-target="#videoModal">Need Help?<i class="fa-solid fa-video"></i></a>
+							</div>
+							<div class="col-md-6">
+								<div class="alert alert-danger" role="alert">
+									<h4 class="alert-heading">CAUTION !</h4>
+									<p>Enabling this option entirely suspends affiliate program tracking for visits and orders. Please use it judiciously.</p>
+								</div>
+								<div>
+									<a href="#000" class="btn btn-danger text-white">Turn Off</a>
+								</div>
+							</div>
+						</div>
+					</div>							
                 </div>
             </div>
 		</main>
 	</section>
+	<!-- ============================Modal Starts HERE======================================================= -->
 	<!-- ********************************Logout Model************************************************* -->
 	<div class="modal fade" id="logOut" tabindex="-1" aria-labelledby="exampleModalLabel" aria-hidden="true">
 		<div class="modal-dialog modal-dialog-centered">
@@ -642,6 +1167,46 @@
 			</div>
 		</div>
 	</div>
+	<!-- ========================Amp Trackning========================= -->
+	<div class="modal fade" id="ampTracking" tabindex="-1" aria-labelledby="exampleModalLabel" aria-hidden="true">
+		<div class="modal-dialog">
+		  <div class="modal-content">
+			<div class="modal-header">
+			  <h1 class="modal-title fs-5" id="exampleModalLabel">AMP Page Tracking</h1>
+			  <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
+			</div>
+			<div class="modal-body">
+				<div>
+					<div>
+						<h4>Step 1</h4>
+						<p>Add the following code to the head of the page</p>
+					</div>
+					<div class="">
+						<label for="formGroupExampleInput" class="form-label"><code><span><</span> head <span>></span></code></label>
+						<textarea class="form-control" placeholder="JS Code rendered here"></textarea>
+						<label for="formGroupExampleInput" class="form-label mt-4"><code><span><</span> /head <span>></span></code></label>
+					</div>
+					<div class=" btngroup text-center">
+						<a type="button" class="">Copy Code</a>
+					</div>
+				</div>
+				<div>
+					<div>
+						<h4>Step 2</h4>
+						<p>Add the following code to the bottom of the body of the page</p>
+					</div>
+					<div class="">
+						<label for="formGroupExampleInput" class="form-label"><code><span><</span> body <span>></span></code></label>
+						<textarea class="form-control" placeholder="JS Code rendered here"></textarea>
+						<label for="formGroupExampleInput" class="form-label mt-4"><code><span><</span> /body <span>></span></code></label>
+					</div>
+					<div class=" btngroup text-center">
+						<a type="button" class="">Copy Code</a>
+					</div>
+				</div>
+			</div>
+		  </div>
+		</div>
 	<!-- =======================Video Modal===================================== -->
 	<div class="modal fade" id="videoModal" tabindex="-1" role="dialog" aria-labelledby="myModalLabel" aria-hidden="true">
 		<div class="modal-dialog modal-lg">
@@ -658,48 +1223,151 @@
 		  </div>
 		</div>
 	</div>
-	<!-- ==================Create Coupon ===============================-->
-	<div class="modal fade" id="createCoupon" tabindex="-1" aria-labelledby="exampleModalLabel" aria-hidden="true">
+	<!-- ========================Third Party Checkout========================= -->
+	<div class="modal fade" id="thirdParty" tabindex="-1" aria-labelledby="exampleModalLabel" aria-hidden="true">
+		<div class="modal-dialog">
+		  <div class="modal-content">
+			<div class="modal-header">
+			  <h1 class="modal-title fs-5" id="exampleModalLabel">Third party checkout</h1>
+			  <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
+			</div>
+			<div class="modal-body">
+				<p>
+					Copy the following code and paste this in your custom checkout's order status page (or thank you page or order confirmation page)
+				</p>
+				<div>
+					<img src="../dashboard-pages/images/third-party.png" alt="">
+				</div>
+			  <form>
+				<div class="jscode">
+					<label for="formGroupExampleInput" class="form-label">Code</label>
+					<textarea class="form-control" placeholder="JS Code rendered here"></textarea>
+				</div>
+			  </form>
+			</div>
+			<div class=" btngroup text-center">
+			  <a type="button" class="">Copy Code</a>
+			</div>
+		  </div>
+		</div>
+	  </div>
+	  <!-- ==============================Google Tag manager===================== -->
+	  <div class="modal fade" id="googleTagManager" aria-hidden="true" aria-labelledby="exampleModalToggleLabel" tabindex="-1">
+		<div class="modal-dialog modal-dialog-centered">
+		  <div class="modal-content">
+			<div class="modal-header">
+			  <h1 class="modal-title fs-5" id="exampleModalToggleLabel">Step 1</h1>
+			  <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
+			</div>
+			<div class="modal-body">
+				<div>
+					<p>Ensure that the base tracking code is present in your store's pages including the page where your <em>gtag('event','conversion')</em> code is present.</p>
+				</div>
+				<div class="alert alert-success my-2" role="alert">
+					<p>Important, please ensure that the goaffpro code loads before <em>gtag('event','conversion')</em></p>
+				</div>
+				<div>
+					<img src="../dashboard-pages/images/code-img.png" alt="">
+				</div>
+				<div class="jscode my-2">
+					<label for="formGroupExampleInput" class="form-label">Code</label>
+					<textarea class="form-control" placeholder="JS Code rendered here"></textarea>
+				</div>
+			</div>
+			<div class="modal-footer d-flex align-items-center">
+			   <a type="button" class="modal-btn me-auto copy-code">Copy Code</a>
+			   <a class="modal-btn ms-auto next-btn" data-bs-target="#stepTwo" data-bs-toggle="modal">Step 2</a>
+			</div>
+		  </div>
+		</div>
+	  </div>
+	  <div class="modal fade" id="stepTwo" aria-hidden="true" aria-labelledby="exampleModalToggleLabel2" tabindex="-1">
+		<div class="modal-dialog modal-dialog-centered">
+		  <div class="modal-content">
+			<div class="modal-header">
+			  <h1 class="modal-title fs-5" id="exampleModalToggleLabel2">Step 2</h1>
+			  <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
+			</div>
+			<div class="modal-body">
+				<div>
+					<p>Enable Google Tag Manager Automatic conversion module</p>
+					<span class="emt">Enable to proceed next step</span>
+				</div>
+				<div class="mt-3">
+					<label class="switch">
+						<input id="stepThree" onclick="stepThree()" class="switch-input" type="checkbox" />
+						<span class="switch-label" data-on="Enable" data-off="Desable"></span> 
+						<span class="switch-handle"></span> 
+					</label>
+				</div>
+			</div>
+			<div class="modal-footer d-flex align-items-center">
+				<a class="modal-btn me-auto copy-code" data-bs-target="#googleTagManager" data-bs-toggle="modal"><i class="fa-solid fa-angle-left"></i></a>
+				<a id="displayThree" style="display: none;" class="modal-btn ms-auto next-btn" data-bs-target="#thirdStep" data-bs-toggle="modal">Step 3</a>
+			</div>
+		</div>
+		</div>
+	  </div>
+	  <div class="modal fade" id="thirdStep" aria-hidden="true" aria-labelledby="exampleModalToggleLabel2" tabindex="-1">
+		<div class="modal-dialog modal-dialog-centered">
+		  <div class="modal-content">
+			<div class="modal-header">
+			  <h1 class="modal-title fs-5" id="exampleModalToggleLabel2">Step 3</h1>
+			  <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
+			</div>
+			<div class="modal-body">
+			 <div>
+				<p>Verify and confirm everything works</p>
+			 </div>
+			 <div>
+				<h2 class="step">Step 3a</h2>
+				<p>Enable conversion data logging</p>
+			 </div>
+			 <div class="mt-3">
+				<label class="switch">
+					<input id="displayThreeB" onclick="displayThreeB()" class="switch-input" type="checkbox" />
+					<span class="switch-label" data-on="Enable" data-off="Desable"></span> 
+					<span class="switch-handle"></span> 
+				</label>
+			 </div>
+			 <div id="threeb" style="display: none;">
+				<h2 class="step">Step 3b</h2>
+				<p>Enable conversion data logging</p>
+			 </div>
+			</div>
+			<div class="modal-footer d-flex align-items-center">
+				<a class="modal-btn me-auto copy-code" data-bs-target="#stepTwo" data-bs-toggle="modal"><i class="fa-solid fa-angle-left"></i></a>
+				<a id="threebBtn" style="display: none;" type="button" class="modal-btn dismiss ms-auto next-btn" data-bs-dismiss="modal">Finish</a>
+			</div>
+		  </div>
+		</div>
+	  </div>
+	<!-- ==================Change Refferal Link style===============================-->
+	<div class="modal fade" id="refferalStyle" tabindex="-1" aria-labelledby="exampleModalLabel" aria-hidden="true">
 		<div class="modal-dialog">
 			<div class="modal-content">
 				<div class="modal-header">
-				<h5 class="modal-title" id="exampleModalLabel">Create Coupon</h5>
-				<button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
+					<h5 class="modal-title" id="exampleModalLabel">Referral Code Style</h5>
+					<button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
 				</div>
 				<div class="modal-body">
 					<form action="#someWhere">
-						<div class="input-group mb-3">
-                            <div class="input-group-text p-0">
-                                <select class="form-select shadow-none bg-light border-0">
-                                    <option selected>Affiliate</option>
-                                    <option value="1">Jos Butller</option>
-                                    <option value="2">Quinton Decock</option>
-                                    <option value="3">Mahela Jayvardhane</option>
-                                    <option value="4">Musafilkur Rahim</option>
-                                    <option value="5">Dhananjay di Silva</option>
-                                </select>
-                            </div>
-                            <input type="search" class="form-control" placeholder="Search Affiliate">
-                            <a href="#000" class="input-group-text shadow-none px-4 btn-warning">
-                                <i class="fa fa-search"></i>
-                            </a>
-                        </div>
-						<div class="col-md-12 mb-3">
-                            <label for="formGroupExampleInput" class="form-label p-1">Coupon Code</label>
-                            <input type="text" class="form-control" id="formGroupExampleInput">
-                        </div>
-                        <div class="form-check mb-3">
-                            <input class="form-check-input" type="checkbox" value="" id="invalidCheck" required>
-                            <small class="form-check-label" for="invalidCheck">
-                               Also create in store
-                            </small>
-                            <div class="invalid-feedback">
-                                You must agree before submitting.
-                            </div>
-                        </div>
-
-						<a type="button" class="btn btn-secondary" data-bs-dismiss="modal">Dismiss</a>
-						<a type="submit" class="btn btn-primary">Create</a>
+						<div class="col mb-3">
+							<label for="formGroupExampleInput" class="form-label p-1">Referral Code given to affiliate on signup</label>
+							<select id="paymentMethod" class="form-select">
+								<option selected>Random String</option>
+								<option value="1">Random Number</option>
+								<option value="2">Sequence</option>
+								<option value="3">Affiliates Name</option>
+								<option value="3">Dictionary Words</option>
+							</select>
+						</div>
+						<div class="mb-3 col">
+							<label for="exampleFormControlInput1" class="form-label p-1">Refferal Code Length (>1)</label>
+							<input type="number" class="form-control" id="exampleFormControlInput1" required>
+						</div>
+						<a type="button" class="btn btn-secondary" data-bs-dismiss="modal">Cancle</a>
+						<a type="submit" class="btn btn-primary">Update</a>
 					</form>
 				</div>
 			</div>
@@ -714,6 +1382,56 @@
 				document.getElementById('custome').classList.add('d-none');
 			}
 		};
+	</script>
+	<script>
+		function stepThree() {
+		  var checkBox = document.getElementById("stepThree");
+		  var text = document.getElementById("displayThree");
+		  if (checkBox.checked == true){
+			text.style.display = "block";
+		  } else {
+			 text.style.display = "none";
+		  }
+		}
+	</script>
+	<script>
+		function displayThreeB() {
+		  var checkBox = document.getElementById("displayThreeB");
+		  var text = document.getElementById("threeb");
+		  var textBtn = document.getElementById("threebBtn");
+		  if (checkBox.checked == true){
+			text.style.display = "block";
+		  } else {
+			 text.style.display = "none";
+		  }
+		  if (checkBox.checked == true){
+			textBtn.style.display = "block";
+		  } else {
+			textBtn.style.display = "none";
+		  }
+		}
+	</script>
+	<script>
+		function playloadKey() {
+		  var checkBox = document.getElementById("myCheck");
+		  var text = document.getElementById("key");
+		  if (checkBox.checked == true){
+			text.style.display = "block";
+		  } else {
+			 text.style.display = "none";
+		  }
+		}
+	</script>
+	<script>
+		function tracking() {
+		  var checkBox = document.getElementById("trackingCheck");
+		  var text = document.getElementById("embedCode");
+		  if (checkBox.checked == true){
+			text.style.display = "block";
+		  } else {
+			 text.style.display = "none";
+		  }
+		}
 	</script>
 	<script>
 			const alertPlaceholder = document.getElementById('liveAlertPlaceholder')
@@ -739,8 +1457,6 @@
 	</script>
     <!-- ==============================Bootstrap script============================ -->
     <script src="../bootstrap-5.3.0-alpha3-dist/js/bootstrap.bundle.min.js"></script>
-    <!-- ==============================ApexChart script CDN ============================ -->
-    <script src="https://cdn.jsdelivr.net/npm/apexcharts"></script>
     <!-- ==============================Local script============================ -->
     <script src="../dashboard-pages/script/global-script.js"></script>
     <script src="../dashboard-pages/script/dashboard.js"></script>
