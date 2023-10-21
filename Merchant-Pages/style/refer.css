@@ -1,0 +1,162 @@
+body a{
+    color: #5676ff;
+    font-weight: 500;
+  }
+  table tbody td a{
+    color: #5676ff;
+    font-weight: 500;
+  }
+  
+  table tbody td{
+      font-size: .85rem;
+      font-weight: 500;
+   }
+     table tbody .timestamp{
+      display: flex;
+      flex-direction: column;
+      justify-content: left;
+      padding: none;
+      text-align: left;
+      border: none;
+     }
+     table tbody .timestamp .date{
+      font-size: .95rem;
+     }
+     table tbody .timestamp .time{
+      font-size: .8rem;
+     }
+     table tbody .timestamp .time, table tbody .timestamp .date {
+      padding: 0;
+     }
+     table .status {
+      padding: 0;
+     }
+     table .status a{
+      display: inline-block;
+     }
+     @media(max-width:1000px){
+      table thead tr th{
+        font-size: 1.1rem !important;
+        padding: 1rem .2rem;
+      }
+     }
+     
+       /* *=======================Statistics============================ */
+  .statistics{
+      margin-top: 2rem;
+  }
+  .statistics .statistics-box{
+      border: 1px solid #7b7c7c;
+      border-radius: 4px;
+      padding: .5rem;
+      margin-bottom: 1rem;
+  }
+  .statistics .statistics-box img{
+      max-width: 100%;
+      display: block;
+      object-fit: contain;
+      width: 25%;
+      margin: auto;
+  }
+  .statistics .statistics-box h2{
+     color: #383737;
+     font-weight: 600;
+     font-size: 2rem;
+  }
+  .statistics .statistics-box h2 span{
+      padding: .25rem;
+   }
+  .statistics .statistics-box small{
+      color: #383737;
+      font-weight: 500;
+      font-size: .9rem;
+   }
+   /* =================Info================= */
+   .refferral-link a{
+    color: #5676ff;
+    font-weight: 500;
+    font-size: .95rem;
+    display: inline-block;
+    margin-bottom: 1rem;
+   }
+   .refferral-link a i{
+   padding: .5rem;
+   }
+   .refferral-link p{
+    color: #000;
+    margin-bottom: .5rem;
+    font-size: 1.2rem;
+    font-weight: 600;
+}
+.table-section h2{
+    margin-bottom: 1rem;
+    font-weight: 600;
+    font-size: 1.4rem;
+}
+.payment h4{
+    margin-bottom: 1rem;
+    font-weight: 600;
+    font-size: 1.4rem;
+}
+.payment ::placeholder{
+   font-weight: 500;
+   font-size: .9rem;
+   color: #000;
+}
+.payment p{
+    font-weight: 500;
+    font-size: .95rem;
+    color: #000;
+    letter-spacing: .4px;
+    line-height: 1.4;
+ }
+ .payment .submit{
+   padding: .45rem 1rem;
+   border-radius: 4px;
+   font-weight: 500;
+   text-transform: uppercase;
+   background-color: #ee755d;
+   color: #fff;
+   border: none;
+   outline: none;
+ }
+ .switch span{
+    font-weight: 600;
+ }
+ .status h4{
+    margin-bottom: 1rem;
+    font-weight: 600;
+    font-size: 1.4rem;
+}
+.status p{
+    font-weight: 500;
+    font-size: .95rem;
+    color: #000;
+    letter-spacing: .4px;
+    line-height: 1.4;
+ }
+ /* ============customize refferal modal========= */
+ #customizeRefferal h5{
+    font-weight: 600;
+    font-size: 1.2rem;
+ }
+ #customizeRefferal label{
+    font-weight: 600;
+    font-size: .95rem;
+ }
+ #customizeRefferal ::placeholder{
+   color: #000;
+   font-size: .9rem;
+   font-weight: 500;
+ }
+ #customizeRefferal .submit{
+    padding: .45rem 1rem;
+    border-radius: 4px;
+    font-weight: 500;
+    text-transform: uppercase;
+    background-color: #ee755d;
+    color: #fff;
+    border: none;
+    outline: none;
+  }
+

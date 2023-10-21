@@ -1,0 +1,140 @@
+
+body{
+    background-color: #f1f3f4;
+}
+.campaign-box {
+   border-bottom: 1px solid #bcb9b9;
+   padding: 2rem 0;
+}
+.campaign-box h4{
+    font-weight: 600;
+    font-size: 1.4rem;
+    color: #000;
+}
+.campaign-box label{
+    font-weight: 600;
+    font-size: .95rem;
+    color: #000;
+    display: inline-block;
+}
+.campaign-box label span{
+   color: #ce2936;
+   padding: .2rem;
+}
+.campaign-box label small{
+   font-size: .8rem;
+   color: #000;
+   display: inline-block;
+ }
+.campaign-box ::placeholder{
+    color: #000;
+    font-weight: 500;
+    font-size: .9rem;
+}
+.campaign-box .example-gracia{
+    display: block;
+    font-size: .78rem;
+    font-weight: 500;
+    color: #000;
+}
+.campaign-box p{
+    font-weight: 500;
+    color: #000;
+    font-size: .95rem;
+    margin-top: .5rem;
+    letter-spacing: .3px;
+} 
+.campaign-box select{
+    font-weight: 500;
+    color: #000;
+    font-size: .9rem;
+} 
+.campaign-box #basic-addon{
+    font-weight: 500;
+    color: #000;
+    font-size: .85rem;
+}
+.campaign-box .selected-product{
+    border: 1px solid #bcb9b9;
+    max-width: 96%;
+    margin: auto;
+    border-radius: 4px;
+    padding: .5rem;
+}
+.campaign-box .selected-product small{
+   color: #000;
+   font-weight: 600;
+   font-size: .9rem;
+   display: block;
+   margin-top: .2rem;
+}
+.campaign-box .selected-product span{
+    color: #000;
+    font-weight: 500;
+    font-size: .85rem;
+    display: inline-block;
+    border: 1px solid #bcb9b9;
+    padding: .2rem .5rem;
+    margin: .5rem 0;
+    border-radius: 3px;
+ }
+ .campaign-box .campaign-btn{
+    display: flex;
+    justify-content: space-around;
+    border: 1px solid #bcb9b9;
+    max-width: 98%;
+    margin: auto;
+    padding: 1.2rem 0;
+    border-radius: 4px;
+ }
+ .campaign-box .campaign-btn a{
+    padding: .5rem .65rem;
+    display: inline-block;
+    border-radius: 4px;
+    font-weight: 500;
+    font-size: .95rem;
+    color: #fff;
+    cursor: pointer;
+    border: none;
+    outline: none;
+ }
+ @media(max-width:600px){
+    .campaign-box .campaign-btn{
+        display: block;
+        margin: auto;
+        text-align: center;
+     }
+     .campaign-box .campaign-btn a{
+        margin-bottom: 1rem;
+     }
+ }
+ .campaign-box .delete{
+    margin-top: 1rem;
+ }
+ .campaign-box .delete a{
+    margin-top: 1rem;
+    padding: .5rem .65rem;
+    display: inline-block;
+    border-radius: 4px;
+    font-weight: 500;
+    font-size: .95rem;
+    background-color: #cd1c1f;
+    color: #fff;
+    text-transform: capitalize;
+    cursor: pointer;
+    border: none;
+ }
+ .campaign-box .pause{
+    background-color: #ffc22c;
+ } 
+ .campaign-box .review{
+    background-color: #ee755d;
+ }
+ .last-row{
+    border: none;
+ }
+ main .title .camp-name{
+    border-bottom: 1px solid #bcb9b9;
+    padding: .2rem .5rem;
+    cursor: pointer;
+ }

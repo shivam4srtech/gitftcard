@@ -1,0 +1,372 @@
+<!DOCTYPE html>
+<html lang="en">
+    <head>
+        <meta charset="UTF-8">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <title>BIGAFFI: Merchant Dashboard</title>
+        <link rel="shortcut icon" href="../images/bigaffilogo.jpeg" type="image/x-icon">
+        <!-- *******************Fontawesome icons***************************** -->
+        <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.2/css/all.min.css" integrity="sha512-z3gLpd7yknf1YoNbCzqRKc4qyor8gaKU1qmn+CShxbuBusANI9QpRohGBreCFkKxLhei6S9CQXFEbbKuqLg0DA==" crossorigin="anonymous" referrerpolicy="no-referrer" />
+        <link rel="stylesheet" href="./font-awesome-4.7.0/css/font-awesome.css">
+        <!-- *********************************Boxi-icons************************************ -->
+        <link href='https://unpkg.com/boxicons@2.0.9/css/boxicons.min.css' rel='stylesheet'>
+        <!-- ***********************************Montserrat********************************** -->
+        <link rel="preconnect" href="https://fonts.googleapis.com">
+        <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+        <link href="https://fonts.googleapis.com/css2?family=Montserrat:wght@100;200;300;400;500;600;800&family=Open+Sans:wght@300;400;600;700&display=swap" rel="stylesheet">
+        <link href="https://fonts.googleapis.com/css2?family=Open+Sans:wght@300;400&family=Raleway:wght@800&display=swap" rel="stylesheet">
+        <link rel="stylesheet" href="../bootstrap-5.3.0-alpha3-dist/css/bootstrap.min.css">
+        <!-- *******************local stylesheet******************** -->
+        <link rel="stylesheet" href="../dashboard-pages/stylesheet/global.css">
+        <link rel="stylesheet" href="../dashboard-pages/stylesheet/dashboard.css">
+        <link rel="stylesheet" href="./style/create-campain.css">
+    </head>
+    <body>
+    <!-- ***********************Dashboard Sidebar************************************** -->
+    <!-- SIDEBAR -->
+	<section id="sidebar">
+		<a href="./merchant.html" class="brand"><img class="logo" style="height: 36px; width: 36px;" src="../images/bigaffilogo.jpeg" alt=""> Big<span>Affi</span></a>
+		<ul class="side-menu">
+			<li><a href="./merchant.html" class="active"><i class='bx bxs-dashboard icon' ></i> Dashboard</a></li>
+			<li class="divider" data-text="Marketplace">Marketplace</li>
+			<li>
+				<a href="#"><i class='bx bxs-group icon'></i>Merchant<i class='bx bx-chevron-right icon-right' ></i></a>
+				<ul class="side-dropdown">
+					<li><a href="./affiliate.html">Affiliates</a></li>
+					<li><a href="./mobile-app.html">Mobile App</a></li>
+					<li><a href="./sales.html">Sales</a></li>
+					<li><a href="./leaderbors.html">Leaderboard</a></li>
+					<li><a href="./multilevel.html">MLM</a></li>
+				</ul>
+			</li>
+			<li><a href="./commission.html"><i class="fa-solid fa-percent icon"></i> Commission</a></li>
+			<li><a href="./coupon.html"><i class="fa-solid fa-tag icon"></i> Coupon</a></li>
+			<li><a href="./payment.html"><i class='bx bx-dollar icon' ></i> Payment</a></li>
+			<li><a href="./analytics.html"><i class="fa-solid fa-chart-line icon"></i>Analytics</a></li>
+			<li class="divider" data-text="Uploads">Uploads</li>
+			<li>
+				<a href="#"><i class="fa-solid fa-image icon"></i>  Media Center <i class='bx bx-chevron-right icon-right' ></i></a>
+				<ul class="side-dropdown">
+                    <li><a href="./upload-media.html"><i class="fa-solid fa-image icon"></i> Media</a></li>
+                    <li><a href="./marketplace.html"><i class="fa-solid fa-shop icon"></i>Marketplace</a></li>
+					<li><a href="./store.html"><i class="fa-solid fa-earth-americas icon"></i>Store</a></li>
+					<li><a href="#"><i class='bx bx-lock-alt icon' ></i> Privacy</a></li>
+					<li><a href="#"><i class='bx bxs-contact icon' ></i> T & C</a></li>
+				</ul>
+			</li>
+            <li>
+				<a href="#"><i class="fa-solid fa-bullhorn icon"></i>  Campaign <i class='bx bx-chevron-right icon-right' ></i></a>
+				<ul class="side-dropdown">
+                    <li><a href="./create-campain.html">Create Campaign</a></li>
+                    <li><a href="./all-campaign.html">All Campaign</a></li>
+				</ul>
+			</li>
+			<li><a href="./settings.html"><i class='bx bx-cog icon' ></i>Settings</a></li>
+			<li><a href="#"><i class='bx bxs-contact icon' ></i> Contact Us</a></li>
+			<li><a href="#" data-bs-toggle="modal" data-bs-target="#logOut"><i class='bx bxs-log-out-circle icon' ></i> Logout</a></li>
+		</ul>
+		<div class="ads">
+			<div class="wrapper">
+				<a href="#" class="btn-upgrade">Upgrade</a>
+				<p>Become a <span>PRO</span> member and enjoy <span>All Features</span></p>
+			</div>
+		</div>
+	</section>
+	<!-- SIDEBAR -->
+
+	<!-- NAVBAR -->
+	<section id="content">
+		<!-- NAVBAR -->
+		<nav>
+			<i class='bx bx-menu toggle-sidebar' ></i>
+			<form action="#">
+				<div class="form-group">
+					<input type="text" placeholder="Search...">
+					<i class='bx bx-search icon' ></i>
+				</div>
+			</form>
+			<a href="#" class="nav-link">
+				<i class='bx bxs-bell icon' ></i>
+				<span class="badge">5</span>
+			</a>
+			<a href="#" class="nav-link">
+				<i class='bx bxs-message-square-dots icon' ></i>
+				<span class="badge">8</span>
+			</a>
+			<span class="divider"></span>
+			<div class="profile">
+				<img src="../images/female_avatar_efig.svg" alt="">
+				<ul class="profile-link">
+					<li><a href="#"><i class='bx bxs-user-circle icon' ></i> Profile</a></li>
+					<li><a href="settings.html"><i class='bx bxs-cog' ></i> Settings</a></li>
+					<li><a href="#" data-bs-toggle="modal" data-bs-target="#logOut"><i class='bx bxs-log-out-circle' ></i> Logout</a></li>
+				</ul>
+			</div>
+		</nav>
+		<main>
+			<h1 class="title">Create New Campaingn</h1>
+			<ul class="breadcrumbs">
+				<li><a href="./merchant.html">Home</a></li>
+				<li class="divider">/</li>
+				<li><a href="#" class="active">Create Campaingn</a></li>
+			</ul>
+			 <!-- **********************************Create Campaign*********************************************** -->
+            <div class="row campaign-box mt-4">
+                <div class="col-md-6 item">
+                   <div>
+                        <h4>General Info</h4>
+                   </div>
+                </div>
+                <div class="col-md-6 item">
+                    <div class="mb-4 col">
+                        <label for="formGroupExampleInput" class="form-label p-1">Campaign Name<span>*</span></label>
+                        <input type="text" class="form-control" id="formGroupExampleInput" placeholder="Eg. Udemy">
+                    </div>
+                    <div class="mb-4 col">
+                        <label for="formGroupExampleInput" class="form-label p-1">Campaign Description<span>*</span><small>(min 10 words)</small></label>
+                        <textarea class="form-control" placeholder="Provide a concise overview of your brand or product."></textarea>
+                    </div>
+                    <div class="mb-4 col">
+                        <label for="formGroupExampleInput" class="form-label p-1">Targeted Keyword<span>*</span></label>
+                        <input type="text" class="form-control" id="formGroupExampleInput">
+                        <small class="example-gracia p-2">eg. beauty, healthcare, technology etc. Used for affiliate matching</small>
+                    </div>
+                </div>
+            </div>
+            <div class="row campaign-box ">
+                <div class="col-md-6 item">
+                   <div>
+                        <h4>Criteria</h4>
+                        <p>Who is eligible to participate in this campaign</p>
+                   </div>
+                </div>
+                <div class="col-md-6 item">
+                    <div>
+                        <div class="col mb-3">
+                            <label for="inputReport" class="form-label">Age Restriction</label>
+                            <select id="paymentMethod" class="form-select" onchange="ageCriteria(this)">
+                              <option selected>No age restriction</option>
+                              <option value="1">Restriction</option>
+                            </select>
+                        </div>
+                        <div id="displayCriteria" class="d-none">
+                            <div class="row row-cols-md-2">
+                                <div class="input-group mb-3 col">
+                                    <span class="input-group-text" id="basic-addon">Min Age</span>
+                                    <input type="number" class="form-control" id="basic-url" aria-describedby="basic-addon3">
+                                </div>
+                                <div class="input-group mb-3 col">
+                                    <span class="input-group-text" id="basic-addon">Max Age</span>
+                                    <input type="number" class="form-control" id="basic-url" aria-describedby="basic-addon3">
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="col mb-3">
+                        <label for="inputReport" class="form-label">Select Country</label>
+                        <select id="paymentMethod" class="form-select">
+                          <option selected>All Country</option>
+                          <option value="1">Australia</option>
+                          <option value="1">Brazil</option>
+                          <option value="1">Canada</option>
+                          <option value="1">Denmark</option>
+                          <option value="1">Egipt</option>
+                          <option value="1">Finland</option>
+                          <option value="1">Germany</option>
+                        </select>
+                    </div>
+                    <div>
+                        <div class="col mb-3">
+                            <label for="inputReport" class="form-label">Restrict based on followers</label>
+                            <select id="paymentMethod" class="form-select" onchange="follower(this)">
+                              <option selected>No Restriction</option>
+                              <option value="1">Restriction</option>
+                            </select>
+                        </div>
+                        <div id="displayFollower" class="d-none">
+                            <div class="row row-cols-md-2">
+                                <div class="input-group mb-3 col">
+                                    <span class="input-group-text" id="basic-addon">Min Follower</span>
+                                    <input type="number" class="form-control" id="basic-url" aria-describedby="basic-addon3">
+                                </div>
+                                <div class="input-group mb-3 col">
+                                    <span class="input-group-text" id="basic-addon">Max Follower</span>
+                                    <input type="number" class="form-control" id="basic-url" aria-describedby="basic-addon3">
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="col mb-3">
+                        <label for="inputReport" class="form-label">Select Country</label>
+                        <select id="paymentMethod" class="form-select">
+                          <option selected>Worldwide</option>
+                          <option value="1">Australia</option>
+                          <option value="1">Brazil</option>
+                          <option value="1">Canada</option>
+                          <option value="1">Denmark</option>
+                          <option value="1">Egipt</option>
+                          <option value="1">Finland</option>
+                          <option value="1">Germany</option>
+                        </select>
+                    </div>
+                </div>
+            </div>
+            <div class="row campaign-box ">
+                <div class="col-md-6 item">
+                   <div>
+                        <h4>Shipping Location</h4>
+                        <p>Which country do you offer shipping ?</p>
+                        <p>Select Default to allow worldwide shipping.</p>
+                   </div>
+                </div>
+                <div class="col-md-6 item">
+                    <div class="col">
+                        <label for="inputReport" class="form-label">Shipping Location</label>
+                        <select id="paymentMethod" class="form-select">
+                          <option selected>Worldwide</option>
+                          <option value="1">Australia</option>
+                          <option value="1">Brazil</option>
+                          <option value="1">Canada</option>
+                          <option value="1">Denmark</option>
+                          <option value="1">Egipt</option>
+                          <option value="1">Finland</option>
+                          <option value="1">Germany</option>
+                        </select>
+                    </div>
+                </div>
+            </div>
+            <div class="row campaign-box ">
+                <div class="col-md-6 item">
+                   <div>
+                        <h4>Sample Products</h4>
+                        <p>Provide product samples to influencers for content creation</p>
+                   </div>
+                </div>
+                <div class="col-md-6 item">
+                    <div>
+                        <div class="col mb-3">
+                            <label for="inputReport" class="form-label">Select Product Preference</label>
+                            <select id="paymentMethod" class="form-select" onchange="productSample(this)">
+                              <option selected>I prefer not to provide product samples to influencers.</option>
+                              <option value="1">provide product samples to influencers.</option>
+                            </select>
+                        </div>
+                        <div id="displaySample" class="d-none">
+                            <div class="row">
+                                <div class="mb-3 col">
+                                    <label for="formGroupExampleInput" class="form-label p-1">Search Product<span>*</span></label>
+                                    <input type="search" class="form-control" id="formGroupExampleInput" placeholder="Eg. mobile">
+                                </div>
+                                <div class="selected-product">
+                                    <small>Selected Product :</small>
+                                    <span>Mobile</span>
+                                    <span>Shoes</span>
+                                    <span>Laptops</span>
+                                    <span>Hand Bags</span>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+            <div class="row campaign-box ">
+                <div class="col-md-6 item">
+                   <div>
+                        <h4>Product Category</h4>
+                        <p>What types of products are available in your store?</p>
+                   </div>
+                </div>
+                <div class="col-md-6 item">
+                    <div>
+                        <div class="col mb-3">
+                            <label for="inputReport" class="form-label">Search Product Categories</label>
+                            <div class="row">
+                                <div class="mb-3 col">
+                                    <input type="search" class="form-control" id="formGroupExampleInput" placeholder="Eg. healthcare">
+                                </div>
+                                <div class="selected-product">
+                                    <small>Selected Product :</small>
+                                    <span>Beauty</span>
+                                    <span>Entertainment</span>
+                                    <span>Electronics</span>
+                                    <span>Fashion</span>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+            <div class="row campaign-box last-row">
+                <div class="campaign-btn">
+                    <div>
+                        <a href="" class="pause">Pause Campaign</a>
+                    </div>
+                    <div>
+                        <a href="" class="review">Submit for Review</a>
+                    </div>
+                </div>
+                <div class="delete">
+                    <a href="">Delete Campaign</a>
+                </div>
+            </div>
+		</main>
+	</section>
+	<!-- ********************************Logout Model************************************************* -->
+	<div class="modal fade" id="logOut" tabindex="-1" aria-labelledby="exampleModalLabel" aria-hidden="true">
+		<div class="modal-dialog modal-dialog-centered">
+			<div class="modal-content logout-content">
+				<div class="modal-header logout-header">
+				<p class="text-center"><i class="fa-solid fa-triangle-exclamation"></i></p>
+				</div>
+				<div class="modal-body logout-body text-center">
+				<h2>Are You Sure!</h2>
+				<p class="mt-2">Don't worry all your changes are saved.<br>Feel free to log back in.</p>
+				</div>
+				<div class="modal-footer logout-footer">
+				<a type="button" class="btn btn-secondary dismiss" data-bs-dismiss="modal">Cancle</a>
+				<a type="button" class="btn btn-primary logout">Logout</a>
+				</div>
+			</div>
+		</div>
+	</div>
+   
+    <!-- ===============age criteria================== -->
+    <script type="text/javascript">
+		function ageCriteria(answer){
+			console.log(answer.value);
+			if(answer.value == 1){
+				document.getElementById('displayCriteria').classList.remove('d-none');
+			} else{
+				document.getElementById('displayCriteria').classList.add('d-none');
+			}
+		};
+	</script>
+     <!-- ===============Display Follower================== -->
+     <script type="text/javascript">
+		function follower(answer){
+			console.log(answer.value);
+			if(answer.value == 1){
+				document.getElementById('displayFollower').classList.remove('d-none');
+			} else{
+				document.getElementById('displayFollower').classList.add('d-none');
+			}
+		};
+	</script>
+    <!-- ===============Product Sample================== -->
+    <script type="text/javascript">
+		function productSample(answer){
+			console.log(answer.value);
+			if(answer.value == 1){
+				document.getElementById('displaySample').classList.remove('d-none');
+			} else{
+				document.getElementById('displaySample').classList.add('d-none');
+			}
+		};
+	</script>
+    <!-- ==============================Bootstrap script============================ -->
+    <script src="../bootstrap-5.3.0-alpha3-dist/js/bootstrap.bundle.min.js"></script>
+    <!-- ==============================Local script============================ -->
+    <script src="../dashboard-pages/script/global-script.js"></script>
+    <script src="../dashboard-pages/script/dashboard.js"></script>
+    </body>
+</html>    
