@@ -1,0 +1,173 @@
+.create-btn{
+    border: 1px solid silver;
+    color: #5676ff;
+    font-size: .95rem;
+    font-weight: 500;
+    letter-spacing: .4px;
+}
+.create-btn i{
+   padding: .5rem;
+}
+.para p{
+    font-weight: 500;
+    color: #000;
+    font-size: 1rem;
+    line-height: 1.3;
+    letter-spacing: .3px;
+    margin-bottom: 1rem;
+}
+.group-box{
+    border: 1px solid #e1dfdf;
+    border-radius: 10px;
+}
+.group-box .group-header{
+    text-align: center;
+    padding: .5rem;
+    background-color: #e6d0b9;
+    border-radius: 10px 10px 0 0;
+}
+.group-box .group-header h2{
+   color: #000;
+   font-weight: 600;
+   font-size: 1.1rem;
+}
+.group-box .member{
+   color: #000;
+   font-weight: 500;
+   font-size: 1rem;
+ }
+ .group-box .member:hover{
+    background-color: #e6d0b9;
+  }
+  .group-box a:hover{
+    background-color: #e6d0b9;
+  }
+  .group-box a:nth-of-type(3){
+    border-radius: 0 0 10px 10px;
+  }
+  .group-box ul li:last-child{
+    border-radius: 0px 0px 10px 10px;
+    margin-bottom: 0;
+  }
+ .group-box a{
+    color: #5676ff;
+    font-weight: 500;
+    font-size: 1rem;
+  }
+  .group-box span{
+    color: #000;
+    font-weight: 500;
+    font-size: 1rem;
+  }
+  /* ==================Edit Member======================== */
+  .group-box .remove{
+    color: #cd1c1f;
+    border-radius: 4px;
+    padding: .1rem .4rem;
+  }
+  .group-box .add{
+    color: #34a853;
+    border-radius: 4px;
+    padding: .1rem .4rem;
+  }
+  /* ==================Edit Group=================== */
+  .edit-group h2{
+    font-weight: 600;
+    font-size: 1.2rem;
+  }
+  .edit-group label{
+    font-weight: 600;
+    font-size: 1rem;
+    padding-left: .25rem;
+  }
+  .edit-group{
+   border-bottom: 1px solid #ddd9d9;
+   padding-bottom: 2rem;
+   margin-bottom: 1rem;
+  }
+  .edit-group .video-modal{
+   color: #5676ff;
+   display: inline-block;
+   font-weight: 500;
+}
+.edit-group .video-modal i{
+    padding-left: .5rem;
+ }
+ .edit-group .commissionrules{
+    border: 1px solid #d0cdcd;
+    border-radius: 6px;
+    padding: 1.2rem .8rem;
+ }
+ .edit-group .commissionrules .therule{
+    font-weight: 500;
+    font-size: 1rem;
+    margin-bottom: .5rem;
+    color: #000;
+ }
+ .edit-group .commissionrules .therule i{
+    padding-right: .5rem;
+    font-weight: 600;
+    font-size: 1.1rem;
+ }
+ .edit-group .commissionrules .therule span{
+    color: #cd1c1f;
+ }
+ .edit-group .commissionrules small{
+  font-weight: 600;
+  font-size: 1.2rem;
+  color: #000;
+  margin-bottom: .5rem;
+  display: inline-block;
+ }
+.edit-group .commissionrules .edit-delete a{
+margin-right: 2rem;
+font-size: 1.2rem;
+}
+.edit-group .commissionrules .edit-delete .delete{
+    color: #cd1c1f;
+}
+.edit-group .commissionrules .edit-delete .edit{
+    color: #000;
+}
+/* ===============modal===================== */
+ .modal h5{
+    font-weight: 600;
+    color: #000;
+    font-size: 1.25rem;
+ }
+ .modal label{
+    font-weight: 600;
+    padding-left: .2rem;
+    font-size: .9rem;
+ }
+ .modal .select select{
+    font-weight: 500;
+    font-size: .9rem;
+ }
+ .modal .tag{
+    color: #000;
+    font-weight: 500;
+ }
+ .modal label span{
+    color: #cd1c1f;
+    padding: .2rem;
+ }
+.modal .btns-group{
+    display: flex;
+    align-items: center;
+    justify-content: space-around;
+    margin-top: 1rem;
+}
+.modal .member-list ul li{
+   padding: .5rem .2rem;
+   border-bottom: 1px solid #d4d1d1;
+   display: block;
+}
+.modal .member-list ul li:last-child{
+    border: none;
+ }
+.modal .member-list ul li a{
+    color: #5676ff;
+    font-weight: 500;
+    padding: .1rem;
+ }

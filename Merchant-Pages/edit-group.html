@@ -1,0 +1,534 @@
+<!DOCTYPE html>
+<html lang="en">
+    <head>
+        <meta charset="UTF-8">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <title>BIGAFFI: Merchant Dashboard</title>
+        <link rel="shortcut icon" href="../images/bigaffilogo.jpeg" type="image/x-icon">
+        <!-- *******************Fontawesome icons***************************** -->
+        <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.2/css/all.min.css" integrity="sha512-z3gLpd7yknf1YoNbCzqRKc4qyor8gaKU1qmn+CShxbuBusANI9QpRohGBreCFkKxLhei6S9CQXFEbbKuqLg0DA==" crossorigin="anonymous" referrerpolicy="no-referrer" />
+        <link rel="stylesheet" href="./font-awesome-4.7.0/css/font-awesome.css">
+        <!-- *********************************Boxi-icons************************************ -->
+        <link href='https://unpkg.com/boxicons@2.0.9/css/boxicons.min.css' rel='stylesheet'>
+        <!-- ***********************************Montserrat********************************** -->
+        <link rel="preconnect" href="https://fonts.googleapis.com">
+        <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+        <link href="https://fonts.googleapis.com/css2?family=Montserrat:wght@100;200;300;400;500;600;800&family=Open+Sans:wght@300;400;600;700&display=swap" rel="stylesheet">
+        <link href="https://fonts.googleapis.com/css2?family=Open+Sans:wght@300;400&family=Raleway:wght@800&display=swap" rel="stylesheet">
+        <link rel="stylesheet" href="../bootstrap-5.3.0-alpha3-dist/css/bootstrap.min.css">
+        <!-- *******************local stylesheet******************** -->
+        <link rel="stylesheet" href="../dashboard-pages/stylesheet/global.css">
+        <link rel="stylesheet" href="../dashboard-pages/stylesheet/dashboard.css">
+        <link rel="stylesheet" href="./style/group.css">
+    </head>
+    <body>
+    <!-- ***********************Dashboard Sidebar************************************** -->
+    <!-- SIDEBAR -->
+	<section id="sidebar">
+		<a href="./merchant.html" class="brand"><img class="logo" style="height: 36px; width: 36px;" src="../images/bigaffilogo.jpeg" alt=""> Big<span>Affi</span></a>
+		<ul class="side-menu">
+			<li><a href="./merchant.html" class="active"><i class='bx bxs-dashboard icon' ></i> Dashboard</a></li>
+			<li class="divider" data-text="Marketplace">Marketplace</li>
+			<li>
+				<a href="#"><i class='bx bxs-group icon'></i>Merchant<i class='bx bx-chevron-right icon-right' ></i></a>
+				<ul class="side-dropdown">
+					<li><a href="./affiliate.html">Affiliates</a></li>
+					<li><a href="./mobile-app.html">Mobile App</a></li>
+					<li><a href="./sales.html">Sales</a></li>
+                    <li><a href="./leaderbors.html">Leaderboard</a></li>
+                    <li><a href="./multilevel.html">MLM</a></li>
+				</ul>
+			</li>
+			<li><a href="./commission.html"><i class="fa-solid fa-percent icon"></i> Commission</a></li>
+            <li><a href="./coupon.html"><i class="fa-solid fa-tag icon"></i> Coupon</a></li>
+			<li><a href="./payment.html"><i class='bx bx-dollar icon' ></i> Payment</a></li>
+            <li><a href="./analytics.html"><i class="fa-solid fa-chart-line icon"></i>Analytics</a></li>
+			<li><a href="./bonus.html"><i class="fa-solid fa-money-bill-trend-up icon"></i> Bonus</a></li>
+            <li class="divider" data-text="Uploads">Uploads</li>
+			<li>
+				<a href="#"><i class="fa-solid fa-image icon"></i>  Media Center <i class='bx bx-chevron-right icon-right' ></i></a>
+				<ul class="side-dropdown">
+                    <li><a href="./upload-media.html"><i class="fa-solid fa-image icon"></i> Media</a></li>
+                    <li><a href="./marketplace.html"><i class="fa-solid fa-shop icon"></i>Marketplace</a></li>
+                    <li><a href="./store.html"><i class="fa-brands fa-uikit icon"></i></i>Affiliate UI</a></li>
+					<li><a href="#"><i class='bx bx-lock-alt icon' ></i> Privacy</a></li>
+					<li><a href="#"><i class='bx bxs-contact icon' ></i> T & C</a></li>
+				</ul>
+			</li>
+            <li>
+				<a href="#"><i class="fa-solid fa-bullhorn icon"></i>  Campaign <i class='bx bx-chevron-right icon-right' ></i></a>
+				<ul class="side-dropdown">
+                    <li><a href="./create-campain.html">Create Campaign</a></li>
+                    <li><a href="./all-campaign.html">All Campaign</a></li>
+				</ul>
+			</li>
+            <li><a href="./group.html"><i class="fa-solid fa-users-rectangle icon"></i>Group</a></li>
+			<li><a href="./settings.html"><i class='bx bx-cog icon' ></i>Settings</a></li>
+			<li><a href="#"><i class='bx bxs-contact icon' ></i> Contact Us</a></li>
+			<li><a href="#" data-bs-toggle="modal" data-bs-target="#logOut"><i class='bx bxs-log-out-circle icon' ></i> Logout</a></li>
+		</ul>
+		<div class="ads">
+			<div class="wrapper">
+				<a href="#" class="btn-upgrade">Upgrade</a>
+				<p>Become a <span>PRO</span> member and enjoy <span>All Features</span></p>
+			</div>
+		</div>
+	</section>
+	<!-- SIDEBAR -->
+
+	<!-- NAVBAR -->
+	<section id="content">
+		<!-- NAVBAR -->
+		<nav>
+			<i class='bx bx-menu toggle-sidebar' ></i>
+			<form action="#">
+				<div class="form-group">
+					<input type="text" placeholder="Search...">
+					<i class='bx bx-search icon' ></i>
+				</div>
+			</form>
+			<a href="#" class="nav-link">
+				<i class='bx bxs-bell icon' ></i>
+				<span class="badge">5</span>
+			</a>
+			<a href="#" class="nav-link">
+				<i class='bx bxs-message-square-dots icon'></i>
+				<span class="badge">8</span>
+			</a>
+			<span class="divider"></span>
+			<div class="profile">
+				<img src="../images/female_avatar_efig.svg" alt="">
+				<ul class="profile-link">
+					<li><a href="#"><i class='bx bxs-user-circle icon' ></i> Profile</a></li>
+					<li><a href="./settings.html"><i class='bx bxs-cog' ></i> Settings</a></li>
+					<li><a href="#" data-bs-toggle="modal" data-bs-target="#logOut"><i class='bx bxs-log-out-circle' ></i> Logout</a></li>
+				</ul>
+			</div>
+		</nav>
+		<!-- NAVBAR -->
+
+		<!-- MAIN -->
+		<main>
+            <ul class="breadcrumbs mb-2">
+				<li><a href="./merchant.html">Home</a></li>
+				<li class="divider">/</li>
+				<li><a href="./edit-member.html" class="active">Edit Group</a></li>
+			</ul>
+			<div>
+                <h1 class="title me-auto">Edit Group TNP Netword</h1>
+            </div>
+            <div class="row edit-group mt-4">
+                <div class="col-md-6">
+                    <div>
+                        <h2>Customize group name and it's default commission</h2>
+                        <div class="mt-2">
+                            <a href="" class="video-modal" data-video="https://www.youtube.com/embed/HBdcL7YsdBY" data-bs-toggle="modal" data-bs-target="#videoModal">Need Help?<i class="fa-solid fa-video"></i></a>
+                        </div>
+                    </div>
+                </div>
+                <div class="col-md-6">
+                    <div>
+                        <form action="#someWhere" class="">
+                            <div class="col mb-3">
+                                <label for="exampleFormControlInput1" class="form-label">Group Name</label>
+                                <input type="text" class="form-control" id="exampleFormControlInput1" placeholder="existing group name should rendered here.." required>
+                            </div>
+                            <div class="col mb-3 select">
+                                <label for="inputReport" class="form-label">Default Commission</label>
+                                <select class="form-select" onchange="bonusType(this)">
+                                  <option selected></option>
+                                  <option value="1">Percentage</option>
+                                  <option value="2">Flat rate</option>
+                                  <option value="3">Fixed amount on entire order</option>
+                                </select>
+                            </div>
+                            <div class="col mb-3 d-none" id="percentage">
+                                <div class="input-group mb-3">
+                                    <input type="number" class="form-control" id="basic-url" aria-describedby="basic-addon3">
+                                    <span class="input-group-text tag" id="basic-addon3">%</span>
+                                </div>
+                            </div>
+                            <div class="col mb-3 d-none" id="flatRate">
+                                <div class="input-group mb-3">
+                                    <span class="input-group-text tag" id="basic-addon3">$</span>
+                                    <input type="number" class="form-control" id="basic-url" aria-describedby="basic-addon3">
+                                </div>
+                            </div>
+                            <div class="text-center">
+                                <a type="submit" class="btn btn-primary">Save</a>
+                            </div>
+                        </form>
+                    </div>
+                </div>
+            </div>
+            <!-- ================Commission rules=================== -->
+            <div class="row edit-group mt-4">
+                <div class="col-md-6">
+                    <div>
+                        <h2>Commission rules</h2>
+                        <div class="mt-2">
+                            <a href="" class="video-modal" data-video="https://www.youtube.com/embed/HBdcL7YsdBY" data-bs-toggle="modal" data-bs-target="#videoModal">Need Help?<i class="fa-solid fa-video"></i></a>
+                        </div>
+                    </div>
+                </div>
+                <div class="col-md-6">
+                    <div>
+                        <a href="#000" class="video-modal" data-bs-toggle="modal" data-bs-target="#createCommissionRule">Add New Commission Rule<i class="fa-solid fa-plus"></i></a>
+                    </div>
+                </div>
+                <!-- ===============Listing Rules=============== -->
+                <div class="col-12 mt-4">
+                    <h2 class="mb-3">Created Commission Rules</h2>
+                    <div class="d-md-flex align-items-center commissionrules mb-3">
+                        <div class="me-auto">
+                            <p class="therule"><i class="fa-solid fa-equals"></i>product name = <span>health care</span></p>
+                            <small class="commissionvalue">10%</small>
+                        </div>
+                        <div class="ms-auto edit-delete">
+                            <a href="#000" class="delete"><i class="fa-solid fa-trash"></i></a>
+                            <a href="#000" class="edit" data-bs-toggle="modal" data-bs-target="#editCommissionRule"><i class="fa-regular fa-pen-to-square"></i></a>
+                        </div>
+                    </div>
+                    <div class="d-md-flex align-items-center commissionrules mb-3">
+                        <div class="me-auto">
+                            <p class="therule"><i class="fa-solid fa-equals"></i>product name = <span>BeautyProduct</span></p>
+                            <small class="commissionvalue">12%</small>
+                        </div>
+                        <div class="ms-auto edit-delete">
+                            <a href="#000" class="delete"><i class="fa-solid fa-trash"></i></a>
+                            <a href="#000" class="edit" data-bs-toggle="modal" data-bs-target="#editCommissionRule"><i class="fa-regular fa-pen-to-square"></i></a>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </main>    
+    </section>
+    <!-- ==================Create Commission rule ===============================-->
+	<div class="modal fade" id="createCommissionRule" tabindex="-1" aria-labelledby="exampleModalLabel" aria-hidden="true">
+		<div class="modal-dialog">
+			<div class="modal-content">
+				<div class="modal-header">
+				<h5 class="modal-title" id="exampleModalLabel">Create Commissions Rule</h5>
+				<button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
+				</div>
+				<div class="modal-body">
+					<form action="#someWhere" class="">
+                        <div>    
+                            <div class="col mb-3 select">
+                                <label for="inputReport" class="form-label">If (choose rule)</label>
+                                <select class="form-select" onchange="rules(this)">
+                                    <option selected></option>
+                                    <option value="1">Product Name</option>
+                                    <option value="2">Product SKU</option>
+                                    <option value="3">Customer Email</option>
+                                    <option value="4">Discount Percentage</option>
+                                    <option value="5">Coupon Code</option>
+                                    <option value="6">Conversion Source</option>
+                                </select>
+                            </div>
+                            <div id="productName" class="row d-none">
+                                <label for="inputReport" class="form-label p-3">Test</label>
+                                <div class="col-md-6" id="">
+                                    <select class="form-select">
+                                        <option selected>Matches</option>
+                                        <option value="1">Equals</option>
+                                        <option value="2">Contains</option>
+                                        <option value="3">Starts with</option>
+                                        <option value="4">Ends with</option>
+                                    </select>
+                                </div>
+                                <div class="col-md-6" id="">
+                                    <div class="input-group mb-3">
+                                        <input type="text" class="form-control" id="basic-url" aria-describedby="basic-addon3" placeholder="value">
+                                    </div>
+                                </div>
+                                <div class="col-12 mb-3 select">
+                                    <label for="inputReport" class="form-label">Commission</label>
+                                    <select class="form-select" onchange="commission(this)">
+                                        <option selected></option>
+                                        <option value="1">Percentage</option>
+                                        <option value="2">Falt Rate</option>
+                                    </select>
+                                </div>
+                                <div class="col d-none" id="percent">
+                                    <label for="basic-url" class="form-label">Percentage</label>
+                                    <div class="input-group mb-3">
+                                        <input type="number" class="form-control" id="basic-url" aria-describedby="basic-addon3">
+                                        <span class="input-group-text tag" id="basic-addon3">%</span>
+                                    </div>
+                                </div>
+                                <div class="col d-none" id="flatRates">
+                                    <label for="basic-url" class="form-label">Flate Rate</label>
+                                    <div class="input-group mb-3">
+                                        <span class="input-group-text tag" id="basic-addon3">$</span>
+                                        <input type="number" class="form-control" id="basic-url" aria-describedby="basic-addon3">
+                                    </div>
+                                </div>
+                            </div>
+                            <!-- ========================= -->
+                            <div id="couponCode" class="row d-none">
+                                <label for="inputReport" class="form-label p-3">Test</label>
+                                <div class="col-md-6" id="">
+                                    <select class="form-select">
+                                        <option selected>Matches</option>
+                                        <option value="1">Equals</option>
+                                        <option value="2">Contains</option>
+                                        <option value="3">Starts with</option>
+                                        <option value="4">Ends with</option>
+                                    </select>
+                                </div>
+                                <div class="col-md-6" id="">
+                                    <div class="input-group mb-3">
+                                        <input type="text" class="form-control" id="basic-url" aria-describedby="basic-addon3" placeholder="value">
+                                    </div>
+                                </div>
+                                <div class="col-12 mb-3 select">
+                                    <label for="inputReport" class="form-label">Commission</label>
+                                    <select class="form-select" onchange="commission(this)">
+                                        <option selected></option>
+                                        <option value="1">Percentage</option>
+                                        <option value="2">Falt Rate</option>
+                                    </select>
+                                </div>
+                                <div class="col d-none" id="percent">
+                                    <label for="basic-url" class="form-label">Percentage</label>
+                                    <div class="input-group mb-3">
+                                        <input type="number" class="form-control" id="basic-url" aria-describedby="basic-addon3">
+                                        <span class="input-group-text tag" id="basic-addon3">%</span>
+                                    </div>
+                                </div>
+                                <div class="col d-none" id="flatRates">
+                                    <label for="basic-url" class="form-label">Flate Rate</label>
+                                    <div class="input-group mb-3">
+                                        <span class="input-group-text tag" id="basic-addon3">$</span>
+                                        <input type="number" class="form-control" id="basic-url" aria-describedby="basic-addon3">
+                                    </div>
+                                </div>
+                                <div class="form-check col-12 pe-5">
+                                    <input class="form-check-input" type="checkbox" value="" id="flexCheckChecked" checked>
+                                    <label class="form-check-label" for="flexCheckChecked">
+                                        Rule Applies only for discounted items
+                                    </label>
+                                </div>
+                            </div>
+                            <!-- ======================= -->
+                            <div id="conversionSource" class="row d-none">
+                                <label for="inputReport" class="form-label p-3">Is</label>
+                                <div class="col-md-12 mb-3" id="">
+                                    <select class="form-select">
+                                        <option selected>Custome Tracking Rules</option>
+                                        <option value="1">Personal Order</option>
+                                        <option value="2">Party Link</option>
+                                        <option value="3">Parent Affiliate</option>
+                                        <option value="4">Customer Affiliate Connection</option>
+                                        <option value="5">Refferal Link Tracking</option>
+                                    </select>
+                                </div>
+                                <div class="col-md-12" id="">
+                                    <div class="input-group mb-3">
+                                        <input type="text" class="form-control" id="basic-url" aria-describedby="basic-addon3" placeholder="value">
+                                    </div>
+                                </div>
+                                <div class="col-12 mb-3 select">
+                                    <label for="inputReport" class="form-label">Commission</label>
+                                    <select class="form-select" onchange="commission(this)">
+                                        <option selected></option>
+                                        <option value="1">Percentage</option>
+                                        <option value="2">Falt Rate</option>
+                                    </select>
+                                </div>
+                                <div class="col d-none" id="conversionPercent">
+                                    <label for="basic-url" class="form-label">Percentage</label>
+                                    <div class="input-group mb-3">
+                                        <input type="number" class="form-control" id="basic-url" aria-describedby="basic-addon3">
+                                        <span class="input-group-text tag" id="basic-addon3">%</span>
+                                    </div>
+                                </div>
+                                <div class="col d-none" id="conversionFlatRates">
+                                    <label for="basic-url" class="form-label">Flate Rate</label>
+                                    <div class="input-group mb-3">
+                                        <span class="input-group-text tag" id="basic-addon3">$</span>
+                                        <input type="number" class="form-control" id="basic-url" aria-describedby="basic-addon3">
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+						<div class="btns-group">
+                            <a type="button" class="btn btn-secondary" data-bs-dismiss="modal">Cancle</a>
+						    <a type="submit" class="btn btn-primary">Create</a>
+                        </div>
+					</form>
+				</div>
+			</div>
+		</div>
+	</div>             
+    <!-- =======================Video Modal===================================== -->
+	<div class="modal fade" id="videoModal" tabindex="-1" role="dialog" aria-labelledby="myModalLabel" aria-hidden="true">
+		<div class="modal-dialog modal-lg">
+		  <div class="modal-content">
+			<div class="modal-header">
+			  <h2>Manually assign sales to an affiliate.</h2>	
+			  <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
+			</div>
+			<div class="modal-body">
+			  <div class="embed-container">
+				<iframe width="100%" height="350" src="https://www.youtube.com/embed/HBdcL7YsdBY" frameborder="0" allowfullscreen></iframe>
+			  </div>
+			</div>
+		  </div>
+		</div>
+	</div>
+    <!-- ==================Group Member modal ===============================-->
+	<div class="modal fade" id="groupMember" tabindex="-1" aria-labelledby="exampleModalLabel" aria-hidden="true">
+		<div class="modal-dialog">
+			<div class="modal-content">
+				<div class="modal-header">
+                    <h5 class="modal-title" id="exampleModalLabel">Group Members</h5>
+                    <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
+				</div>
+				<div class="modal-body member-list">
+					<ul>
+                        <li><a href="./affiliate-details.html">Kevin Pietersen</a></li>
+                        <li><a href="./affiliate-details.html">Joe Root</a></li>
+                        <li><a href="./affiliate-details.html">Alastair Cook</a></li>
+                        <li><a href="./affiliate-details.html">Ricky Ponting</a></li>
+                        <li><a href="./affiliate-details.html">Eoin Morgan</a></li>
+                        <li><a href="./affiliate-details.html">Shane Warne</a></li>
+                        <li><a href="./affiliate-details.html">Michael Clarke</a></li>
+                        <li><a href="./affiliate-details.html">Stuard broad</a></li>
+                        <li><a href="./affiliate-details.html">Graeme Swann</a></li>
+                    </ul>
+				</div>
+			</div>
+		</div>
+	</div>
+   <!-- ==================Create Group Modal ===============================-->
+	<div class="modal fade" id="createGroup" tabindex="-1" aria-labelledby="exampleModalLabel" aria-hidden="true">
+		<div class="modal-dialog">
+			<div class="modal-content">
+				<div class="modal-header">
+                    <h5 class="modal-title" id="exampleModalLabel">Create Group</h5>
+                    <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
+				</div>
+				<div class="modal-body">
+					<form action="#someWhere" class="">
+                        <div class="col mb-3">
+                            <label for="exampleFormControlInput1" class="form-label">Group Name<span>(for your reference only)</span></label>
+                            <input type="text" class="form-control" id="exampleFormControlInput1" required>
+                        </div>
+                        <div class="col mb-3 select">
+                            <label for="inputReport" class="form-label">Default Commission</label>
+                            <select class="form-select" onchange="bonusType(this)">
+                              <option selected></option>
+                              <option value="1">Percentage</option>
+                              <option value="2">Flat rate</option>
+                              <option value="3">Fixed amount on entire order</option>
+                            </select>
+                        </div>
+                        <div class="col mb-3 d-none" id="percentage">
+                            <div class="input-group mb-3">
+                                <input type="number" class="form-control" id="basic-url" aria-describedby="basic-addon3">
+                                <span class="input-group-text tag" id="basic-addon3">%</span>
+                            </div>
+                        </div>
+                        <div class="col mb-3 d-none" id="flatRate">
+                            <div class="input-group mb-3">
+                                <span class="input-group-text tag" id="basic-addon3">$</span>
+                                <input type="number" class="form-control" id="basic-url" aria-describedby="basic-addon3">
+                            </div>
+                        </div>
+						<div class="btns-group">
+                            <a type="button" class="btn btn-secondary" data-bs-dismiss="modal">Cancle</a>
+						    <a type="submit" class="btn btn-primary">Create</a>
+                        </div>
+					</form>
+				</div>
+			</div>
+		</div>
+	</div>
+	<!-- ********************************Logout Model************************************************* -->
+	<div class="modal fade" id="logOut" tabindex="-1" aria-labelledby="exampleModalLabel" aria-hidden="true">
+		<div class="modal-dialog modal-dialog-centered">
+			<div class="modal-content logout-content">
+				<div class="modal-header logout-header">
+				<p class="text-center"><i class="fa-solid fa-triangle-exclamation"></i></p>
+				</div>
+				<div class="modal-body logout-body text-center">
+				<h2>Are You Sure!</h2>
+				<p class="mt-2">Don't worry all your changes are saved.<br>Feel free to log back in.</p>
+				</div>
+				<div class="modal-footer logout-footer">
+				<a type="button" class="btn btn-secondary dismiss" data-bs-dismiss="modal">Cancle</a>
+				<a type="button" class="btn btn-primary logout">Logout</a>
+				</div>
+			</div>
+		</div>
+	</div>
+    <script type="text/javascript">
+		function bonusType(answer){
+			if(answer.value == 1){
+				document.getElementById('percentage').classList.remove('d-none');
+			} else{
+				document.getElementById('percentage').classList.add('d-none');
+			}
+            if(answer.value == 2 || answer.value == 3){
+				document.getElementById('flatRate').classList.remove('d-none');
+			} else{
+				document.getElementById('flatRate').classList.add('d-none');
+			}
+		};
+	</script>
+    <script type="text/javascript">
+		function rules(answer){
+			if(answer.value == 1 || answer.value == 2 || answer.value == 3 || answer.value == 4){
+				document.getElementById('productName').classList.remove('d-none');
+			} else{
+				document.getElementById('productName').classList.add('d-none');
+			}
+            if(answer.value == 5){
+				document.getElementById('couponCode').classList.remove('d-none');
+			} else{
+				document.getElementById('couponCode').classList.add('d-none');
+			}
+            if(answer.value == 6){
+				document.getElementById('conversionSource').classList.remove('d-none');
+			} else{
+				document.getElementById('conversionSource').classList.add('d-none');
+			}
+		};
+	</script>
+    <script type="text/javascript">
+		function commission(answer){
+			if(answer.value == 1){
+				document.getElementById('percent').classList.remove('d-none');
+			} else{
+				document.getElementById('percent').classList.add('d-none');
+			}
+            if(answer.value == 2){
+				document.getElementById('flatRates').classList.remove('d-none');
+			} else{
+				document.getElementById('flatRates').classList.add('d-none');
+			}
+		};
+	</script>
+    <script type="text/javascript">
+		function commission(answer){
+			if(answer.value == 1){
+				document.getElementById('conversionPercent').classList.remove('d-none');
+			} else{
+				document.getElementById('conversionPercent').classList.add('d-none');
+			}
+            if(answer.value == 2){
+				document.getElementById('conversionFlatRates').classList.remove('d-none');
+			} else{
+				document.getElementById('conversionFlatRates').classList.add('d-none');
+			}
+		};
+	</script>
+    <!-- ==============================Bootstrap script============================ -->
+    <script src="../bootstrap-5.3.0-alpha3-dist/js/bootstrap.bundle.min.js"></script>
+    <!-- ==============================Local script============================ -->
+    <script src="../dashboard-pages/script/global-script.js"></script>
+    <script src="../dashboard-pages/script/dashboard.js"></script>
+    </body>
+</html>    

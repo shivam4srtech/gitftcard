@@ -46,6 +46,7 @@
     text-transform: capitalize;
     cursor: pointer;
     transition: .3s ease;
+    border-radius: 4px;
 }
 .site-description .explore:hover{
     background-color: #002E6E;
@@ -176,6 +177,7 @@
     padding: .5rem .5rem 3rem .5rem;
     box-sizing: border-box;
     box-shadow: 5px 5px 10px #d0cece;
+    border-radius: 10px;
 }
 .choose-item img{
     max-width: 90%;
@@ -263,6 +265,11 @@
     font-weight: 600;
     font-size: 2.2rem;
     margin-bottom: 1.6rem;
+}
+@media(max-width:600px){
+    .logos h2{
+       font-size: 1rem;
+    }
 }
 .counters > div {
     max-width: 900px;

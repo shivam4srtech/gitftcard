@@ -1,9 +1,5 @@
 body{
     background-color: #fbfbfb;
-    /* display: flex;
-    justify-content: center;
-    align-items: center;
-    height: 100vh; */
 }
 .dashboard-box h1{
     font-weight: 500;
@@ -66,4 +62,16 @@ body{
     .choose-dashboard .dashboard-item img{
         width: 70%;
      }
+ }
+ .go-home{
+    text-align: center;
+ }
+ .go-home a{
+    color: #000;
+    font-weight: 500;
+    font-size: 1rem;
+    display: inline-block;
+ }
+ .go-home a i{
+   padding: .5rem;
  }

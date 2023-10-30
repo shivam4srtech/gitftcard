@@ -43,13 +43,14 @@
             <li><a href="./coupon.html"><i class="fa-solid fa-tag icon"></i> Coupon</a></li>
 			<li><a href="./payment.html"><i class='bx bx-dollar icon' ></i> Payment</a></li>
             <li><a href="./analytics.html"><i class="fa-solid fa-chart-line icon"></i>Analytics</a></li>
+			<li><a href="./bonus.html"><i class="fa-solid fa-money-bill-trend-up icon"></i> Bonus</a></li>
             <li class="divider" data-text="Uploads">Uploads</li>
 			<li>
 				<a href="#"><i class="fa-solid fa-image icon"></i>  Media Center <i class='bx bx-chevron-right icon-right' ></i></a>
 				<ul class="side-dropdown">
                     <li><a href="./upload-media.html"><i class="fa-solid fa-image icon"></i> Media</a></li>
                     <li><a href="./marketplace.html"><i class="fa-solid fa-shop icon"></i>Marketplace</a></li>
-                    <li><a href="./store.html"><i class="fa-solid fa-earth-americas icon"></i>Store</a></li>
+                    <li><a href="./store.html"><i class="fa-brands fa-uikit icon"></i></i>Affiliate UI</a></li>
 					<li><a href="#"><i class='bx bx-lock-alt icon' ></i> Privacy</a></li>
 					<li><a href="#"><i class='bx bxs-contact icon' ></i> T & C</a></li>
 				</ul>
@@ -61,6 +62,7 @@
                     <li><a href="./all-campaign.html">All Campaign</a></li>
 				</ul>
 			</li>
+            <li><a href="./group.html"><i class="fa-solid fa-users-rectangle icon"></i>Group</a></li>
 			<li><a href="./settings.html"><i class='bx bx-cog icon' ></i>Settings</a></li>
 			<li><a href="#"><i class='bx bxs-contact icon' ></i> Contact Us</a></li>
 			<li><a href="#" data-bs-toggle="modal" data-bs-target="#logOut"><i class='bx bxs-log-out-circle icon' ></i> Logout</a></li>
@@ -121,18 +123,18 @@
                 <div class="card-header">
                   <ul class="nav nav-tabs card-header-tabs id="myTab" role="tablist"">
                     <li class="nav-item" role="presentation">
-                      <a class="nav-link" aria-current="true" href="#" id="home-tab" data-bs-toggle="tab" data-bs-target="#profile" aria-controls="profile" aria-selected="true">Profile</a>
+                      <a class="nav-link active" aria-current="true" href="#" id="home-tab" data-bs-toggle="tab" data-bs-target="#profile" aria-controls="profile" aria-selected="true">Profile</a>
                     </li>
                     <li class="nav-item" role="presentation">
                        <a class="nav-link" aria-current="true" href="#" id="home-tab" data-bs-toggle="tab" data-bs-target="#affiliateDashboard" aria-controls="affiliateDashboard" aria-selected="true">Affiliate Dashboard</a>
                     </li>
                     <li class="nav-item" role="presentation">
-                        <a class="nav-link active" aria-current="true" href="#" id="home-tab" data-bs-toggle="tab" data-bs-target="#dashboardPreference" aria-controls="dashboardPreference" aria-selected="true">Dashboard Preference</a>
+                        <a class="nav-link" aria-current="true" href="#" id="home-tab" data-bs-toggle="tab" data-bs-target="#dashboardPreference" aria-controls="dashboardPreference" aria-selected="true">Dashboard Preference</a>
                      </li>
                   </ul>
                 </div>
                 <div class="card-body tab-content" id="nav-tabContent">
-                    <div class="tab-pane fade show " id="profile" role="tabpanel" aria-labelledby="nav-home-tab" tabindex="0">
+                    <div class="tab-pane fade active show" id="profile" role="tabpanel" aria-labelledby="nav-home-tab" tabindex="0">
                         <div class="row store-profile">
                             <div class="col-md-6">
                                 <h2> Store Profile</h2>
@@ -576,7 +578,7 @@
                         </div>
                     </div>
                     <!-- ========================Preference================================ -->
-                    <div class="tab-pane fade show active" id="dashboardPreference" role="tabpanel" aria-labelledby="nav-home-tab" tabindex="0">
+                    <div class="tab-pane fade show" id="dashboardPreference" role="tabpanel" aria-labelledby="nav-home-tab" tabindex="0">
                         <div class="row">
                             <h2>Customize Tabs for your Affiliate's Dashboard</h2>
                             <p>You can control which tab your affiliate can access</p>
@@ -847,7 +849,7 @@
 				<div class="modal-body">
 					<form action="#someWhere">
 						<div class="col-md-12 mb-3 mt-3">
-                            <label for="inputReport" class="form-label">Select desired payment method</label>
+                            <label for="inputReport" class="form-label fw-bolder">Select desired font</label>
                             <select id="paymentMethod" class="form-select" onchange="chooseFont(this)">
                               <option selected>Choose Font</option>
                               <option value="1">Google Font</option>

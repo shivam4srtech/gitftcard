@@ -1,0 +1,251 @@
+.bonus-tab label{
+    font-weight: 600;
+    font-size: 1rem;
+    padding: .4rem;
+} 
+.bonus-tab select{
+    color: #000;
+    font-weight: 500;
+    font-size: .9rem;
+}
+.bonus-tab a{
+    color: #5676ff;
+    font-weight: 500;
+    font-size: 1rem;
+}
+ .bonus-tab h2{
+    font-weight: 600;
+    color: #000;
+    font-size: 1.5rem;
+    margin-bottom: 1rem;
+}
+.bonus-tab p{
+    font-weight: 500;
+    color: #000;
+    font-size: 1rem;
+    margin-bottom: .5rem;
+    letter-spacing: .4px;
+    line-height: 1.3;
+}
+.bonus-tab .video-modal{
+    color: #5676ff;
+    font-weight: 500;
+    cursor: pointer;
+    text-decoration: none;
+    margin-top: .2rem;
+    margin-bottom: 1rem;
+}
+.bonus-tab .total-bonus{
+    font-weight: 500;
+    font-size: 1rem;
+}
+.bonus-tab .total-bonus strong{
+   font-weight: 600;
+   padding-left: .5rem;
+   font-size: 1.1rem;
+}
+.bonus-tab ::placeholder{
+    font-weight: 500;
+    color: #000;
+    font-size: .9rem;
+}
+.bonus-tab .video-modal i{
+    padding-left: .5rem;
+}
+.table-section table .affiliate{
+    padding: 0; 
+}
+.bonus-tab .table-section th{
+    text-align: left;
+    padding: .8rem .5rem;
+    font-size: 1.2rem;
+}
+.bonus-tab .table-section td{
+    text-align: left;
+    padding-left: .5rem ;
+    font-weight: 500;
+    color: #000;
+}
+.bonus-tab .table-section .delete{
+   display: flex;
+   flex-direction: row;
+   flex-wrap: wrap;
+}
+.bonus-tab .table-section .delete a{
+   color: #cd1c1f;
+   font-weight: 600;
+   padding: .5rem;
+ }
+.table-section table tbody .affiliate span{
+    text-align: left;
+    padding: .2rem;
+}
+.table-section table tbody .affiliate a{
+    font-weight: 500;
+    color: #000;
+}
+.table-section table tbody td{
+    font-weight: 500;
+    color: #000;
+    padding: 0;
+}
+.table-section table tbody .affiliate .name{
+    font-weight: 500;
+    color: #5676ff;
+    text-transform: capitalize;
+}
+.table-section table tbody .pay-time{
+    padding: 0;
+}
+.table-section table tbody .pay-time span{
+    padding: .2rem;
+    display: block;
+    text-align: left;
+}
+.table-section table tbody .pay-time .date{
+   font-weight: 600;
+   font-size: 1rem;
+
+}
+.table-section table tbody td{
+    font-weight: 500;
+    font-size: .9rem;
+ 
+ }
+ .table-section table tbody a{
+   color: #5676ff;
+   text-decoration: none;
+ 
+ }
+ .table-section table .action{
+    display: flex;
+    flex-direction: row;
+    flex-wrap: wrap;
+    align-items: center;
+    justify-content: space-around;
+    font-size: 1.2rem;
+    padding: 0 .5rem;
+    cursor: pointer;
+  }
+  .table-section table .action .delete{
+    color: #cd1c1f;
+  }
+  .table-section table .action .edit a{
+    color: #000;
+    font-weight: 600;
+  }
+  .table-section table .action .approve, .table-section table .action .reject {
+    border-radius: 4px;
+    padding: .1rem .2rem;
+    color: #fff;
+    font-size: .9rem;
+    cursor: pointer;
+  }
+  .table-section table .action .approve{
+    background-color: #34a853;
+  }
+  .table-section table .action .reject{
+    background-color: #cd1c1f;
+  }
+ .bonus-tab .submit{
+    border: none;
+    outline: none;
+    font-weight: 500;
+    text-decoration: none;
+    letter-spacing: .4px;
+    border-radius: 4px;
+    background-color: #ee755d;
+    color: #fff;
+    text-transform: uppercase;
+    padding: .5rem 1rem;
+    display: inline-block;
+    cursor: pointer;
+}
+.bonus-tab .created-bonus{
+    border: 1px solid #d6d5d5;
+    border-radius: 10px;
+    padding: 1rem .5rem;
+}
+.bonus-tab .created-bonus .bonus-title{
+    font-weight: 600;
+    font-size: 1.1rem;
+    color: #000;
+}
+.bonus-tab .created-bonus .bonus-type{
+    background-color: #5676ff;
+    color: #fff;
+    font-weight: 500;
+    border-radius: 4px;
+    padding: .14rem .4rem;
+    font-size: .85rem;
+    text-transform: capitalize;
+    letter-spacing: .4px;
+}
+.bonus-tab .created-bonus ul li{
+   list-style-type: disc;
+   margin-left: 2.8%;
+   color: #000;
+   font-weight: 500;
+   font-size: .95rem;
+   padding: .2rem;
+}
+.bonus-tab .condition{
+    border-radius: 6px;
+    margin-top: .5rem;
+    background-color:#e6d0b9;
+    padding: .5rem;
+ }
+ .bonus-tab .condition h3{
+    font-weight: 600;
+    margin-bottom: .2rem;
+ }
+ .bonus-tab .condition span{
+    font-weight: 500;
+    font-size: .9rem;
+ }
+/* ===============modal===================== */
+ .modal h5{
+    font-weight: 600;
+    color: #000;
+    font-size: 1.25rem;
+ }
+ .modal label{
+    font-weight: 600;
+    padding-left: .2rem;
+    font-size: .9rem;
+ }
+ .modal .select select{
+    font-weight: 500;
+    font-size: .9rem;
+ }
+ .modal .tag{
+    color: #000;
+    font-weight: 500;
+ }
+ .modal label span{
+    color: #cd1c1f;
+    padding: .2rem;
+ }
+.modal .condition{
+    border-radius: 10px;
+    background-color: #f4f7fa;
+    padding: 1rem .5rem;
+    margin-bottom: 1.2rem;
+}
+.modal .condition h2{
+    color: #000;
+    margin-bottom: .8rem;
+    font-weight: 600;
+}
+.modal .condition .remove a{
+    color: #cd1c1f;
+    font-weight: 600;
+    font-size: .95rem;
+    letter-spacing: .4px;
+}
+.modal .btns-group{
+    display: flex;
+    align-items: center;
+    justify-content: space-around;
+    margin-top: 1rem;
+}

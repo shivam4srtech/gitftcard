@@ -83,7 +83,9 @@ li {
 	list-style: none;
 }
 
-
+strong{
+	font-weight: bold;
+}
 
 /* SIDEBAR */
 #sidebar {
@@ -630,6 +632,14 @@ main .page-count select option{
    }
    .form-check-input{
 	margin-top: 0rem;
+   }
+   ::selection{
+	background-color: #000;
+	color: #fff;
+   }
+   .card-header-tabs .nav-link{
+	font-weight: 500;
+	color: #5676ff;
    }
    /* ===========================Toggle BTN======================== */
 .switch {
