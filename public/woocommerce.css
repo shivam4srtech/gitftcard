@@ -1,0 +1,139 @@
+.woocommerce-box{
+    border: 1px solid #cfcdcd;
+    margin: auto;
+    background-color: #f7f7f8;
+    border-radius: 6px;
+    margin-top: 1.6rem;
+    padding: 1rem .8rem;
+    display: flex;
+    align-items: center;
+}
+.container{
+    margin-top: 8rem;
+    margin-bottom: 1rem;
+}
+.container h1{
+   font-weight: 500;
+}
+.woocommerce-box .steps h2{
+   font-weight: 600;
+   font-size: 1.2rem;
+   color: #000;
+}
+.woocommerce-box .steps h2 small{
+    color: #999;
+    font-size: .75rem;
+ }
+ .woocommerce-box .steps ul li{
+   list-style-type: decimal;
+   margin-left: 4%;
+   padding: .6rem 0;
+   font-weight: 500;
+   color: #000;
+   font-size: .95rem;
+ }
+ .woocommerce-box .steps .submit{
+   border: 1px solid #ee755d;
+   display: inline-block;
+   border-radius: 4px;
+   padding: .4rem 1rem;
+   font-weight: 500;
+   background-color: #ee755d;
+   color: #fff;
+   letter-spacing: .4px;
+   transition: .2s ease;
+  }
+  .woocommerce-box .steps .submit:hover{
+   background-color: transparent;
+   color: #ee755d;
+   }
+   .woocommerce-box img{
+    max-width: 100%;
+    object-fit: contain;
+    border-radius: 6px;
+    }
+    .woocommerce-box .steps small{
+       font-weight: 600;
+       font-size: 1.2rem;
+    }
+    .woocommerce-box .steps .content{
+       margin-left: 4%;
+    }
+    .woocommerce-box .steps .content p{
+        font-weight: 500;
+        margin-top: 1rem;
+        font-size: .9rem;
+        margin-bottom: .85rem;
+     }
+     .woocommerce-box .steps .content label{
+        font-weight: 600;
+        font-size: .9rem;
+     }
+     .woocommerce-box .steps ::placeholder{
+        font-weight: 500;
+        font-size: .85rem;
+        color: #000;
+     }
+     .woocommerce-box .back{
+        margin-bottom: .7rem;
+        color: #5676ff;
+        font-weight: 500;
+        display: inline-block;
+     }
+     .woocommerce-box .back i{
+        padding-right: .4rem;
+     }
+      .woocommerce-box .method{
+        margin-bottom: 1.4rem;
+        border-radius: 6px;
+        padding: 1rem .8rem;
+        background-color: #e6d0b960;
+        border: 1px solid #e6d0b9;
+      }
+     .steps h3{
+       font-weight: 600;
+       margin-top: 1rem;
+       font-size: 1.1rem;
+       color: #000;
+      }
+      .steps .method h4{
+        font-weight: 600;
+        font-size: 1.2rem;
+        margin-bottom: .5rem;
+        color: #000;
+       }
+       .steps .method p{
+       font-weight: 500;
+       color: #000;
+       margin-top: .5rem;
+       margin-bottom: .5rem;
+       letter-spacing: .4px;
+       line-height: 1.35;
+       }
+       .steps .method a{
+       color: #5676ff;
+       font-weight: 500;
+       }
+       .steps .method strong{
+        color: #000;
+        font-weight: 700;
+        font-size: 1.01rem;
+        }
+        .steps .method small{
+            color: #000;
+            font-weight: 600;
+            font-size: 1rem;
+            background-color: #ee755da2;
+            padding: .1rem .25rem;
+            color: #fff;
+            border-radius: 2px;
+            display: inline-block;
+        }
+        .woocommerce-box .steps label{
+            font-weight: 600;
+            margin-left: .25rem;
+        }
+        .woocommerce-box .steps a{
+            font-weight: 500;
+          color: #5676ff;
+        }

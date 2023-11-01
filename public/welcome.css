@@ -1,0 +1,135 @@
+.container{
+    margin-top: 4rem;
+    margin-bottom: 1rem;
+}
+.container h1{
+   font-weight: 500;
+}
+.container h1 span{
+   color: #ee755d;
+   cursor: pointer;
+ }
+ .container h1 span:hover{
+    color: #002E6E;
+  }
+.welcome-box{
+    border: 1px solid #cfcdcd;
+    margin: auto;
+    background-color: #f7f7f8;
+    border-radius: 6px;
+    margin-top: 1.6rem;
+    padding: 1rem .8rem;
+}
+.welcome-box a{
+    font-weight: 500;
+    color: #5676ff;
+    cursor: pointer;
+    text-decoration: none;
+}
+.welcome-box a i{
+   padding: .5rem;
+}
+.welcome-box .store-box{
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+    border: 1px solid #cfcdcd;
+    padding: 1rem .5rem;
+    margin-top: 1rem;
+    border-radius: 6px;
+}
+.welcome-box .store-box a{
+    display: block;
+    font-weight: 500;
+    color: #5676ff;
+    font-size: .95rem;
+}
+.welcome-box h4{
+    font-weight: 600;
+    color: #000;
+    font-size: 1.6rem;
+}
+.welcome-box .store-box h3{
+    font-weight: 600;
+    color: #000;
+    font-size: 1.2rem;
+    margin-bottom: .5rem;
+}
+.welcome-box .store-box a{
+   margin-bottom: 1rem;
+}
+.welcome-box .add-app{
+   display: inline-block;
+   margin-top: 1.2rem;
+   margin-bottom: 1rem;
+   border-radius: 4px;
+   padding: .6rem 1rem;
+   font-weight: 500;
+   letter-spacing: .4px;
+   color: #fff;
+   background-color: #ee755d;
+   border: none;
+   outline:  none;
+   font-size: .98rem;
+ }
+ .welcome-box p{
+    font-weight: 500;
+    letter-spacing: .4px;
+    font-size: .99rem;
+    color: #000;
+  }
+  .welcome-box .home{
+    display: inline-block;
+    margin-top: 1rem;
+    font-size: .9rem;
+  }
+  .welcome-box .home i{
+    padding: .5rem;
+  }
+  @media(max-width:600px){
+    .welcome-box h4{
+        font-size: 1.2rem;
+    }
+    .welcome-box .store-box h3{
+        font-size: 1.1rem;
+    }
+}
+/* =====================Plateform box======================= */
+.welcome-box .plateform-box{
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+    border: 1px solid #cfcdcd;
+    padding: 1rem .5rem;
+    border-radius: 6px;
+    max-width: 99%;
+    margin: 1.6rem auto;
+}
+.plateform-box .plateform-item{
+    border: 1px solid #cfcdcd;
+    border-radius: 4px;
+    box-sizing: border-box;
+    padding: .4rem;
+}
+.plateform-box .plateform-item img{
+    display: block;
+    margin: auto;
+    width: 100%;
+    object-fit: contain;
+    border-radius: 4px;
+    overflow: auto;
+    height: 5rem;
+}
+.plateform-box h5{
+    font-weight: 600;
+    color: #000;
+    font-size: 1.6rem;
+    margin-top: 1rem;
+    margin-bottom: 1.4rem;
+    color: #ee755d;
+}
+@media(max-width:600px){
+    .plateform-box h5{
+       font-size: 1.4rem;
+    }
+}

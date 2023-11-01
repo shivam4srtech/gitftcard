@@ -74,11 +74,16 @@
   .edit-group h2{
     font-weight: 600;
     font-size: 1.2rem;
+    margin-bottom: 1rem;
   }
   .edit-group label{
     font-weight: 600;
     font-size: 1rem;
     padding-left: .25rem;
+  }
+  .edit-group .child-label{
+   font-size: .85rem;
+   font-weight: 500;
   }
   .edit-group{
    border-bottom: 1px solid #ddd9d9;
@@ -112,9 +117,9 @@
  .edit-group .commissionrules .therule span{
     color: #cd1c1f;
  }
- .edit-group .commissionrules small{
+ .edit-group .commissionrules  small{
   font-weight: 600;
-  font-size: 1.2rem;
+  font-size: 1rem;
   color: #000;
   margin-bottom: .5rem;
   display: inline-block;
@@ -128,6 +133,39 @@ font-size: 1.2rem;
 }
 .edit-group .commissionrules .edit-delete .edit{
     color: #000;
+}
+.edit-group p{
+   font-weight: 500;
+   font-size: 1rem;
+   color: #000;
+}
+.edit-group .upload span{
+   padding-left: .5rem;
+   margin-top: .2rem;
+   display: inline-block;
+   font-weight: 500;
+   font-size: .8rem;
+}
+.edit-group .upload #logo{
+   max-width: 100%;
+   object-fit: contain;
+   margin: auto;
+   display: block;
+   border-radius: 4px;
+}
+.edit-group .submit{
+   text-transform: capitalize;
+   font-weight: 500;
+   border-radius: 4px;
+   padding: .4rem 1rem;
+   letter-spacing: .4px;
+   outline: none;
+   border: none;
+   background-color: #FF7F50;
+   color: #fff;
+}
+.edit-group:last-child{
+   border-bottom: none;
 }
 /* ===============modal===================== */
  .modal h5{

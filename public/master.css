@@ -448,3 +448,64 @@ footer .copyright{
 
     }
 }
+/* ************************Logout Model************************** */
+.modal .modal-dialog .logout-content{
+    border-radius: 12px;
+    max-width: 20rem;
+    margin: auto;
+}
+.modal .logout-header p{
+    text-align: center;
+    display: block;
+    width: 100%;
+}
+.modal .logout-header p i{
+   font-size: 1.85rem;
+   border-radius: 50%;
+   border: 5px solid #ee755d;
+   padding: .5rem;
+   color: #ee755d;
+}
+.modal .logout-body{
+    border: 10px solid #fff;
+}
+.modal .logout-body h2{
+   font-size: 1.65rem;
+   font-weight: 600;
+   color: #ee755d;
+}
+.modal .logout-body p{
+    font-size: .9rem;
+    color: #000;
+    font-weight: 500;
+    letter-spacing: .2px;
+    line-height: 1.4;
+ }
+ .modal .logout-footer{
+    display: flex;
+    border-radius: 0px;
+    padding: 0;
+    margin: 0;
+    justify-content: space-around;
+    align-items: center;
+    padding-bottom: .4rem;
+ }
+ .modal .logout-footer .btn{
+    text-decoration: none;
+    text-transform: uppercase;
+    border-radius: 0px;
+    border: none;
+    font-weight: 500;
+    padding: .45rem 1.4rem;
+    border-radius: 4px;
+ }
+ /* .modal .logout-footer .dismiss{
+    background-color: #ee755d;
+ } */
+ .modal .modal-footer .logout{
+    background-color: #363636;
+ }
+ ::selection{
+    color: #FFF;
+    background-color: #000;
+ }

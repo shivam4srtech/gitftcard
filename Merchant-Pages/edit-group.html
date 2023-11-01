@@ -178,7 +178,7 @@
                 </div>
                 <!-- ===============Listing Rules=============== -->
                 <div class="col-12 mt-4">
-                    <h2 class="mb-3">Created Commission Rules</h2>
+                    <h2>Created Commission Rules</h2>
                     <div class="d-md-flex align-items-center commissionrules mb-3">
                         <div class="me-auto">
                             <p class="therule"><i class="fa-solid fa-equals"></i>product name = <span>health care</span></p>
@@ -198,6 +198,202 @@
                             <a href="#000" class="delete"><i class="fa-solid fa-trash"></i></a>
                             <a href="#000" class="edit" data-bs-toggle="modal" data-bs-target="#editCommissionRule"><i class="fa-regular fa-pen-to-square"></i></a>
                         </div>
+                    </div>
+                </div>
+            </div>
+            <div class="row edit-group mt-5">
+                <div class="col-md-6">
+                    <div>
+                       <h2>Configuration Settings for Groups</h2> 
+                       <p>Custom settings for members within this group.</p>
+                    </div>
+                </div>
+                <div class="col-md-6">
+                    <form action="#somewhere">
+                        <div class="col mb-3">
+                            <label for="exampleFormControlInput1" class="form-label">Default referral link</label>
+                            <input type="text" class="form-control" id="exampleFormControlInput1"required>
+                        </div>
+                        <div class="col mb-3">
+                            <label for="exampleFormControlInput1" class="form-label">Group Description</label>
+                            <textarea class="form-control" aria-label="With textarea"></textarea>
+                        </div>
+                        <div class="col mb-3">
+                            <label for="exampleFormControlInput1" class="form-label">Customer-affiliate connection</label>
+                            <div class="form-check">
+                                <input class="form-check-input" type="checkbox" value="" id="flexCheckDefault">
+                                <label class="form-check-label child-label" for="flexCheckDefault">
+                                    Automatically connect customer with affiliate
+                                </label>
+                              </div>
+                              <div class="form-check">
+                                <input class="form-check-input" type="checkbox" value="" id="flexCheckChecked" checked>
+                                <label class="form-check-label child-label" for="flexCheckChecked">
+                                    Set connection expiration ?
+                                </label>
+                              </div>
+                        </div>
+                        <div class="col mb-3">
+                            <label for="exampleFormControlInput1" class="form-label">Payment Options</label>
+                            <div class="form-check">
+                                <input class="form-check-input" type="checkbox" value="" id="flexCheckChecked" checked>
+                                <label class="form-check-label child-label" for="flexCheckChecked">
+                                    Bank Transfer
+                                </label>
+                            </div>
+                            <div class="form-check">
+                                <input class="form-check-input" type="checkbox" value="" id="flexCheckChecked" checked>
+                                <label class="form-check-label child-label" for="flexCheckChecked">
+                                    UPI
+                                </label>
+                            </div>
+                            <div class="form-check">
+                                <input class="form-check-input" type="checkbox" value="" id="flexCheckChecked" checked>
+                                <label class="form-check-label child-label" for="flexCheckChecked">
+                                    cash
+                                </label>
+                            </div>
+                            <div class="form-check">
+                                <input class="form-check-input" type="checkbox" value="" id="flexCheckChecked" checked>
+                                <label class="form-check-label child-label" for="flexCheckChecked">
+                                    Google Pay
+                                </label>
+                            </div>
+                            <div class="form-check">
+                                <input class="form-check-input" type="checkbox" value="" id="flexCheckChecked" checked>
+                                <label class="form-check-label child-label" for="flexCheckChecked">
+                                    Cheque
+                                </label>
+                            </div>
+                            <div class="form-check">
+                                <input class="form-check-input" type="checkbox" value="" id="flexCheckChecked" checked>
+                                <label class="form-check-label child-label" for="flexCheckChecked">
+                                    Debit Card
+                                </label>
+                            </div>
+                            <div class="form-check">
+                                <input class="form-check-input" type="checkbox" value="" id="flexCheckChecked" checked>
+                                <label class="form-check-label child-label" for="flexCheckChecked">
+                                    Net Banking
+                                </label>
+                            </div>
+                            <div class="form-check">
+                                <input class="form-check-input" type="checkbox" value="" id="flexCheckChecked" checked>
+                                <label class="form-check-label child-label" for="flexCheckChecked">
+                                    Ali Pay
+                                </label>
+                            </div>
+                            <div class="form-check">
+                                <input class="form-check-input" type="checkbox" value="" id="flexCheckChecked" checked>
+                                <label class="form-check-label child-label" for="flexCheckChecked">
+                                    PayPal
+                                </label>
+                            </div>
+                        </div>
+                        <div class="col mb-5 select">
+                            <label for="inputReport" class="form-label">Default discount type</label>
+                            <select class="form-select" onchange="discountType(this)">
+                                <option selected>Use System Settings</option>
+                                <option value="1">Use Custome Default Coupon</option>
+                            </select>
+                        </div>
+                        <div class="col d-none mb-4" id="customeDiscount">
+                            <div>
+                                <label for="exampleFormControlInput1" class="form-label">Custome Default Coupons</label>
+                                <input type="text" class="form-control" id="basic-url" aria-describedby="basic-addon3">
+                            </div>
+                        </div>
+                        <div class="col mb-3 select">
+                            <label for="inputReport" class="form-label">Give commission for new customers</label>
+                            <select class="form-select">
+                                <option selected>Only new customer</option>
+                                <option value="1">All Customers</option>
+                                <option value="2">Use System Settings</option>
+                            </select>
+                        </div>
+                        <div class="text-center">
+                            <input type="submit" class="submit" value="save">
+                        </div>
+                    </form>
+                </div>
+            </div>
+            <div class="row edit-group">
+                <div class="col-md-6">
+                    <h2>Group badge</h2>
+                    <p>Identifier symbolizing group within  affiliate community.</p>
+                    <a href="" class="video-modal mt-2" data-video="https://www.youtube.com/embed/HBdcL7YsdBY" data-bs-toggle="modal" data-bs-target="#videoModal">Watch Video for info<i class="fa-solid fa-video"></i></a>
+                </div>
+                <div class="col-md-6 upload">
+                    <div class="mb-3 col">
+                        <label for="formFileMultiple" class="form-label p-2">Upload Group Badge</label>
+                        <input class="form-control" type="file" id="formFileMultiple" multiple onchange="readURLLogo(this);">
+                        <span class="media-size">Only PNG, JPG files. Maximum size 2MB</span>
+                    </div>
+                    <div class="col-md-4 mx-auto">
+                        <img id="logo" src="http://placehold.it/150" alt="your image"/>
+                    </div>
+                </div>
+            </div>
+            <div class="row edit-group">
+                <div class="col-md-6">
+                    <h2>Commission Booster</h2>
+                    <p>Boost affiliate commissions upon meeting predefined criteria or targets.</p>
+                    <a href="" class="video-modal mt-2" data-video="https://www.youtube.com/embed/HBdcL7YsdBY" data-bs-toggle="modal" data-bs-target="#videoModal">Watch Video for info<i class="fa-solid fa-video"></i></a>
+                </div>
+                <div class="col-md-6">
+                    <form action="#someWhere">
+                        <div class="col mb-3">
+                            <label for="exampleFormControlInput1" class="form-label">Name</label>
+                            <input type="text" class="form-control" id="exampleFormControlInput1" placeholder="existing group name should rendered here.." required>
+                        </div>
+                        <div class="col mb-3 select">
+                            <label for="inputReport" class="form-label">Apply On</label>
+                            <select class="form-select">
+                                <option selected>Revenue</option>
+                                <option value="1">Subtotal Revenue</option>
+                                <option value="2">Sale Commission</option>
+                                <option value="3">Network Commission</option>
+                                <option value="4">Total Commission</option>
+                                <option value="5">Number of orders</option>
+                                <option value="6">New costomers orders</option>
+                            </select>
+                        </div>
+                        <div class="col mb-3 select">
+                            <label for="inputReport" class="form-label">Time Period</label>
+                            <select class="form-select">
+                                <option selected>Current Month</option>
+                                <option value="1">Current Week</option>
+                                <option value="2">Last 60 Days</option>
+                                <option value="3">Last 90 Days</option>
+                                <option value="4">Last 180 Days</option>
+                                <option value="2">All Time</option>
+                            </select>
+                        </div>
+                        <div class="col mb-3">
+                            <label for="exampleFormControlInput1" class="form-label">Minimum Value</label>
+                            <input type="number" class="form-control" id="exampleFormControlInput1" placeholder="value" required>
+                        </div>
+                        <div class="mb-3">
+                            <label for="exampleFormControlInput1" class="form-label">Boost</label>
+                            <div class="input-group">
+                                <input type="number" class="form-control" aria-label="boost" aria-describedby="basic-addon1">
+                                <span class="input-group-text" id="basic-addon1">%</span>
+                            </div>
+                        </div>
+                        <div class="text-center mb-3">
+                            <input type="submit" class="submit" value="create">
+                        </div>
+                    </form>
+                </div>
+                <div class="d-md-flex align-items-center commissionrules mb-3">
+                    <div class="me-auto">
+                        <h2>BoostComm23</h2>
+                        <p class="therule"><i class="fa-solid fa-equals"></i>if revenue = <span>100</span> in <span>current month</span> then boost commission by <span>10%</span></p>
+                        <small class="commissionvalue">Boosted Commission 12%</small>
+                    </div>
+                    <div class="ms-auto edit-delete">
+                        <a href="#000" class="delete"><i class="fa-solid fa-trash"></i></a>
+                        <a href="#000" class="edit" data-bs-toggle="modal" data-bs-target="#editCommissionRule"><i class="fa-regular fa-pen-to-square"></i></a>
                     </div>
                 </div>
             </div>
@@ -244,7 +440,7 @@
                                 </div>
                                 <div class="col-12 mb-3 select">
                                     <label for="inputReport" class="form-label">Commission</label>
-                                    <select class="form-select" onchange="commission(this)">
+                                    <select class="form-select" onchange="commissionOne(this)">
                                         <option selected></option>
                                         <option value="1">Percentage</option>
                                         <option value="2">Falt Rate</option>
@@ -284,20 +480,20 @@
                                 </div>
                                 <div class="col-12 mb-3 select">
                                     <label for="inputReport" class="form-label">Commission</label>
-                                    <select class="form-select" onchange="commission(this)">
+                                    <select class="form-select" onchange="commissionTwo(this)">
                                         <option selected></option>
                                         <option value="1">Percentage</option>
                                         <option value="2">Falt Rate</option>
                                     </select>
                                 </div>
-                                <div class="col d-none" id="percent">
+                                <div class="col d-none" id="couponPercent">
                                     <label for="basic-url" class="form-label">Percentage</label>
                                     <div class="input-group mb-3">
                                         <input type="number" class="form-control" id="basic-url" aria-describedby="basic-addon3">
                                         <span class="input-group-text tag" id="basic-addon3">%</span>
                                     </div>
                                 </div>
-                                <div class="col d-none" id="flatRates">
+                                <div class="col d-none" id="couponFlatRates">
                                     <label for="basic-url" class="form-label">Flate Rate</label>
                                     <div class="input-group mb-3">
                                         <span class="input-group-text tag" id="basic-addon3">$</span>
@@ -331,7 +527,7 @@
                                 </div>
                                 <div class="col-12 mb-3 select">
                                     <label for="inputReport" class="form-label">Commission</label>
-                                    <select class="form-select" onchange="commission(this)">
+                                    <select class="form-select" onchange="commissionThree(this)">
                                         <option selected></option>
                                         <option value="1">Percentage</option>
                                         <option value="2">Falt Rate</option>
@@ -498,7 +694,7 @@
 		};
 	</script>
     <script type="text/javascript">
-		function commission(answer){
+		function commissionOne(answer){
 			if(answer.value == 1){
 				document.getElementById('percent').classList.remove('d-none');
 			} else{
@@ -512,7 +708,21 @@
 		};
 	</script>
     <script type="text/javascript">
-		function commission(answer){
+		function commissionTwo(answer){
+			if(answer.value == 1){
+				document.getElementById('couponPercent').classList.remove('d-none');
+			} else{
+				document.getElementById('couponPercent').classList.add('d-none');
+			}
+            if(answer.value == 2){
+				document.getElementById('couponFlatRates').classList.remove('d-none');
+			} else{
+				document.getElementById('couponFlatRates').classList.add('d-none');
+			}
+		};
+	</script>
+    <script type="text/javascript">
+		function commissionThree(answer){
 			if(answer.value == 1){
 				document.getElementById('conversionPercent').classList.remove('d-none');
 			} else{
@@ -525,6 +735,32 @@
 			}
 		};
 	</script>
+    <script type="text/javascript">
+		function discountType(answer){
+			if(answer.value == 1){
+				document.getElementById('customeDiscount').classList.remove('d-none');
+			} else{
+				document.getElementById('customeDiscount').classList.add('d-none');
+			}
+		}
+	</script>
+    <script>
+            //upload image
+            function readURLLogo(input) {
+            if (input.files && input.files[0]) {
+                var reader = new FileReader();
+
+                reader.onload = function (e) {
+                    $('#logo')
+                        .attr('src', e.target.result);
+                };
+
+                reader.readAsDataURL(input.files[0]);
+            }
+        }
+    </script>
+     <!-- ==============================JQuery CDN========================================= -->
+     <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.1.0/jquery.min.js"></script>  
     <!-- ==============================Bootstrap script============================ -->
     <script src="../bootstrap-5.3.0-alpha3-dist/js/bootstrap.bundle.min.js"></script>
     <!-- ==============================Local script============================ -->
