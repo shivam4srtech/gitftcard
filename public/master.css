@@ -509,3 +509,7 @@ footer .copyright{
     color: #FFF;
     background-color: #000;
  }
+ .nav-item.loginBtn .nav-link{
+    background-color: #002E6E;
+    color: #fff;
+ }

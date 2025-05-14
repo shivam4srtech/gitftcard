@@ -117,17 +117,15 @@
 			<ul class="breadcrumbs">
 				<li><a href="./merchant.html">Home</a></li>
 				<li class="divider">/</li>
-				<li><a href="./affiliate.html" class="active">commissions</a></li>
+				<li><a href="./affiliate.html" class="active">refferal commissions</a></li>
 			</ul>
             <div class="card mt-4">
                 <div class="card-header">
                   <ul class="nav nav-tabs card-header-tabs id="myTab" role="tablist"">
                     <li class="nav-item" role="presentation">
-                      <a class="nav-link active" aria-current="true" href="#" id="home-tab" data-bs-toggle="tab" data-bs-target="#referralCommissions" aria-controls="referralCommissions" aria-selected="true">Referral commissions</a>
+                      <a class="nav-link active" aria-current="true" href="#" id="home-tab" data-bs-toggle="tab" data-bs-target="#referralCommissions" aria-controls="referralCommissions" aria-selected="true">Overspent Commissions</a>
                     </li>
-                    <li class="nav-item" role="presentation">
-                     <a class="nav-link" aria-current="true" href="#" id="home-tab" data-bs-toggle="tab" data-bs-target="#royaltiesCommission" aria-controls="royaltiesCommission" aria-selected="true">Royalties Commission</a>
-                    </li>
+                    
                   </ul>
                 </div>
                 <div class="card-body tab-content" id="nav-tabContent">
@@ -267,135 +265,7 @@
                         </div>
                     </div>
                     
-                    <!-- ================Royalties Commissions=============== -->
-                    <div class="tab-pane fade show" id="royaltiesCommission" role="tabpanel" aria-labelledby="nav-home-tab" tabindex="0">
-						<div class="row royaltie">
-							<h2>Royalties Commissions</h2>
-							<p>Doesn't matter who refers the sale, the set affiliate will also get the commission.</p>
-							<p>Watch tutorial video for more info <a href="" class="video-modal" data-video="https://www.youtube.com/embed/HBdcL7YsdBY" data-bs-toggle="modal" data-bs-target="#videoModal">Watch Here <i class="fa-solid fa-video"></i></a></p>
-						</div>
-						<form action="" class="row royaltie-form">
-							<div class="col-md-6">
-								<div class="mb-3">
-									<select class="form-select" aria-label="Default select example" required>
-										<option selected>Applies on all sales</option>
-										<option value="1">Applies on referred sale</option>
-										<option value="2">Applies on all sales</option>
-										<option value="3">Applies on non-referred sales</option>
-									</select>
-								</div>
-								<div class="input-group mb-3">
-									<div class="input-group-text p-0">
-										<select class="form-select form-select-lg shadow-none bg-light border-0">
-											<option selected>Affiliate</option>
-											<option value="1">Jos Butller</option>
-											<option value="2">Quinton Decock</option>
-											<option value="3">Mahela Jayvardhane</option>
-											<option value="4">Musafilkur Rahim</option>
-											<option value="5">Dhananjay di Silva</option>
-										</select>
-									</div>
-									<input type="search" class="form-control" placeholder="Search Affiliate">
-									<a href="#000" class="input-group-text shadow-none px-4 btn-warning">
-										<i class="fa fa-search"></i>
-									</a>
-								</div>
-								<div class="mb-3">
-									<label for="inputReport" class="form-label p-2">Select commission attribute</label>
-									<select id="paymentMethod" class="form-select" onchange="royalties(this)">
-									  <option selected>Select</option>
-									  <option value="1">Percentages</option>
-									  <option value="2">Flat Rate</option>
-									</select>
-								</div>
-								<div class="mb-3 d-none" id="one">
-									<div class="input-group mb-3">
-										<span class="input-group-text" id="basic-addon3">%</span>
-										<input type="number" class="form-control" id="basic-url" aria-describedby="basic-addon3">
-									</div>
-								</div>
-								<div class="mb-3 d-none" id="two">
-									<div class="input-group mb-3">
-										<span class="input-group-text" id="basic-addon3">$</span>
-										<input type="number" class="form-control" id="basic-url" aria-describedby="basic-addon3">
-									</div>
-								</div>
-								<div class="mb-3 col-md-6 submit">
-									<input type="submit" value="Set Commission">
-								</div>	
-							</div>
-						</form>
-                        <div class="table-section">
-                            <table>
-                                <thead>
-                                    <tr>
-                                        <th>Product</th>
-                                        <th>Affiliate</th>
-										<th>Commission</th>
-                                        <th>Action</th>
-                                    </tr>
-                                </thead>
-                                <tbody>
-                                    <tr>
-                                        <td>
-                                            <span>Jhandu Balm</span>
-                                        </td>
-                                        <td class="name">
-                                            <span><a href="./affiliate-details.html">AB De villiers</a></span>
-                                        </td>
-                                        <td>
-                                            <span>10%</span>
-                                        </td>
-                                        <td class="">
-                                            <span><a href="#000" class="p-1">Edit</a></span>
-                                        </td>
-                                    </tr>
-                                    <tr>
-                                        <td>
-                                            <span>Jhandu Balm</span>
-                                        </td>
-                                        <td class="name">
-                                            <span><a href="./affiliate-details.html">David Miller</a></span>
-                                        </td>
-                                        <td>
-                                            <span>10%</span>
-                                        </td>
-                                        <td class="action">
-                                            <span><a href="#000" class="p-1">Edit</a></span>
-                                        </td>
-                                    </tr>
-                                    <tr>
-                                        <td>
-                                            <span>Jhandu Balm</span>
-                                        </td>
-                                        <td class="name">
-                                            <span><a href="./affiliate-details.html">Stuart Broad</a></span>
-                                        </td>
-                                        <td>
-                                            <span>10%</span>
-                                        </td>
-                                        <td class="action">
-                                            <span><a href="#000" class="p-1">Edit</a></span>
-                                        </td>
-                                    </tr>
-                                    <tr>
-                                        <td>
-                                            <span>Jhandu Balm</span>
-                                        </td>
-                                        <td class="name">
-                                            <span><a href="./affiliate-details.html">Louse Phillipe</a></span>
-                                        </td>
-                                        <td>
-                                            <span>10%</span>
-                                        </td>
-                                        <td class="action">
-                                            <span><a href="#000" class="p-1">Edit</a></span>
-                                        </td>
-                                    </tr>
-                                </tbody>
-                            </table>
-                        </div>
-                    </div>
+                    
                 </div>
             </div>
             <div class="page-count">
